@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #b273d9;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="icon_02_balance-Hover" transform="translate(2631 10927)">
+    <rect id="Rectangle_853" data-name="Rectangle 853" class="cls-1" width="26" height="26" transform="translate(-2631 -10927)"/>
+    <path id="_02-balance" data-name="02-balance" class="cls-2" d="M22.769,22.39,34.038,24.1v9.555L18.8,31.381v-11.2L31.344,17v6.564" transform="translate(-2644.416 -10940.159)"/>
+  </g>
+</svg>

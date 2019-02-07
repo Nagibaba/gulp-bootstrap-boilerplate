@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #b273d9;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="icon_01_home-Hover" transform="translate(2631 10988)">
+    <rect id="Rectangle_852" data-name="Rectangle 852" class="cls-1" width="26" height="26" transform="translate(-2631 -10988)"/>
+    <path id="_01-home" data-name="01-home" class="cls-2" d="M34.087,33.659H28.649V29l-4.41-2.695v7.35H18.8V22.047L26.444,17l7.644,5.047Z" transform="translate(-2644.3 -11001.159)"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.788 18.159">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #994DC9;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <path id="_01-home" data-name="01-home" class="cls-1" d="M34.087,33.659H28.649V29l-4.41-2.695v7.35H18.8V22.047L26.444,17l7.644,5.047Z" transform="translate(-18.05 -16.25)"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 235 31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4d4d4d;
+        font-size: 14px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-2 {
+        fill: #999;
+        font-size: 18px;
+        font-family: MaterialIcons-Regular, Material Icons;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #707070;
+        stroke-width: 2px;
+        opacity: 0.2;
+      }
+    </style>
+  </defs>
+  <g id="Group_247" data-name="Group 247" transform="translate(-830 -417)">
+    <text id="Bəxtiyar_Vahabzadə" data-name="Bəxtiyar Vahabzadə" class="cls-1" transform="translate(830 432)"><tspan x="0" y="0">Bəxtiyar Vahabzadə</tspan></text>
+    <text id="person" class="cls-2" transform="translate(1047 436)"><tspan x="0" y="0">person</tspan></text>
+    <line id="Line_158" data-name="Line 158" class="cls-3" x2="235" transform="translate(830 447)"/>
+  </g>
+</svg>

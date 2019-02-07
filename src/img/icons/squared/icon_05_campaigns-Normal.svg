@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #edd2ff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="icon_05_campaigns-Normal" transform="translate(2705 10744)">
+    <rect id="Rectangle_841" data-name="Rectangle 841" class="cls-1" width="26" height="26" transform="translate(-2705 -10744)"/>
+    <path id="_05-campaigns" data-name="05-campaigns" class="cls-2" d="M16.705,33.679l-.294-5.145L13.3,23.978l5.316-2.058L22.193,18l3.528,3.92,5.39,2.058-2.94,4.557-.465,5.145L22.291,30Z" transform="translate(-2714.568 -10757.159)"/>
+  </g>
+</svg>

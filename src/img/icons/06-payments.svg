@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.689 15.219">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #edd2ff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="_06-payments" data-name="06-payments" transform="translate(0.75 0.75)">
+    <path id="Path_4" data-name="Path 4" class="cls-1" d="M34.189,34.25l-2.972,1.47-3.09-1.47-2.962,1.47-3.09-1.47L19,35.719V22H34.189Z" transform="translate(-19 -22)"/>
+    <line id="Line_1" data-name="Line 1" class="cls-1" x2="8.82" transform="translate(3.185 4.9)"/>
+    <line id="Line_2" data-name="Line 2" class="cls-1" x2="8.82" transform="translate(3.185 7.595)"/>
+  </g>
+</svg>

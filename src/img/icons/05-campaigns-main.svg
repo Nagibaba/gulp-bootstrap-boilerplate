@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.311 17.179">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #994DC9;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <path id="_05-campaigns" data-name="05-campaigns" class="cls-1" d="M16.705,33.679l-.294-5.145L13.3,23.978l5.316-2.058L22.193,18l3.528,3.92,5.39,2.058-2.94,4.557-.465,5.145L22.291,30Z" transform="translate(-12.55 -17.25)"/>
+</svg>

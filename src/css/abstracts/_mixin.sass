@@ -1,0 +1,71 @@
+
+
+
+=respondmin($breakpoint)
+	@if $breakpoint == sm 
+		@media (min-width: 576px)
+			@content
+	
+
+	@if $breakpoint == md 
+		@media (min-width: 768px)
+			@content
+	
+
+	@if $breakpoint == lg 
+		@media (min-width: 992px)
+			@content
+	
+
+	@if $breakpoint == xl 
+		@media (min-width: 1200px)
+			@content
+	
+
+	
+
+
+
+=respondmax($breakpoint)
+	@if $breakpoint == sm 
+		@media (max-width: 575px)
+			@content
+	
+
+	@if $breakpoint == md 
+		@media (max-width: 767px)
+			@content
+	
+
+	@if $breakpoint == lg 
+		@media (max-width: 991px)
+			@content
+	
+
+	@if $breakpoint == xl 
+		@media (max-width: 1199px) 
+			@content
+	
+
+
+
+
+
+=font-full($family, $weight, $fileName)
+	font-family: $font
+	src: url('../../fonts/#{$font}.eot')
+	src: url('../../fonts/#{$font}.eot?#iefix') format('embedded-opentype'),
+	url('../../fonts/#{$font}.woff2') format('woff2'),
+	url('../../fonts/#{$font}.woff') format('woff'),
+	url('../../fonts/#{$font}.ttf') format('truetype'),
+	url('../../fonts/#{$font}.svg##{$font}') format('svg')
+
+
+
+=transform($property)
+  -webkit-transform: $property
+  -ms-transform: $property
+  transform: $property
+
+.box
+  +transform(rotate(30deg))

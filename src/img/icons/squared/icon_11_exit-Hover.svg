@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #b273d9;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="icon_11_exit-Hover" transform="translate(2445 10614)">
+    <rect id="Rectangle_874" data-name="Rectangle 874" class="cls-1" width="26" height="26" transform="translate(-2445 -10614)"/>
+    <g id="Group_621" data-name="Group 621" transform="translate(-2440 -10611)">
+      <line id="Line_202" data-name="Line 202" class="cls-2" x1="6.991" transform="translate(7.262 9.782)"/>
+      <path id="Path_216" data-name="Path 216" class="cls-2" d="M9.584,17.589H4.545A2.541,2.541,0,0,1,2,15.044V4.545A2.541,2.541,0,0,1,4.545,2h5.04"/>
+      <path id="Path_217" data-name="Path 217" class="cls-2" d="M38.9,20.8l3.137,3.137L38.9,27.1" transform="translate(-27.784 -14.156)"/>
+    </g>
+  </g>
+</svg>

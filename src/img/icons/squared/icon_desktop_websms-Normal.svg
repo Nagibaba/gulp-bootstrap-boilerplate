@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="icon_desktop_websms-Normal" transform="translate(2677 10481)">
+    <rect id="Rectangle_860" data-name="Rectangle 860" class="cls-1" width="36" height="36" transform="translate(-2677 -10481)"/>
+    <g id="Group_588" data-name="Group 588" transform="translate(-2672.882 -10473.729)">
+      <rect id="Rectangle_261" data-name="Rectangle 261" class="cls-2" width="23.781" height="17.307" transform="translate(2 2)"/>
+      <path id="Path_189" data-name="Path 189" class="cls-2" d="M34.115,11.8,22.224,19.488,14.1,14.228" transform="translate(-8.334 -6.75)"/>
+    </g>
+  </g>
+</svg>

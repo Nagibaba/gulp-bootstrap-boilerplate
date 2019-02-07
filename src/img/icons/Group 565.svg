@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.167 30.737">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_565" data-name="Group 565" transform="translate(0.25 0.25)">
+    <path id="Path_257" data-name="Path 257" class="cls-1" d="M21.628,14.468A12.015,12.015,0,0,1,10.4,21.756" transform="translate(4.572 6.374)"/>
+    <path id="Path_258" data-name="Path 258" class="cls-1" d="M25.067,11.172A15.978,15.978,0,0,0,23.9,8.979h0a8.214,8.214,0,0,0-5.555-7.894A15.09,15.09,0,0,0,13.956.5a19.892,19.892,0,0,0-4.386.585,8.158,8.158,0,0,0-5.7,7.894h0A15.978,15.978,0,0,0,2.7,11.172" transform="translate(1.016)"/>
+    <path id="Path_259" data-name="Path 259" class="cls-1" d="M18.954,17.448H17.2V7.8h1.754a2.464,2.464,0,0,1,2.485,2.485v4.678A2.377,2.377,0,0,1,18.954,17.448Z" transform="translate(7.713 3.372)"/>
+    <path id="Path_260" data-name="Path 260" class="cls-1" d="M2.985,7.8H4.739v9.648H2.985A2.464,2.464,0,0,1,.5,14.963V10.285A2.464,2.464,0,0,1,2.985,7.8Z" transform="translate(0 3.372)"/>
+    <circle id="Ellipse_85" data-name="Ellipse 85" class="cls-2" cx="1.462" cy="1.462" r="1.462" transform="translate(13.364 26.814)"/>
+  </g>
+</svg>

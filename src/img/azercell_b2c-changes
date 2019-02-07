@@ -1,0 +1,9 @@
+IE11-ə uyğunlaşdırmaq üçün bəzi "img" teqlərinə verilmiş SVG ikonlar "viewBox"lar kiçildildi.
+
+Footer brovserin ölçüsünə uyğun olaraq daim aşağı hissəyə yapışdırıldı. (src/js/main/main.js)  
+
+"Switch"lərə aktivlik verildi. "Opened" və "Closed" teqləri ilə (src/js/main/main.js və "switch" class-ı ola html-lərdə)
+
+Footer-a kölgə əlavə edildi
+
+HTML-lərdə bəzi ikonlar ortalandı. Bəzən class adları dəyişilərək(məs. "align-bottom"->"align-middle"), bir dəfə də css-lə ("img__icon"-a align verilərək)

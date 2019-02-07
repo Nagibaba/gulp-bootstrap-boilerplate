@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.739 18.159">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #994DC9;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <path id="_02-balance" data-name="02-balance" class="cls-1" d="M22.769,22.39,34.038,24.1v9.555L18.8,31.381v-11.2L31.344,17v6.606" transform="translate(-18.05 -16.25)"/>
+</svg>
