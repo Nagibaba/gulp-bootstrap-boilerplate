@@ -87,7 +87,7 @@ gulp.task('html:build', function () {
 
 gulp.task('pug:build', function () {
     gulp.src(path.src.pug)  
-        .pipe(rigger()) 
+        // .pipe(rigger()) // we don't need it anymore as PUG does it
         .pipe(pug({
             pretty: true
         }
