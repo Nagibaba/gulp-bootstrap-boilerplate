@@ -52,6 +52,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.2.1",
+    "gulp-pug": "^4.0.1",
     "pikaday": "^1.7.0"
   }
 }

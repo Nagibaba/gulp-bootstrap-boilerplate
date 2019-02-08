@@ -15,9 +15,10 @@ var flatten = require('gulp-flatten');
 var connect = require('gulp-connect');
 var notify = require("gulp-notify");
 const imagemin = require('gulp-imagemin');
+var pug = require('gulp-pug');
 
 
-var gulpJustStarted = true;
+// var gulpJustStarted = true;
 var lastCompile = new Date();
 
 const babel = require('gulp-babel');
@@ -30,6 +31,7 @@ var source = require('vinyl-source-stream');
 var path = {
     build: { 
         html: 'build/',
+        pug: 'build/',
         js: 'build/js/',
         vendor: 'build/js/vendor/', 
         css: 'build/css/main/',
@@ -38,6 +40,7 @@ var path = {
     },
     src: {
         html: 'src/*.html', 
+        pug: 'src/*.pug',
         js: 'src/js/main/**/*.js',
         vendor: 'src/js/vendor/*.js',
         css: 'src/css/main.sass',
@@ -46,6 +49,7 @@ var path = {
     },
     watch: { 
         html: 'src/**/*.html',
+        pug: 'src/**/*.pug',
         js: 'src/js/main/*.js',
         vendor: 'src/js/vendor/*.js',
         css: 'src/css/**/*.sass',
@@ -81,7 +85,19 @@ gulp.task('html:build', function () {
     );
 });
 
-
+gulp.task('pug:build', function () {
+    gulp.src(path.src.pug)  
+        .pipe(rigger()) 
+        .pipe(pug({
+            pretty: true
+        }
+        ))
+        .pipe(gulp.dest(path.build.pug)) 
+        .pipe(reload({stream: true}))
+        .pipe(
+            notify({ message: "PUG compiled", onLast: true })
+        );
+});
 
 gulp.task('js:build', function () {
     browserify({
@@ -176,6 +192,7 @@ gulp.task('fonts:build', function() {
 
 gulp.task('build', [
     'html:build',
+    'pug:build',
     'js:build',
     'css:build',
     'fonts:build',
@@ -189,6 +206,9 @@ gulp.task('watch', function(){
 
     watch([path.watch.html], function(event, cb) {
         gulp.start('html:build');
+    });
+    watch([path.watch.pug], function(event, cb) {
+        gulp.start('pug:build');
     });
     watch([path.watch.css], function(event, cb) {
         gulp.start('css:build');
