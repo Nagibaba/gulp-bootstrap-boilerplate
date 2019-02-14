@@ -88,6 +88,10 @@ gulp.task('html:build', function () {
 gulp.task('pug:build', function () {
     gulp.src(path.src.pug)  
         // .pipe(rigger()) // we don't need it anymore as PUG does it
+        .on('error', function(err) {
+            console.log(err)
+            this.emit('end')
+        })
         .pipe(pug({
             pretty: true
         }
@@ -103,6 +107,10 @@ gulp.task('js:build', function () {
     browserify({
         entries: ['./src/js/main/main.js'],
         debug: true
+    })
+    .on('error', function(err) {
+        console.log(err)
+        this.emit('end')
     })
     .transform(babelify)
     

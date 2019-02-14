@@ -1,0 +1,108 @@
+.hamburger
+	display: flex
+	align-self: center
+	flex-direction: column
+	justify-content: space-between
+	width: 35px
+	// height: 25px
+	cursor: pointer
+	
+	.ham-line
+		padding: 0
+		margin: 0
+		align-self: flex-end
+		height: 2px
+		width: 100%
+		margin-bottom: 9px
+		background-color: $darkGray
+		
+	.meat
+		width: 75%
+		transition: all 200ms ease-in-out
+		
+	.bottom-bun
+		width: 50%
+		margin-bottom: 0
+		transition: all 400ms ease-in-out
+	
+	&:hover
+		div
+			width: 100%
+		
+		.top-bun
+			animation: burger-hover 1s initial ease-in-out alternate
+		
+		.meat
+			animation: burger-hover 1s initial ease-in-out alternate forwards 200ms
+		
+		.bottom-bun
+			animation: burger-hover 1s initial ease-in-out alternate forwards 400ms
+
+		
+//Animation Keyframes
+@keyframes burger-hover
+	0%
+		width: 100%
+	50%
+		width: 50%
+	100%
+		width: 100%
+
+
+
+.tab-content
+	display: none
+.tab-content#tab-1
+	display: flex
+.b-nav
+	z-index: 1000
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	box-shadow: none
+	width: 100%
+	max-width: 416px
+	overflow-y: auto
+	overflow-x: hidden
+	background-color: white
+	transform: translate(100%, 0)
+	transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+
+	&--active
+		transform: scale(1.0, 1.0)
+		box-shadow: -6px 0 15px rgba(47, 47, 47, .17)
+	&__tab
+		& a
+			color: $white-gray
+		&--first
+			border-right: 1px solid #EFEFEF
+		&--active
+			& a
+				font-weight: bolder
+				color: $main-color
+	&__item
+		@extend .mb-3
+		color: $black
+		font-weight: 400
+		font-size: 20px
+		position: relative
+		
+
+		&:hover, &--active
+			font-weight: bold
+			color: $black
+			&::after
+				position: absolute
+				top: -4px
+				left: 0
+				content: url('../../img/Line 47.svg')
+				z-index: -1
+			// background-color: red
+			// background-image: url('../../img/Line 47.svg')
+			// background-repeat: no-repeat
+  	// 	background-size: auto
+  	// 	background-position: bottom
+
+		
+

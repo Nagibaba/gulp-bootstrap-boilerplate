@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="101.803" height="24.656" viewBox="0 0 101.803 24.656">
+  <g id="Group_39" data-name="Group 39" transform="translate(-1052.197 -37.344)">
+    <text id="SƏBƏT" transform="translate(1087 57)" fill="#333" font-size="18" font-family="CirceRounded-Bold, Circe Rounded" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">SƏBƏT</tspan></text>
+    <g id="shopping-basket_1_" data-name="shopping-basket (1)" transform="translate(1052.197 17.122)">
+      <g id="Group_11" data-name="Group 11" transform="translate(0 20.222)">
+        <path id="Path_22" data-name="Path 22" d="M290.132,26.2H292.3l-3.211-5.508a.934.934,0,1,0-1.613.943Z" transform="translate(-272.77 -20.222)" fill="#fcd626"/>
+        <path id="Path_23" data-name="Path 23" d="M107.124,21.672a.934.934,0,1,0-1.613-.943L102.3,26.243h2.166Z" transform="translate(-97.111 -20.265)" fill="#fcd626"/>
+        <path id="Path_24" data-name="Path 24" d="M23.114,171.278H1.588A1.587,1.587,0,0,0,0,172.866v1.76a1.587,1.587,0,0,0,1.588,1.588h.5l1.532,8.3a2.176,2.176,0,0,0,2.014,1.755H18.757a2.176,2.176,0,0,0,2.014-1.755l1.542-8.308h.806a1.587,1.587,0,0,0,1.588-1.588v-1.76A1.593,1.593,0,0,0,23.114,171.278Zm-14.349,8.3v3.581a.9.9,0,0,1-1.8,0v-5.022a.9.9,0,1,1,1.8,0Zm2.881,0v3.581a.9.9,0,0,1-1.8,0v-5.022a.9.9,0,0,1,.9-.9.916.916,0,0,1,.9.9Zm2.9,2.08v1.5a.9.9,0,0,1-1.8,0v-5.022a.916.916,0,0,1,.9-.9.9.9,0,0,1,.9.9Zm2.881,0v1.5a.9.9,0,0,1-1.8,0v-5.022a.9.9,0,1,1,1.8,0Z" transform="translate(0 -163.616)" fill="#fcd626"/>
+      </g>
+    </g>
+    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(1069 39)" fill="#fcd626" stroke="#fff" stroke-width="1">
+      <circle cx="6" cy="6" r="6" stroke="none"/>
+      <circle cx="6" cy="6" r="5.5" fill="none"/>
+    </g>
+    <text id="_3" data-name="3" transform="translate(1075 47)" fill="#333" font-size="7" font-family="CirceRounded-Bold, Circe Rounded" font-weight="700" letter-spacing="0.08em"><tspan x="-1.855" y="0">3</tspan></text>
+  </g>
+</svg>

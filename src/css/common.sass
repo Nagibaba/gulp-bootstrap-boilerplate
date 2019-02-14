@@ -1,0 +1,209 @@
+.bg
+	background: red
+a
+	color: inherit
+a:hover
+	text-decoration: none
+	color: inherit
+div
+	display: flex
+	flex-shrink: 0
+
+html, body, .full-height
+	height: 100%
+
+body
+	font-family: CirceRounded
+	// overflow: hidden
+
+
+	overflow-x: hidden
+.shopping-card
+	margin-right: 50px
+	&--icon
+		width: 24px
+		height: 22px
+		position: relative
+	&--text
+		@extend .ml-2
+		font-weight: bold
+
+		
+
+
+.notification-circle
+	width: 12px
+	height: 12px
+	border-radius: 12px
+	background-color: $main-color
+	font-size: 7px
+	font-weight: bold
+	text-align: center
+	border: 1px solid white
+	position: absolute
+	right: -3px
+	top: 3px
+
+.lang
+	@extend .d-flex, .fullCenter, .ml-2
+	width: 52px
+	height: 52px
+	border-radius: 52px
+	box-shadow: 0 0 6px
+	background-color: white
+
+	&--active
+		box-shadow: none
+		background-color: $main-color
+
+
+
+.b-header
+	font-size: 28px
+	font-weight: bold
+	text-align: center
+
+
+.inputs-wrapper
+	background-color: #FCFCFC
+	width: 1012px
+	max-width: 100%
+	border-radius: 33px
+	box-shadow: 0 0 15px rgba(0,0,0,.16)
+
+
+.link-thumbnail
+	@extend .mr-2
+	border-radius: 66px
+
+
+.form-group
+	@extend .mr-2
+	position: relative
+	font-size: 15px
+	font-weight: normal
+	color: $black
+	& label
+		position: absolute
+		top: -22px
+		width: 100%
+		text-align: center
+.b-input
+	flex-grow: 1
+	border-radius: 10px
+	border-color: #F0F0F0
+	height: 45px
+	font-family: CirceRounded
+	
+	&:focus
+		border-color: $main-color
+		box-shadow: none
+.corrier-price
+
+	@extend .fullCenter, .mx-2
+	border-radius: 10px
+	border-color: #F0F0F0
+	height: 45px
+	background-color: #F4F4F4
+	font-size: 20px
+	font-weight: bold
+	width: 100%
+	max-width: 72px
+
+.footer-img
+	position: fixed
+	width: calc( 100% + 300px )
+	bottom: -100px
+	z-index: -1
+	left: -150px
+	right: -150px
+
+select.form-control
+	appearance: none
+	background: rgba(0, 0, 0, 0) url("../../img/down-arrow.svg") no-repeat calc(100% - 10px) !important
+	overflow: hidden
+	width: auto
+
+.b-footer
+	width: 1012px
+	max-width: 100%
+
+.align-center
+	align-self: center
+
+
+.form-check
+	width: 144px
+	max-width: 100%
+	background-color: white
+	border: 1px solid #F4F4F4
+	border-radius: 10px
+.form-check-label
+	font-size: 15px
+	font-weight: normal
+
+.form-check-input
+	border-color: $main-color
+
+
+
+
+
+
+.form-check-input
+  + label
+    display: block
+
+    cursor: pointer
+    padding: 0.2em
+    &:before
+      content: "\2714"
+      border: 1px solid $main-color
+      border-radius: 5px
+      display: inline-block
+      width: 15px
+      height: 15px
+      padding-left: 0.2em
+      padding-bottom: 0.3em
+      padding-top: 0
+      margin-right: 0.2em
+      vertical-align: middle
+      box-sizing: content-box
+      color: transparent
+      transition: .2s
+    &:active:before
+      transform: scale(0)
+  display: none
+  &:checked + label:before
+    background-color: $main-color
+    border-color: $main-color
+    color: #fff
+  &:disabled + label:before
+    transform: scale(1)
+    border-color: #aaa
+  &:checked:disabled + label:before
+    transform: scale(1)
+    background-color: #bfb
+    border-color: #bfb
+
+
+
+.simple-button
+	width: 144px
+	max-width: 100%
+
+	background-color: white
+	border: none
+	border-radius: 10px
+	box-shadow: 0 0 15px rgba(0,0,0, .16)
+
+.tracking-button
+	font-size: 15px
+	color: #CBCBCB
+	text-decoration: underline
+.main-button
+	width: 180px
+	background-color: $main-color
+	border-radius: 20px
+	font-size: 20px
+	font-weight: bold

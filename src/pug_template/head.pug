@@ -12,4 +12,76 @@ html
 		// <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
 		link(rel='stylesheet' href='./css/main/main.min.css?v=2.0')
 	body
-		nav
+		.container-fluid.full-height
+			.container.flex-column.full-height
+
+				.row.flex-row.mt-3
+					.col-4.align-items-center
+						a(href="")
+							img(src="./img/Group 10.svg", alt="", width="73px")
+					.col-4.justify-content-center
+						img(src="./img/Group 334.svg", alt="", width="192px")
+					.col-4.justify-content-end
+						div.align-items-center
+							.shopping-card
+								.shopping-card--icon
+									img(src="./img/shopping-basket (1).svg", alt="")
+									span.notification-circle 1
+								span.shopping-card--text SƏBƏT
+							.hamburger
+								.top-bun.ham-line
+								.meat.ham-line
+								.bottom-bun.ham-line
+
+				.b-nav
+					.container-fluid.flex-column.mt-4
+						.row.flex-shrink-0
+							.col-6.b-nav__tab.b-nav__tab--first.justify-content-center.b-nav__tab--active
+								a(href="#tab-1", class="nav-tab-button") MENYU 
+							.col-6.b-nav__tab.b-nav__tab--second.justify-content-center
+								a(href="#tab-2", class="nav-tab-button") HESABIM 
+
+						.row.flex-shrink-0
+							img(src="./img/Group 441.svg", alt="", class="img img-fluid")
+
+						.container-fluid.flex-column.align-items-end.mt-4.pr-5.tab-content#tab-1
+							a(href="").b-nav__item Necə işləyirik 
+							a(href="").b-nav__item Qiymət cədvəli
+							a(href="").b-nav__item Haqqımızda
+							a(href="").b-nav__item Tez-tez verilən suallar
+							a(href="").b-nav__item.b-nav__item--active Nümunə saytlar
+							a(href="").b-nav__item Xəbərlər və yeniliklər
+							a(href="").b-nav__item Daşınma şərtləri
+							a(href="").b-nav__item Sifariş et xidmət şərtləri
+							a(href="").b-nav__item Gizlilik siyasəti
+							a(href="").b-nav__item Tracking Number
+
+						.container-fluid.flex-column.align-items-end.mt-4.pr-5.tab-contentt#tab-2
+							a(href="").b-nav__item Xaricdəki ünvanlarım
+							a(href="").b-nav__item Ünvanlarım
+							a(href="").b-nav__item Sifarişlərim
+							a(href="").b-nav__item Balansım
+							a(href="").b-nav__item Sorğular
+							a(href="").b-nav__item İsmarışlar
+							a(href="").b-nav__item Şəxsi məlumatlar
+							a(href="").b-nav__item Son 30 gün tarixcə
+							a(href="").b-nav__item Kuryer sifarişi
+							a(href="").b-nav__item Çıxış
+
+						.container-fluid.justify-content-end.pr-5.my-5
+							a(href="").lang
+								span RU
+							a(href="").lang 
+								span AZ
+							a(href="").lang.lang--active
+								span EN
+
+				block unique-content
+		
+				.row.flex-column.growable.b-footer
+					.col-md-6
+						p.copyright-text Copyright 2018. Developed by Fizza team.
+					.col-md-6
+
+		//- img(src="./img/Path 33.svg", alt="").footer-img
+		script(src='js/all.js')
