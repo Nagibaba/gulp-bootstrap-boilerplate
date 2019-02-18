@@ -9,6 +9,7 @@ var autoprefixer = require('autoprefixer-core');
 var rigger = require('gulp-rigger');
 var minify = require('gulp-minify');
 var minifyCSS=require('gulp-minify-css');
+var uncss = require('gulp-uncss');
 var rename = require("gulp-rename"); 
 var concat = require('gulp-concat'); 
 var flatten = require('gulp-flatten'); 
@@ -146,6 +147,9 @@ gulp.task('css:build', function () {
             console.log(err)
             this.emit('end')
         })
+        // .pipe(uncss({
+        //     html: [path.build.html + '*.html']
+        // }))
         .pipe(postcss([ autoprefixer({ browsers: ["> 0%", 'ie 11'] }) ]))
         .pipe(gulp.dest(path.build.css))
         .pipe(minifyCSS())

@@ -45,6 +45,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^3.2.1",
+    "gulp-uncss": "^1.0.6",
     "gulp-util": "~3.0.4",
     "gulp-watch": "^5.0.0",
     "vinyl-source-stream": "~1.1.0"
@@ -54,6 +55,7 @@
     "bootstrap": "^4.2.1",
     "gulp-pug": "^4.0.1",
     "jquery": "^3.3.1",
-    "pikaday": "^1.7.0"
+    "pikaday": "^1.7.0",
+    "swiper": "^4.4.6"
   }
 }

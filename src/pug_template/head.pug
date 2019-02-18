@@ -11,23 +11,35 @@ html
 		// Place favicon.ico in the root directory
 		// <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
 		link(rel='stylesheet' href='./css/main/main.min.css?v=2.0')
+		link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+		link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css')
 	body
+		.user
 		.container-fluid.full-height
 			.container.flex-column.full-height
 
 				.row.flex-row.mt-3
-					.col-4.align-items-center
+					.col-3.align-items-center.p-xs-0
 						a(href="")
-							img(src="./img/Group 10.svg", alt="", width="73px")
-					.col-4.justify-content-center
-						img(src="./img/Group 334.svg", alt="", width="192px")
+							img.img-fluid(src="./img/Group 10.svg", alt="", width="73px")
+					.col-5.justify-content-center
+						img.img-fluid.align-self-center(src="./img/Group 334.svg", alt="", width="192px")
 					.col-4.justify-content-end
-						div.align-items-center
-							.shopping-card
+						div.align-items-center.position-relative
+							.shopping-card.d-none.d-md-flex
 								.shopping-card--icon
 									img(src="./img/shopping-basket (1).svg", alt="")
 									span.notification-circle 1
-								span.shopping-card--text SƏBƏT
+								span.shopping-card--text.mr-2 SƏBƏT
+							include components/shopping_card_content
+							form.search-form.mr-3(action="", title="Search with tracking number")
+								.form-groudp.input-group
+									input.col-sm-10.form-control.b-input.b-search-input#search(type='text', placeholder='Tracking number')
+
+									.input-group-append
+										label.col-sm-2.control-label.pm-0(for='search')
+											i.fa.fa-map-marker
+										
 							.hamburger
 								.top-bun.ham-line
 								.meat.ham-line
@@ -56,7 +68,7 @@ html
 							a(href="").b-nav__item Gizlilik siyasəti
 							a(href="").b-nav__item Tracking Number
 
-						.container-fluid.flex-column.align-items-end.mt-4.pr-5.tab-contentt#tab-2
+						.container-fluid.flex-column.align-items-end.mt-4.pr-5.tab-content#tab-2
 							a(href="").b-nav__item Xaricdəki ünvanlarım
 							a(href="").b-nav__item Ünvanlarım
 							a(href="").b-nav__item Sifarişlərim
@@ -78,10 +90,18 @@ html
 
 				block unique-content
 		
-				.row.flex-column.growable.b-footer
+				.row.b-footer.py-5
 					.col-md-6
 						p.copyright-text Copyright 2018. Developed by Fizza team.
-					.col-md-6
+					.col-md-6.justify-content-md-end.justify-content-xs-center
+						a.social-icon(href="")
+							i.fa.fa-facebook
+						a.social-icon(href="")
+							i.fa.fa-twitter
+						a.social-icon(href="")
+							i.fa.fa-instagram
+
 
 		//- img(src="./img/Path 33.svg", alt="").footer-img
 		script(src='js/all.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js')

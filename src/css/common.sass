@@ -19,7 +19,14 @@ body
 
 	overflow-x: hidden
 .shopping-card
-	margin-right: 50px
+	// margin-right: 20px
+	cursor: pointer
+	padding: 13px
+	&--active
+		background-color: #F8F8F8
+		
+		border-radius: 14px
+		box-shadow: 0 0 15px rgba(0, 0, 0, .15)
 	&--icon
 		width: 24px
 		height: 22px
@@ -70,11 +77,73 @@ body
 	max-width: 100%
 	border-radius: 33px
 	box-shadow: 0 0 15px rgba(0,0,0,.16)
+	&--shopping
+		display: none
+		position: absolute
+		top: 50px
+		right: 30px
+		z-index: $zindex-popover	
+		width: auto
+		max-width: initial
+		& th
+			font-size: 15px
+			font-weight: bold
+			color: #B1B1B1
+			white-space: nowrap
+    		vertical-align: middle
+		& tbody th
+			font-size: 12px
+			vertical-align: middle
+		& td
+			font-size: 12px
+			color: $black
+			vertical-align: middle
+
 
 
 .link-thumbnail
 	@extend .mr-2
+	border: 2px solid transparent
+	width: 70px
+	height: 70px
+	border-radius: 70px
+	position: relative
+	cursor: pointer
+	transition: .4s border
+	& img
+		border-radius: 66px
+	&:after
+			@extend .fullCenter
+			content: '\00d7'
+			// font-family: FontAwesome
+			font-size: 20px
+			background: $main-color
+			color: white
+			width: 24px
+			height: 24px
+			border-radius: 50%
+			border: 1px solid white
+			position: absolute
+			right: -4px
+			top: -4px
+			opacity: 0
+			transition: .4s opacity
+
+	&:hover
+		border: 2px solid $main-color 
+		&:after
+			opacity: 1
+		
+.order-thumb
+	border: 2px solid transparent
+	width: 70px
+	height: 70px
+	border-radius: 70px
+	position: relative
+	cursor: pointer
+	transition: .4s border
 	border-radius: 66px
+	border: 2px solid $main-color
 
 
 .form-group
@@ -125,7 +194,7 @@ select.form-control
 	width: auto
 
 .b-footer
-	width: 1012px
+	// width: 1012px
 	max-width: 100%
 
 .align-center
@@ -207,3 +276,103 @@ select.form-control
 	border-radius: 20px
 	font-size: 20px
 	font-weight: bold
+
+
+.b-search-input
+	width: 100%
+	max-width: 0
+	height: 30px!important
+	opacity: 0
+	padding-left: 0
+	overflow: hidden
+	border-radius: 10px
+	border-color: #F0F0F0
+	height: 45px
+	font-family: CirceRounded
+	border-color: $main-color
+	transition: .5s all
+	&:focus
+		max-width: 150px
+		opacity: 1
+		padding-left: $input-btn-padding-x
+		border-color: $main-color
+		box-shadow: none
+		outline: none
+
+
+.slider-wrapper
+	width: 100%
+	height: 300px
+	overflow: hidden
+	box-shadow: 0 0 15px rgba(0,0,0,.16)
+	border-radius: 33px
+
+.swiper-container
+	width: 100%
+	
+	
+	
+.swiper-slide, .swiper-pagination
+	@extend .fullCenter
+
+
+.b-slider-card
+	width: 100%
+	border-radius: 33px
+	overflow: hidden
+	position: relative
+	&:hover .b-slider-header
+		color: white
+		transform: scale(1.02)
+		top: 0
+
+.b-slider-header
+	position: absolute
+	top: 200px
+	bottom: 0
+	right: 0
+	left: 0
+	width: 100%
+	background-color: rgba(0, 0, 0, .8)
+	color: white
+	text-align: center
+	padding-top: 1.5rem
+	padding-bottom: 2rem
+	padding-left: 10px
+	padding-right: 10px
+	transition: .4s all
+	
+
+.swiper-button-prev
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23#{$main-color-nude}'%2F%3E%3C%2Fsvg%3E") !important
+	opacity: .5
+	transition: .4s opacity
+	&:hover
+		opacity: 1
+
+.swiper-button-next
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23#{$main-color-nude}'%2F%3E%3C%2Fsvg%3E") !important
+	opacity: .5
+	transition: .4s opacity
+	&:hover
+		opacity: 1
+.swiper-pagination-bullet-active
+	background-color: $white-gray!important
+
+.img-responsive
+	@extend .img-fluid
+	width: 100%
+
+.social-icon
+	@extend .px-3
+	font-size: 20px
+	color: $main-color
+	&:first-of-type
+		@extend .pl-0
+	&:last-of-type
+		@extend .pr-0
+
+@include media-breakpoint-between(xs, sm)
+	.col-md-6
+		margin-top: 15px
+

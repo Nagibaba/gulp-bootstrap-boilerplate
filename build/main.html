@@ -11,18 +11,61 @@
     <!-- Place favicon.ico in the root directory-->
     <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="./css/main/main.min.css?v=2.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
   </head>
   <body>
+    <div class="user"></div>
     <div class="container-fluid full-height">
       <div class="container flex-column full-height">
         <div class="row flex-row mt-3">
-          <div class="col-4 align-items-center"><a href=""><img src="./img/Group 10.svg" alt="" width="73px"></a></div>
-          <div class="col-4 justify-content-center"><img src="./img/Group 334.svg" alt="" width="192px"></div>
+          <div class="col-3 align-items-center p-xs-0"><a href=""><img class="img-fluid" src="./img/Group 10.svg" alt="" width="73px"></a></div>
+          <div class="col-5 justify-content-center"><img class="img-fluid align-self-center" src="./img/Group 334.svg" alt="" width="192px"></div>
           <div class="col-4 justify-content-end">
-            <div class="align-items-center">
-              <div class="shopping-card">
-                <div class="shopping-card--icon"><img src="./img/shopping-basket (1).svg" alt=""><span class="notification-circle">1</span></div><span class="shopping-card--text">SƏBƏT</span>
+            <div class="align-items-center position-relative">
+              <div class="shopping-card d-none d-md-flex">
+                <div class="shopping-card--icon"><img src="./img/shopping-basket (1).svg" alt=""><span class="notification-circle">1</span></div><span class="shopping-card--text mr-2">SƏBƏT</span>
               </div>
+              <div class="inputs-wrapper inputs-wrapper--shopping">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Şəkil</th>
+                        <th scope="col">Məhsul Linki</th>
+                        <th scope="col">Qiymət</th>
+                        <th scope="col">Yekun</th>
+                        <th scope="col">Rəng</th>
+                        <th scope="col">Ölçü</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td> <img class="order-thumb" src="https://via.placeholder.com/66" alt=""></td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <form class="search-form mr-3" action="" title="Search with tracking number">
+                <div class="form-groudp input-group">
+                  <input class="col-sm-10 form-control b-input b-search-input" id="search" type="text" placeholder="Tracking number">
+                  <div class="input-group-append">
+                    <label class="col-sm-2 control-label pm-0" for="search"><i class="fa fa-map-marker"></i></label>
+                  </div>
+                </div>
+              </form>
               <div class="hamburger">
                 <div class="top-bun ham-line"></div>
                 <div class="meat ham-line"></div>
@@ -39,7 +82,7 @@
             </div>
             <div class="row flex-shrink-0"><img class="img img-fluid" src="./img/Group 441.svg" alt=""></div>
             <div class="container-fluid flex-column align-items-end mt-4 pr-5 tab-content" id="tab-1"><a class="b-nav__item" href="">Necə işləyirik </a><a class="b-nav__item" href="">Qiymət cədvəli</a><a class="b-nav__item" href="">Haqqımızda</a><a class="b-nav__item" href="">Tez-tez verilən suallar</a><a class="b-nav__item b-nav__item--active" href="">Nümunə saytlar</a><a class="b-nav__item" href="">Xəbərlər və yeniliklər</a><a class="b-nav__item" href="">Daşınma şərtləri</a><a class="b-nav__item" href="">Sifariş et xidmət şərtləri</a><a class="b-nav__item" href="">Gizlilik siyasəti</a><a class="b-nav__item" href="">Tracking Number</a></div>
-            <div class="container-fluid flex-column align-items-end mt-4 pr-5 tab-contentt" id="tab-2"><a class="b-nav__item" href="">Xaricdəki ünvanlarım</a><a class="b-nav__item" href="">Ünvanlarım</a><a class="b-nav__item" href="">Sifarişlərim</a><a class="b-nav__item" href="">Balansım</a><a class="b-nav__item" href="">Sorğular</a><a class="b-nav__item" href="">İsmarışlar</a><a class="b-nav__item" href="">Şəxsi məlumatlar</a><a class="b-nav__item" href="">Son 30 gün tarixcə</a><a class="b-nav__item" href="">Kuryer sifarişi</a><a class="b-nav__item" href="">Çıxış</a></div>
+            <div class="container-fluid flex-column align-items-end mt-4 pr-5 tab-content" id="tab-2"><a class="b-nav__item" href="">Xaricdəki ünvanlarım</a><a class="b-nav__item" href="">Ünvanlarım</a><a class="b-nav__item" href="">Sifarişlərim</a><a class="b-nav__item" href="">Balansım</a><a class="b-nav__item" href="">Sorğular</a><a class="b-nav__item" href="">İsmarışlar</a><a class="b-nav__item" href="">Şəxsi məlumatlar</a><a class="b-nav__item" href="">Son 30 gün tarixcə</a><a class="b-nav__item" href="">Kuryer sifarişi</a><a class="b-nav__item" href="">Çıxış</a></div>
             <div class="container-fluid justify-content-end pr-5 my-5"><a class="lang" href=""><span>RU</span></a><a class="lang" href=""> <span>AZ</span></a><a class="lang lang--active" href=""><span>EN</span></a></div>
           </div>
         </div>
@@ -50,80 +93,107 @@
           </p>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-6"></div>
-          <div class="inputs-wrapper flex-column f-20 bold py-3 px-3">
-            <div class="row">
-              <div class="col-6 justify-content-end">
-                <p class="pr-5">Yekun qiymət (TL): <span class="main-color">2345 TL</span></p>
-              </div>
-              <div class="col-6">
-                <p class="pl-5">Yekun qiymət (AZN): <span class="main-color">124 AZN</span></p>
-              </div>
-            </div>
-            <div class="row py-3 justify-content-center"><img class="link-thumbnail" src="https://via.placeholder.com/66" alt=""><img class="link-thumbnail" src="https://via.placeholder.com/66" alt=""><img class="link-thumbnail" src="https://via.placeholder.com/66" alt=""><img class="link-thumbnail" src="https://via.placeholder.com/66" alt=""></div>
-            <div class="row pt-3 flex-row mt-2 px-5 fullCenter">
-              <div class="col-md-6 no-padding pr-2">
-                <div class="form-group w-75">
-                  <label for="exampleFormControlInput1">linki əlavə et</label>
-                  <input class="form-control b-input" type="email" placeholder="" autofocus>
+          <div class="col-md-6">
+            <div class="inputs-wrapper flex-column f-20 bold py-3 px-5">
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>Yekun qiymət (TL): <span class="main-color">2345 TL</span></p>
                 </div>
-                <div class="form-group w-25">
-                  <label for="exampleFormControlInput1">qiymət(TL)</label>
-                  <input class="form-control b-input b-input--small" type="email" placeholder="">
+                <div class="col-lg-6">
+                  <p>Yekun qiymət (AZN): <span class="main-color">124 AZN</span></p>
                 </div>
               </div>
-              <div class="col-md-6 no-padding"><span class="corrier-price f-1">+5%</span>
-                <div class="form-group f-2">
-                  <label for="exampleFormControlInput1">cəmi</label>
-                  <input class="form-control b-input b-input--small" type="email" placeholder="">
+              <div class="row py-3 justify-content-center">
+                <div class="link-thumbnail"><img src="https://via.placeholder.com/66" alt=""></div>
+                <div class="link-thumbnail"><img src="https://via.placeholder.com/66" alt=""></div>
+                <div class="link-thumbnail"><img src="https://via.placeholder.com/66" alt=""></div>
+                <div class="link-thumbnail"><img src="https://via.placeholder.com/66" alt=""></div>
+              </div>
+              <div class="row pt-3 flex-row fullCenter">
+                <div class="col-lg-6 no-padding">
+                  <div class="form-group f-3 mt-2">
+                    <label for="exampleFormControlInput1">linki əlavə et</label>
+                    <input class="form-control b-input" type="email" placeholder="" autofocus>
+                  </div>
                 </div>
-                <div class="form-group f-2">
-                  <label for="exampleFormControlInput1">ölçü</label>
-                  <select class="form-control b-input b-input--small">
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                  </select>
+                <div class="col-lg-6 no-padding">
+                  <div class="form-group f-2 mt-2">
+                    <label for="exampleFormControlInput1">qiymət(TL)</label>
+                    <input class="form-control b-input b-input--small" type="email" placeholder="">
+                  </div><span class="corrier-price f-1">+5%</span>
                 </div>
-                <div class="form-group f-2">
-                  <label for="exampleFormControlInput1">rəng</label>
-                  <input class="form-control b-input b-input--small" type="email" placeholder="">
+                <div class="col-md-12 no-padding pt-2">
+                  <div class="form-group f-2 mt-2">
+                    <label for="exampleFormControlInput1">cəmi</label>
+                    <input class="form-control b-input b-input--small" type="email" placeholder="">
+                  </div>
+                  <div class="form-group f-2 mt-2">
+                    <label for="exampleFormControlInput1">ölçü</label>
+                    <select class="form-control b-input b-input--small">
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                  <div class="form-group f-2 mt-2">
+                    <label for="exampleFormControlInput1">rəng</label>
+                    <input class="form-control b-input b-input--small" type="email" placeholder="">
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row pt-3 flex-row mt-2 px-5 fullCenter">
-              <div class="col-12 no-padding">
-                <div class="form-group fullWidth">
-                  <label for="exampleFormControlInput1">Qeyd</label>
-                  <input class="form-control b-input" type="email" placeholder="">
+              <div class="row pt-3 flex-row fullCenter no-padding">
+                <div class="col-12 no-padding">
+                  <div class="form-group fullWidth mt-2">
+                    <label for="exampleFormControlInput1">Qeyd</label>
+                    <input class="form-control b-input" type="email" placeholder="">
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row pt-3 flex-row mt-2 px-5 fullCenter">
-              <div class="form-check py-1">
-                <input class="form-check-input" id="exampleCheck1" type="checkbox">
-                <label class="form-check-label" for="exampleCheck1">təcili sifariş</label>
+              <div class="row pt-3 pm-0 flex-row px-5 fullCenter">
+                <div class="form-check py-1 mt-1">
+                  <input class="form-check-input" id="exampleCheck1" type="checkbox">
+                  <label class="form-check-label" for="exampleCheck1">təcili sifariş</label>
+                </div>
+                <button class="btn btn-light ml-1 simple-button mt-1" type="button">yeni link</button>
               </div>
-              <button class="btn btn-light ml-1 simple-button" type="button">yeni link</button>
-            </div>
-            <div class="row pt-3 flex-row mt-2 px-5">
-              <div class="col-3 align-items-center"><a class="tracking-button" href="">Tracking Number Axtar</a></div>
-              <div class="col-6 fullCenter">
+              <div class="row pt-3 flex-row fullCenter">
                 <button class="btn btn-warning main-button" type="button">Sifariş et</button>
               </div>
-              <div class="col-3"></div>
+            </div>
+          </div>
+          <div class="col-md-6 justufy-content-end">
+            <div class="slider-wrapper">
+              <!-- Slider main container-->
+              <div class="swiper-container">
+                <!-- Additional required wrapper-->
+                <div class="swiper-wrapper">
+                  <!-- Slides-->
+                  <div class="swiper-slide">
+                    <div class="b-slider-card"><img class="img-responsive" src="img/67.jpg" alt=""><a class="b-slider-header" href=""> 
+                        <h5>&times;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem expedita</h5>
+                        <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia tempore veritatis similique autem, dolor alias quibusdam repellat animi suscipit libero, distinctio, culpa, accusamus fugit id obcaecati quos. Exercitationem ducimus, error.</p></a></div>
+                  </div>
+                </div>
+                <!-- If we need pagination-->
+                <!-- If we need navigation buttons-->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- If we need scrollbar-->
+              </div>
             </div>
           </div>
         </div>
-        <div class="row flex-column growable b-footer">
+        <div class="row b-footer py-5">
           <div class="col-md-6">
             <p class="copyright-text">Copyright 2018. Developed by Fizza team.</p>
           </div>
-          <div class="col-md-6"></div>
+          <div class="col-md-6 justify-content-md-end justify-content-xs-center"><a class="social-icon" href=""><i class="fa fa-facebook"></i></a><a class="social-icon" href=""><i class="fa fa-twitter"></i></a><a class="social-icon" href=""><i class="fa fa-instagram"></i></a></div>
         </div>
       </div>
     </div>
     <script src="js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
   </body>
 </html>

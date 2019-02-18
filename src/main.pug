@@ -9,70 +9,98 @@ block unique-content
 
 	.row.justify-content-center
 		.col-md-6
-		.inputs-wrapper.flex-column.f-20.bold.py-3.px-3
-			.row
-				.col-6.justify-content-end
-					p.pr-5 Yekun qiymət (TL): 
-						span.main-color 2345 TL
+			.inputs-wrapper.flex-column.f-20.bold.py-3.px-5
+				.row
+					.col-lg-6
+						p Yekun qiymət (TL): 
+							span.main-color 2345 TL
 
-				.col-6
-					p.pl-5 Yekun qiymət (AZN): 
-						span.main-color 124 AZN
+					.col-lg-6
+						p Yekun qiymət (AZN): 
+							span.main-color 124 AZN
 
-			.row.py-3.justify-content-center
-				img(src="https://via.placeholder.com/66", alt="").link-thumbnail
-				img(src="https://via.placeholder.com/66", alt="").link-thumbnail
-				img(src="https://via.placeholder.com/66", alt="").link-thumbnail
-				img(src="https://via.placeholder.com/66", alt="").link-thumbnail
-			
-			.row.pt-3.flex-row.mt-2.px-5.fullCenter
-				.col-md-6.no-padding.pr-2
-					.form-group.w-75
-						label(for='exampleFormControlInput1') linki əlavə et
-						input.form-control.b-input(type='email', placeholder='', autofocus)
-					.form-group.w-25
-						label(for='exampleFormControlInput1') qiymət(TL)
-						input.form-control.b-input.b-input--small(type='email', placeholder='')
-				
-				.col-md-6.no-padding
-					span.corrier-price.f-1 +5%
-
-					.form-group.f-2
-						label(for='exampleFormControlInput1') cəmi
-						input.form-control.b-input.b-input--small(type='email', placeholder='')
-					.form-group.f-2
-						label(for='exampleFormControlInput1') ölçü
-						select.form-control.b-input.b-input--small
-							option
-							option
-							option
-							option
-					.form-group.f-2
-						label(for='exampleFormControlInput1') rəng
-						input.form-control.b-input.b-input--small(type='email', placeholder='')
+				.row.py-3.justify-content-center
+					.link-thumbnail
+						img(src="https://via.placeholder.com/66", alt="")
+					.link-thumbnail
+						img(src="https://via.placeholder.com/66", alt="")
+					.link-thumbnail
+						img(src="https://via.placeholder.com/66", alt="")
+					.link-thumbnail
+						img(src="https://via.placeholder.com/66", alt="")
 					
-
-
-			.row.pt-3.flex-row.mt-2.px-5.fullCenter
-				.col-12.no-padding
-					.form-group.fullWidth
-						label(for='exampleFormControlInput1') Qeyd
-						input.form-control.b-input(type='email', placeholder='')
-
-
-			.row.pt-3.flex-row.mt-2.px-5.fullCenter
 				
-					.form-check.py-1
-						input#exampleCheck1.form-check-input(type='checkbox')
-						label.form-check-label(for='exampleCheck1') təcili sifariş
+				.row.pt-3.flex-row.fullCenter
+					.col-lg-6.no-padding
+						.form-group.f-3.mt-2
+							label(for='exampleFormControlInput1') linki əlavə et
+							input.form-control.b-input(type='email', placeholder='', autofocus)
+						
+					
+					.col-lg-6.no-padding
+						.form-group.f-2.mt-2
+							label(for='exampleFormControlInput1') qiymət(TL)
+							input.form-control.b-input.b-input--small(type='email', placeholder='')
+						span.corrier-price.f-1 +5%
 
-					button.btn.btn-light.ml-1.simple-button(type='button') yeni link
-				
-			.row.pt-3.flex-row.mt-2.px-5
-				.col-3.align-items-center
-					a.tracking-button(href="") Tracking Number Axtar
-				.col-6.fullCenter
+					.col-md-12.no-padding.pt-2
+						
+
+						.form-group.f-2.mt-2
+							label(for='exampleFormControlInput1') cəmi
+							input.form-control.b-input.b-input--small(type='email', placeholder='')
+						.form-group.f-2.mt-2
+							label(for='exampleFormControlInput1') ölçü
+							select.form-control.b-input.b-input--small
+								option
+								option
+								option
+								option
+						.form-group.f-2.mt-2
+							label(for='exampleFormControlInput1') rəng
+							input.form-control.b-input.b-input--small(type='email', placeholder='')
+						
+
+
+				.row.pt-3.flex-row.fullCenter.no-padding
+					.col-12.no-padding
+						.form-group.fullWidth.mt-2
+							label(for='exampleFormControlInput1') Qeyd
+							input.form-control.b-input(type='email', placeholder='')
+
+
+				.row.pt-3.pm-0.flex-row.px-5.fullCenter
+					
+						.form-check.py-1.mt-1
+							input#exampleCheck1.form-check-input(type='checkbox')
+							label.form-check-label(for='exampleCheck1') təcili sifariş
+
+						button.btn.btn-light.ml-1.simple-button.mt-1(type='button') yeni link
+					
+				.row.pt-3.flex-row.fullCenter
 					button.btn.btn-warning.main-button(type='button') Sifariş et
-				.col-3
+		.col-md-6.justufy-content-end
+			.slider-wrapper
+				// Slider main container
+				.swiper-container
+					// Additional required wrapper
+					.swiper-wrapper
+						// Slides
 
+						.swiper-slide
+							.b-slider-card
+								img(src="img/67.jpg", alt="").img-responsive
+								
+								a.b-slider-header(href="") 
+									h5 &times;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem expedita
+									p.mt-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia tempore veritatis similique autem, dolor alias quibusdam repellat animi suscipit libero, distinctio, culpa, accusamus fugit id obcaecati quos. Exercitationem ducimus, error.
+
+						
+					// If we need pagination
+					// If we need navigation buttons
+					.swiper-pagination
+					.swiper-button-prev
+					.swiper-button-next
+					// If we need scrollbar
+					//- .swiper-scrollbar
 
