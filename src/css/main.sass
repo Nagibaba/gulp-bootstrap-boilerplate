@@ -1,26 +1,18 @@
 // Custom.scss
 // Option B: Include parts of Bootstrap
 
-// // Required
-// @import "../../node_modules/bootstrap/scss/functions"
-// @import "../../node_modules/bootstrap/scss/variables"
-// @import "../../node_modules/bootstrap/scss/mixins"
-
-// // Optional
-// @import "../../node_modules/bootstrap/scss/reboot"
-// @import "../../node_modules/bootstrap/scss/type"
-// @import "../../node_modules/bootstrap/scss/images"
-// @import "../../node_modules/bootstrap/scss/code"
-// @import "../../node_modules/bootstrap/scss/grid"
-
-// @import "../../node_modules/bootstrap/scss/variables"
-// @import "../../node_modules/bootstrap/scss/nav"
-// @import "../../node_modules/bootstrap/scss/navbar"
-// @import "../../node_modules/bootstrap/scss/jumbotron"
+// own
+@import "abstracts/bt5start"
+  
+@import "abstracts/function"
+@import "abstracts/mixin"
+@import "abstracts/variables"
 
 
 // all bootstrap components
+$theme-colors: ( primary: $main-color, danger: #ff4136)
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
 // @import "../../node_modules/@fortawesome/fontawesome";
 // @import "../fontawesome/scss/fontawesome.scss"
 // @import "../fontawesome/scss/solid.scss"
@@ -34,12 +26,7 @@
 // 		content: fa-content($fa-var-user)
 
 
-// own
-@import "abstracts/bt5start"
-  
-@import "abstracts/function"
-@import "abstracts/mixin"
-@import "abstracts/variables"
+
 
 @import "base/base"
 @import "base/typography"
@@ -59,6 +46,7 @@
 
 
 @import "common.sass"
+@import "../../node_modules/@chenfengyuan/datepicker/src/index.scss"
 
 
 // @import "test-grid.sass"

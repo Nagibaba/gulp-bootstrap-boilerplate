@@ -22,11 +22,11 @@ html
 					.col-3.align-items-center.p-xs-0
 						a(href="")
 							img.img-fluid(src="./img/Group 10.svg", alt="", width="73px")
-					.col-5.justify-content-center
+					.col-6.justify-content-center
 						img.img-fluid.align-self-center(src="./img/Group 334.svg", alt="", width="192px")
-					.col-4.justify-content-end
+					.col-3.justify-content-end
 						div.align-items-center.position-relative
-							.shopping-card.d-none.d-md-flex
+							button.btn.shopping-card.d-none.d-md-flex
 								.shopping-card--icon
 									img(src="./img/shopping-basket (1).svg", alt="")
 									span.notification-circle 1
@@ -45,7 +45,7 @@ html
 								.meat.ham-line
 								.bottom-bun.ham-line
 
-				.b-nav
+				.b-nav.d-flex
 					.container-fluid.flex-column.mt-4
 						.row.flex-shrink-0
 							.col-6.b-nav__tab.b-nav__tab--first.justify-content-center.b-nav__tab--active
@@ -68,19 +68,59 @@ html
 							a(href="").b-nav__item Gizlilik siyasəti
 							a(href="").b-nav__item Tracking Number
 
-						.container-fluid.flex-column.align-items-end.mt-4.pr-5.tab-content#tab-2
-							a(href="").b-nav__item Xaricdəki ünvanlarım
-							a(href="").b-nav__item Ünvanlarım
-							a(href="").b-nav__item Sifarişlərim
-							a(href="").b-nav__item Balansım
-							a(href="").b-nav__item Sorğular
-							a(href="").b-nav__item İsmarışlar
-							a(href="").b-nav__item Şəxsi məlumatlar
-							a(href="").b-nav__item Son 30 gün tarixcə
-							a(href="").b-nav__item Kuryer sifarişi
-							a(href="").b-nav__item Çıxış
+						//- .container-fluid.flex-column.align-items-end.mt-4.pr-5.tab-content#tab-2
+						//- 	a(href="").b-nav__item Xaricdəki ünvanlarım
+						//- 	a(href="").b-nav__item Ünvanlarım
+						//- 	a(href="").b-nav__item Sifarişlərim
+						//- 	a(href="").b-nav__item Balansım
+						//- 	a(href="").b-nav__item Sorğular
+						//- 	a(href="").b-nav__item İsmarışlar
+						//- 	a(href="").b-nav__item Şəxsi məlumatlar
+						//- 	a(href="").b-nav__item Son 30 gün tarixcə
+						//- 	a(href="").b-nav__item Kuryer sifarişi
+						//- 	a(href="").b-nav__item Çıxış
 
-						.container-fluid.justify-content-end.pr-5.my-5
+
+						.container-fluid.flex-column.mt-4.tab-content#tab-2
+							h1.text-center GİRİŞ
+							
+							.row.mt-4
+								.col-6.justify-content-center.pr-1
+									button.btn.btn-light.ml-1.simple-button.mt-1.fullWidth(type='button')
+										i.social-login.fa.fa-google-plus(style="color: #F34A38")
+							
+								.col-6.justify-content-center.pl-1
+									button.btn.btn-light.ml-1.simple-button.mt-1.fullWidth(type='button')
+										i.social-login.fa.fa-facebook(style="color: #385C8E")
+							
+							.row.mt-4
+								.col-12
+									.form-group.fullWidth
+										//- label(for='exampleFormControlInput1') Email
+										input.form-control.b-input(type='email', placeholder='fizza@gmail.com', autofocus)
+
+							.row
+								.col-12
+									.form-group.fullWidth
+										//- label(for='exampleFormControlInput1') Email
+										input.form-control.b-input(type='password', placeholder='********', autofocus)
+
+							.row
+								.col-12.justify-content-center
+									button.btn.btn-warning.main-button(type='submit') Daxil ol
+
+							p.text-center
+								a(href="").forgot-pass__link Şifrəmi unutdum
+
+							.container-fluid.account-info.mt-5
+								.row.justify-content-center
+									p.account-info__ask Hələ də hesabın yoxdur? O zaman
+								.row.justify-content-center
+									a(href="").account-info__register QEYDİYYATDAN KEÇ
+								.row.justify-content-center
+									a(href="").account-info__company-register Hüquqi şəxslər üçün Qeydiyyat
+
+						.container.mt-5.justify-content-center
 							a(href="").lang
 								span RU
 							a(href="").lang 

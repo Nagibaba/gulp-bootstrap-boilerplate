@@ -1,0 +1,82 @@
+extends pug_template/head
+
+block unique-content
+	.row.justify-content-center.mt-5
+		
+		.inputs-wrapper.inputs-wrapper--white.flex-column.f-20.py-3.px-3.px-sm-5
+			h1.text-center.mt-3.mb-5 QEYDİYYAT
+
+			form(action="")
+				.row.mt-2
+					.col-md-4
+						.form-group.mt-4.mt-sm-2.fullWidth
+							label(for='exampleFormControlInput1') Ad*
+							input.form-control.b-input(type='text', placeholder='', autofocus)
+
+					.col-md-4
+						.form-group.mt-4.mt-sm-2.fullWidth
+							label(for='exampleFormControlInput1') Soyad*
+							input.form-control.b-input(type='text', placeholder='', autofocus)
+
+					.col-md-4
+						.form-group.mt-4.mt-sm-2.fullWidth.flex-column
+							label(for='exampleFormControlInput1') Doğum tarixi*
+							input.form-control.b-input(type='text', data-toggle="datepicker", placeholder='', autofocus)
+
+				.row.mt-2
+					.col-md-4.flex-column.justify-content-center.mb-2.mb-sm-0.gender-radiogroup
+						.row.m-0
+							.col-md-6.p-0.pr-sm-1
+								label
+									input(type="radio" name="gender" value="man")
+									span Kişi
+								
+							.col-md-6.p-0.pl-sm-1
+								label
+									input(type="radio" name="gender" value="woman")
+									span Qadın
+
+					.col-md-4
+						.form-group.mt-4.mt-sm-2.fullWidth
+							label(for='exampleFormControlInput1') Telefon nömrəsi*
+							input.form-control.b-input(type='number', placeholder='', autofocus)
+
+					.col-md-4
+						.form-group.mt-4.mt-sm-2.fullWidth
+							label(for='exampleFormControlInput1') Şəxsiyyət vəsiqəsi No*
+							input.form-control.b-input(type='text', placeholder='', autofocus)
+
+				.row.mt-2
+					.col-md-4
+						.form-group.mt-4.mt-sm-2.fullWidth
+							label(for='exampleFormControlInput1') Email*
+							input.form-control.b-input(type='email', placeholder='', autofocus)
+
+					.col-md-4
+						.form-group.mt-4.mt-sm-2.fullWidth
+							label(for='exampleFormControlInput1') Şifrə*
+							input.form-control.b-input(type='password', placeholder='', autofocus)
+
+					.col-md-4
+						.form-group.mt-4.mt-sm-2.fullWidth
+							label(for='exampleFormControlInput1') Şifrə təkrarı*
+							input.form-control.b-input(type='password', placeholder='', autofocus)
+
+				.row.mt-2
+					.col-md-8
+						.form-group.mt-4.mt-sm-2.fullWidth
+							label(for='exampleFormControlInput1') Ünvan*
+							input.form-control.b-input(type='text', placeholder='', autofocus)
+
+					.col-md-4
+						.form-group.mt-4.mt-sm-2.fullWidth
+							label(for='exampleFormControlInput1') Dəvət edən dostun müştəri kodu
+							input.form-control.b-input(type='text', placeholder='', autofocus)
+
+				
+				p.rules-warn.mt-3.text-center Qeydiyyatdan keçməklə 
+					a.main-color(href="") Qaydalar və Şərtləri 
+					| qəbul etmiş olursunuz.
+
+				.row.pt-3.mb-3.flex-row.fullCenter
+					button.btn.btn-warning.main-button(type='submit') Qeydiyyatdan keç

@@ -2,22 +2,25 @@
 	background: red
 a
 	color: inherit
-a:hover
-	text-decoration: none
-	color: inherit
+	transition: .4s color
+	&:hover
+		color: $black
+		text-decoration: none
+	
 div
-	display: flex
+	display: inherit
 	flex-shrink: 0
 
 html, body, .full-height
-	height: 100%
+	height: 99%
+	width: 100%
 
 body
 	font-family: CirceRounded
 	// overflow: hidden
-
-
+	color: $black
 	overflow-x: hidden
+	overflow-y: auto
 .shopping-card
 	// margin-right: 20px
 	cursor: pointer
@@ -72,7 +75,7 @@ body
 
 
 .inputs-wrapper
-	background-color: #FCFCFC
+	background-color: #F8F8F8
 	width: 1012px
 	max-width: 100%
 	border-radius: 33px
@@ -98,8 +101,13 @@ body
 			font-size: 12px
 			color: $black
 			vertical-align: middle
-
-
+	&--white
+		width: 1105px
+		background-color: #ffffff
+.table td, .table th
+	border-top: 1px solid rgba(112, 112, 112, .1)
+.table thead th
+	border-bottom: none
 
 .link-thumbnail
 	@extend .mr-2
@@ -207,6 +215,8 @@ select.form-control
 	background-color: white
 	border: 1px solid #F4F4F4
 	border-radius: 10px
+	padding-left: 0
+	text-align: center
 .form-check-label
 	font-size: 15px
 	font-weight: normal
@@ -233,9 +243,10 @@ select.form-control
       width: 15px
       height: 15px
       padding-left: 0.2em
+      padding-right: 0.2em
       padding-bottom: 0.3em
       padding-top: 0
-      margin-right: 0.2em
+      margin-right: 0.5em
       vertical-align: middle
       box-sizing: content-box
       color: transparent
@@ -271,7 +282,9 @@ select.form-control
 	color: #CBCBCB
 	text-decoration: underline
 .main-button
-	width: 180px
+	padding-left: 30px
+	padding-right: 30px
+	min-width: 180px
 	background-color: $main-color
 	border-radius: 20px
 	font-size: 20px
@@ -375,4 +388,71 @@ select.form-control
 @include media-breakpoint-between(xs, sm)
 	.col-md-6
 		margin-top: 15px
+	.form-group.mt-2
+		margin-top: 15px
+
+
+
+.btn
+	&-icon
+		@extend .px-1, .mr-1
+		font-size: 10px
+		color: $main-color
+		transition: .2s transform
+		&:focus, &:active
+			box-shadow: none
+			// transform: scale(1.2)
+			// transform: translateY(5px)
+		&:hover
+			color: $main-color
+			transform: scale(1.2)
+
+
+.gender-radiogroup
+	& input
+		display: none
+		&:checked + span
+			background-color: $main-color
+			color: white
+	& label
+		cursor: pointer
+		width: 100%
+		text-align: center
+		border-radius: 10px
+		& span
+			@extend .py-2
+			border-radius: 10px
+			background-color: #F7F7F7
+			display: block
+			transition: .4s all
+
+.rules-warn
+	font-size: 15px
+	font-weight: bold
+
+.fa.social-login
+	font-size: 20px
+
+.forgot-pass
+	&__link
+		font-size: 12px
+		text-decoration: underline
+		color: $main-color
+		transition: .4s color
+		&:hover
+			color: $black
+
+.account-info
+	@extend .flex-column
+	font-size: 15px
+	font-weight: bold
+	color: $main-color
+
+	&__ask
+		font-weight: normal
+		color: #BEBEBE
+	&__company-register
+		text-decoration: underline
+
+	
 

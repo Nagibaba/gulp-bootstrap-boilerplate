@@ -1,3 +1,5 @@
-const a = ()=> console.log('this comes from a.js')
+const a = ()=> {
+	
+}
 
 export default a

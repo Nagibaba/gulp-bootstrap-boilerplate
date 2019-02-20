@@ -1,22 +1,22 @@
 extends pug_template/head
 
 block unique-content
-	.row.flex-column.growable
-		p.b-header 
+	.row.flex-column.growable.my-3
+		h1.b-header 
 			|Lorem ipsum dolor sit amet,
 			//- br
 			| consectetur adipisicing elit. 
 
 	.row.justify-content-center
 		.col-md-6
-			.inputs-wrapper.flex-column.f-20.bold.py-3.px-5
+			.inputs-wrapper.flex-column.f-20.py-3.px-5
 				.row
 					.col-lg-6
-						p Yekun qiymət (TL): 
+						p.bold Yekun qiymət (TL): 
 							span.main-color 2345 TL
 
 					.col-lg-6
-						p Yekun qiymət (AZN): 
+						p.bold Yekun qiymət (AZN): 
 							span.main-color 124 AZN
 
 				.row.py-3.justify-content-center
@@ -29,78 +29,90 @@ block unique-content
 					.link-thumbnail
 						img(src="https://via.placeholder.com/66", alt="")
 					
-				
-				.row.pt-3.flex-row.fullCenter
-					.col-lg-6.no-padding
-						.form-group.f-3.mt-2
-							label(for='exampleFormControlInput1') linki əlavə et
-							input.form-control.b-input(type='email', placeholder='', autofocus)
+				form(action="")
+					.row.pt-3.flex-row.fullCenter
+						.col-lg-6.no-padding
+							.form-group.f-3.mt-2
+								label(for='exampleFormControlInput1') linki əlavə et
+								input.form-control.b-input(type='email', placeholder='', autofocus)
+							
 						
-					
-					.col-lg-6.no-padding
-						.form-group.f-2.mt-2
-							label(for='exampleFormControlInput1') qiymət(TL)
-							input.form-control.b-input.b-input--small(type='email', placeholder='')
-						span.corrier-price.f-1 +5%
+						.col-lg-6.no-padding
+							.form-group.f-2.mt-2
+								label(for='exampleFormControlInput1') qiymət(TL)
+								input.form-control.b-input.b-input--small(type='email', placeholder='')
+							span.corrier-price.f-1.mt-2 +5%
 
-					.col-md-12.no-padding.pt-2
+						.col-md-12.no-padding.pt-2
+							
+
+							.form-group.f-2.mt-2
+								label(for='exampleFormControlInput1') cəmi
+								input.form-control.b-input.b-input--small(type='email', placeholder='')
+							.form-group.f-2.mt-2
+								label(for='exampleFormControlInput1') ölçü
+								select.form-control.b-input.b-input--small
+									option
+									option
+									option
+									option
+							.form-group.f-2.mt-2
+								label(for='exampleFormControlInput1') rəng
+								input.form-control.b-input.b-input--small(type='email', placeholder='')
+							
+
+
+					.row.pt-3.flex-row.fullCenter.no-padding
+						.col-12.no-padding
+							.form-group.fullWidth.mt-2
+								label(for='exampleFormControlInput1') Qeyd
+								input.form-control.b-input(type='email', placeholder='')
+
+
+					.row.pt-3.pm-0.flex-row.px-5.fullCenter
 						
+							.form-check.py-1.mt-1
+								input#exampleCheck1.form-check-input(type='checkbox')
+								label.form-check-label(for='exampleCheck1') təcili sifariş
 
-						.form-group.f-2.mt-2
-							label(for='exampleFormControlInput1') cəmi
-							input.form-control.b-input.b-input--small(type='email', placeholder='')
-						.form-group.f-2.mt-2
-							label(for='exampleFormControlInput1') ölçü
-							select.form-control.b-input.b-input--small
-								option
-								option
-								option
-								option
-						.form-group.f-2.mt-2
-							label(for='exampleFormControlInput1') rəng
-							input.form-control.b-input.b-input--small(type='email', placeholder='')
+							button.btn.btn-light.ml-1.simple-button.mt-1(type='button') yeni link
 						
+					.row.pt-3.flex-row.fullCenter
+						button.btn.btn-warning.main-button(type='submit') Sifariş et
+		.col-md-6.flex-column.justify-content-between
+			.row.mx-0.my-5.mt-sm-0
+				.inputs-wrapper.py-3.px-5
 
+						form.fullWidth.mt-2
+							p.bold.f-20.text-center Tracking no search
+							.form-group
+								label(for='exampleFormControlInput1') 
+								input.form-control.b-input(type='text', name='search', placeholder='')
+							.row.pt-3.flex-row.fullCenter
+								button.btn.btn-warning.main-button(type='submit') Axtar
 
-				.row.pt-3.flex-row.fullCenter.no-padding
-					.col-12.no-padding
-						.form-group.fullWidth.mt-2
-							label(for='exampleFormControlInput1') Qeyd
-							input.form-control.b-input(type='email', placeholder='')
+			.row.mx-0
+				.slider-wrapper
+					// Slider main container
+					.swiper-container
+						// Additional required wrapper
+						.swiper-wrapper
+							// Slides
 
+							.swiper-slide
+								.b-slider-card
+									img(src="img/67.jpg", alt="").img-responsive
+									
+									a.b-slider-header(href="") 
+										h5 &times;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem expedita
+										p.mt-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia tempore veritatis similique autem, dolor alias quibusdam repellat animi suscipit libero, distinctio, culpa, accusamus fugit id obcaecati quos. Exercitationem ducimus, error.
 
-				.row.pt-3.pm-0.flex-row.px-5.fullCenter
-					
-						.form-check.py-1.mt-1
-							input#exampleCheck1.form-check-input(type='checkbox')
-							label.form-check-label(for='exampleCheck1') təcili sifariş
-
-						button.btn.btn-light.ml-1.simple-button.mt-1(type='button') yeni link
-					
-				.row.pt-3.flex-row.fullCenter
-					button.btn.btn-warning.main-button(type='button') Sifariş et
-		.col-md-6.justufy-content-end
-			.slider-wrapper
-				// Slider main container
-				.swiper-container
-					// Additional required wrapper
-					.swiper-wrapper
-						// Slides
-
-						.swiper-slide
-							.b-slider-card
-								img(src="img/67.jpg", alt="").img-responsive
-								
-								a.b-slider-header(href="") 
-									h5 &times;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem expedita
-									p.mt-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia tempore veritatis similique autem, dolor alias quibusdam repellat animi suscipit libero, distinctio, culpa, accusamus fugit id obcaecati quos. Exercitationem ducimus, error.
-
-						
-					// If we need pagination
-					// If we need navigation buttons
-					.swiper-pagination
-					.swiper-button-prev
-					.swiper-button-next
-					// If we need scrollbar
-					//- .swiper-scrollbar
+							
+						// If we need pagination
+						// If we need navigation buttons
+						.swiper-pagination
+						.swiper-button-prev
+						.swiper-button-next
+						// If we need scrollbar
+						//- .swiper-scrollbar
 

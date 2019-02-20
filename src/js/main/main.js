@@ -6,6 +6,8 @@ import nav from './nav'
 import documentListener from './documentListener'
 import slider from './slider'
 import shoppingCard from './shoppingCard'
+require("@chenfengyuan/datepicker")
+
 
 function ready(fn) {
   if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
@@ -21,5 +23,5 @@ ready(function() {
 	documentListener($)
 	slider(Swiper)
 	shoppingCard($)
-	
+	$('[data-toggle="datepicker"]').datepicker()
 })
