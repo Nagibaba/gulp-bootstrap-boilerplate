@@ -197,7 +197,7 @@ body
 
 select.form-control
 	appearance: none
-	background: rgba(0, 0, 0, 0) url("../../img/down-arrow.svg") no-repeat calc(100% - 10px) !important
+	background: white url("../../img/down-arrow.svg") no-repeat calc(100% - 10px) !important
 	overflow: hidden
 	width: auto
 
@@ -315,7 +315,7 @@ select.form-control
 
 .slider-wrapper
 	width: 100%
-	height: 300px
+	// height: 500px
 	overflow: hidden
 	box-shadow: 0 0 15px rgba(0,0,0,.16)
 	border-radius: 33px
@@ -456,3 +456,70 @@ select.form-control
 
 	
 
+.b-news
+	@include shadow(1)
+	width: 284px
+	max-width: 100%
+	// height: 100px
+	border-radius: 10px
+	overflow: hidden
+	transition: all 250ms
+	&:hover,&:focus
+		@include shadow(3);
+		transform: translateY(-5px)
+	&:active
+		@include shadow(2);
+		transform: translateY(-2px) 
+	&__img
+		border-radius: 10px
+	&__info
+		padding-top: 9px
+		padding-left: 12px
+		padding-right: 12px
+	&__title
+		font-weight: bold
+		font-size: 15px
+	&__paragraph
+		font-size: 12px
+	&__date
+		font-size: 12px	
+		color: #CECECE
+		padding: 0 0 5px 0
+		margin: 0
+		text-align: right
+
+
+.news1-img
+	width: 552px
+	height:auto
+	border-radius: 10px
+	&__wrapper
+		display: inline-block
+		float: left
+		border-radius: 10px
+		padding: 0 20px 20px 0
+	&__date
+		text-align: right
+		font-size: 15px
+		color: #CECECE
+
+
+
+.b-faq
+	@include shadow(1)
+	width: 100%
+	border-radius: 10px
+	overflow: hidden
+	transition: all 250ms
+	&:hover,&:focus
+		@include shadow(3);
+		transform: translateY(-5px)
+	&:active
+		@include shadow(2);
+		transform: translateY(-2px) 
+	&__img
+		border-radius: 10px
+	&__title
+		font-weight: bold
+		font-size: 15px
+	

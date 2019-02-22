@@ -1,6 +1,7 @@
 'use strict'
 ////// POPUP
 import $ from 'jquery'
+import mask from 'jquery-mask-plugin'
 import a from './a'
 import nav from './nav'
 import documentListener from './documentListener'
@@ -23,5 +24,6 @@ ready(function() {
 	documentListener($)
 	slider(Swiper)
 	shoppingCard($)
-	$('[data-toggle="datepicker"]').datepicker()
+	$('[data-toggle="datepicker"]').datepicker({ format: "dd/mm/yyyy" })
+	$('.date').mask('00/00/0000', {translation:{placeholder: "__/__/____"}});
 })

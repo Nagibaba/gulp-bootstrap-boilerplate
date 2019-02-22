@@ -21,7 +21,7 @@ block unique-content
 					.col-md-4
 						.form-group.mt-4.mt-sm-2.fullWidth.flex-column
 							label(for='exampleFormControlInput1') Doğum tarixi*
-							input.form-control.b-input(type='text', data-toggle="datepicker", placeholder='', autofocus)
+							input.form-control.b-input.date(type='text', data-toggle="datepicker", data-mask="00/00/0000", placeholder='dd/mm/yyy', autofocus)
 
 				.row.mt-2
 					.col-md-4.flex-column.justify-content-center.mb-2.mb-sm-0.gender-radiogroup
@@ -37,7 +37,7 @@ block unique-content
 									span Qadın
 
 					.col-md-4
-						.form-group.mt-4.mt-sm-2.fullWidth
+						.form-group.mt-4.mt-md-2.fullWidth
 							label(for='exampleFormControlInput1') Telefon nömrəsi*
 							input.form-control.b-input(type='number', placeholder='', autofocus)
 

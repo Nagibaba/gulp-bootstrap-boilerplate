@@ -1,6 +1,7 @@
 doctype html
 html
 	head
+		- var date = new Date().getTime();
 		meta(charset='utf-8')
 		meta(http-equiv='x-ua-compatible' content='ie=edge')
 		title Nagibaba starter Gulp BS
@@ -9,14 +10,14 @@ html
 		link(rel='manifest' href='site.webmanifest')
 		link(rel='apple-touch-icon' href='icon.png')
 		// Place favicon.ico in the root directory
-		// <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
-		link(rel='stylesheet' href='./css/main/main.min.css?v=2.0')
-		link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
-		link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css')
+		// <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css
+		link(rel='stylesheet' type="text/css" href=`./css/main/main.min.css?v=`+date)
+		link(rel='stylesheet' type="text/css" href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+		link(rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css')
 	body
-		.user
+		p.bg-danger.text-center.flexAlert.white Brovseriniz köhnədir. Lütfən müasir brovserlərdən birini yükləyin
 		.container-fluid.full-height
-			.container.flex-column.full-height
+			.container.flex-column.full-height.justify-content-between.d-flex
 
 				.row.flex-row.mt-3
 					.col-3.align-items-center.p-xs-0
@@ -47,14 +48,14 @@ html
 
 				.b-nav.d-flex
 					.container-fluid.flex-column.mt-4
-						.row.flex-shrink-0
+						.row.mb-5.flex-shrink-0
 							.col-6.b-nav__tab.b-nav__tab--first.justify-content-center.b-nav__tab--active
 								a(href="#tab-1", class="nav-tab-button") MENYU 
 							.col-6.b-nav__tab.b-nav__tab--second.justify-content-center
 								a(href="#tab-2", class="nav-tab-button") HESABIM 
 
-						.row.flex-shrink-0
-							img(src="./img/Group 441.svg", alt="", class="img img-fluid")
+						//- .row.flex-shrink-0
+						//- 	img(src="./img/Group 441.svg", alt="", class="img img-fluid")
 
 						.container-fluid.flex-column.align-items-end.mt-4.pr-5.tab-content#tab-1
 							a(href="").b-nav__item Necə işləyirik 
@@ -130,7 +131,7 @@ html
 
 				block unique-content
 		
-				.row.b-footer.py-5
+				.row.b-footer.pt-5.pb-2
 					.col-md-6
 						p.copyright-text Copyright 2018. Developed by Fizza team.
 					.col-md-6.justify-content-md-end.justify-content-xs-center
@@ -143,5 +144,5 @@ html
 
 
 		//- img(src="./img/Path 33.svg", alt="").footer-img
-		script(src='js/all.js')
+		script(src='js/all.js?v='+date)
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js')

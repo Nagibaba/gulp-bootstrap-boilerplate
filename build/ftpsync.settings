@@ -4,15 +4,15 @@
 
 	"default": {
 
-		 "host": "185.32.44.46",
-    "username": "fizza",
-    "password": "e)*0FimQqOD)",
+		"host": "185.32.44.46",
+	    "username": "fizza",
+	    "password": "e)*0FimQqOD)",
 		"path": "/public_html/frontend",
 
 		"upload_on_save": false, // set *false* if you do not want to upload on save!
 
-		// "port": 21,
-		// "tls": false,
+		"port": 21,
+		"tls": true,
 		// "timeout": 30, // [seconds]
 
 		// "passive": true,

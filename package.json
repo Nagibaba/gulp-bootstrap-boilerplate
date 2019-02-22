@@ -56,6 +56,7 @@
     "bootstrap": "^4.2.1",
     "gulp-pug": "^4.0.1",
     "jquery": "^3.3.1",
+    "jquery-mask-plugin": "^1.14.15",
     "pikaday": "^1.7.0",
     "swiper": "^4.4.6"
   }
