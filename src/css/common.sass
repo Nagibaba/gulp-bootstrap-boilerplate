@@ -314,10 +314,11 @@ select.form-control
 
 
 .slider-wrapper
-	width: 100%
-	// height: 500px
-	overflow: hidden
-	box-shadow: 0 0 15px rgba(0,0,0,.16)
+	width: 500px
+	height: auto
+	max-width: 100%
+	// overflow: hidden
+	// box-shadow: 0 0 15px rgba(0,0,0,.16)
 	border-radius: 33px
 
 .swiper-container
@@ -328,33 +329,39 @@ select.form-control
 .swiper-slide, .swiper-pagination
 	@extend .fullCenter
 
-
-.b-slider-card
-	width: 100%
-	border-radius: 33px
-	overflow: hidden
-	position: relative
-	&:hover .b-slider-header
+.swiper-slide
+	box-shadow: 0 0 15px rgba(0,0,0,.16)
+.b-slider
+	&-card
+		width: 100%
+		// border-radius: 33px
+		// overflow: hidden
+		position: relative
+		&:hover .b-slider-header
+			color: white
+			transform: scale(1.02)
+			top: 0
+	&-header
+		position: absolute
+		top: 200px
+		bottom: 0
+		right: 0
+		left: 0
+		width: 100%
+		background-color: rgba(0, 0, 0, .8)
 		color: white
-		transform: scale(1.02)
-		top: 0
+		text-align: center
+		padding-top: 1.5rem
+		padding-bottom: 2rem
+		padding-left: 10px
+		padding-right: 10px
+		transition: .4s all
 
-.b-slider-header
-	position: absolute
-	top: 200px
-	bottom: 0
-	right: 0
-	left: 0
-	width: 100%
-	background-color: rgba(0, 0, 0, .8)
-	color: white
-	text-align: center
-	padding-top: 1.5rem
-	padding-bottom: 2rem
-	padding-left: 10px
-	padding-right: 10px
-	transition: .4s all
-	
+	&__img
+		object-fit: cover	
+		border-radius: 33px
+		// overflow: hidden
+
 
 .swiper-button-prev
 	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23#{$main-color-nude}'%2F%3E%3C%2Fsvg%3E") !important
@@ -390,7 +397,10 @@ select.form-control
 		margin-top: 15px
 	.form-group.mt-2
 		margin-top: 15px
-
+	.b-slider
+		&__img
+			object-fit: contain	
+			border-radius: 0
 
 
 .btn

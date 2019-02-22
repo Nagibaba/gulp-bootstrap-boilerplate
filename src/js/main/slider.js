@@ -7,6 +7,7 @@ const mySwiper = (Swiper)=>{
     speed: 400,
     spaceBetween: 100,
     slideShadows: true,
+    calculateHeight:true,
     shadow: true,
 
     // If we need pagination

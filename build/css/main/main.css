@@ -10053,11 +10053,9 @@ select.form-control {
     outline: none; }
 
 .slider-wrapper {
-  width: 100%;
-  overflow: hidden;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
-     -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+  width: 500px;
+  height: auto;
+  max-width: 100%;
   -webkit-border-radius: 33px;
      -moz-border-radius: 33px;
           border-radius: 33px; }
@@ -10065,12 +10063,13 @@ select.form-control {
 .swiper-container {
   width: 100%; }
 
+.swiper-slide {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+     -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.16); }
+
 .b-slider-card {
   width: 100%;
-  -webkit-border-radius: 33px;
-     -moz-border-radius: 33px;
-          border-radius: 33px;
-  overflow: hidden;
   position: relative; }
   .b-slider-card:hover .b-slider-header {
     color: white;
@@ -10099,6 +10098,13 @@ select.form-control {
   -o-transition: .4s all;
   -moz-transition: .4s all;
   transition: .4s all; }
+
+.b-slider__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-border-radius: 33px;
+     -moz-border-radius: 33px;
+          border-radius: 33px; }
 
 .swiper-button-prev {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23FCD626'%2F%3E%3C%2Fsvg%3E") !important;
@@ -10134,7 +10140,13 @@ select.form-control {
   .col-md-6 {
     margin-top: 15px; }
   .form-group.mt-2 {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+  .b-slider__img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0; } }
 
 .btn-icon {
   font-size: 10px;
