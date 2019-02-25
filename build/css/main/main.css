@@ -6492,7 +6492,7 @@ button.bg-dark:focus {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .lang {
+.d-flex, .lang, .b-news--sample {
   display: -webkit-box !important;
   display: -webkit-flex !important;
   display: -moz-box !important;
@@ -6689,7 +6689,7 @@ button.bg-dark:focus {
       -ms-flex-direction: row !important;
           flex-direction: row !important; }
 
-.flex-column, .account-info {
+.flex-column, .account-info, .b-news--sample {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
   -webkit-flex-direction: column !important;
@@ -7989,7 +7989,8 @@ button.bg-dark:focus {
   padding: 1.5rem !important; }
 
 .pt-4,
-.py-4 {
+.py-4,
+.b-news--sample {
   padding-top: 1.5rem !important; }
 
 .pr-4,
@@ -7997,7 +7998,8 @@ button.bg-dark:focus {
   padding-right: 1.5rem !important; }
 
 .pb-4,
-.py-4 {
+.py-4,
+.b-news--sample {
   padding-bottom: 1.5rem !important; }
 
 .pl-4,
@@ -9381,10 +9383,38 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+::-webkit-scrollbar {
+  width: 26px;
+  height: 18px; }
+
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 10px solid rgba(0, 0, 0, 0);
+  -webkit-background-clip: padding-box;
+    -webkit-background-clip-background-clip: padding-box;
+  -webkit-border-radius: 17px;
+  background-color: rgba(252, 214, 38, 0.6); }
+
+::-webkit-scrollbar-thumb:hover {
+  height: 6px;
+  border: 10px solid rgba(0, 0, 0, 0);
+  -webkit-background-clip: padding-box;
+    -webkit-background-clip-background-clip: padding-box;
+  -webkit-border-radius: 17px;
+  background-color: #fcd626; }
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none; }
+
+::-webkit-scrollbar-corner {
+  background-color: transparent; }
+
 h1 {
   font-size: 25px; }
 
-.fullCenter, .growable, .lang, .link-thumbnail:after, .corrier-price, .swiper-slide, .swiper-pagination {
+.fullCenter, .growable, .lang, .link-thumbnail:after, .corrier-price, .swiper-slide, .swiper-pagination, .b-news--sample {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -9554,23 +9584,6 @@ h1 {
     -o-transition: all 400ms ease-in-out;
     -moz-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out; }
-  .hamburger:hover div {
-    width: 100%; }
-  .hamburger:hover .top-bun {
-    -webkit-animation: burger-hover 1s initial ease-in-out alternate;
-       -moz-animation: burger-hover 1s initial ease-in-out alternate;
-         -o-animation: burger-hover 1s initial ease-in-out alternate;
-            animation: burger-hover 1s initial ease-in-out alternate; }
-  .hamburger:hover .meat {
-    -webkit-animation: burger-hover 1s initial ease-in-out alternate forwards 200ms;
-       -moz-animation: burger-hover 1s initial ease-in-out alternate forwards 200ms;
-         -o-animation: burger-hover 1s initial ease-in-out alternate forwards 200ms;
-            animation: burger-hover 1s initial ease-in-out alternate forwards 200ms; }
-  .hamburger:hover .bottom-bun {
-    -webkit-animation: burger-hover 1s initial ease-in-out alternate forwards 400ms;
-       -moz-animation: burger-hover 1s initial ease-in-out alternate forwards 400ms;
-         -o-animation: burger-hover 1s initial ease-in-out alternate forwards 400ms;
-            animation: burger-hover 1s initial ease-in-out alternate forwards 400ms; }
 
 @-webkit-keyframes burger-hover {
   0% {
@@ -9689,7 +9702,7 @@ div {
           flex-shrink: 0; }
 
 html, body, .full-height {
-  height: 99%;
+  height: 100%;
   width: 100%; }
 
 body {
@@ -9753,7 +9766,6 @@ body {
   text-align: center; }
 
 .inputs-wrapper {
-  background-color: #F8F8F8;
   width: 1012px;
   max-width: 100%;
   -webkit-border-radius: 33px;
@@ -10233,6 +10245,8 @@ select.form-control {
   -o-transition: all 250ms;
   -moz-transition: all 250ms;
   transition: all 250ms; }
+  .b-news--sample {
+    width: 267px; }
   .b-news:hover, .b-news:focus {
     -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
        -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -10326,6 +10340,69 @@ select.form-control {
   .b-faq__title {
     font-weight: bold;
     font-size: 15px; }
+
+.blurry-background {
+  -webkit-transition: .2s all;
+  -o-transition: .2s all;
+  -moz-transition: .2s all;
+  transition: .2s all; }
+  .blurry-background--active {
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.3); }
+
+.b-popup {
+  -webkit-transform: scale(0);
+     -moz-transform: scale(0);
+      -ms-transform: scale(0);
+       -o-transform: scale(0);
+          transform: scale(0);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  -webkit-transition: .2s all;
+  -o-transition: .2s all;
+  -moz-transition: .2s all;
+  transition: .2s all; }
+  .b-popup--active {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+        -ms-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1); }
+  .b-popup__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 858px;
+    max-height: 80%;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    background-color: white;
+    overflow: auto; }
 
 .datepicker-container {
   background-color: #fff;

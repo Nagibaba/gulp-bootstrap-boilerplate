@@ -7,6 +7,7 @@ import nav from './nav'
 import documentListener from './documentListener'
 import slider from './slider'
 import shoppingCard from './shoppingCard'
+import openPopup from './openPopup'
 require("@chenfengyuan/datepicker")
 
 
@@ -25,5 +26,10 @@ ready(function() {
 	slider(Swiper)
 	shoppingCard($)
 	$('[data-toggle="datepicker"]').datepicker({ format: "dd/mm/yyyy" })
-	$('.date').mask('00/00/0000', {translation:{placeholder: "__/__/____"}});
+
+	// $.mask.definitions['9'] = '';
+	// $.mask.definitions['d'] = '[0-9]';
+	$('.jqueryMask').mask(null);
+	openPopup($)
+
 })

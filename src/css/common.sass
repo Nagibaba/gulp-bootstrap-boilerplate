@@ -12,7 +12,7 @@ div
 	flex-shrink: 0
 
 html, body, .full-height
-	height: 99%
+	height: 100%
 	width: 100%
 
 body
@@ -75,7 +75,7 @@ body
 
 
 .inputs-wrapper
-	background-color: #F8F8F8
+	// background-color: #F8F8F8
 	width: 1012px
 	max-width: 100%
 	border-radius: 33px
@@ -474,6 +474,9 @@ select.form-control
 	border-radius: 10px
 	overflow: hidden
 	transition: all 250ms
+	&--sample
+		@extend .d-flex, .flex-column, .fullCenter, .py-4
+		width: 267px
 	&:hover,&:focus
 		@include shadow(3);
 		transform: translateY(-5px)
@@ -532,4 +535,41 @@ select.form-control
 	&__title
 		font-weight: bold
 		font-size: 15px
+	
+
+.blurry-background
+	transition: .2s all
+	&--active
+		filter: blur(8px) 
+		background-color: rgba(0,0,0, .3)
+
+
+
+.b-popup
+	// opacity: 0
+	// display: none
+	transform: scale(0)
+	display: flex
+	justify-content: center
+	align-items: center
+	position: fixed
+	top: 0 
+	bottom: 0
+	left: 0
+	right: 0
+	
+	z-index: $zindex-modal
+	// background-color: rgba(0, 0, 0, .1)
+	transition: .2s all
+	&--active
+		transform: scale(1)
+		// background-color: rgba(0, 0, 0, .1)
+	&__inner
+		flex-direction: column
+		max-width: 858px
+		max-height: 80%
+		border-radius: 10px
+		background-color: white
+		overflow: auto
+
 	
