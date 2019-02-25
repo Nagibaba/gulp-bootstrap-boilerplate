@@ -9770,10 +9770,7 @@ body {
   max-width: 100%;
   -webkit-border-radius: 33px;
      -moz-border-radius: 33px;
-          border-radius: 33px;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
-     -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.16); }
+          border-radius: 33px; }
   .inputs-wrapper--shopping {
     display: none;
     position: absolute;
@@ -9781,7 +9778,11 @@ body {
     right: 30px;
     z-index: 1060;
     width: auto;
-    max-width: initial; }
+    max-width: initial;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+       -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+    background-color: #F8F8F8; }
     .inputs-wrapper--shopping th {
       font-size: 15px;
       font-weight: bold;
