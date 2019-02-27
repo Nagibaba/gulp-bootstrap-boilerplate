@@ -79,7 +79,7 @@ body
 	width: 1012px
 	max-width: 100%
 	border-radius: 33px
-
+	// box-shadow: 0 0 15px rgba(0,0,0,.16)
 	&--shopping
 		display: none
 		position: absolute
@@ -106,11 +106,33 @@ body
 	&--white
 		width: 1105px
 		background-color: #ffffff
-.table td, .table th
-	border-top: 1px solid rgba(112, 112, 112, .1)
-.table thead th
-	border-bottom: none
+	&--material
+		box-shadow: 0 0 15px rgba(0,0,0,.16)
+	&--metric
+		width: auto
 
+.table
+	& td, & th
+		border-top: 1px solid rgba(112, 112, 112, .1)
+		vertical-align: middle
+	& thead th
+		border-bottom: none
+	&--borderless td, &--borderless th
+		border: none!important
+	&--address
+		border-spacing: 0
+		margin-bottom: 0
+		
+		& th, & td
+			
+			border-collapse: collapse
+			// padding: 0
+			text-align: left
+		& th
+			color: #BEBEBE
+
+	&--nowrap
+		white-space: nowrap
 .link-thumbnail
 	@extend .mr-2
 	border: 2px solid transparent
@@ -394,15 +416,7 @@ select.form-control
 	&:last-of-type
 		@extend .pr-0
 
-@include media-breakpoint-between(xs, sm)
-	.col-md-6
-		margin-top: 15px
-	.form-group.mt-2
-		margin-top: 15px
-	.b-slider
-		&__img
-			object-fit: contain	
-			border-radius: 0
+
 
 
 .btn
@@ -411,6 +425,8 @@ select.form-control
 		font-size: 10px
 		color: $main-color
 		transition: .2s transform
+		&--address
+			font-size: 15px
 		&:focus, &:active
 			box-shadow: none
 			// transform: scale(1.2)
@@ -568,10 +584,72 @@ select.form-control
 		// background-color: rgba(0, 0, 0, .1)
 	&__inner
 		flex-direction: column
-		max-width: 858px
+		width: 858px
+		max-width: 100%
 		max-height: 80%
 		border-radius: 10px
 		background-color: white
 		overflow: auto
 
 	
+.back-button
+	position: absolute
+	left: 0
+	&__wrapper
+		height: 57px
+
+
+
+
+.copy
+	@extend .mb-5
+	&__key
+		color: #BEBEBE
+		font-size: 18px
+		font-weight: bold
+	&__value
+
+		font-size: 20px
+		font-weight: bold
+	&__left
+		max-width: 80%
+
+
+.addAddress
+	max-width: 50%
+	&__icon
+		width: 100px
+		max-width: 100%
+		height: auto
+		transition: .4s all
+	&:hover &__icon
+		transform: rotate(180deg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include media-breakpoint-between(xs, sm)
+	.col-md-6
+		margin-top: 15px
+	.form-group.mt-2
+		margin-top: 15px
+	.b-slider
+		&__img
+			object-fit: contain	
+			border-radius: 0
+
+	.back-button
+		left: -26px

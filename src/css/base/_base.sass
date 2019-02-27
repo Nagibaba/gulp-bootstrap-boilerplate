@@ -1,6 +1,6 @@
 ::-webkit-scrollbar 
         width: 26px
-        height: 18px
+        height: 24px
 ::-webkit-scrollbar-thumb 
     height: 6px
     border: 10px solid rgba(0, 0, 0, 0)
@@ -24,8 +24,14 @@
 ::-webkit-scrollbar-corner 
     background-color: transparent 
 
-
-
+body.main-bg
+	&::-webkit-scrollbar-thumb 
+	    
+	    background-color: white
+	    // -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05)
+	&::-webkit-scrollbar-thumb:hover 
+	    
+	    background-color: white
 h1
 	font-size: 25px
 .fullCenter
@@ -36,10 +42,13 @@ h1
 	width: 100%!important
 .main-color
 	color: $main-color
-
+.main-bg
+	background-color: $main-color
 .mtm-0
 	margin-top: 0
 
+.f-15
+	font-size: 15px
 .f-20
 	font-size: 20px
 
@@ -79,3 +88,9 @@ h1
 @supports (display: flex)
 	.flexAlert
 		display: none
+
+
+.limit-min
+	min-width: 100px
+.limit-max
+	max-width: 100px

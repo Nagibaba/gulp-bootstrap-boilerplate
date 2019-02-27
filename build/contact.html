@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory-->
     <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1551278922416">
+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1551278921731">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
   </head>
@@ -142,46 +142,35 @@
           </div>
         </div>
         <div class="row justify-content-center mt-5">
-          <div class="col-xl-4 col-md-6 justify-content-center mb-5"><a class="b-news" href=""><img class="b-news__img" src="https://via.placeholder.com/284X134" alt="">
-              <div class="b-news__info">
-                <p class="b-news__title">Xəbərin başlığı, blah blah blah blah blah.</p>
-                <p class="b-news__paragraph">Xəbərdən ilk bir neçə cümlə blah blah blah blah blah blah blah blah blah blah…</p>
-                <p class="b-news__date">14.12.2018</p>
-              </div></a></div>
-          <div class="col-xl-4 col-md-6 justify-content-center mb-5"><a class="b-news" href=""><img class="b-news__img" src="https://via.placeholder.com/284X134" alt="">
-              <div class="b-news__info">
-                <p class="b-news__title">Xəbərin başlığı, blah blah blah blah blah.</p>
-                <p class="b-news__paragraph">Xəbərdən ilk bir neçə cümlə blah blah blah blah blah blah blah blah blah blah…</p>
-                <p class="b-news__date">14.12.2018</p>
-              </div></a></div>
-          <div class="col-xl-4 col-md-6 justify-content-center mb-5"><a class="b-news" href=""><img class="b-news__img" src="https://via.placeholder.com/284X134" alt="">
-              <div class="b-news__info">
-                <p class="b-news__title">Xəbərin başlığı, blah blah blah blah blah.</p>
-                <p class="b-news__paragraph">Xəbərdən ilk bir neçə cümlə blah blah blah blah blah blah blah blah blah blah…</p>
-                <p class="b-news__date">14.12.2018</p>
-              </div></a></div>
-          <div class="col-xl-4 col-md-6 justify-content-center mb-5"><a class="b-news" href=""><img class="b-news__img" src="https://via.placeholder.com/284X134" alt="">
-              <div class="b-news__info">
-                <p class="b-news__title">Xəbərin başlığı, blah blah blah blah blah.</p>
-                <p class="b-news__paragraph">Xəbərdən ilk bir neçə cümlə blah blah blah blah blah blah blah blah blah blah…</p>
-                <p class="b-news__date">14.12.2018</p>
-              </div></a></div>
-          <div class="col-xl-4 col-md-6 justify-content-center mb-5"><a class="b-news" href=""><img class="b-news__img" src="https://via.placeholder.com/284X134" alt="">
-              <div class="b-news__info">
-                <p class="b-news__title">Xəbərin başlığı, blah blah blah blah blah.</p>
-                <p class="b-news__paragraph">Xəbərdən ilk bir neçə cümlə blah blah blah blah blah blah blah blah blah blah…</p>
-                <p class="b-news__date">14.12.2018</p>
-              </div></a></div>
-          <div class="col-xl-4 col-md-6 justify-content-center mb-5"><a class="b-news" href=""><img class="b-news__img" src="https://via.placeholder.com/284X134" alt="">
-              <div class="b-news__info">
-                <p class="b-news__title">Xəbərin başlığı, blah blah blah blah blah.</p>
-                <p class="b-news__paragraph">Xəbərdən ilk bir neçə cümlə blah blah blah blah blah blah blah blah blah blah…</p>
-                <p class="b-news__date">14.12.2018</p>
-              </div></a></div>
-          <div class="row pt-3 mb-3 flex-row fullCenter">
-            <button class="btn btn-warning main-button" type="submit">Daha çox</button>
+          <div class="inputs-wrapper inputs-wrapper--white d-block f-15 pt-3 pb-5 px-3 px-sm-5">
+            <div class="row">
+              <div class="col-md-6 flex-column">
+                <h1 class="mt-3 mb-5">ƏLAQƏ</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed metus ac nulla placerat blandit. Pellentesque habitant morbi tristique fames ac turpis egestas.</p>
+                <p class="bold d-flex align-items-center f-20"><img class="mr-3" src="./img/old-typical-phone (1).svg" alt="phone icon">7878</p>
+                <p class="bold d-flex align-items-center f-20"><img class="mr-3" src="./img/call-answer (4).svg" alt="phone icon">+994 55 778 78 78</p>
+                <p class="bold d-flex align-items-center f-20"><img class="mr-3" src="./img/mail-black-envelope-symbol (1).svg" alt="phone icon">info@fizzacargo.az</p>
+                <p>Bizi sosial şəbəkələrdə də izləməyi unutmayın:</p>
+                <p><a class="social-icon" href=""><i class="fa fa-facebook"></i></a><a class="social-icon" href=""><i class="fa fa-twitter"></i></a><a class="social-icon" href=""><i class="fa fa-instagram"></i></a></p>
+              </div>
+              <div class="col-md-6 p-0">
+                <div id="map" style="width: 100%; height: 100%"></div>
+              </div>
+            </div>
           </div>
         </div>
+        <script>
+          function initMap() {
+          	// The location of Uluru
+          	var uluru = {lat: -25.344, lng: 131.036};
+          	// The map, centered at Uluru
+          	var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: uluru});
+          	// The marker, positioned at Uluru
+          	var marker = new google.maps.Marker({position: uluru, map: map});
+          }
+          
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsG3ouk-u6m5MEydbt_i5inYU65buklic&amp;callback=initMap"></script>
         <div class="row b-footer pt-5 pb-2">
           <div class="col-md-6">
             <p class="copyright-text">Copyright 2018. Developed by Fizza team.</p>
@@ -191,7 +180,7 @@
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="js/all.js?v=1551278922416"></script>
+    <script src="js/all.js?v=1551278921731"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
   </body>
 </html>

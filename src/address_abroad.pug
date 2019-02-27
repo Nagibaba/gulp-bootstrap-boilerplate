@@ -1,0 +1,54 @@
+extends pug_template/head
+
+block unique-content
+	.row.justify-content-center.mt-5
+		
+		.inputs-wrapper.inputs-wrapper--white.d-block.f-20.pt-3.pb-5.px-3.px-sm-5
+			h1.text-center.mt-3.mb-5 XARİCDƏKİ ÜNVANLARIM
+			
+			.row.flex-row
+				.col-md-6.flex-column
+
+					- 
+						var values = [{key: 'Soyadı, adı', value: 'Fizza Xidmətlər', id: 'name'},
+							{key: 'Adres satır 1', value: 'İnkilap mh. Küçüksu cd. Yelkenciler sk. Vardar ap. NO :14/3 , m110380 Firuza Pasha', id: 'address'},
+							{key: 'İl (şehir)', value: 'İstanbul', id: 'city'},
+							{key: 'İlçe', value: 'Ümraniye', id: 'district'},
+							{key: 'Semt', value: 'Fizza Xidmətlər', id: 'neighborhood'},
+							
+
+						];
+					each val in values
+						.copy.d-flex.flex-row.justify-content-between
+							.copy__left.flex-column
+								p.copy__key.m-0 #{val.key}
+								p.copy__value.m-0(id=val.id) #{val.value}
+							.copy__right.flex-column.justify-content-center
+								button.btn.btn-clipboard.b-tooltip(data-clipboard-target='#'+val.id )
+									img(src="./img/paper.svg", alt="Copy this")
+									span.tooltiptext Kopiyala
+					
+			
+
+
+				.col-md-6.flex-column
+					- 
+						var values2 = [
+							{key: 'Adress başlığı', value: 'Fizza', id: 'addressHead'},
+							{key: 'ZIP / Post kodu', value: '124328724', id: 'zipcode'},
+							{key: 'Ölkə', value: 'Türkiye', id: 'country'},
+							{key: 'TC Kimlik', value: '2423875927520975', id: 'tcId'},
+							{key: 'Cep Telefonu', value: '3443598203', id: 'phoneNumber'},
+							{key: 'Vergi Numarası', value: '3443598203', id: 'taxId'},
+							
+
+						];
+					each val in values2
+						.copy.d-flex.flex-row.justify-content-between
+							.copy__left.flex-column
+								p.copy__key.m-0 #{val.key}
+								p.copy__value.m-0(id=val.id) #{val.value}
+							.copy__right.flex-column.justify-content-center
+								button.btn.btn-clipboard.b-tooltip(data-clipboard-target='#'+val.id )
+									img(src="./img/paper.svg", alt="Copy this")
+									span.tooltiptext Kopiyala

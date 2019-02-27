@@ -7895,7 +7895,7 @@ button.bg-dark:focus {
 .mx-5 {
   margin-right: 3rem !important; }
 
-.mb-5,
+.mb-5, .copy,
 .my-5 {
   margin-bottom: 3rem !important; }
 
@@ -9385,7 +9385,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 ::-webkit-scrollbar {
   width: 26px;
-  height: 18px; }
+  height: 24px; }
 
 ::-webkit-scrollbar-thumb {
   height: 6px;
@@ -9410,6 +9410,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 ::-webkit-scrollbar-corner {
   background-color: transparent; }
+
+body.main-bg::-webkit-scrollbar-thumb {
+  background-color: white; }
+
+body.main-bg::-webkit-scrollbar-thumb:hover {
+  background-color: white; }
 
 h1 {
   font-size: 25px; }
@@ -9437,8 +9443,14 @@ h1 {
 .main-color {
   color: #FCD626; }
 
+.main-bg {
+  background-color: #FCD626; }
+
 .mtm-0 {
   margin-top: 0; }
+
+.f-15 {
+  font-size: 15px; }
 
 .f-20 {
   font-size: 20px; }
@@ -9503,6 +9515,12 @@ h1 {
   .flexAlert {
     display: none; } }
 
+.limit-min {
+  min-width: 100px; }
+
+.limit-max {
+  max-width: 100px; }
+
 @font-face {
   font-family: 'CirceRounded';
   src: url("../../fonts/CirceRounded-Thin.otf") format("opentype");
@@ -9537,6 +9555,42 @@ h1 {
   src: url("../../fonts/CirceRounded-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal; }
+
+.b-tooltip {
+  position: relative;
+  display: inline-block; }
+  .b-tooltip .tooltiptext {
+    visibility: visible;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s; }
+    .b-tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent; }
+  .b-tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1; }
 
 .hamburger {
   display: -webkit-box;
@@ -9799,13 +9853,35 @@ body {
   .inputs-wrapper--white {
     width: 1105px;
     background-color: #ffffff; }
+  .inputs-wrapper--material {
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+       -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.16); }
+  .inputs-wrapper--metric {
+    width: auto; }
 
 .table td,
 .table th {
-  border-top: 1px solid rgba(112, 112, 112, 0.1); }
+  border-top: 1px solid rgba(112, 112, 112, 0.1);
+  vertical-align: middle; }
 
 .table thead th {
   border-bottom: none; }
+
+.table--borderless td, .table--borderless th {
+  border: none !important; }
+
+.table--address {
+  border-spacing: 0;
+  margin-bottom: 0; }
+  .table--address th, .table--address td {
+    border-collapse: collapse;
+    text-align: left; }
+  .table--address th {
+    color: #BEBEBE; }
+
+.table--nowrap {
+  white-space: nowrap; }
 
 .link-thumbnail {
   border: 2px solid transparent;
@@ -10149,18 +10225,6 @@ select.form-control {
   font-size: 20px;
   color: #FCD626; }
 
-@media (max-width: 767.98px) {
-  .col-md-6 {
-    margin-top: 15px; }
-  .form-group.mt-2 {
-    margin-top: 15px; }
-  .b-slider__img {
-    -o-object-fit: contain;
-       object-fit: contain;
-    -webkit-border-radius: 0;
-       -moz-border-radius: 0;
-            border-radius: 0; } }
-
 .btn-icon {
   font-size: 10px;
   color: #FCD626;
@@ -10168,6 +10232,8 @@ select.form-control {
   -o-transition: .2s transform;
   -moz-transition: .2s transform;
   transition: .2s transform; }
+  .btn-icon--address {
+    font-size: 15px; }
   .btn-icon:focus, .btn-icon:active {
     -webkit-box-shadow: none;
        -moz-box-shadow: none;
@@ -10397,13 +10463,63 @@ select.form-control {
        -moz-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 858px;
+    width: 858px;
+    max-width: 100%;
     max-height: 80%;
     -webkit-border-radius: 10px;
        -moz-border-radius: 10px;
             border-radius: 10px;
     background-color: white;
     overflow: auto; }
+
+.back-button {
+  position: absolute;
+  left: 0; }
+  .back-button__wrapper {
+    height: 57px; }
+
+.copy__key {
+  color: #BEBEBE;
+  font-size: 18px;
+  font-weight: bold; }
+
+.copy__value {
+  font-size: 20px;
+  font-weight: bold; }
+
+.copy__left {
+  max-width: 80%; }
+
+.addAddress {
+  max-width: 50%; }
+  .addAddress__icon {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+    -moz-transition: .4s all;
+    transition: .4s all; }
+  .addAddress:hover .addAddress__icon {
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+@media (max-width: 767.98px) {
+  .col-md-6 {
+    margin-top: 15px; }
+  .form-group.mt-2 {
+    margin-top: 15px; }
+  .b-slider__img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0; }
+  .back-button {
+    left: -26px; } }
 
 .datepicker-container {
   background-color: #fff;

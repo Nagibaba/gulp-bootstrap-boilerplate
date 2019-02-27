@@ -1,0 +1,97 @@
+extends pug_template/head
+
+block unique-content
+	.row.justify-content-center.flex-column.mt-5
+		
+		h1.text-center.mt-3.mb-5 ÜNVANLARIM
+		
+		.inputs-wrapper.inputs-wrapper--white.inputs-wrapper--material.d-block.f-18.py-3.px-5.mb-5
+			
+			.row.flex-row
+				.table-responsive
+					table.table.table--borderless.table--address.table--nowrap(cellspacing="0" cellpadding="0")
+						tbody
+							tr
+								th(scope='col') Ünvan adı
+								th(scope='col') Şəhər
+								th(scope='col') Ünvan
+								td.px-0(rowspan="2")
+									button.btn.btn-icon.btn-icon--address
+										img.mb-1(src="./img/pencil (3).svg", alt="", height="24px" width="auto")
+										p.p-0.m-0 edit
+								td.px-0(rowspan="2")
+									button.btn.btn-icon.btn-icon--address
+										img.mb-1(src="./img/rubbish-bin (2).svg", alt="", height="27px" width="auto")
+										p.p-0.m-0 delete
+							tr
+								td Evim
+								td Bakı
+								td İnkilap mh. Küçüksu cd. Yelkenciler sk., Vardar ap. NO :14/3
+								
+								
+		.inputs-wrapper.inputs-wrapper--white.inputs-wrapper--material.d-block.f-18.py-3.px-5.mb-5
+			
+			.row.flex-row
+				.table-responsive
+					table.table.table--borderless.table--address.table--nowrap(cellspacing="0" cellpadding="0")
+						tbody
+							tr
+								th(scope='col') Ünvan adı
+								th(scope='col') Şəhər
+								th(scope='col') Ünvan
+								td.px-0(rowspan="2")
+									button.btn.btn-icon.btn-icon--address
+										img.mb-1(src="./img/pencil (3).svg", alt="", height="24px" width="auto")
+										p.p-0.m-0 edit
+								td.px-0(rowspan="2")
+									button.btn.btn-icon.btn-icon--address
+										img.mb-1(src="./img/rubbish-bin (2).svg", alt="", height="27px" width="auto")
+										p.p-0.m-0 delete
+							tr
+								td Evim
+								td Bakı
+								td İnkilap mh. Küçüksu cd. Yelkenciler sk., Vardar ap. NO :14/3
+								
+								
+		
+
+		.row.fullCenter
+			a(href="").addAddress.openPopup
+				img.addAddress__icon(src="./img/plus (5).svg", alt="add address icon")
+
+
+
+block popup
+	.b-popup
+			.b-popup__inner.px-5.py-4
+				h1.text-center.mb-4 Ünvan əlavə et
+				.row
+					.col-md-5.flex-column
+						.form-group.f-2.mt-5
+								label.text-left.ml-2(for='exampleFormControlInput1') Şəhər
+								select.form-control.b-input.b-input--small
+									option Baku
+									option Naxc
+									option
+									option
+						
+						.form-group.f-2.mt-5
+								label.text-left.ml-2(for='exampleFormControlInput1') Rayon
+								select.form-control.b-input.b-input--small
+									option Narimanov st / Rajabli 34.5A
+									option Naxc
+									option
+									option
+						
+						.form-group.f-2.mt-5
+								label.text-left.ml-2(for='exampleFormControlInput1') Ünvan
+								select.form-control.b-input.b-input--small
+									option Narimanov st / Rajabli 34.5A
+									option Naxc
+									option
+									option
+
+						.row.pt-3.flex-row.fullCenter
+							button.btn.btn-warning.main-button(type='submit') Təsdiqlə
+					.col-md-7.p-0.bg-danger
+						#map(style="width: 100%; height: 100%")

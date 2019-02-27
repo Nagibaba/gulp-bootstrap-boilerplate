@@ -1,0 +1,14 @@
+<svg id="turkey_1_" data-name="turkey (1)" xmlns="http://www.w3.org/2000/svg" width="46.792" height="46.792" viewBox="0 0 46.792 46.792">
+  <g id="Group_85" data-name="Group 85" transform="translate(0 0)">
+    <g id="Group_84" data-name="Group 84" transform="translate(0 0)">
+      <g id="Ellipse_15" data-name="Ellipse 15" fill="#e30917" stroke="#fff" stroke-width="3">
+        <ellipse cx="23.396" cy="23.396" rx="23.396" ry="23.396" stroke="none"/>
+        <ellipse cx="23.396" cy="23.396" rx="21.896" ry="21.896" fill="none"/>
+      </g>
+      <g id="Group_83" data-name="Group 83" transform="translate(8.897 12.773)">
+        <path id="Path_217" data-name="Path 217" d="M108.207,125.944a8.771,8.771,0,1,1,5.127-15.878,10.751,10.751,0,1,0,0,14.213,8.707,8.707,0,0,1-5.127,1.665" transform="translate(-94.535 -106.424)" fill="#eee"/>
+        <path id="Path_218" data-name="Path 218" d="M283.207,169.94l3.565.822.323,3.644,1.883-3.137,3.567.82-2.4-2.761,1.881-3.137-3.368,1.433-2.4-2.761.322,3.646Z" transform="translate(-263.815 -158.855)" fill="#eee"/>
+      </g>
+    </g>
+  </g>
+</svg>

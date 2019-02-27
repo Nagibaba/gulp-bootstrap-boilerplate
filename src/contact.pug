@@ -1,0 +1,47 @@
+extends pug_template/head
+
+block unique-content
+	.row.justify-content-center.mt-5
+		
+		.inputs-wrapper.inputs-wrapper--white.d-block.f-15.pt-3.pb-5.px-3.px-sm-5
+			.row
+				.col-md-6.flex-column
+					h1.mt-3.mb-5 ƏLAQƏ
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed metus ac nulla placerat blandit. Pellentesque habitant morbi tristique fames ac turpis egestas.
+					
+					p.bold.d-flex.align-items-center.f-20
+						img.mr-3(src="./img/old-typical-phone (1).svg", alt="phone icon")
+						| 7878
+					p.bold.d-flex.align-items-center.f-20
+						img.mr-3(src="./img/call-answer (4).svg", alt="phone icon")
+						| +994 55 778 78 78
+					p.bold.d-flex.align-items-center.f-20
+						img.mr-3(src="./img/mail-black-envelope-symbol (1).svg", alt="phone icon")
+						| info@fizzacargo.az
+
+
+					p Bizi sosial şəbəkələrdə də izləməyi unutmayın:
+
+					p
+						a.social-icon(href="")
+							i.fa.fa-facebook
+						a.social-icon(href="")
+							i.fa.fa-twitter
+						a.social-icon(href="")
+							i.fa.fa-instagram
+				.col-md-6.p-0
+					#map(style="width: 100%; height: 100%")
+			
+		
+
+	script.
+		function initMap() {
+			// The location of Uluru
+			var uluru = {lat: -25.344, lng: 131.036};
+			// The map, centered at Uluru
+			var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: uluru});
+			// The marker, positioned at Uluru
+			var marker = new google.maps.Marker({position: uluru, map: map});
+		}
+
+	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsG3ouk-u6m5MEydbt_i5inYU65buklic&callback=initMap")
