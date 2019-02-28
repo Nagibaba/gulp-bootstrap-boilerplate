@@ -453,6 +453,34 @@ select.form-control
 			background-color: #F7F7F7
 			display: block
 			transition: .4s all
+.payment-radiogroup
+	&--first
+		& input
+			&:checked + div
+				background-image: url('../../img/Group 451.svg')
+		& label
+			& div
+				background-image: url('../../img/Group 450.svg')
+	&--second
+		& input
+			&:checked + div
+				background-image: url('../../img/Group 453.svg')
+		& label
+			& div
+				background-image: url('../../img/Group 452.svg')
+
+	& input
+		display: none
+		
+	& label
+		cursor: pointer
+		width: 100%
+		& div
+			background-size: stretch
+			width: 92px
+			height: 92px
+			// background-color: red
+			transition: .4s all
 
 .rules-warn
 	font-size: 15px
@@ -558,8 +586,10 @@ select.form-control
 .blurry-background
 	transition: .2s all
 	&--active
-		filter: blur(8px) 
+		
+		filter: blur(8px) brightness(70%)
 		background-color: rgba(0,0,0, .3)
+		
 
 
 
@@ -585,7 +615,7 @@ select.form-control
 	&__inner
 		flex-direction: column
 		width: 858px
-		max-width: 100%
+		max-width: 95%
 		max-height: 80%
 		border-radius: 10px
 		background-color: white

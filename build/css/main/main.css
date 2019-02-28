@@ -9411,6 +9411,12 @@ a.text-dark:hover, a.text-dark:focus {
 ::-webkit-scrollbar-corner {
   background-color: transparent; }
 
+.black {
+  color: black; }
+
+.gray {
+  color: #BEBEBE; }
+
 body.main-bg::-webkit-scrollbar-thumb {
   background-color: white; }
 
@@ -9454,6 +9460,9 @@ h1 {
 
 .f-20 {
   font-size: 20px; }
+
+.f-25 {
+  font-size: 25px; }
 
 .bold {
   font-weight: bold; }
@@ -9682,6 +9691,11 @@ h1 {
   display: flex; }
 
 .b-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 1000;
   position: fixed;
   top: 0;
@@ -10270,6 +10284,35 @@ select.form-control {
     -moz-transition: .4s all;
     transition: .4s all; }
 
+.payment-radiogroup--first input:checked + div {
+  background-image: url("../../img/Group 451.svg"); }
+
+.payment-radiogroup--first label div {
+  background-image: url("../../img/Group 450.svg"); }
+
+.payment-radiogroup--second input:checked + div {
+  background-image: url("../../img/Group 453.svg"); }
+
+.payment-radiogroup--second label div {
+  background-image: url("../../img/Group 452.svg"); }
+
+.payment-radiogroup input {
+  display: none; }
+
+.payment-radiogroup label {
+  cursor: pointer;
+  width: 100%; }
+  .payment-radiogroup label div {
+    -webkit-background-size: stretch stretch;
+       -moz-background-size: stretch;
+            background-size: stretch;
+    width: 92px;
+    height: 92px;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+    -moz-transition: .4s all;
+    transition: .4s all; }
+
 .rules-warn {
   font-size: 15px;
   font-weight: bold; }
@@ -10414,8 +10457,8 @@ select.form-control {
   -moz-transition: .2s all;
   transition: .2s all; }
   .blurry-background--active {
-    -webkit-filter: blur(8px);
-            filter: blur(8px);
+    -webkit-filter: blur(8px) brightness(70%);
+            filter: blur(8px) brightness(70%);
     background-color: rgba(0, 0, 0, 0.3); }
 
 .b-popup {
@@ -10464,7 +10507,7 @@ select.form-control {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 858px;
-    max-width: 100%;
+    max-width: 95%;
     max-height: 80%;
     -webkit-border-radius: 10px;
        -moz-border-radius: 10px;

@@ -1,0 +1,73 @@
+extends pug_template/head
+
+block unique-content
+	.row.justify-content-center.mt-5
+		
+		.inputs-wrapper.inputs-wrapper--white.d-block.f-20.pt-3.pb-5.px-3.px-sm-5
+			h1.text-center.mt-3.mb-5 BALANSIM
+			
+			.about-logo__wrapper.text-center.mb-5
+				//- img(src="./img/Group 78.svg", alt="new image")
+			p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed metus ac nulla placerat blandit. Pellentesque habitant morbi tristique fames ac turpis egestas.
+
+			p.text-center Cari balans: 
+				span.f-25.bold.main-color -3.05 AZN
+
+			.row.pt-3.flex-row.fullCenter
+				button.btn.btn-warning.main-button.openPopup(type='submit') Ödə
+
+
+			h1.text-center.mt-5.mb-5 BALANS TARİXCƏSİ
+
+			.row.flex-row
+				.col-lg-1.fullCenter
+					p.gray 17.12.2018
+				.col-lg-10
+					p.p-0.pl-4 Sifaişci tərəfindən əməliyyat: +3.51 AZN (trendyol sebetde)
+
+			.row.flex-row
+				.col-lg-1.fullCenter
+					p.gray 17.12.2018
+				.col-lg-10
+					p.p-0.pl-4 Sifaişci tərəfindən əməliyyat: +3.51 AZN (trendyol sebetde elave endirim 19.57tl ve kargo 8.99tl) Hazırki balans 4.37 AZN
+
+			.row.flex-row
+				.col-lg-1.fullCenter
+					p.gray 17.12.2018
+				.col-lg-10
+					p.p-0.pl-4 Sifaişci tərəfindən əməliyyat: +3.51 AZN (trendyol sebetde elave endirim 19.57tl ve kargo 8.99tl) Hazırki balans 4.37 AZN
+
+			.row.flex-row
+				.col-lg-1.fullCenter
+					p.gray 17.12.2018
+				.col-lg-10
+					p.p-0.pl-4 Sifaişci tərəfindən əməliyyat: +3.51 AZN (trendyol sebetde elave endirim 19.57tl ve kargo 8.99tl) Hazırki balans 4.37 AZN
+
+			.row.flex-row
+				.col-lg-1.fullCenter
+					p.gray 17.12.2018
+				.col-lg-10
+					p.p-0.pl-4 Sifaişci tərəfindən əməliyyat: +3.51 AZN (trendyol sebetde elave endirim 19.57tl ve kargo 8.99tl) Hazırki balans 4.37 AZN
+
+			
+
+block popup
+	.b-popup
+			.b-popup__inner.fullCenter.p-1.px-sm-5.py-sm-4
+				h1.text-center.mb-4 Ünvan əlavə et
+				.row.flex-row.payment-radiogroup.m-0.p-0
+					.col-6.payment-radiogroup--first
+						
+						label.d-flex.flex-column.justify-content-end.p-0.pr-1.pr-sm-3
+							input(type="radio" name="gender" value="man")
+							div 
+							p.bold Terminal Ödəniş
+						
+					.col-6.payment-radiogroup--second.p-0.pl-0.pl-sm-3
+						label.d-flex.flex-column.d-flex.justify-content-start
+							input(type="radio" name="gender" value="man")
+							div 
+							p.bold Nağdsız Ödəniş
+
+				.row.pt-3.flex-row.fullCenter
+					button.btn.btn-warning.main-button(type='submit') Təsdiqlə
