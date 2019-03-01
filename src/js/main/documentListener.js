@@ -5,7 +5,13 @@ const documentListener = ($, cb=null) => {
 
 		// if not self clicked
 		if(!_this.closest('.hamburger').length && !_this.closest('.b-nav').length){
-			nav.removeClass('b-nav--active'); 
+			const pressClose = $('.pressClose')
+			const body = $('body')
+
+			nav.removeClass('b-nav--active')
+			pressClose.hide()
+			setTimeout(function(){body.removeClass('y-hidden')}, 300)
+
 		}
 		if(!_this.closest('.shopping-card').length && !_this.closest('.inputs-wrapper--shopping').length){
 			$('.shopping-card').removeClass('shopping-card--active')

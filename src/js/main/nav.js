@@ -1,7 +1,12 @@
 const nav = ($) => {
 	$('.hamburger').click(()=>{
 		const nav = $('.b-nav')
+		const pressClose = $('.pressClose')
+		const body = $('body')
+
 		nav.addClass('b-nav--active')
+		pressClose.show()
+		body.addClass('y-hidden')
 	})
 
 	$('.nav-tab-button').click((e)=>{

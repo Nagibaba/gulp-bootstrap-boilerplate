@@ -73,7 +73,7 @@ var reload = function(){
 // }
 
 gulp.task('html:build', function () {
-    gulp.src(path.src.html) 
+    return gulp.src(path.src.html) 
     .on('error', function(err) {
         console.log(err)
         this.emit('end')
@@ -87,7 +87,7 @@ gulp.task('html:build', function () {
 });
 
 gulp.task('pug:build', function () {
-    gulp.src(path.src.pug)  
+    return gulp.src(path.src.pug)  
         // .pipe(rigger()) // we don't need it anymore as PUG does it
         .on('error', function(err) {
             console.log(err)
@@ -105,7 +105,7 @@ gulp.task('pug:build', function () {
 });
 
 gulp.task('js:build', function () {
-    browserify({
+    return browserify({
         entries: ['./src/js/main/main.js'],
         debug: true
     })
@@ -141,7 +141,7 @@ gulp.task('js:build', function () {
 
 
 gulp.task('css:build', function () {
-    gulp.src(path.src.css) 
+    return gulp.src(path.src.css) 
         .pipe(sass()) 
         .on('error', function(err) {
             console.log(err)
@@ -162,7 +162,7 @@ gulp.task('css:build', function () {
 
 
 gulp.task('image:build', function () {
-    gulp.src(path.src.images) 
+    return gulp.src(path.src.images) 
     .on('error', function(err) {
         console.log(err)
         this.emit('end')

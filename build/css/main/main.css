@@ -6492,7 +6492,7 @@ button.bg-dark:focus {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .lang, .b-news--sample {
+.d-flex, .lang, .btn-icon, .b-news--sample {
   display: -webkit-box !important;
   display: -webkit-flex !important;
   display: -moz-box !important;
@@ -6689,7 +6689,7 @@ button.bg-dark:focus {
       -ms-flex-direction: row !important;
           flex-direction: row !important; }
 
-.flex-column, .account-info, .b-news--sample {
+.flex-column, .btn-icon, .account-info, .b-news--sample {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
   -webkit-flex-direction: column !important;
@@ -9426,7 +9426,7 @@ body.main-bg::-webkit-scrollbar-thumb:hover {
 h1 {
   font-size: 25px; }
 
-.fullCenter, .growable, .lang, .link-thumbnail:after, .corrier-price, .swiper-slide, .swiper-pagination, .b-news--sample {
+.fullCenter, .growable, .lang, .link-thumbnail:after, .corrier-price, .form-check__urgent-price, .swiper-slide, .swiper-pagination, .btn-icon, .b-news--sample, .addAddressIcon {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -9529,6 +9529,26 @@ h1 {
 
 .limit-max {
   max-width: 100px; }
+
+.limit-max--400 {
+  max-width: 400px !important;
+  width: 100% !important; }
+
+.limit-max--700 {
+  max-width: 700px !important;
+  width: 100% !important; }
+
+.limit-max--566 {
+  max-width: 566px !important;
+  width: 100% !important; }
+
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url("../../img/Group 453.svg") url("../../img/Group 451.svg"); }
 
 @font-face {
   font-family: 'CirceRounded';
@@ -9750,6 +9770,16 @@ h1 {
         content: url("../../img/Line 47.svg");
         z-index: -1; }
 
+.pressClose {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 900;
+  background-color: rgba(0, 0, 0, 0.2); }
+
 .bg {
   background: red; }
 
@@ -9778,6 +9808,8 @@ body {
   color: #333333;
   overflow-x: hidden;
   overflow-y: auto; }
+  body.y-hidden::-webkit-scrollbar-thumb {
+    background-color: transparent; }
 
 .shopping-card {
   cursor: pointer;
@@ -9896,6 +9928,12 @@ body {
 
 .table--nowrap {
   white-space: nowrap; }
+
+.table .borderBottom {
+  border-bottom: 1px solid #E6E6E6; }
+
+.table .thinBorder {
+  border-bottom: 1px solid rgba(112, 112, 112, 0.1); }
 
 .link-thumbnail {
   border: 2px solid transparent;
@@ -10027,7 +10065,7 @@ select.form-control {
           align-self: center; }
 
 .form-check {
-  width: 144px;
+  min-width: 144px;
   max-width: 100%;
   background-color: white;
   border: 1px solid #F4F4F4;
@@ -10036,13 +10074,17 @@ select.form-control {
           border-radius: 10px;
   padding-left: 0;
   text-align: center; }
-
-.form-check-label {
-  font-size: 15px;
-  font-weight: normal; }
-
-.form-check-input {
-  border-color: #FCD626; }
+  .form-check-label {
+    font-size: 15px;
+    font-weight: normal; }
+  .form-check-input {
+    border-color: #FCD626; }
+  .form-check__urgent-price {
+    font-size: 13px;
+    color: #F4F4F4;
+    border-left: 1px solid #F4F4F4; }
+  .form-check--lg {
+    width: 566px; }
 
 .form-check-input {
   display: none; }
@@ -10051,19 +10093,15 @@ select.form-control {
     cursor: pointer;
     padding: 0.2em; }
     .form-check-input + label:before {
+      display: inline-block;
       content: "\2714";
       border: 1px solid #FCD626;
       -webkit-border-radius: 5px;
          -moz-border-radius: 5px;
               border-radius: 5px;
-      display: inline-block;
-      width: 15px;
-      height: 15px;
-      padding-left: 0.2em;
-      padding-right: 0.2em;
-      padding-bottom: 0.3em;
-      padding-top: 0;
-      margin-right: 0.5em;
+      width: 20px;
+      height: 20px;
+      padding: 0;
       vertical-align: middle;
       -webkit-box-sizing: content-box;
          -moz-box-sizing: content-box;
@@ -10073,12 +10111,28 @@ select.form-control {
       -o-transition: .2s;
       -moz-transition: .2s;
       transition: .2s; }
-    .form-check-input + label:active:before {
-      -webkit-transform: scale(0);
-         -moz-transform: scale(0);
-          -ms-transform: scale(0);
-           -o-transform: scale(0);
-              transform: scale(0); }
+  .form-check-input--flex + label:before {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .form-check-input--flex:active:before {
+    -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+        -ms-transform: scale(0);
+         -o-transform: scale(0);
+            transform: scale(0); }
   .form-check-input:checked + label:before {
     background-color: #FCD626;
     border-color: #FCD626;
@@ -10300,8 +10354,7 @@ select.form-control {
   display: none; }
 
 .payment-radiogroup label {
-  cursor: pointer;
-  width: 100%; }
+  cursor: pointer; }
   .payment-radiogroup label div {
     -webkit-background-size: stretch stretch;
        -moz-background-size: stretch;
@@ -10544,6 +10597,25 @@ select.form-control {
     -moz-transition: .4s all;
     transition: .4s all; }
   .addAddress:hover .addAddress__icon {
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+.addAddressIcon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-left: 12px;
+  padding-right: 12px; }
+  .addAddressIcon__icon {
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+    -moz-transition: .4s all;
+    transition: .4s all; }
+  .addAddressIcon:hover .addAddressIcon__icon {
     -webkit-transform: rotate(180deg);
        -moz-transform: rotate(180deg);
         -ms-transform: rotate(180deg);

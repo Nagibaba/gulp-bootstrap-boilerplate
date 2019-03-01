@@ -53,21 +53,21 @@ block unique-content
 
 block popup
 	.b-popup
-			.b-popup__inner.fullCenter.p-1.px-sm-5.py-sm-4
+			.b-popup__inner.fullCenter.flex-column.limit-max--700.p-1.py-3
 				h1.text-center.mb-4 Ünvan əlavə et
-				.row.flex-row.payment-radiogroup.m-0.p-0
-					.col-6.payment-radiogroup--first
+				.row.flex-row.payment-radiogroup.fullWidth.m-0.p-0
+					.col-6.payment-radiogroup--first.justify-content-end
 						
-						label.d-flex.flex-column.justify-content-end.p-0.pr-1.pr-sm-3
+						label.flex-column.fullCenter.m-0.mr-1.mr-sm-3
 							input(type="radio" name="gender" value="man")
 							div 
-							p.bold Terminal Ödəniş
+							p.bold.mt-1 Terminal Ödəniş
 						
-					.col-6.payment-radiogroup--second.p-0.pl-0.pl-sm-3
-						label.d-flex.flex-column.d-flex.justify-content-start
+					.col-6.payment-radiogroup--second
+						label.flex-column.fullCenter
 							input(type="radio" name="gender" value="man")
 							div 
-							p.bold Nağdsız Ödəniş
+							p.bold.text-center.mt-1 Nağdsız Ödəniş
 
 				.row.pt-3.flex-row.fullCenter
 					button.btn.btn-warning.main-button(type='submit') Təsdiqlə

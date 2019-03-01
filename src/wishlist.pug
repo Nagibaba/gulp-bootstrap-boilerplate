@@ -1,0 +1,117 @@
+extends pug_template/head
+
+block unique-content
+	.row.justify-content-center.mt-5
+		
+		.inputs-wrapper.inputs-wrapper--white.d-block.f-20.pt-3.pb-5.px-3.px-sm-5
+			h1.text-center.mt-3.mb-5 SON 30 GÜN TARİXCƏSİ
+			
+			.about-logo__wrapper.text-center.mb-5
+				//- img(src="./img/Group 78.svg", alt="new image")
+			p Fizza vasitəsi ilə son 30 gün ərzində ölkəyə gətirdiyiniz bağlamaların məhsul dəyəri və çatdırılma haqqına ödədiyiniz məbləğlərin toplamı. Nəzərinizə çatdıraq ki, son 30 gün ərzində şəxsi istifadə üçün gətirilmiş poçt yüklərinin toplam cəmi 1000$ keçdikdə gömrük rüsumu tətbiq edilir
+
+
+			p.text-center.bold Son 30 gündə xərcləmələr: 
+				span.f-25.bold.main-color 320$
+
+			
+
+			.table-responsive
+				table.table
+					thead
+						tr
+							th(scope='col') #
+							th(scope='col') Şəkil
+							th(scope='col') Məhsul Linki
+							th(scope='col') Qiymət
+							th(scope='col') Yekun
+							th(scope='col') Rəng
+							th(scope='col') Ölçü
+							th(scope='col')
+							th(scope='col')
+					tbody
+						tr.thinBorder
+							th(scope='row')
+								input#wishlist-check.form-check-input.form-check-input--flex(type='checkbox' checked)
+								label.form-check-label.p-0(for='wishlist-check')
+							td 
+								img.order-thumb(src="https://via.placeholder.com/66", alt="")
+							td https://www.flaticon.com/slide…
+							td 100 TL
+							td 105 TL
+							td Mavi
+							td Tək
+							td.px-0 
+								button.btn.btn-icon
+									img.mb-1(src="./img/pencil (3).svg", alt="edit icon", height="19px" width="auto")
+									| edit
+							td.px-0
+								button.btn.btn-icon
+									img.mb-1(src="./img/rubbish-bin (2).svg", alt="delete icon", height="19px" width="auto")
+									| delete
+						tr.thinBorder
+							th(scope='row')
+								input#wishlist-check3.form-check-input.form-check-input--flex(type='checkbox')
+								label.form-check-label.p-0(for='wishlist-check3')
+							td 
+								img.order-thumb(src="https://via.placeholder.com/66", alt="")
+							td https://www.flaticon.com/slide…
+							td 100 TL
+							td 105 TL
+							td Mavi
+							td Tək
+							td.px-0 
+								button.btn.btn-icon
+									img.mb-1(src="./img/pencil (3).svg", alt="edit icon", height="19px" width="auto")
+									| edit
+							td.px-0
+								button.btn.btn-icon
+									img.mb-1(src="./img/rubbish-bin (2).svg", alt="delete icon", height="19px" width="auto")
+									| delete
+						tr.thinBorder
+							th(scope='row')
+								input#wishlist-check2.form-check-input.form-check-input--flex(type='checkbox' checked)
+								label.form-check-label.p-0(for='wishlist-check2')
+							td 
+								img.order-thumb(src="https://via.placeholder.com/66", alt="")
+							td https://www.flaticon.com/slide…
+							td 100 TL
+							td 105 TL
+							td Mavi
+							td Tək
+							td.px-0 
+								button.btn.btn-icon
+									img.mb-1(src="./img/pencil (3).svg", alt="edit icon", height="19px" width="auto")
+									| edit
+							td.px-0
+								button.btn.btn-icon
+									img.mb-1(src="./img/rubbish-bin (2).svg", alt="delete icon", height="19px" width="auto")
+									| delete
+			
+
+			.row.fullCenter
+				.form-check.d-flex.flex-row.px-1.mt-1
+					input#urgent-order.form-check-input(type='checkbox')
+					label.form-check-label.ml-2.my-1(for='urgent-order') 
+						span.mx-2 təcili sifariş			
+					span.form-check__urgent-price.px-2 +2$
+
+
+			.row.mt-5
+				.col-sm-6.flex-column
+					p.bold.text-center.text-sm-right Yekun qiymət (TL): 
+						span.main-color 2345 TL
+
+				.col-sm-6.flex-column
+					p.bold.text-center.text-sm-left Yekun qiymət (AZN): 
+						span.main-color 124 AZN
+
+					
+			.row.pt-3.flex-row.fullCenter
+				.col-md-4 
+				.col-md-4.fullCenter
+					button.btn.btn-warning.main-button(type='submit') Sifariş et
+				.col-md-4
+					a(href="").tracking-button.mx-auto.ml-md-0.mt-3.mt-md-0 Təcili sifariş nədir?
+			
+			

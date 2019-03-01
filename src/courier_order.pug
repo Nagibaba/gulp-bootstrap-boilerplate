@@ -1,0 +1,44 @@
+extends pug_template/head
+
+block unique-content
+	.row.justify-content-center.mt-5
+		
+		.inputs-wrapper.inputs-wrapper--white.fullCenter.flex-column.f-20.pt-3.pb-5.px-3.px-sm-5
+			h1.text-center.mt-3.mb-5 KURYER SİFARİŞİ
+			
+			.about-logo__wrapper.text-center.mb-5
+				//- img(src="./img/Group 78.svg", alt="new image")
+			p Bağlamalarınızın Kuryerlə çatdırılması üçün zəhmət olmasa ünvan qeyd edin.Nəzərinizə çatdırmaq istəyirik ki, kuryer sifarişləri əraziyə görə, növbə ilə gün ərzində tamamlanacaq. Xahiş edirik ünvanı tam və dəqiq şəkildə qeyd edin. Kuryer sifarişi Bakı şəhər daxili ünvandan asılı “olmayaraq” 3 azn hesablanır.
+
+			.limit-max--566.fullCenter.flex-column.mt-5
+				.row.fullWidth.m-0
+					.form-check.fullWidth.d-flex.flex-row.py-1.px-1.mt-1
+						input#urgent-order.form-check-input(type='checkbox')
+						label.form-check-label.ml-2(for='urgent-order') 
+							span.ml-1 Təcili Kuryer Sifarişi (2 SAAT) 5 AZN
+				.row.fullWidth.m-0.mt-3
+					.form-check.fullWidth.d-flex.flex-row.py-1.px-1.mt-1
+						input#urgent-order4.form-check-input(type='checkbox')
+						label.form-check-label.ml-2(for='urgent-order4') 
+							span.ml-1 Gün ərzində (24 SAAT) 3 AZN
+				.row.fullWidth.m-0.mt-3
+					.col-md-6.p-0
+						.form-group.f-2.mt-2
+							label(for='exampleFormControlInput1') 
+							select.form-control.b-input.b-input--small
+								option Ünvan seç
+								option
+								option
+								option
+					.col-md-6.p-0
+						.form-group.fullWidth.mt-2
+								label(for='exampleFormControlInput1') 
+								input.form-control.b-input(type='email', placeholder='Əlavə et')
+								a(href="").addAddressIcon
+									img.addAddressIcon__icon(src="./img/plus (5).svg", alt="Add address icon button" style="width: 25px; height: 25px")
+
+
+			.row.pt-3.mt-5.flex-row.fullCenter
+				button.btn.btn-warning.main-button(type='submit') Kuryer sifariş et
+			
+			

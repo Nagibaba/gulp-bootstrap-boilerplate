@@ -1,0 +1,75 @@
+extends pug_template/head
+
+block unique-content
+	.row.justify-content-center.mt-5
+		
+		.inputs-wrapper.inputs-wrapper--white.d-block.f-20.pt-3.pb-5.px-3.px-sm-5
+			h1.text-center.mt-3.mb-5 SON 30 GÜN TARİXCƏSİ
+			
+			.about-logo__wrapper.text-center.mb-5
+				//- img(src="./img/Group 78.svg", alt="new image")
+			p Fizza vasitəsi ilə son 30 gün ərzində ölkəyə gətirdiyiniz bağlamaların məhsul dəyəri və çatdırılma haqqına ödədiyiniz məbləğlərin toplamı. Nəzərinizə çatdıraq ki, son 30 gün ərzində şəxsi istifadə üçün gətirilmiş poçt yüklərinin toplam cəmi 1000$ keçdikdə gömrük rüsumu tətbiq edilir
+
+
+			p.text-center.bold Son 30 gündə xərcləmələr: 
+				span.f-25.bold.main-color 320$
+
+			
+
+			table.table.table--borderless.table--nowrap.f-20(cellspacing="20px" cellpadding="0")
+				tbody
+					tr.borderBottom
+						th Tarix
+						th Məhsulun Qiyməti
+						th(scope='col') Çatdırılma Qiyməti
+						th(scope='col') Cəmi
+						
+					tr
+						td.gray 17.12.2018
+						td 34$
+						td 11$
+						td 34$
+					tr
+						td.gray 17.12.2018
+						td 34$
+						td 11$
+						td 34$
+					tr
+						td.gray 17.12.2018
+						td 34$
+						td 11$
+						td 34$
+					tr
+						td.gray 17.12.2018
+						td 34$
+						td 11$
+						td 34$
+					tr
+						td.gray 17.12.2018
+						td 34$
+						td 11$
+						td 34$
+					
+
+			
+
+block popup
+	.b-popup
+			.b-popup__inner.fullCenter.flex-column.limit-max--700.p-1.py-3
+				h1.text-center.mb-4 Ünvan əlavə et
+				.row.flex-row.payment-radiogroup.fullWidth.m-0.p-0
+					.col-6.payment-radiogroup--first.justify-content-end
+						
+						label.flex-column.fullCenter.m-0.mr-1.mr-sm-3
+							input(type="radio" name="gender" value="man")
+							div 
+							p.bold.mt-1 Terminal Ödəniş
+						
+					.col-6.payment-radiogroup--second
+						label.flex-column.fullCenter
+							input(type="radio" name="gender" value="man")
+							div 
+							p.bold.text-center.mt-1 Nağdsız Ödəniş
+
+				.row.pt-3.flex-row.fullCenter
+					button.btn.btn-warning.main-button(type='submit') Təsdiqlə
