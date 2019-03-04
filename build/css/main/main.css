@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .box {
   -webkit-transform: rotate(30deg);
   -ms-transform: rotate(30deg);
@@ -9426,6 +9427,9 @@ body.main-bg::-webkit-scrollbar-thumb:hover {
 h1 {
   font-size: 25px; }
 
+h2 {
+  font-size: 20px; }
+
 .fullCenter, .growable, .lang, .link-thumbnail:after, .corrier-price, .form-check__urgent-price, .swiper-slide, .swiper-pagination, .btn-icon, .b-news--sample, .addAddressIcon {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9771,14 +9775,23 @@ body::after {
         z-index: -1; }
 
 .pressClose {
-  display: none;
+  opacity: 0;
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
   z-index: 900;
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.2);
+  will-change: opacity;
+  pointer-events: none;
+  -webkit-transition: .4s opacity;
+  -o-transition: .4s opacity;
+  -moz-transition: .4s opacity;
+  transition: .4s opacity; }
+  .pressClose--active {
+    opacity: 1;
+    pointer-events: auto; }
 
 .bg {
   background: red; }
@@ -9800,7 +9813,7 @@ div {
           flex-shrink: 0; }
 
 html, body, .full-height {
-  height: 100%;
+  min-height: 100vh;
   width: 100%; }
 
 body {
@@ -10015,6 +10028,7 @@ body {
      -moz-border-radius: 10px;
           border-radius: 10px;
   border-color: #F0F0F0;
+  font-size: 18px;
   height: 45px;
   font-family: CirceRounded; }
   .b-input:focus {
@@ -10622,8 +10636,44 @@ select.form-control {
          -o-transform: rotate(180deg);
             transform: rotate(180deg); }
 
+.custom-file-label.b-input::after {
+  content: 'Seç';
+  height: 43px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  padding-left: 50px;
+  padding-right: 50px; }
+
+.custom-file, .custom-file-input {
+  height: 45px; }
+
+.custom-file {
+  margin-bottom: 1rem; }
+
+.work__col {
+  position: relative; }
+  .work__col--first {
+    padding-left: 0;
+    padding-right: 30px; }
+    .work__col--first:after {
+      content: url("../../img/Path 191.svg");
+      position: absolute;
+      right: -73px; }
+  .work__col--second {
+    padding-top: 159px; }
+    .work__col--second:after {
+      content: url("../../img/Path 192.svg");
+      position: absolute;
+      right: -73px;
+      bottom: 26px; }
+
+.work__img {
+  background-color: white;
+  z-index: 10; }
+
 @media (max-width: 767.98px) {
-  .col-md-6 {
+  .col-md-6, .col-md-12 {
     margin-top: 15px; }
   .form-group.mt-2 {
     margin-top: 15px; }
@@ -10634,7 +10684,12 @@ select.form-control {
        -moz-border-radius: 0;
             border-radius: 0; }
   .back-button {
-    left: -26px; } }
+    left: -26px; }
+  .custom-file-label.b-input::after {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .b-input {
+    font-size: 17px; } }
 
 .datepicker-container {
   background-color: #fff;

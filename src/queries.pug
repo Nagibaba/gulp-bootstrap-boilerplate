@@ -7,35 +7,35 @@ block unique-content
 			h1.text-center.mt-3.mb-5 SORĞULAR
 			
 
-
-			table.table.table--borderless.table--nowrap.f-20(cellspacing="20px" cellpadding="0")
-				tbody
-					tr.borderBottom
-						th Tarix
-						th Başlıq
-						th(scope='col') Bitmə tarixi
-						th(scope='col') Bax
-						
-					tr
-						td.gray 17.12.2018
-						td Kuryer sifarişi zamanı yaranan axsaqlıq
-						td 20.18.2018
-						td 34$
-					tr
-						td.gray 17.12.2018
-						td Kuryer sifarişi zamanı yaranan axsaqlıq
-						td 20.18.2018
-						td 34$
-					tr
-						td.gray 17.12.2018
-						td Kuryer sifarişi zamanı yaranan axsaqlıq
-						td 20.18.2018
-						td 34$
-					tr
-						td.gray 17.12.2018
-						td Kuryer sifarişi zamanı yaranan axsaqlıq
-						td 20.18.2018
-						td 34$
+			.table-responsive
+				table.table.table--borderless.table--nowrap.f-20(cellspacing="20px" cellpadding="0")
+					tbody
+						tr.borderBottom
+							th Tarix
+							th Başlıq
+							th(scope='col') Bitmə tarixi
+							th(scope='col') Bax
+							
+						tr
+							td.gray 17.12.2018
+							td Kuryer sifarişi zamanı yaranan axsaqlıq
+							td 20.18.2018
+							td 34$
+						tr
+							td.gray 17.12.2018
+							td Kuryer sifarişi zamanı yaranan axsaqlıq
+							td 20.18.2018
+							td 34$
+						tr
+							td.gray 17.12.2018
+							td Kuryer sifarişi zamanı yaranan axsaqlıq
+							td 20.18.2018
+							td 34$
+						tr
+							td.gray 17.12.2018
+							td Kuryer sifarişi zamanı yaranan axsaqlıq
+							td 20.18.2018
+							td 34$
 					
 			.row.pt-3.mt-5.flex-row.fullCenter
 				button.btn.btn-warning.main-button.openPopup(type='submit') Sorğu əlavə et
@@ -45,13 +45,43 @@ block unique-content
 
 block popup
 	.b-popup
-			.b-popup__inner.flex-column.px-5.py-3
+			.b-popup__inner.flex-column.px-4.px-sm-5.py-3
 				h1.text-center.mb-4 Sorğu əlavə et
-				.row.flex-row.fullCenter.pt-3.m-0
-					.form-group.fullWidth.mt-2
-						label(for='exampleFormControlInput1') Qeyd
-						input.form-control.b-input(type='email', placeholder='')
-
+				.row.flex-row.fullCenter.p-0.pt-3.m-0
+					.col-md-12
+						.form-group.fullWidth.mt-2
+							label.text-left.pl-2(for='exampleFormControlInput1') Başlıq*
+							input.form-control.b-input(type='email', placeholder='')
+					
+					.col-md-6
+						.form-group.fullWidth.mt-2
+								label(for='exampleFormControlInput1') 
+								select.form-control.b-input
+									option Mövzu*
+									option
+									option
+									option
+					.col-md-6
+						.form-group.fullWidth.mt-2
+								label(for='exampleFormControlInput1') 
+								select.form-control.b-input
+									option Prioritet*
+									option
+									option
+									option
+					.col-md-6
+						.custom-file.mt-2
+							input#customFileLang.custom-file-input(type='file', lang='az')
+							label.custom-file-label.b-input(for='customFileLang') Şəkil (jpg,png,pdf)
+					.col-md-6
+						.form-group.fullWidth.mt-2
+							label.text-left.pl-2(for='exampleFormControlInput1') 
+							input.form-control.b-input(type='text', placeholder='Link')
+					.col-md-12
+						.form-group.fullWidth.mt-2
+							label.text-left.pl-2(for='exampleFormControlTextarea1') Sorğunuz*
+							textarea#exampleFormControlTextarea1.form-control.b-input(rows='3')
+					
 				.row.flex-row.payment-radiogroup.fullWidth.m-0.p-0
 					.col-6.payment-radiogroup--first.justify-content-end
 						

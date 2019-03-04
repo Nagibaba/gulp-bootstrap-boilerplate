@@ -9,7 +9,7 @@ const documentListener = ($, cb=null) => {
 			const body = $('body')
 
 			nav.removeClass('b-nav--active')
-			pressClose.hide()
+			pressClose.removeClass('pressClose--active')
 			setTimeout(function(){body.removeClass('y-hidden')}, 300)
 
 		}

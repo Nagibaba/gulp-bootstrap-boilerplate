@@ -119,7 +119,8 @@
 		
 
 .pressClose
-	display: none
+	// display: none
+	opacity: 0
 	position: fixed
 	left: 0
 	top: 0
@@ -127,3 +128,10 @@
 	right: 0
 	z-index: 900
 	background-color: rgba(0, 0, 0, .2)
+	will-change: opacity
+	pointer-events: none
+	transition: .4s opacity
+	&--active
+		// display: flex
+		opacity: 1
+		pointer-events: auto

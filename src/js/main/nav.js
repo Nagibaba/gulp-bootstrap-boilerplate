@@ -5,7 +5,7 @@ const nav = ($) => {
 		const body = $('body')
 
 		nav.addClass('b-nav--active')
-		pressClose.show()
+		pressClose.addClass('pressClose--active')
 		body.addClass('y-hidden')
 	})
 
