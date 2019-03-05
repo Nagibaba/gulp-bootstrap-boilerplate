@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory-->
     <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1551791068686">
+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1551791070635">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
   </head>
@@ -142,69 +142,58 @@
             <div class="container mt-5 justify-content-center"><a class="lang" href=""><span>RU</span></a><a class="lang" href=""> <span>AZ</span></a><a class="lang lang--active" href=""><span>EN</span></a></div>
           </div>
         </div>
-        <div class="row justify-content-center flex-column mt-5">
-          <h1 class="text-center mt-3 mb-5">ÜNVANLARIM</h1>
-          <div class="inputs-wrapper inputs-wrapper--white inputs-wrapper--material d-block f-18 py-3 px-5 mb-5">
-            <div class="row flex-row">
-              <div class="table-responsive">
-                <table class="table table--borderless table--address table--nowrap" cellspacing="0" cellpadding="0">
-                  <tbody>
-                    <tr>
-                      <th scope="col">Ünvan adı</th>
-                      <th scope="col">Şəhər</th>
-                      <th scope="col">Ünvan</th>
-                      <td class="px-0" rowspan="2">
-                        <button class="btn btn-icon btn-icon--address"><img class="mb-1" src="./img/pencil (3).svg" alt="" height="24px" width="auto">
-                          <p class="p-0 m-0">edit</p>
-                        </button>
-                      </td>
-                      <td class="px-0" rowspan="2">
-                        <button class="btn btn-icon btn-icon--address"><img class="mb-1" src="./img/rubbish-bin (2).svg" alt="" height="27px" width="auto">
-                          <p class="p-0 m-0">delete</p>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Evim</td>
-                      <td>Bakı</td>
-                      <td>İnkilap mh. Küçüksu cd. Yelkenciler sk., Vardar ap. NO :14/3</td>
-                    </tr>
-                  </tbody>
-                </table>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div class="inputs-wrapper inputs-wrapper--white d-block f-15 pt-3 pb-5 px-3 px-sm-5">
+              <p class="text-center m-0">Cari balans: <span class="f-25 bold main-color">-3.05 AZN</span></p>
+              <div class="row pt-3 flex-row fullCenter">
+                <button class="btn btn-warning main-button" type="submit">Balansı artır</button>
               </div>
             </div>
           </div>
-          <div class="inputs-wrapper inputs-wrapper--white inputs-wrapper--material d-block f-18 py-3 px-5 mb-5">
-            <div class="row flex-row">
-              <div class="table-responsive">
-                <table class="table table--borderless table--address table--nowrap" cellspacing="0" cellpadding="0">
-                  <tbody>
-                    <tr>
-                      <th scope="col">Ünvan adı</th>
-                      <th scope="col">Şəhər</th>
-                      <th scope="col">Ünvan</th>
-                      <td class="px-0" rowspan="2">
-                        <button class="btn btn-icon btn-icon--address"><img class="mb-1" src="./img/pencil (3).svg" alt="" height="24px" width="auto">
-                          <p class="p-0 m-0">edit</p>
-                        </button>
-                      </td>
-                      <td class="px-0" rowspan="2">
-                        <button class="btn btn-icon btn-icon--address"><img class="mb-1" src="./img/rubbish-bin (2).svg" alt="" height="27px" width="auto">
-                          <p class="p-0 m-0">delete</p>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Evim</td>
-                      <td>Bakı</td>
-                      <td>İnkilap mh. Küçüksu cd. Yelkenciler sk., Vardar ap. NO :14/3</td>
-                    </tr>
-                  </tbody>
-                </table>
+          <div class="col-md-6">
+            <div class="inputs-wrapper inputs-wrapper--white d-block f-15 pt-3 pb-5 px-3 px-sm-5">
+              <div class="row flex-row fullCenter">
+                <button class="btn btn-warning main-button" type="submit">Sifariş et</button>
+              </div>
+              <div class="row pt-3 flex-row fullCenter">
+                <button class="btn btn-warning main-button" type="submit">Bəyənnamə əlavə et</button>
               </div>
             </div>
           </div>
-          <div class="row fullCenter"><a class="addAddress openPopup" href=""><img class="addAddress__icon" src="./img/plus (5).svg" alt="add address icon"></a></div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="inputs-wrapper inputs-wrapper--white fullCenter flex-column f-15 pt-3 pb-5 px-3 px-sm-5">
+            <h1 class="text-center mt-3">SİFARİŞLƏRİM</h1>
+            <p class="text-center mb-5">Müştəri Kodu: <span class="f-25 bold main-color">112 820</span></p>
+            <div class="about-logo__wrapper text-center mb-5"></div>
+            <div class="orders__content-wrapper">
+              <div class="row justify-content-between">
+                <div class="col-md-3 fullCenter">
+                  <button class="btn btn-primary orders__tab-pill orders__tab-pill--active" type="button">
+                     Notifications <span class="badge badge-light">4</span></button>
+                </div>
+                <div class="col-md-3 fullCenter">
+                  <button class="btn orders__tab-pill" type="button">
+                     Notifications <span class="badge badge-light">4</span></button>
+                </div>
+                <div class="col-md-3 fullCenter">
+                  <button class="btn orders__tab-pill" type="button">
+                     Notifications <span class="badge badge-light">4</span></button>
+                </div>
+                <div class="col-md-3 fullCenter">
+                  <button class="btn orders__tab-pill" type="button">
+                     Notifications <span class="badge badge-light">24</span></button>
+                </div>
+              </div>
+              <div class="row justify-content-between mt-3">
+                <div class="col-md-3 fullCenter"><a class="orders__filter-link orders__filter-link--active fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/filter-results-button.svg" alt="filter icon">Əvvəlcə Bahalı</a></div>
+                <div class="col-md-3 fullCenter"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/filter-results-button-reverse.svg" alt="filter icon">Əvvəlcə Ucuz</a></div>
+                <div class="col-md-3 fullCenter"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/sort-alphabet-ascending.svg" alt="filter icon">A-dan Z-yə</a></div>
+                <div class="col-md-3 fullCenter"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/descending-alphabet-sort.svg" alt="filter icon">Z-dən A-ya</a></div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row b-footer pt-5 pb-2">
           <div class="col-md-6">
@@ -214,50 +203,8 @@
         </div>
       </div>
     </div>
-    <div class="b-popup">
-      <div class="b-popup__inner px-5 py-4">
-        <h1 class="text-center mb-4">Ünvan əlavə et</h1>
-        <div class="row">
-          <div class="col-md-5 flex-column">
-            <div class="form-group f-2 mt-5">
-              <label class="text-left ml-2" for="exampleFormControlInput1">Şəhər</label>
-              <select class="form-control b-input b-input--small">
-                <option>Baku</option>
-                <option>Naxc</option>
-                <option></option>
-                <option></option>
-              </select>
-            </div>
-            <div class="form-group f-2 mt-5">
-              <label class="text-left ml-2" for="exampleFormControlInput1">Rayon</label>
-              <select class="form-control b-input b-input--small">
-                <option>Narimanov st / Rajabli 34.5A</option>
-                <option>Naxc</option>
-                <option></option>
-                <option></option>
-              </select>
-            </div>
-            <div class="form-group f-2 mt-5">
-              <label class="text-left ml-2" for="exampleFormControlInput1">Ünvan</label>
-              <select class="form-control b-input b-input--small">
-                <option>Narimanov st / Rajabli 34.5A</option>
-                <option>Naxc</option>
-                <option></option>
-                <option></option>
-              </select>
-            </div>
-            <div class="row pt-3 flex-row fullCenter">
-              <button class="btn btn-warning main-button" type="submit">Təsdiqlə</button>
-            </div>
-          </div>
-          <div class="col-md-7 p-0 bg-danger">
-            <div id="map" style="width: 100%; height: 100%"></div>
-          </div>
-        </div>
-      </div>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="js/all.js?v=1551791068686"></script>
+    <script src="js/all.js?v=1551791070635"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
   </body>
 </html>

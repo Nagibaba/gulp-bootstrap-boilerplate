@@ -710,6 +710,7 @@ select.form-control
 			&:after
 				content: url('../../img/Path 191.svg')
 				position: absolute
+				top: 31px
 				right: -73px
 		&--second
 			padding-top: 159px
@@ -718,12 +719,51 @@ select.form-control
 				position: absolute
 				right: -73px
 				bottom: 26px
+		&--last
+			padding-top: 0px
+			&:before
+				content: url('../../img/Path 193.svg')
+				position: absolute
+				left: -73px
+				top: 117px
+
 	&__img
 		background-color: white
 		z-index: 10
+		&--top
+			margin-bottom: 35px
+		&--bottom
+			margin-top: 35px
 
+	&__text
+		&-wrapper
 
+.orders
+	&__content-wrapper
+		@extend .flex-column 
+		width: 782px
+	&__tab-pill
+		box-shadow: 0 0 15px rgba(0, 0, 0, .13)
+		border-radius: 10px
+		&:not(&--active)
+			@extend .btn-light
 
+		& .badge
+			border-radius: 50%
+			margin-left: .3rem
+			background-color: $main-color
+
+		&--active
+			@extend .btn-primary
+			background-color: $main-color
+			& .badge
+				background-color: white
+	&__filter-link
+		white-space: nowrap
+		&--active
+			font-weight: bold
+			color: $main-color
+			pointer-events: none
 
 
 
@@ -750,3 +790,24 @@ select.form-control
 
 	.b-input
 		font-size: 17px
+
+@include media-breakpoint-between(xs, lg)
+	.work
+		&__col
+			padding-top: 10px
+			padding-bottom: 20px
+			&--first
+				padding-right: 0
+			&:after, &:before
+				content: ''
+		&__img
+			order: 0
+			margin-bottom: 35px
+			margin-top: 0
+
+		&__text
+			&-wrapper
+				order: 1
+
+
+			

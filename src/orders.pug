@@ -1,0 +1,63 @@
+extends pug_template/head
+
+block unique-content
+	.row.justify-content-center.mt-5
+		.col-md-6
+			.inputs-wrapper.inputs-wrapper--white.d-block.f-15.pt-3.pb-5.px-3.px-sm-5
+				p.text-center.m-0 Cari balans: 
+					span.f-25.bold.main-color -3.05 AZN
+				.row.pt-3.flex-row.fullCenter
+					button.btn.btn-warning.main-button(type='submit') Balansı artır
+		.col-md-6
+			.inputs-wrapper.inputs-wrapper--white.d-block.f-15.pt-3.pb-5.px-3.px-sm-5
+				.row.flex-row.fullCenter
+						button.btn.btn-warning.main-button(type='submit') Sifariş et
+				.row.pt-3.flex-row.fullCenter
+						button.btn.btn-warning.main-button(type='submit') Bəyənnamə əlavə et
+	.row.justify-content-center.mt-5
+		
+		.inputs-wrapper.inputs-wrapper--white.fullCenter.flex-column.f-15.pt-3.pb-5.px-3.px-sm-5
+			h1.text-center.mt-3 SİFARİŞLƏRİM
+			p.text-center.mb-5 Müştəri Kodu: 
+					span.f-25.bold.main-color 112 820
+
+			.about-logo__wrapper.text-center.mb-5
+
+			.orders__content-wrapper
+				.row.justify-content-between
+					.col-md-3.fullCenter
+						button.btn.btn-primary.orders__tab-pill.orders__tab-pill--active(type='button') 
+							| Notifications 
+							span.badge.badge-light 4
+					.col-md-3.fullCenter
+						button.btn.orders__tab-pill(type='button') 
+							| Notifications 
+							span.badge.badge-light 4
+					.col-md-3.fullCenter
+						button.btn.orders__tab-pill(type='button') 
+							| Notifications 
+							span.badge.badge-light 4
+					.col-md-3.fullCenter
+						button.btn.orders__tab-pill(type='button') 
+							| Notifications 
+							span.badge.badge-light 24
+
+				.row.justify-content-between.mt-3
+					.col-md-3.fullCenter
+						a.orders__filter-link.orders__filter-link--active.fullCenter(href="") 
+							img.orders__filter-icon.mr-2(src="./img/filter-results-button.svg", alt="filter icon")
+							|Əvvəlcə Bahalı
+					.col-md-3.fullCenter
+						a.orders__filter-link.fullCenter(href="") 
+							img.orders__filter-icon.mr-2(src="./img/filter-results-button-reverse.svg", alt="filter icon")
+							|Əvvəlcə Ucuz
+					.col-md-3.fullCenter
+						a.orders__filter-link.fullCenter(href="") 
+							img.orders__filter-icon.mr-2(src="./img/sort-alphabet-ascending.svg", alt="filter icon")
+							|A-dan Z-yə
+					.col-md-3.fullCenter
+						a.orders__filter-link.fullCenter(href="") 
+							img.orders__filter-icon.mr-2(src="./img/descending-alphabet-sort.svg", alt="filter icon")
+							|Z-dən A-ya
+
+
