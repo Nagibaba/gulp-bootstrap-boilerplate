@@ -48,10 +48,17 @@ $grid-gutter-width: 30px !default
 @import "abstracts/bt5end"
 
 // components
-// @import "./components/ripple"
-
+// @import "./components/tracking"
+$progress-color-dark:       $main-color
+$progress-color:            $main-color
+$progress-color-light:      $grey
+$progress-color-grey-light: white
+$progress-color-grey:       $main-color
+$progress-color-grey-dark:  #333333
+@import "../../node_modules/progress-tracker/app/styles/progress-tracker.scss"
 @import "common.sass"
 @import "../../node_modules/@chenfengyuan/datepicker/src/index.scss"
+
 
 
 // @import "test-grid.sass"

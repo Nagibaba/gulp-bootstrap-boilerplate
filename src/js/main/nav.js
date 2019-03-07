@@ -1,3 +1,5 @@
+import closeNav from './closeNav'
+
 const nav = ($) => {
 	$('.hamburger').click(()=>{
 		const nav = $('.b-nav')
@@ -18,6 +20,10 @@ const nav = ($) => {
 		$('.tab-content').hide()
 		$('.tab-content' + href).css('display','inherit')
 
+	})
+
+	$('.pressClose').bind('click, touchstart', e=>{
+		closeNav()
 	})
 }
 

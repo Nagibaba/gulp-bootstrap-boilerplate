@@ -11,6 +11,7 @@ import documentListener from './documentListener'
 import slider from './slider'
 import shoppingCard from './shoppingCard'
 import openPopup from './openPopup'
+import 'bootstrap/js/dist/collapse'
 require("@chenfengyuan/datepicker")
 
 

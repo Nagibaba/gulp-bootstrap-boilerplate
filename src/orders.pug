@@ -25,19 +25,19 @@ block unique-content
 
 			.orders__content-wrapper
 				.row.justify-content-between
-					.col-md-3.fullCenter
+					.col-md-3.fullCenter.mb-3.mb-sm-0
 						button.btn.btn-primary.orders__tab-pill.orders__tab-pill--active(type='button') 
 							| Notifications 
 							span.badge.badge-light 4
-					.col-md-3.fullCenter
+					.col-md-3.fullCenter.mb-3.mb-sm-0
 						button.btn.orders__tab-pill(type='button') 
 							| Notifications 
 							span.badge.badge-light 4
-					.col-md-3.fullCenter
+					.col-md-3.fullCenter.mb-3.mb-sm-0
 						button.btn.orders__tab-pill(type='button') 
 							| Notifications 
 							span.badge.badge-light 4
-					.col-md-3.fullCenter
+					.col-md-3.fullCenter.mb-3.mb-sm-0
 						button.btn.orders__tab-pill(type='button') 
 							| Notifications 
 							span.badge.badge-light 24
@@ -59,5 +59,156 @@ block unique-content
 						a.orders__filter-link.fullCenter(href="") 
 							img.orders__filter-icon.mr-2(src="./img/descending-alphabet-sort.svg", alt="filter icon")
 							|Z-dən A-ya
+				
+				.row.flex-column.justify-content-between.mt-4
+					.col-md-12.flex-column
+						-
+							var values = [
+								{accId: 'accordion1', popupId: 'popup1'},
+								{accId: 'accordion2', popupId: 'popup2'},
+
+								];
+						each val in values
+							.order-accordion.flex-column.mb-4
+								.order-accordion__header
+									.row.justify-content-between
+										.col-sm-6.fullCenter
+											h2.m-0 
+												span.order-accordion__h-key Mağaza:  
+												span.bold.black Trendyol
+
+										.col-sm-6.fullCenter
+											h2.m-0 
+												span.order-accordion__h-key Ölkə:  
+												span.bold.black Türkiyə
+								
+								.order-accordion__content-wrapper
+									.table-responsive
+										table.table.table--borderless.table--nowrap.table--textCenter.f-18(cellspacing="20px" cellpadding="0")
+											tbody
+												tr.gray
+													th Tarix
+													th Qiymət
+													th Çəki
+													th Çatdırılma haqqı
+													th Ölçülər
+													
+													
+											
+												tr
+													td 12.12.2018
+													td 100.72 TL
+													td 0.778 kg
+													td 6.5 $
+													td 0.00x0.00x0.00
+
+									.row.m-0.justify-content-between.f-18
+										.col-sm-6.fullCenter
+											a.order-accordion__link.openOrderAccordion.fullCenter(data-toggle='collapse', href='#'+val.accId) 
+												img.orders__filter-icon.mr-2(src="./img/link (2).svg", alt="filter icon")
+												|Bağlama içərisindəki məhsullar
+
+										.col-sm-6.fullCenter
+											a.order-accordion__link.fullCenter.openPopup(href="#"+val.popupId) 
+												img.orders__filter-icon.mr-2(src="./img/airplane (1).svg", alt="filter icon")
+												|Bağlama Hərəkətləri
+			
+
+								.table-responsive.order-accordion__toggle.collapse(id=val.accId)
+									table.table.table--borderless.table--nowrap.table--textCenter.f-18(cellspacing="20px" cellpadding="0")
+										tbody
+											tr.gray.order-accordion__grayBack
+												th Şəkil
+												th Qiymət
+												th Müştəri qeydi
+												th Link
+												
+												
+										
+											tr
+												td
+													img.order-accordion__thumb(src="https://via.placeholder.com/44", alt="")
+												td 100.72 TL
+												td Rəng - mavi, ölçü blah blah blah
+												td
+													a.order-accordion__hlink(href="") Məhsul linki
+											tr
+												td
+													img.order-accordion__thumb(src="https://via.placeholder.com/44", alt="")
+												td 100.72 TL
+												td Rəng - mavi, ölçü blah blah blah
+												td
+													a.order-accordion__hlink(href="") Məhsul linki
+											
+
+block popup
+	.b-popup#popup1
+			.b-popup__inner.p-2.px-sm-5.py-sm-4
+				h1.text-center.main-color.mb-4 Tracking Map
+				.row.fullCenter.m-0
+					.progress-tracker__wrapper
+						ul.progress-tracker.progress-tracker--text.progress-tracker--center
+							li.progress-step.is-complete
+								span.progress-marker 1
+								span.progress-text
+									h4.progress-title Step 1
+									|  18.12.2018
+							li.progress-step.is-complete
+								span.progress-marker 2
+								span.progress-text
+									h4.progress-title Step 2
+									|  20.12.2018
+							li.progress-step.is-active
+								span.progress-marker 3
+								span.progress-text
+									h4.progress-title Step 3
+									|  18.12.2018
+							li.progress-step
+								span.progress-marker 4
+								span.progress-text
+									h4.progress-title Step 4
+									|  18.12.2018
+							li.progress-step
+								span.progress-marker 5
+								span.progress-text
+									h4.progress-title Step 5
+									|  18.12.2018
 
 
+	.b-popup#popup2
+		.b-popup__inner.p-2.px-sm-5.py-sm-4
+			h1.text-center.mb-4 Təhvil Verilənlər
+			.row.order-delivered.d-flex.flex-column.m-0
+				.row.order-delivered__header.fullCenter.m-0.p-1
+					.col-sm-4.fullCenter
+						h2.m-0 
+							span.order-accordion__h-key Mağaza:  
+							span.bold.black Trendyol
+					.col-sm-4.fullCenter
+						h2.m-0 
+							span.order-accordion__h-key Ölkə:  
+							span.bold.black Türkiyə
+					.col-sm-4.fullCenter
+						a.order-delivered__link.fullCenter.m-0(href="") 
+							img.orders__filter-icon.mr-2(src="./img/link (2).svg", alt="filter icon")
+							|Məhsulun Linki
+
+				.row.order-delivered__content.fullCenter.f-18.m-0.mt-4.mb-4.p-0
+					.col-sm-6.flex-column.fullCenter.mt-3
+						p.gray.m-0 Təhvil Verən
+						p.black.m-0 Royana Aliyeva
+					.col-sm-6.flex-column.fullCenter.mt-3
+						p.gray.m-0 Təhvil Verən
+						p.black.m-0 Royana Aliyeva
+					.col-sm-6.flex-column.fullCenter.mt-3
+						p.gray.m-0 Təhvil Verən
+						p.black.m-0 Royana Aliyeva
+					.col-sm-6.flex-column.fullCenter.mt-3
+						p.gray.m-0 Təhvil Verən
+						p.black.m-0 Royana Aliyeva
+					.col-sm-6.flex-column.fullCenter.mt-3
+						p.gray.m-0 Təhvil Verən
+						p.black.m-0 Royana Aliyeva
+					.col-sm-6.flex-column.fullCenter.mt-3
+						p.gray.m-0 Təhvil Verən
+						p.black.m-0 Royana Aliyeva

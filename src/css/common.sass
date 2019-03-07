@@ -20,7 +20,7 @@ body
 	// overflow: hidden
 	color: $black
 	overflow-x: hidden
-	overflow-y: auto
+	// overflow-y: auto
 	// transition: .4s all
 	&.y-hidden
 		&::-webkit-scrollbar-thumb 
@@ -141,6 +141,8 @@ body
 		border-bottom: 1px solid #E6E6E6
 	& .thinBorder
 		border-bottom: 1px solid rgba(112, 112, 112, .1)
+	&--textCenter th, &--textCenter td
+		@extend .text-center
 .link-thumbnail
 	@extend .mr-2
 	border: 2px solid transparent
@@ -526,6 +528,7 @@ select.form-control
 		color: #BEBEBE
 	&__company-register
 		text-decoration: underline
+		text-align: center
 
 	
 
@@ -740,16 +743,22 @@ select.form-control
 
 .orders
 	&__content-wrapper
-		@extend .flex-column 
+		@extend .d-flex, .flex-column 
 		width: 782px
+		max-width: 100%
 	&__tab-pill
+		@extend .flex-row, .fullCenter
 		box-shadow: 0 0 15px rgba(0, 0, 0, .13)
 		border-radius: 10px
+		line-height: 22px
 		&:not(&--active)
 			@extend .btn-light
 
 		& .badge
-			border-radius: 50%
+			@extend .fullCenter
+			width: 22px
+			height: 22px
+			border-radius: 22px
 			margin-left: .3rem
 			background-color: $main-color
 
@@ -760,16 +769,136 @@ select.form-control
 				background-color: white
 	&__filter-link
 		white-space: nowrap
+		&:hover
+			color: $main-color
 		&--active
 			font-weight: bold
 			color: $main-color
 			pointer-events: none
 
 
+.order-accordion
+	@extend .d-flex, .flex-column 
+	background-color: #FDFDFD
+	border: 1px solid #EDEDED
+	border-radius: 10px
+
+	&__header
+		@extend .d-flex, .flex-column, .py-2
+		background-color: #EDEDED
+		border-radius: 10px
+	&__h-key
+		font-weight: normal
+		color: #BEBEBE
+	&__content-wrapper
+		@extend .d-flex, .flex-column, .py-2, .px-4
+	&__link
+		@extend .mb-2
+		// white-space: nowrap
+		text-align: center
+		color: $main-color
+		text-decoration: underline
+		&:hover
+			text-decoration: underline
+			color: #B2B2B2
+		&--active
+			text-decoration: underline
+			font-weight: bold
+			color: #B2B2B2
+			pointer-events: none
+
+	&__thumb
+		border: 2px solid transparent
+		width: 44px
+		height: 44px
+		border-radius: 44px
+		position: relative
+		cursor: pointer
+		transition: .4s border
+		border-radius: 66px
+		border: 2px solid $main-color
+	
+	&__grayBack
+		
+		background-color: #EDEDED
+			
+	&__hlink
+		text-decoration: underline
+		color: $black
+		&:hover
+			color: $main-color
+	// &__toggle
+	// 	// transform: scaleY(0)
+	// 	max-height: 0
+	// 	transition: .4s all
+	// 	&--active
+	// 		// transform: scaleY(1)
+	// 		// max-height: 1000px
+
+.progress-tracker
+	width: 700px
+	&__wrapper
+		max-width: 100%
+		overflow-x: auto
+	&--center .progress-step::after
+		z-index: 1!important
+
+.progress-step
+	
+	&::after
+		background-color: #F4F4F4
+	&.is-complete .progress-marker, &.is-active .progress-marker
+		// background-color: $main-color
+		color: white
+	&.is-active .progress-marker
+		font-size: 0
+		position: relative
+		&::before
+			@extend .fullCenter
+			content: url('../../img/maps-and-flags (2).svg')
+			position: absolute
+			left: 0
+			top: 0
+			right: 0
+			bottom: 0
+	& .progress-marker
+		// background-color: white
+		width: 58px
+		height: 58px
+		color: $main-color
+		font-size: 25px
+		box-shadow: 0 0 6px rgba(0, 0, 0, .35)
+	&:not(:last-child)::after
+		top: 29px
+
+	& .progress-text, & .progress-title
+		font-size: 15px
+
+	& .progress-text
+		color: #D8D8D8
+	
+	& .progress-title
+		color: $black
 
 
+.order-delivered
+	&__header
+		background-color: #EDEDED
+		border-radius: 10px
 
-
+	&__link
+		// white-space: nowrap
+		text-align: center
+		color: $main-color
+		text-decoration: underline
+		&:hover
+			text-decoration: underline
+			color: #B2B2B2
+		&--active
+			text-decoration: underline
+			font-weight: bold
+			color: #B2B2B2
+			pointer-events: none
 
 @include media-breakpoint-between(xs, sm)
 	.col-md-6, .col-md-12
@@ -791,6 +920,13 @@ select.form-control
 	.b-input
 		font-size: 17px
 
+	.news1-img
+			
+		&__wrapper
+			
+			padding: 0
+		&__date
+
 @include media-breakpoint-between(xs, lg)
 	.work
 		&__col
@@ -808,6 +944,3 @@ select.form-control
 		&__text
 			&-wrapper
 				order: 1
-
-
-			

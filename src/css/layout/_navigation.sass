@@ -68,11 +68,19 @@
 	overflow-y: auto
 	overflow-x: hidden
 	background-color: white
-	transform: translate(100%, 0)
+	-webkit-transform: translateZ(0)
+	-webkit-transform:translate3d(0,0,0)
+	transform: translate3d(100%, 0, 0)
+
+	-webkit-perspective: 1000
+	-webkit-backface-visibility: hidden
+	-webkit-transform-style: preserve-3d
+
 	transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
 
 	&--active
-		transform: scale(1.0, 1.0)
+		transform: translate3d(0, 0, 0)
+		// z-index: 1
 		box-shadow: -6px 0 15px rgba(47, 47, 47, .17)
 		// &:after
 		// 	content: ''
