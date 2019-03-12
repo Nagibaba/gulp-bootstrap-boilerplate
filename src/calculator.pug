@@ -12,11 +12,11 @@ html
 		// Place favicon.ico in the root directory
 		// <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css
 		link(rel='stylesheet' type="text/css" href=`./css/main/main.min.css?v=`+date)
-		link(rel='stylesheet' type="text/css" href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
-		link(rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css')
+		//- link(rel='stylesheet' type="text/css" href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+		//- link(rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css')
 		style
 
-	body.main-bg
+	body
 		.container-fluid.blurry-background.full-height.py-2.px-5
 			//- .container.flex-column.full-height.justify-content-between.d-flex
 
@@ -28,11 +28,12 @@ html
 								img(src="./img/back (1).svg", alt="back button")
 							h1.fullCenter KALKULYATOR
 					.row.mt-4
-						p.text-center.white.pr-0.pr-md-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed metus ac nulla placerat blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus pretium elit quis mi ultricies pharetra. 
+						p.text-center.pr-0.pr-md-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed metus ac nulla placerat blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus pretium elit quis mi ultricies pharetra. 
 
-			
+					.flex-grow-1
+
 					.row.flex-row.justify-content-center.mt-5
-						.inputs-wrapper.inputs-wrapper--white.inputs-wrapper--material.inputs-wrapper--metric.d-flex.f-18.px-3.pt-5.pb-md-3.pt-md-5.px-md-5.mb-5
+						.inputs-wrapper.inputs-wrapper--white.inputs-wrapper--material.inputs-wrapper__metric.inputs-wrapper__metric--first.d-flex.f-18.px-4.pt-5.pb-md-3.pt-md-5.px-md-5
 							.form-group.f-2.limit-min
 								label.text-left.ml-2(for='exampleFormControlInput1') Çəki vahidi
 								select.form-control.b-input
@@ -45,22 +46,22 @@ html
 									
 
 					.row.flex-row.justify-content-center.mt-5
-						.inputs-wrapper.inputs-wrapper--white.inputs-wrapper--material.inputs-wrapper--metric.d-flex.flex-column.f-18.px-3.pt-5.pb-md-3.pt-md-5.px-md-5.mb-5
-							.row
-								.col-sm-3.col-6.justify-content-center
+						.inputs-wrapper.inputs-wrapper--white.inputs-wrapper--material.inputs-wrapper__metric.inputs-wrapper__metric--first.d-flex.flex-column.f-18.px-4.pt-5.pb-md-3.pt-md-5.px-md-5.mb-5
+							.row.m-0
+								.col-sm-3.col-6.justify-content-center.p-0
 									.form-group.f-2.limit-max.mt-2
 										label(for='exampleFormControlInput1') Çəki
 										input.form-control.b-input(type='email', placeholder='')
-								.col-sm-3.col-6.justify-content-center
+								.col-sm-3.col-6.justify-content-center.p-0
 									.form-group.f-2.limit-max.mt-2
 										label(for='exampleFormControlInput1') Uzunluq
 										input.form-control.b-input(type='email', placeholder='')
-								.col-sm-3.col-6.justify-content-center
+								.col-sm-3.col-6.justify-content-center.p-0
 									.form-group.f-2.limit-max.mt-2
 										label(for='exampleFormControlInput1') Eni
 										input.form-control.b-input(type='email', placeholder='')
 								
-								.col-sm-3.col-6.justify-content-center
+								.col-sm-3.col-6.justify-content-center.p-0
 									.form-group.f-2.limit-max.mt-2
 										label(for='exampleFormControlInput1') Hündürlük
 										input.form-control.b-input(type='email', placeholder='')
@@ -77,11 +78,11 @@ html
 							
 						h1.text-center VALYUTA HESABLANMASI
 					.row.mt-4
-						p.text-center.white.pl-0.pl-md-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed metus ac nulla placerat blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus pretium elit quis mi ultricies pharetra. 
+						p.text-center.pl-0.pl-md-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed metus ac nulla placerat blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus pretium elit quis mi ultricies pharetra. 
 
 			
 					.row.flex-row.justify-content-center.mt-5
-						.inputs-wrapper.inputs-wrapper--white.inputs-wrapper--material.inputs-wrapper--metric.d-flex.f-18.px-3.pt-5.pb-md-3.pt-md-5.px-md-5.mb-5
+						.inputs-wrapper.inputs-wrapper--white.inputs-wrapper--material.inputs-wrapper__metric.inputs-wrapper__metric--second.d-flex.f-18.px-4.pt-5.pb-3.pt-md-5.px-md-5.mb-5
 							.form-group.f-2.limit-min
 								label.text-left.ml-2(for='exampleFormControlInput1') TL ilə məbləğ
 								input.form-control.b-input(type='email', placeholder='')
@@ -96,9 +97,9 @@ html
 					.row.flex-row.justify-content-center.back-button__wrapper
 						h1.text-center ÖLKƏLƏR ÜZRƏ TARİFLƏR
 					.row.mt-4
-						p.text-center.white.pl-0.pl-md-5 Sifariş olunan bağlamanın çatdırılma haqqı çəkiyə görə hesablanır. Ölçüsü 1 metrdən böyük olan bağlamaların çatdırılma haqqı həcmi çəkiyə görə hesablanır. Həcmi çəkinin hesablanması üçün en * hündürlük * uzunluq / 6000 standartı tətbiq edilir. 
+						p.text-center.pl-0.pl-md-5 Sifariş olunan bağlamanın çatdırılma haqqı çəkiyə görə hesablanır. Ölçüsü 1 metrdən böyük olan bağlamaların çatdırılma haqqı həcmi çəkiyə görə hesablanır. Həcmi çəkinin hesablanması üçün en * hündürlük * uzunluq / 6000 standartı tətbiq edilir. 
 					.row.flex-row.justify-content-center.mt-5
-						.inputs-wrapper.inputs-wrapper--white.inputs-wrapper--material.inputs-wrapper--metric.d-flex.f-18.px-3.pt-3.pb-md-3.pt-md-3.px-md-5.mb-5
+						.inputs-wrapper.inputs-wrapper--white.inputs-wrapper--material.inputs-wrapper__metric.inputs-wrapper__metric--second.d-flex.f-18.px-4.pt-3.pb-md-3.pt-md-3.px-md-5.mb-5
 							.table-responsive
 								table.table.table--borderless.table--nowrap(cellspacing="20px" cellpadding="0")
 									tbody

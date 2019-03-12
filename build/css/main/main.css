@@ -10345,8 +10345,12 @@ body {
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
        -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.16); }
-  .inputs-wrapper--metric {
-    width: auto; }
+  .inputs-wrapper__metric {
+    width: 100%; }
+    .inputs-wrapper__metric--first {
+      max-width: 428px; }
+    .inputs-wrapper__metric--second {
+      max-width: 428px; }
 
 .table td,
 .table th {
