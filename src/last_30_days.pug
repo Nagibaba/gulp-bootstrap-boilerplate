@@ -13,8 +13,25 @@ block unique-content
 
 			p.text-center.bold Son 30 gündə xərcləmələr: 
 				span.f-25.bold.main-color 320$
-
 			
+			.row.mx-0.my-5
+				.col-12
+					p.text-center.bold.fullWidth 
+						i.fa.fa-filter.main-color.mr-3
+						|Tarixə görə filtr et
+				.col-sm-6
+					.form-group.mt-4.mt-sm-2.fullWidth.flex-column
+						label(for='exampleFormControlInput1') Bu tarixdən*
+						input.form-control.b-input.jqueryMask(type='text', data-toggle="datepicker", data-mask="00/00/0000", placeholder='dd/mm/yyy')
+
+				.col-sm-6
+					.form-group.mt-4.mt-sm-2.fullWidth.flex-column
+						label(for='exampleFormControlInput1') Bu tarixə*
+						input.form-control.b-input.jqueryMask(type='text', data-toggle="datepicker", data-mask="00/00/0000", placeholder='dd/mm/yyy')
+				.row.pt-3.flex-row.fullWidth.fullCenter
+					button.btn.btn-warning.main-button(type='submit') Filtr et 
+							
+
 			.table-responsive
 				table.table.table--borderless.table--nowrap.f-20(cellspacing="20px" cellpadding="0")
 					tbody
