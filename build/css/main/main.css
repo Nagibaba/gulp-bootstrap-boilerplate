@@ -6694,7 +6694,7 @@ button.bg-dark:focus {
       -ms-flex-direction: row !important;
           flex-direction: row !important; }
 
-.flex-column, .btn-icon, .account-info, .b-news--sample, .orders__content-wrapper, .order-accordion, .order-accordion__header, .order-accordion__content-wrapper {
+.flex-column, .form-group, .btn-icon, .account-info, .b-news--sample, .orders__content-wrapper, .order-accordion, .order-accordion__header, .order-accordion__content-wrapper {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
   -webkit-flex-direction: column !important;
@@ -9678,13 +9678,13 @@ body::after {
     margin-bottom: 9px;
     background-color: #959595; }
   .hamburger .meat {
-    width: 75%;
+    width: 100%;
     -webkit-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
     -moz-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out; }
   .hamburger .bottom-bun {
-    width: 50%;
+    width: 100%;
     margin-bottom: 0;
     -webkit-transition: all 400ms ease-in-out;
     -o-transition: all 400ms ease-in-out;
