@@ -10385,6 +10385,9 @@ body {
 .table--nowrap {
   white-space: nowrap; }
 
+.table--nowrap-td td {
+  white-space: nowrap; }
+
 .table .borderBottom {
   border-bottom: 1px solid #E6E6E6; }
 
