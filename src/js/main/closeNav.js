@@ -1,11 +1,11 @@
 import $ from 'jquery'
 const closeNav = ()=> {
 	const pressClose = $('.pressClose')
-	const body = $('body')
+	const html = $('html')
 	const nav = $('.b-nav')
 	nav.removeClass('b-nav--active')
 	pressClose.removeClass('pressClose--active')
-	setTimeout(function(){body.removeClass('y-hidden')}, 300)
+	setTimeout(function(){html.removeClass('y-hidden')}, 300)
 }
 
 export default closeNav

@@ -7826,7 +7826,7 @@ button.bg-dark:focus {
 .my-1 {
   margin-bottom: 0.25rem !important; }
 
-.ml-1,
+.ml-1, .errorText,
 .mx-1 {
   margin-left: 0.25rem !important; }
 
@@ -9285,10 +9285,10 @@ a.text-info:hover, a.text-info:focus {
 a.text-warning:hover, a.text-warning:focus {
   color: #ba8b00 !important; }
 
-.text-danger {
+.text-danger, .errorText {
   color: #ff4136 !important; }
 
-a.text-danger:hover, a.text-danger:focus {
+a.text-danger:hover, a.errorText:hover, a.text-danger:focus, a.errorText:focus {
   color: #e90d00 !important; }
 
 .text-light {
@@ -10243,15 +10243,25 @@ div {
           flex-shrink: 0; }
 
 html, body, .full-height {
-  min-height: 100vh;
-  width: 100%; }
+  min-height: 100vh; }
+
+html {
+  width: 100vw;
+  margin-right: -webkit-calc(100vw - 100%);
+  margin-right: -moz-calc(100vw - 100%);
+  margin-right: calc(100vw - 100%);
+  -webkit-transition: .1s all;
+  -o-transition: .1s all;
+  -moz-transition: .1s all;
+  transition: .1s all; }
+  html.y-hidden {
+    overflow-y: hidden; }
 
 body {
+  width: 100%;
   font-family: CirceRounded;
   color: #333333;
   overflow-x: hidden; }
-  body.y-hidden::-webkit-scrollbar-thumb {
-    background-color: transparent; }
 
 .shopping-card {
   cursor: pointer;
@@ -10462,7 +10472,7 @@ body {
           border-radius: 10px;
   border-color: #F0F0F0;
   font-size: 18px;
-  height: 45px;
+  max-height: 45px;
   font-family: CirceRounded; }
   .b-input:focus {
     border-color: #FCD626;
@@ -10501,6 +10511,10 @@ select.form-control {
   background: white url("../../img/down-arrow.svg") no-repeat calc(100% - 10px) !important;
   overflow: hidden;
   width: auto; }
+  select.form-control.is-invalid {
+    background: white url("../../img/down-arrow-error.svg") no-repeat -webkit-calc(100% - 10px) !important;
+    background: white url("../../img/down-arrow-error.svg") no-repeat -moz-calc(100% - 10px) !important;
+    background: white url("../../img/down-arrow-error.svg") no-repeat calc(100% - 10px) !important; }
 
 .b-footer {
   max-width: 100%; }
@@ -11311,6 +11325,9 @@ select.form-control {
        -moz-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; } }
+
+.errorText {
+  min-height: 46px; }
 
 .datepicker-container {
   background-color: #fff;

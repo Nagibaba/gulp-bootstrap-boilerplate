@@ -4,11 +4,12 @@ const nav = ($) => {
 	$('.hamburger').click(()=>{
 		const nav = $('.b-nav')
 		const pressClose = $('.pressClose')
-		const body = $('body')
+		const html = $('html')
 
 		nav.addClass('b-nav--active')
 		pressClose.addClass('pressClose--active')
-		body.addClass('y-hidden')
+		html.addClass('y-hidden')
+
 	})
 
 	$('.nav-tab-button').click((e)=>{

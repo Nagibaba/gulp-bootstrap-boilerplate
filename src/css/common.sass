@@ -12,19 +12,29 @@ div
 	flex-shrink: 0
 
 html, body, .full-height
+	// box-sizing: content-box
 	min-height: 100vh
-	width: 100%
+	
 
+html
+	width: 100vw
+	margin-right: calc(100vw - 100%)
+	transition: .1s all
+	&.y-hidden
+		overflow-y: hidden
+		
+
+		// &::-webkit-scrollbar-thumb 
+	 //    	background-color: transparent
 body
+	width: 100%
 	font-family: CirceRounded
 	// overflow: hidden
 	color: $black
 	overflow-x: hidden
 	// overflow-y: auto
 	// transition: .4s all
-	&.y-hidden
-		&::-webkit-scrollbar-thumb 
-	    	background-color: transparent
+	
 .shopping-card
 	// margin-right: 20px
 	cursor: pointer
@@ -210,7 +220,7 @@ body
 	border-radius: 10px
 	border-color: #F0F0F0
 	font-size: 18px
-	height: 45px
+	max-height: 45px
 	font-family: CirceRounded
 	
 	&:focus
@@ -241,6 +251,8 @@ select.form-control
 	background: white url("../../img/down-arrow.svg") no-repeat calc(100% - 10px) !important
 	overflow: hidden
 	width: auto
+	&.is-invalid
+		background: white url("../../img/down-arrow-error.svg") no-repeat calc(100% - 10px) !important
 
 .b-footer
 	// width: 1012px
@@ -950,3 +962,7 @@ select.form-control
 		&__text
 			&-wrapper
 				order: 1
+
+.errorText
+	@extend .text-danger, .ml-1
+	min-height: 46px

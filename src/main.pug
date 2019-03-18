@@ -37,13 +37,14 @@ block unique-content
 							.form-group.f-3.mt-2
 								label(for='exampleFormControlInput1') linki əlavə et
 								input.form-control.b-input.is-invalid(type='email', placeholder='', autofocus)
-								small.text-danger.ml-1 Must be 8-20 characters long.
+								small.errorText Must be 8-20 characters long.
 
 						
 						.col-lg-6.no-padding
 							.form-group.f-2.mt-2
 								label(for='exampleFormControlInput1') qiymət(TL)
-								input.form-control.b-input.b-input--small(type='email', placeholder='')
+								input.form-control.b-input.b-input--small.is-invalid(type='email', placeholder='')
+								small.errorText Must be 8-20 characters long.
 							span.corrier-price.f-1.mt-2 +5%
 
 						.col-md-12.no-padding.pt-2
@@ -51,14 +52,16 @@ block unique-content
 
 							.form-group.f-2.mt-2
 								label(for='exampleFormControlInput1') cəmi
-								input.form-control.b-input.b-input--small(type='email', placeholder='')
+								input.form-control.b-input.b-input--small.is-invalid(type='email', placeholder='')
+								small.errorText Must be 8-20 characters long.
 							.form-group.f-2.mt-2
 								label(for='exampleFormControlInput1') ölçü
-								select.form-control.b-input.b-input--small
+								select.form-control.b-input.b-input--small.is-invalid
 									option
 									option
 									option
 									option
+								small.errorText Must be 8-20 characters long.
 							.form-group.f-2.mt-2
 								label(for='exampleFormControlInput1') rəng
 								input.form-control.b-input.b-input--small(type='email', placeholder='')
