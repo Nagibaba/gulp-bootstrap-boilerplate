@@ -1,6 +1,6 @@
 import closeNav from './closeNav'
 
-const nav = ($) => {
+const nav = () => {
 	$('.hamburger').click(()=>{
 		const nav = $('.b-nav')
 		const pressClose = $('.pressClose')

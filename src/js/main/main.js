@@ -1,7 +1,7 @@
 'use strict'
 ////// POPUP
-import $ from 'jquery'
-import mask from 'jquery-mask-plugin'
+// import $ from 'jquery'
+// import mask from 'jquery-mask-plugin'
 import Clipboard from 'clipboard'
 // import Tooltip from 'tooltip'
 
@@ -12,7 +12,7 @@ import slider from './slider'
 import shoppingCard from './shoppingCard'
 import openPopup from './openPopup'
 import 'bootstrap/js/dist/collapse'
-require("@chenfengyuan/datepicker")
+// require("@chenfengyuan/datepicker")
 
 
 function ready(fn) {
@@ -25,16 +25,16 @@ function ready(fn) {
 
 ready(function() {
 
-	nav($)
-	documentListener($)
+	nav()
+	documentListener()
 	slider(Swiper)
-	shoppingCard($)
+	shoppingCard()
 	$('[data-toggle="datepicker"]').datepicker({ format: "dd/mm/yyyy" })
 
 	// $.mask.definitions['9'] = '';
 	// $.mask.definitions['d'] = '[0-9]';
-	$('.jqueryMask').mask(null);
-	openPopup($)
+	// $('.jqueryMask').mask('2231');
+	openPopup()
 
 	
 	// Clipboard

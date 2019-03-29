@@ -1,4 +1,3 @@
-import $ from 'jquery'
 const closeNav = ()=> {
 	const pressClose = $('.pressClose')
 	const html = $('html')

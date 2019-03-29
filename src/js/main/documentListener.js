@@ -1,5 +1,5 @@
 import closeNav from './closeNav'
-const documentListener = ($, cb=null) => {
+const documentListener = (cb=null) => {
 	$(document).click((e)=>{
 		const _this = $(e.target)
 		

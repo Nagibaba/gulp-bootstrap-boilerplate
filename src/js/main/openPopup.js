@@ -1,4 +1,4 @@
-const openPopup = ($)=> {
+const openPopup = ()=> {
 	const blurryBg = $('.blurry-background')
 	const popup = $('.b-popup')
 	const bNav = $('.b-nav') // responsive issues

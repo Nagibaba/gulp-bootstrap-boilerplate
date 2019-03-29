@@ -10475,7 +10475,7 @@ body {
           border-radius: 10px;
   border-color: #F0F0F0;
   font-size: 18px;
-  max-height: 45px;
+  min-height: 45px;
   font-family: CirceRounded; }
   .b-input:focus {
     border-color: #FCD626;

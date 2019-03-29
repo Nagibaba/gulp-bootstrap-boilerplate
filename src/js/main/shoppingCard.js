@@ -1,5 +1,5 @@
 
-const shoppingCard = ($)=> {
+const shoppingCard = ()=> {
 	$('.shopping-card').click(()=>{
 		$('.shopping-card').toggleClass('shopping-card--active')
 		$('.inputs-wrapper--shopping').toggle()
