@@ -41,7 +41,7 @@ ready(function() {
 	new Clipboard('.btn-clipboard');
 	var timeout;
 	// const timeout
-	$('.btn-clipboard').click(e=>{
+	$('.btn-clipboard').bind('click onpressstart', e=>{
 		const target = $(e.target).parent('button')
 		const tooltip = target.find('.tooltiptext')
 		// const copyText = $( target.data('clipboard-target') )
