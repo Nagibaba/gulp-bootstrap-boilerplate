@@ -9481,6 +9481,9 @@ h2 {
 .f-25 {
   font-size: 25px; }
 
+.f-100 {
+  font-size: 100px; }
+
 .bold {
   font-weight: bold; }
 
@@ -9564,6 +9567,28 @@ h2 {
 
 .ws-nowrap {
   white-space: nowrap !important; }
+
+.blink {
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+     -moz-animation: blink-animation 1s steps(5, start) infinite;
+       -o-animation: blink-animation 1s steps(5, start) infinite;
+          animation: blink-animation 1s steps(5, start) infinite; }
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden; } }
+
+@-moz-keyframes blink-animation {
+  to {
+    visibility: hidden; } }
+
+@-o-keyframes blink-animation {
+  to {
+    visibility: hidden; } }
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden; } }
 
 body::after {
   position: absolute;
