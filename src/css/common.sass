@@ -921,6 +921,22 @@ select.form-control
 			color: #B2B2B2
 			pointer-events: none
 
+.b-spinner
+	@extend .fullCenter
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: mainColor(.8)
+	z-index: 1
+	&--active
+		display: flex
+
+
+
+
 @include media-breakpoint-between(xs, sm)
 	.col-md-6, .col-md-12
 		margin-top: 15px
@@ -969,3 +985,4 @@ select.form-control
 .errorText
 	@extend .text-danger, .ml-1
 	min-height: 46px
+

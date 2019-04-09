@@ -12,20 +12,23 @@ block unique-content
 						.form-group.mt-4.mt-sm-2.fullWidth
 							label(for='exampleFormControlInput1') Ad*
 							input.form-control.b-input(type='text', placeholder='', autofocus)
+							small.errorText Must be 8-20 characters long.
 
 					.col-md-4
 						.form-group.mt-4.mt-sm-2.fullWidth
 							label(for='exampleFormControlInput1') Soyad*
 							input.form-control.b-input(type='text', placeholder='', autofocus)
+							small.errorText Must be 8-20 characters long.
 
 					.col-md-4
 						.form-group.mt-4.mt-sm-2.fullWidth.flex-column
 							label(for='exampleFormControlInput1') Doğum tarixi*
 							input.form-control.b-input.jqueryMask(type='text', data-toggle="datepicker", data-mask="00/00/0000", placeholder='dd/mm/yyy', autofocus)
+							small.errorText Must be 8-20 characters long.
 
 				.row.mt-2
-					.col-md-4.flex-column.justify-content-center.mb-2.mb-sm-0.gender-radiogroup
-						.row.m-0
+					.col-md-4.flex-column.justify-content-start.mb-2.mb-sm-0.gender-radiogroup
+						.row.m-0.mt-4.mt-md-2
 							.col-md-6.p-0.pr-sm-1
 								label
 									input(type="radio" name="gender" value="man")
@@ -40,11 +43,13 @@ block unique-content
 						.form-group.mt-4.mt-md-2.fullWidth
 							label(for='exampleFormControlInput1') Telefon nömrəsi*
 							input.form-control.b-input.jqueryMask(type='text', data-mask="+99400-000-00-00", value="+994" placeholder='', autofocus)
+							small.errorText Must be 8-20 characters long.
 
 					.col-md-4
 						.form-group.mt-4.mt-sm-2.fullWidth
 							label(for='exampleFormControlInput1') Şəxsiyyət vəsiqəsi No*
 							input.form-control.b-input(type='text', placeholder='', autofocus)
+							small.errorText Must be 8-20 characters long.
 
 				.row.mt-2
 					.col-md-4
@@ -79,4 +84,7 @@ block unique-content
 					| qəbul etmiş olursunuz.
 
 				.row.pt-3.mb-3.flex-row.fullCenter
-					button.btn.btn-warning.main-button(type='submit') Qeydiyyatdan keç
+					button.btn.btn-warning.main-button(type='submit')
+						|Qeydiyyatdan keç
+						
+
