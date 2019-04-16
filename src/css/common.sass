@@ -625,11 +625,12 @@ select.form-control
 	
 
 .blurry-background
-	transition: .2s all
+	will-change: filter, background-color
+	transition: .2s filter, background-color
 	&--active
 		
 		filter: blur(8px) brightness(70%)
-		background-color: rgba(0,0,0, .3)
+		background-color: rgba(0,0,0, .2)
 		
 
 
@@ -637,6 +638,7 @@ select.form-control
 .b-popup
 	// opacity: 0
 	// display: none
+	// will-change: transform
 	transform: scale(0)
 	display: flex
 	justify-content: center
@@ -649,7 +651,7 @@ select.form-control
 	
 	z-index: $zindex-modal
 	// background-color: rgba(0, 0, 0, .1)
-	transition: .2s all
+	transition: .2s transform
 	&--active
 		transform: scale(1)
 		// background-color: rgba(0, 0, 0, .1)

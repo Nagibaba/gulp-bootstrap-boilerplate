@@ -11147,14 +11147,15 @@ select.form-control {
     font-size: 15px; }
 
 .blurry-background {
-  -webkit-transition: .2s all;
-  -o-transition: .2s all;
-  -moz-transition: .2s all;
-  transition: .2s all; }
+  will-change: filter, background-color;
+  -webkit-transition: .2s filter, background-color;
+  -o-transition: .2s filter, background-color;
+  -moz-transition: .2s filter, background-color;
+  transition: .2s filter, background-color; }
   .blurry-background--active {
     -webkit-filter: blur(8px) brightness(70%);
             filter: blur(8px) brightness(70%);
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(0, 0, 0, 0.2); }
 
 .b-popup {
   -webkit-transform: scale(0);
@@ -11183,10 +11184,10 @@ select.form-control {
   left: 0;
   right: 0;
   z-index: 1050;
-  -webkit-transition: .2s all;
-  -o-transition: .2s all;
-  -moz-transition: .2s all;
-  transition: .2s all; }
+  -webkit-transition: .2s transform;
+  -o-transition: .2s transform;
+  -moz-transition: .2s transform;
+  transition: .2s transform; }
   .b-popup--active {
     -webkit-transform: scale(1);
        -moz-transform: scale(1);
