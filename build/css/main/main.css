@@ -10504,6 +10504,10 @@ body {
     position: absolute;
     top: 50px;
     right: 30px;
+    max-height: -webkit-calc( 100vh - 100px);
+    max-height: -moz-calc( 100vh - 100px);
+    max-height: calc( 100vh - 100px);
+    overflow-y: auto;
     z-index: 1060;
     width: auto;
     max-width: initial;
