@@ -33,6 +33,16 @@ block unique-content
 					
 				form(action="")
 					.row.pt-3.flex-row.fullCenter
+						.col-lg-12.no-padding
+							.form-group.f-2.mt-2
+								label(for='exampleFormControlInput1') Ölkə
+								select.form-control.b-input.selectpicker(data-live-search='true' data-style="b-input")
+									option(value='1') bir
+									option(value='2') iki
+									option(value='3') uc
+									option(value='4') dord
+								small.errorText Must be 8-20 characters long. 
+								
 						.col-lg-6.no-padding
 							.form-group.f-3.mt-2
 								label(for='exampleFormControlInput1') linki əlavə et
@@ -49,6 +59,7 @@ block unique-content
 
 						.col-md-12.no-padding.pt-2
 							
+							
 
 							.form-group.f-2.mt-2
 								label(for='exampleFormControlInput1') cəmi
@@ -56,11 +67,11 @@ block unique-content
 								small.errorText Must be 8-20 characters long.
 							.form-group.f-2.mt-2
 								label(for='exampleFormControlInput1') ölçü
-								select.form-control.b-input.b-input--small.is-invalid
-									option
-									option
-									option
-									option
+								select.form-control.b-input.b-input--small.selectpicker(data-live-search='true' data-style="b-input")
+									option(value='1') bir
+									option(value='2') iki
+									option(value='3') uc
+									option(value='4') dord
 								small.errorText Must be 8-20 characters long.
 							.form-group.f-2.mt-2
 								label(for='exampleFormControlInput1') rəng

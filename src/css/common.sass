@@ -130,7 +130,7 @@ body
 		&--first
 			max-width: 428px
 		&--second
-			max-width: 428px
+			// max-width: 428px
 
 
 .table
@@ -352,6 +352,7 @@ select.form-control
 	padding-right: 30px
 	min-width: 180px
 	background-color: $main-color
+	border-color: transparent!important
 	border-radius: 20px
 	font-size: 20px
 	font-weight: bold
@@ -810,11 +811,11 @@ select.form-control
 
 	&__header
 		@extend .d-flex, .flex-column, .py-2
-		background-color: #EDEDED
+		background-color: $main-color
 		border-radius: 10px
 	&__h-key
 		font-weight: normal
-		color: #BEBEBE
+		color: white
 	&__content-wrapper
 		@extend .d-flex, .flex-column, .py-2, .px-4
 	&__link

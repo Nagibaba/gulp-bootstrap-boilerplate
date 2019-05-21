@@ -11,7 +11,8 @@ import documentListener from './documentListener'
 import slider from './slider'
 import shoppingCard from './shoppingCard'
 import openPopup from './openPopup'
-import 'bootstrap/js/dist/collapse'
+// import 'bootstrap'
+// import 'bootstrap/js/dist/collapse'
 // require("@chenfengyuan/datepicker")
 
 
@@ -59,6 +60,7 @@ ready(function() {
 			
 		}, 200)
 	})
+	$('.selectpicker').selectpicker();
 
 	// function copyToClipboard(element) {
 	//     var $temp = $("<input>");

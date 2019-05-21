@@ -14,3 +14,7 @@ added Fontawesome, uncss,
 - run `gulp`
 - open localhost:8080
 HERE you GO!#Read me
+
+
+SOME COOL FEATURES
+1. `npm run diffHtml` gets differences of your html files with your git repository and adds to `diff.txt`

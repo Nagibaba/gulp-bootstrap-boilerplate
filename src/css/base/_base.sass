@@ -25,9 +25,9 @@
     background-color: transparent 
 
 .black
-	color: black
+	color: black!important
 .gray
-	color: #BEBEBE
+	color: #BEBEBE!important
 
 body.main-bg
 	&::-webkit-scrollbar-thumb 
@@ -133,3 +133,9 @@ h2
 @keyframes blink-animation
   to
     visibility: hidden
+.shadow
+	@include shadow(1)
+	transition: all 250ms
+	&:hover,&:focus
+		@include shadow(3);
+		transform: translateY(-5px)

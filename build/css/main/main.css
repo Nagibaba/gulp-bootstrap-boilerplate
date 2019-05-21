@@ -9423,10 +9423,10 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: transparent; }
 
 .black {
-  color: black; }
+  color: black !important; }
 
 .gray {
-  color: #BEBEBE; }
+  color: #BEBEBE !important; }
 
 body.main-bg::-webkit-scrollbar-thumb {
   background-color: white; }
@@ -9589,6 +9589,24 @@ h2 {
 @keyframes blink-animation {
   to {
     visibility: hidden; } }
+
+.shadow {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  -moz-transition: all 250ms;
+  transition: all 250ms; }
+  .shadow:hover, .shadow:focus {
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+       -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-transform: translateY(-5px);
+       -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+         -o-transform: translateY(-5px);
+            transform: translateY(-5px); }
 
 body::after {
   position: absolute;
@@ -10539,8 +10557,6 @@ body {
     width: 100%; }
     .inputs-wrapper__metric--first {
       max-width: 428px; }
-    .inputs-wrapper__metric--second {
-      max-width: 428px; }
 
 .table td,
 .table th {
@@ -10820,6 +10836,7 @@ select.form-control {
   padding-right: 30px;
   min-width: 180px;
   background-color: #FCD626;
+  border-color: transparent !important;
   -webkit-border-radius: 20px;
      -moz-border-radius: 20px;
           border-radius: 20px;
@@ -11358,13 +11375,13 @@ select.form-control {
      -moz-border-radius: 10px;
           border-radius: 10px; }
   .order-accordion__header {
-    background-color: #EDEDED;
+    background-color: #FCD626;
     -webkit-border-radius: 10px;
        -moz-border-radius: 10px;
             border-radius: 10px; }
   .order-accordion__h-key {
     font-weight: normal;
-    color: #BEBEBE; }
+    color: white; }
   .order-accordion__link {
     text-align: center;
     color: #FCD626;
