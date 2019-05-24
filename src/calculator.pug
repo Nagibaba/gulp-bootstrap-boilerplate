@@ -34,6 +34,17 @@ html
 
 					.row.flex-row.justify-content-center.mt-5
 						.inputs-wrapper.inputs-wrapper--white.inputs-wrapper--material.inputs-wrapper__metric.inputs-wrapper__metric--first.d-flex.f-18.px-4.pt-5.pb-md-3.pt-md-5.px-md-5
+							.form-group.f-2.mt-2
+								label(for='exampleFormControlInput1') Ölkə
+								select.form-control.b-input
+									option(value='1') Türkiyə
+									option(value='2') iki
+									option(value='3') uc
+									option(value='4') dord
+								//- small.errorText Must be 8-20 characters long.
+
+					.row.flex-row.justify-content-center.mt-5
+						.inputs-wrapper.inputs-wrapper--white.inputs-wrapper--material.inputs-wrapper__metric.inputs-wrapper__metric--first.d-flex.f-18.px-4.pt-5.pb-md-3.pt-md-5.px-md-5
 							.form-group.f-2.limit-min
 								label.text-left.ml-2(for='exampleFormControlInput1') Çəki vahidi
 								select.form-control.b-input
@@ -105,11 +116,20 @@ html
 							.table-responsive
 								table.table.table--borderless.table--nowrap-td(cellspacing="20px" cellpadding="0")
 									tbody
-										tr.f-15.main-color
+										tr.f-15.main-color.ws-nowrap
 											th
 											th
-											th(scope='col') 0,5 kq dək
-											th(scope='col') 0,5 kq dan - 1 kq dək
+											
+											th(scope='col') 0,10 kq
+											th(scope='col') 0,10 kq dan - 0.25 kq
+											th(scope='col') 0,25 kq dan - 0.5 kq
+											th(scope='col') 0,50 kq dan - 0.75 kq
+											th(scope='col') 0,75 kq dan - 1 kq
+											th(scope='col') 1 kq dan - 2 kq
+											th(scope='col') 2 kq dan - 5 kq
+											th(scope='col') 5 kq dan - 10 kq
+											th(scope='col') 10 kq dan - 50 kq
+											th(scope='col') 50 kq dan yuxarı
 											
 										tr
 											td
@@ -118,7 +138,15 @@ html
 												
 											td Türkiyə
 											td 4.10 $ 
+											td 6.50 $
+											td 4.10 $ 
+											td 6.50 $
+											td 4.10 $ 
+											td 6.50 $
+											td 4.10 $ 
 											td 6.50 $	
+											td 6.50 $	
+
 										tr
 											td
 												
@@ -127,4 +155,94 @@ html
 											td Amerika
 											td 5.00 $ 
 											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 7.50 $
+
+										tr
+											td
+												
+												img.mb-1(src="./img/Untitled-1_bəə.png", alt="UAE flag" width="46" height="46")
+												
+											td
+												abbr(title="Birləşmiş Ərəb əmirlikləri") BƏƏ
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 7.50 $
+
+										tr
+											td
+												
+												img.mb-1(src="./img/Untitled-1_china.png", alt="China flag" width="46" height="46")
+												
+											td Çin
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 7.50 $
+
+										tr
+											td
+												
+												img.mb-1(src="./img/Untitled-1_germany.png", alt="Germany flag" width="46" height="46")
+												
+											td Almaniya
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 7.50 $
+
+										tr
+											td
+												
+												img.mb-1(src="./img/Untitled-1_ingiltərə.png", alt="England flag" width="46" height="46")
+												
+											td İngiltərə
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 7.50 $
+
+										tr
+											td
+												
+												img.mb-1(src="./img/Untitled-1_russia.png", alt="Russia flag" width="46" height="46")
+												
+											td Rusiya
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 5.00 $ 
+											td 7.50 $
+											td 7.50 $
+
+
 											
