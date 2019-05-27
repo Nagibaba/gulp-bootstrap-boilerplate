@@ -9917,10 +9917,17 @@ body::after {
   100% {
     width: 100%; } }
 
-.tab-content {
+.tab-content#tab-2 {
   display: none; }
 
 .tab-content#tab-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.tab-content > .active {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -10815,7 +10822,7 @@ select.form-control {
     border-color: #bfb; }
 
 .simple-button {
-  width: 144px;
+  min-width: 144px;
   max-width: 100%;
   background-color: white;
   border: none;

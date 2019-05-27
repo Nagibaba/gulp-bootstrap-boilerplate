@@ -11,6 +11,7 @@ import documentListener from './documentListener'
 import slider from './slider'
 import shoppingCard from './shoppingCard'
 import openPopup from './openPopup'
+import repeatItem from './repeatItem'
 // import 'bootstrap'
 // import 'bootstrap/js/dist/collapse'
 // require("@chenfengyuan/datepicker")
@@ -30,12 +31,14 @@ ready(function() {
 	documentListener()
 	slider(Swiper)
 	shoppingCard()
+	openPopup()
+	repeatItem()
+
 	$('[data-toggle="datepicker"]').datepicker({ format: "dd/mm/yyyy" })
 
 	// $.mask.definitions['9'] = '';
 	// $.mask.definitions['d'] = '[0-9]';
 	// $('.jqueryMask').mask('2231');
-	openPopup()
 
 	
 	// Clipboard
@@ -60,7 +63,10 @@ ready(function() {
 			
 		}, 200)
 	})
-	$('.selectpicker').selectpicker();
+	$('.selectpicker').selectpicker()
+
+
+
 
 	// function copyToClipboard(element) {
 	//     var $temp = $("<input>");

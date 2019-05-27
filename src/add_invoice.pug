@@ -14,43 +14,71 @@ block unique-content
 					.form-group.fullWidth.mt-2
 							label(for='exampleFormControlInput1') 
 							select.form-control.b-input
-								option Bağlama sayı
+								option Bəyənnamə
 								option
 								option
 								option
-				.col-md-6.pt-2
-					.form-group.fullWidth.mt-2
-							label(for='exampleFormControlInput1') 
-							select.form-control.b-input
-								option Məhsul tipi
-								option
-								option
-								option
-
-				.col-md-6.pt-2
-					.form-group.mt-4.mt-sm-2.fullWidth.flex-column
-						label.text-left.pl-2(for='exampleFormControlInput1') Sifariş tarixi
-						input.form-control.b-input.jqueryMask(type='text', data-toggle="datepicker", data-mask="00/00/0000", placeholder='dd/mm/yyy')
-
-				.col-md-6.pt-2
-					.form-group.fullWidth.mt-2
-						label.text-left.pl-2(for='exampleFormControlInput1') Mağaza
-						input.form-control.b-input(type='text', placeholder='')
 				
 				.col-md-6.pt-2
 					.form-group.fullWidth.mt-2
-						label.text-left.pl-2(for='exampleFormControlInput1') Qiymət
-						input.form-control.b-input(type='number', placeholder='')
+						label.text-left.pl-2(for='exampleFormControlInput1') Bəyənnamə adı
+						input.form-control.b-input(type='text', placeholder='')
+
+
+				.col-md-6.pt-2
+					.form-group.fullWidth.mt-2
+						label.text-left.pl-2(for='exampleFormControlInput1') İzləmə nömrəsi
+						input.form-control.b-input(type='text', placeholder='')
+				
+
+			
+
+				
+				
+				//- .col-md-6.pt-2
+				//- 	.form-group.fullWidth.mt-2
+				//- 		label.text-left.pl-2(for='exampleFormControlInput1') Qiymət
+				//- 		input.form-control.b-input(type='number', placeholder='')
 				
 				.col-md-6.pt-2
 					.custom-file.mt-2
 						input#customFileLang.custom-file-input(type='file', lang='az')
 						label.custom-file-label.b-input(for='customFileLang') Invoice (jpg,png,pdf)
 				
-				.col-md-12.pt-2
+				//- .col-md-12.pt-2
+				//- 	.form-group.fullWidth.mt-2
+				//- 		label.text-left.pl-2(for='exampleFormControlTextarea1') Qeyd
+				//- 		textarea#exampleFormControlTextarea1.form-control.b-input(rows='3')
+
+
+			hr.main-bg
+
+			.row.flex-row.justify-content-between.p-0.pt-3.m-0
+				
+				.col-md-4.flex-column.pt-2(data-repeat-id='item')
 					.form-group.fullWidth.mt-2
-						label.text-left.pl-2(for='exampleFormControlTextarea1') Qeyd
-						textarea#exampleFormControlTextarea1.form-control.b-input(rows='3')
+						label(for='exampleFormControlInput1') 
+						select.form-control.b-input
+							option Bəyənnamə
+							option
+							option
+							option
+					
+					.form-group.fullWidth.mt-2
+						label.text-left.pl-2(for='exampleFormControlInput1') Məhsul adı
+						input.form-control.b-input(type='text', placeholder='')
+					
+					.form-group.fullWidth.mt-2
+						label.text-left.pl-2(for='exampleFormControlInput1') Qiymət
+						input.form-control.b-input(type='number', placeholder='')
+					
+				
+					
+				
+
+
+
 
 			.row.pt-3.flex-row.fullCenter
+				button.btn.btn-light.simple-button.mr-3.px-3(type='button' data-repeat-target='item') Məhsul Əlavə et +
 				button.btn.btn-warning.main-button(type='submit') Əlavə et

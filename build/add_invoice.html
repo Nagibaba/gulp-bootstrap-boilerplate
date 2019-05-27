@@ -9,7 +9,7 @@
     <link rel="manifest" href="site.webmanifest">
     <!-- Place favicon.ico in the root directory-->
     <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706267122">
+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558955861429">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -465,7 +465,7 @@
                 <div class="form-group fullWidth mt-2">
                   <label for="exampleFormControlInput1"> </label>
                   <select class="form-control b-input">
-                    <option>Bağlama sayı</option>
+                    <option>Bəyənnamə</option>
                     <option></option>
                     <option></option>
                     <option></option>
@@ -474,31 +474,14 @@
               </div>
               <div class="col-md-6 pt-2">
                 <div class="form-group fullWidth mt-2">
-                  <label for="exampleFormControlInput1"> </label>
-                  <select class="form-control b-input">
-                    <option>Məhsul tipi</option>
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6 pt-2">
-                <div class="form-group mt-4 mt-sm-2 fullWidth flex-column">
-                  <label class="text-left pl-2" for="exampleFormControlInput1">Sifariş tarixi</label>
-                  <input class="form-control b-input jqueryMask" type="text" data-toggle="datepicker" data-mask="00/00/0000" placeholder="dd/mm/yyy">
-                </div>
-              </div>
-              <div class="col-md-6 pt-2">
-                <div class="form-group fullWidth mt-2">
-                  <label class="text-left pl-2" for="exampleFormControlInput1">Mağaza</label>
+                  <label class="text-left pl-2" for="exampleFormControlInput1">Bəyənnamə adı</label>
                   <input class="form-control b-input" type="text" placeholder="">
                 </div>
               </div>
               <div class="col-md-6 pt-2">
                 <div class="form-group fullWidth mt-2">
-                  <label class="text-left pl-2" for="exampleFormControlInput1">Qiymət</label>
-                  <input class="form-control b-input" type="number" placeholder="">
+                  <label class="text-left pl-2" for="exampleFormControlInput1">İzləmə nömrəsi</label>
+                  <input class="form-control b-input" type="text" placeholder="">
                 </div>
               </div>
               <div class="col-md-6 pt-2">
@@ -507,14 +490,31 @@
                   <label class="custom-file-label b-input" for="customFileLang">Invoice (jpg,png,pdf)</label>
                 </div>
               </div>
-              <div class="col-md-12 pt-2">
+            </div>
+            <hr class="main-bg">
+            <div class="row flex-row justify-content-between p-0 pt-3 m-0">
+              <div class="col-md-4 flex-column pt-2" data-repeat-id="item">
                 <div class="form-group fullWidth mt-2">
-                  <label class="text-left pl-2" for="exampleFormControlTextarea1">Qeyd</label>
-                  <textarea class="form-control b-input" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <label for="exampleFormControlInput1"> </label>
+                  <select class="form-control b-input">
+                    <option>Bəyənnamə</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group fullWidth mt-2">
+                  <label class="text-left pl-2" for="exampleFormControlInput1">Məhsul adı</label>
+                  <input class="form-control b-input" type="text" placeholder="">
+                </div>
+                <div class="form-group fullWidth mt-2">
+                  <label class="text-left pl-2" for="exampleFormControlInput1">Qiymət</label>
+                  <input class="form-control b-input" type="number" placeholder="">
                 </div>
               </div>
             </div>
             <div class="row pt-3 flex-row fullCenter">
+              <button class="btn btn-light simple-button mr-3 px-3" type="button" data-repeat-target="item">Məhsul Əlavə et +</button>
               <button class="btn btn-warning main-button" type="submit">Əlavə et</button>
             </div>
           </div>
@@ -534,6 +534,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-    <script src="js/all.js?v=1558706267122"></script>
+    <script src="js/all.js?v=1558955861429"></script>
   </body>
 </html>

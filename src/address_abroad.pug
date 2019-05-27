@@ -7,48 +7,81 @@ block unique-content
 			h1.text-center.mt-3.mb-5 XARİCDƏKİ ÜNVANLARIM
 			
 			.row.flex-row
-				.col-md-6.flex-column
-
-					- 
-						var values = [{key: 'Soyadı, adı', value: 'Fizza Xidmətlər', id: 'name'},
-							{key: 'Adres satır 1', value: 'İnkilap mh. Küçüksu cd. Yelkenciler sk. Vardar ap. NO :14/3 , m110380 Firuza Pasha', id: 'address'},
-							{key: 'İl (şehir)', value: 'İstanbul', id: 'city'},
-							{key: 'İlçe', value: 'Ümraniye', id: 'district'},
-							{key: 'Semt', value: 'Fizza Xidmətlər', id: 'neighborhood'},
-							
-
-						];
-					each val in values
-						.copy.d-flex.flex-row.justify-content-between
-							.copy__left.flex-column
-								p.copy__key.m-0 #{val.key}
-								p.copy__value.m-0(id=val.id) #{val.value}
-							.copy__right.flex-column.justify-content-center
-								button.btn.btn-clipboard.b-tooltip(data-clipboard-target='#'+val.id )
-									img(src="./img/paper.svg", alt="Copy this")
-									span.tooltiptext Kopiyala
+				
+				ul#pills-tab.nav.nav-pills.nav-justified.fullWidth.mb-3(role='tablist')
+					li.nav-item
+						a#turkey-tab.nav-link.active(data-toggle='pill', href='#turkey', role='tab', aria-controls='turkey', aria-selected='true') Home
+					li.nav-item
+						a#usa-tab.nav-link(data-toggle='pill', href='#usa', role='tab', aria-controls='usa', aria-selected='false') Profile
+					li.nav-item
+						a#uae-tab.nav-link(data-toggle='pill', href='#uae', role='tab', aria-controls='uae', aria-selected='false') Contact
+					li.nav-item
+						a#china-tab.nav-link(data-toggle='pill', href='#china', role='tab', aria-controls='china', aria-selected='false') Contact
+					li.nav-item
+						a#germany-tab.nav-link(data-toggle='pill', href='#germany', role='tab', aria-controls='germany', aria-selected='false') Contact
+					li.nav-item
+						a#england-tab.nav-link(data-toggle='pill', href='#england', role='tab', aria-controls='england', aria-selected='false') Contact
+					li.nav-item
+						a#russia-tab.nav-link(data-toggle='pill', href='#russia', role='tab', aria-controls='russia', aria-selected='false') Contact
 					
+					
+
+				
+
+
+
+			#pills-tabContent.tab-content.mt-5
 			
 
 
-				.col-md-6.flex-column
-					- 
-						var values2 = [
-							{key: 'Adress başlığı', value: 'Fizza', id: 'addressHead'},
-							{key: 'ZIP / Post kodu', value: '124328724', id: 'zipcode'},
-							{key: 'Ölkə', value: 'Türkiye', id: 'country'},
-							{key: 'TC Kimlik', value: '2423875927520975', id: 'tcId'},
-							{key: 'Cep Telefonu', value: '3443598203', id: 'phoneNumber'},
-							{key: 'Vergi Numarası', value: '3443598203', id: 'taxId'},
-							
+				-
+					var countries = ['turkey', 'usa', 'uae', 'china', 'germany', 'england', 'russia'];
 
-						];
-					each val in values2
-						.copy.d-flex.flex-row.justify-content-between
-							.copy__left.flex-column
-								p.copy__key.m-0 #{val.key}
-								p.copy__value.m-0(id=val.id) #{val.value}
-							.copy__right.flex-column.justify-content-center
-								button.btn.btn-clipboard.b-tooltip(data-clipboard-target='#'+val.id )
-									img(src="./img/paper.svg", alt="Copy this")
-									span.tooltiptext Kopiyala
+				each country, index in countries
+
+					div(role='tabpanel', aria-labelledby=country+'-tab' id=country class=`row flex-row tab-pane fade ${index==0?'show active':''} ` )
+						.col-md-6.flex-column
+
+							-
+								var values = [{key: 'Soyadı, adı', value: 'Fizza Xidmətlər', id: 'name'},
+									{key: 'Adres satır 1', value: 'İnkilap mh. Küçüksu cd. Yelkenciler sk. Vardar ap. NO :14/3 , m110380 Firuza Pasha', id: 'address'},
+									{key: 'İl (şehir)', value: 'İstanbul', id: 'city'},
+									{key: 'İlçe', value: 'Ümraniye', id: 'district'},
+									{key: 'Semt', value: 'Fizza Xidmətlər', id: 'neighborhood'},
+									
+
+								];
+							each val in values
+								.copy.d-flex.flex-row.justify-content-between
+									.copy__left.flex-column
+										p.copy__key.m-0 #{val.key}
+										p.copy__value.m-0(id=val.id) #{val.value}
+									.copy__right.flex-column.justify-content-center
+										button.btn.btn-clipboard.b-tooltip(data-clipboard-target='#'+val.id )
+											img(src="./img/paper.svg", alt="Copy this")
+											span.tooltiptext Kopiyala
+							
+					
+
+
+						.col-md-6.flex-column
+							-
+								var values2 = [
+									{key: 'Adress başlığı', value: 'Fizza', id: 'addressHead'},
+									{key: 'ZIP / Post kodu', value: '124328724', id: 'zipcode'},
+									{key: 'Ölkə', value: 'Türkiye', id: 'country'},
+									{key: 'TC Kimlik', value: '2423875927520975', id: 'tcId'},
+									{key: 'Cep Telefonu', value: '3443598203', id: 'phoneNumber'},
+									{key: 'Vergi Numarası', value: '3443598203', id: 'taxId'},
+									
+
+								];
+							each val in values2
+								.copy.d-flex.flex-row.justify-content-between
+									.copy__left.flex-column
+										p.copy__key.m-0 #{val.key}
+										p.copy__value.m-0(id=val.id) #{val.value}
+									.copy__right.flex-column.justify-content-center
+										button.btn.btn-clipboard.b-tooltip(data-clipboard-target='#'+val.id )
+											img(src="./img/paper.svg", alt="Copy this")
+											span.tooltiptext Kopiyala
