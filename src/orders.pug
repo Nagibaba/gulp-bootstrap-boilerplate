@@ -16,7 +16,7 @@ block unique-content
 						button.btn.btn-warning.main-button(type='submit') Bəyənnamə əlavə et
 	.row.justify-content-center.mt-5
 		
-		.inputs-wrapper.inputs-wrapper--white.fullCenter.flex-column.f-15.pt-3.pb-5.px-3.px-sm-5
+		.inputs-wrapper.inputs-wrapper--white.fullCenter.flex-column.f-15.pt-3.pb-5.px-3.px-sm-0
 			h1.text-center.mt-3 SİFARİŞLƏRİM
 			p.text-center.mb-5 Müştəri Kodu: 
 					span.f-25.bold.main-color 112 820
@@ -25,40 +25,58 @@ block unique-content
 
 			.orders__content-wrapper
 				.row.justify-content-between
-					.col-md-3.fullCenter.mb-3.mb-sm-0
-						button.btn.btn-primary.orders__tab-pill.orders__tab-pill--active(type='button') 
-							| Notifications 
-							span.badge.badge-light 4
-					.col-md-3.fullCenter.mb-3.mb-sm-0
-						button.btn.orders__tab-pill(type='button') 
-							| Notifications 
-							span.badge.badge-light 4
-					.col-md-3.fullCenter.mb-3.mb-sm-0
-						button.btn.orders__tab-pill(type='button') 
-							| Notifications 
-							span.badge.badge-light 4
-					.col-md-3.fullCenter.mb-3.mb-sm-0
-						button.btn.orders__tab-pill(type='button') 
-							| Notifications 
-							span.badge.badge-light 24
+					.col-6.col-md-12.flex-row.flex-wrap.fullCenter
+						.col-md-3.col-sm-12.fullCenter.mb-3
+							button.btn.btn-primary.orders__tab-pill.orders__tab-pill--active(type='button') 
+								| Notifications 
+								span.badge.badge-light 4
+						.col-md-3.col-sm-12.fullCenter.mb-3
+							button.btn.orders__tab-pill(type='button') 
+								| Notifications 
+								span.badge.badge-light 4
+						.col-md-3.col-sm-12.fullCenter.mb-3
+							button.btn.orders__tab-pill(type='button') 
+								| Notifications 
+								span.badge.badge-light 4
+						.col-md-3.col-sm-12.fullCenter.mb-3
+							button.btn.orders__tab-pill(type='button') 
+								| Notifications 
+								span.badge.badge-light 24
+
+					.col-6.col-md-12.flex-row.flex-wrap.fullCenter.mt-md-3
+						.col-lg-3.col-md-4.col-sm-12.fullCenter.mb-2
+							a.orders__filter-link.orders__filter-link--active.fullCenter(href="") 
+								img.orders__filter-icon.mr-2(src="./img/filter-results-button.svg", alt="filter icon")
+								|Əvvəlcə Bahalı
+						.col-lg-3.col-md-4.col-sm-12.fullCenter.mb-2
+							a.orders__filter-link.fullCenter(href="") 
+								img.orders__filter-icon.mr-2(src="./img/filter-results-button-reverse.svg", alt="filter icon")
+								|Əvvəlcə Ucuz
+						.col-lg-3.col-md-4.col-sm-12.fullCenter.mb-2
+							a.orders__filter-link.fullCenter(href="") 
+								img.orders__filter-icon.mr-2(src="./img/sort-alphabet-ascending.svg", alt="filter icon")
+								|A-dan Z-yə
+						.col-lg-3.col-md-4.col-sm-12.fullCenter.mb-2
+							a.orders__filter-link.fullCenter(href="") 
+								img.orders__filter-icon.mr-2(src="./img/descending-alphabet-sort.svg", alt="filter icon")
+								|Z-dən A-ya
 
 				.row.justify-content-between.mt-3
-					.col-md-3.fullCenter
-						a.orders__filter-link.orders__filter-link--active.fullCenter(href="") 
-							img.orders__filter-icon.mr-2(src="./img/filter-results-button.svg", alt="filter icon")
-							|Əvvəlcə Bahalı
-					.col-md-3.fullCenter
-						a.orders__filter-link.fullCenter(href="") 
-							img.orders__filter-icon.mr-2(src="./img/filter-results-button-reverse.svg", alt="filter icon")
-							|Əvvəlcə Ucuz
-					.col-md-3.fullCenter
-						a.orders__filter-link.fullCenter(href="") 
-							img.orders__filter-icon.mr-2(src="./img/sort-alphabet-ascending.svg", alt="filter icon")
-							|A-dan Z-yə
-					.col-md-3.fullCenter
-						a.orders__filter-link.fullCenter(href="") 
-							img.orders__filter-icon.mr-2(src="./img/descending-alphabet-sort.svg", alt="filter icon")
-							|Z-dən A-ya
+					.col-md-6.fullCenter.mb-2
+						.form-group.f-2.mt-2
+							label(for='exampleFormControlInput1') Ölkə
+							select.form-control.b-input.b-input--small.selectpicker(data-live-search='true' data-style="b-input")
+								option(value='1') bir
+								option(value='2') iki
+								option(value='3') uc
+								option(value='4') dord
+					.col-md-6.fullCenter.mb-2
+						.form-group.f-2.mt-2
+							label(for='exampleFormControlInput1') Sənədləşmə
+							select.form-control.b-input.b-input--small
+								option(value='1') Bəyənnamə
+								option(value='2') Digər
+								
 				
 				.row.flex-column.justify-content-between.mt-4
 					.col-md-12.flex-column

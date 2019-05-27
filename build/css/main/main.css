@@ -11335,8 +11335,7 @@ select.form-control {
     margin-top: 35px; }
 
 .orders__content-wrapper {
-  width: 782px;
-  max-width: 100%; }
+  width: 100%; }
 
 .orders__tab-pill {
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.13);
@@ -11492,7 +11491,7 @@ select.form-control {
   right: 0;
   bottom: 0;
   background-color: rgba(252, 214, 38, 0.8);
-  z-index: 1; }
+  z-index: 1051; }
   .b-spinner--active {
     display: -webkit-box;
     display: -webkit-flex;

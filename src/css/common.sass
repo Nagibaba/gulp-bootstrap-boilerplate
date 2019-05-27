@@ -770,8 +770,7 @@ select.form-control
 .orders
 	&__content-wrapper
 		@extend .d-flex, .flex-column 
-		width: 782px
-		max-width: 100%
+		width: 100%
 	&__tab-pill
 		@extend .flex-row, .fullCenter
 		box-shadow: 0 0 15px rgba(0, 0, 0, .13)
@@ -935,7 +934,7 @@ select.form-control
 	right: 0
 	bottom: 0
 	background-color: mainColor(.8)
-	z-index: 1
+	z-index: $zindex-modal + 1
 	&--active
 		display: flex
 

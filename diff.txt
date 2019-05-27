@@ -1,672 +1,575 @@
 diff --git a/build/404.html b/build/404.html
-index 6b31082..234b8b0 100644
+index b93724f..9ec2e33 100644
 --- a/build/404.html
 +++ b/build/404.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511687539">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445208542">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520605081">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706265534">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -474,6 +475,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -477,6 +477,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511687539"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445208542"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520605081"></script>
++    <script src="js/all.js?v=1558706265534"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/about.html b/build/about.html
-index b7d097d..4bc00f6 100644
+index ae8d337..e0973a2 100644
 --- a/build/about.html
 +++ b/build/about.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511689541">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445208905">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520605232">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706265896">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -474,6 +475,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -477,6 +477,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511689541"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445208905"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520605232"></script>
++    <script src="js/all.js?v=1558706265896"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/add_invoice.html b/build/add_invoice.html
-index 4ba8871..a080181 100644
+index 5c615c7..04ae321 100644
 --- a/build/add_invoice.html
 +++ b/build/add_invoice.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511695604">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445210192">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520606444">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706267122">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -531,6 +532,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -534,6 +534,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511695604"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445210192"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520606444"></script>
++    <script src="js/all.js?v=1558706267122"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/address_abroad.html b/build/address_abroad.html
-index 5cc7a0f..3b6b80b 100644
+index 860ced9..a7893b5 100644
 --- a/build/address_abroad.html
 +++ b/build/address_abroad.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511693610">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445209788">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520605987">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706266726">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -578,6 +579,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -581,6 +581,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511693610"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445209788"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520605987"></script>
++    <script src="js/all.js?v=1558706266726"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/addresses.html b/build/addresses.html
-index 0cdba37..be47a57 100644
+index d66f3eb..b264ff5 100644
 --- a/build/addresses.html
 +++ b/build/addresses.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511691584">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445209245">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520605660">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706266260">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -574,6 +575,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -577,6 +577,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511691584"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445209245"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520605660"></script>
++    <script src="js/all.js?v=1558706266260"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/balance.html b/build/balance.html
-index bd76e1d..186f2c5 100644
+index 94564bd..9bfd03b 100644
 --- a/build/balance.html
 +++ b/build/balance.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511697634">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445210600">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520606646">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706267405">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -544,6 +545,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -547,6 +547,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511697634"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445210600"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520606646"></script>
++    <script src="js/all.js?v=1558706267405"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/calculator.html b/build/calculator.html
-index c3108fd..084fda5 100644
+index 61abb87..be945ea 100644
 --- a/build/calculator.html
 +++ b/build/calculator.html
 @@ -10,7 +10,7 @@
      <link rel="apple-touch-icon" href="icon.png">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511698146">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445210830">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520606910">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706267492">
      <style></style>
    </head>
    <body>
-@@ -23,7 +23,6 @@
-           <div class="row mt-4">
-             <p class="text-center pr-0 pr-md-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed metus ac nulla placerat blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus pretium elit quis mi ultricies pharetra. </p>
-           </div>
--          <div class="flex-grow-1"></div>
-           <div class="row flex-row justify-content-center mt-5">
-             <div class="inputs-wrapper inputs-wrapper--white inputs-wrapper--material inputs-wrapper__metric inputs-wrapper__metric--first d-flex f-18 px-4 pt-5 pb-md-3 pt-md-5 px-md-5">
-               <div class="form-group f-2 limit-min">
-@@ -94,6 +93,8 @@
-               </div>
-             </div>
-           </div>
-+        </div>
-+        <div class="col-md-12 flex-column">
-           <div class="row flex-row justify-content-center back-button__wrapper mx-0">
-             <h1 class="text-center">ÖLKƏLƏR ÜZRƏ TARİFLƏR</h1>
-           </div>
 diff --git a/build/contact.html b/build/contact.html
-index 1916dca..47c3fe4 100644
+index e40ea48..fa333b7 100644
 --- a/build/contact.html
 +++ b/build/contact.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511699676">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445211314">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520607304">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706267744">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -498,6 +499,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -501,6 +501,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511699676"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445211314"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520607304"></script>
++    <script src="js/all.js?v=1558706267744"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/courier_order.html b/build/courier_order.html
-index 41c18fa..fbfd672 100644
+index 3818b8b..7990384 100644
 --- a/build/courier_order.html
 +++ b/build/courier_order.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511700761">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445211720">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520607717">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706268033">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -511,6 +512,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -514,6 +514,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511700761"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445211720"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520607717"></script>
++    <script src="js/all.js?v=1558706268033"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/edit_profile.html b/build/edit_profile.html
-index 7f8ca40..a5d0ebf 100644
+index 8f17bbb..9fad744 100644
 --- a/build/edit_profile.html
 +++ b/build/edit_profile.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511702043">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445212007">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520607919">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706268529">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -560,6 +561,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -563,6 +563,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511702043"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445212007"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520607919"></script>
++    <script src="js/all.js?v=1558706268529"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/faq.html b/build/faq.html
-index 0d18ed7..c6b4aea 100644
+index 5a24a3c..372eb07 100644
 --- a/build/faq.html
 +++ b/build/faq.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511704721">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445212322">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520608131">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706268818">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -499,6 +500,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -502,6 +502,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511704721"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445212322"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520608131"></script>
++    <script src="js/all.js?v=1558706268818"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/how_work.html b/build/how_work.html
-index 9633825..489ced0 100644
+index bf74858..134e763 100644
 --- a/build/how_work.html
 +++ b/build/how_work.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511706304">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445212656">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520608377">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706269100">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -499,6 +500,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -502,6 +502,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511706304"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445212656"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520608377"></script>
++    <script src="js/all.js?v=1558706269100"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/last_30_days.html b/build/last_30_days.html
-index d5004ba..6b061b0 100644
+index c652def..71b15e0 100644
 --- a/build/last_30_days.html
 +++ b/build/last_30_days.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511707358">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445213054">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520608697">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706269444">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -562,6 +563,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -565,6 +565,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511707358"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445213054"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520608697"></script>
++    <script src="js/all.js?v=1558706269444"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/main.html b/build/main.html
-index 0b12c75..1126b58 100644
+index 28d07eb..3d00a1b 100644
 --- a/build/main.html
 +++ b/build/main.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511708778">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445213347">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520609267">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706269740">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -480,6 +481,17 @@
-               </div>
-               <form action="">
-                 <div class="row pt-3 flex-row fullCenter">
-+                  <div class="col-lg-12 no-padding">
-+                    <div class="form-group f-2 mt-2">
-+                      <label for="exampleFormControlInput1">Ölkə</label>
-+                      <select class="form-control b-input selectpicker" data-live-search="true" data-style="b-input">
-+                        <option value="1">bir</option>
-+                        <option value="2">iki</option>
-+                        <option value="3">uc</option>
-+                        <option value="4">dord</option>
-+                      </select><small class="errorText">Must be 8-20 characters long. </small>
-+                    </div>
-+                  </div>
-                   <div class="col-lg-6 no-padding">
-                     <div class="form-group f-3 mt-2">
-                       <label for="exampleFormControlInput1">linki əlavə et</label>
-@@ -499,11 +511,11 @@
-                     </div>
-                     <div class="form-group f-2 mt-2">
-                       <label for="exampleFormControlInput1">ölçü</label>
--                      <select class="form-control b-input b-input--small is-invalid">
--                        <option></option>
--                        <option></option>
--                        <option></option>
--                        <option></option>
-+                      <select class="form-control b-input b-input--small selectpicker" data-live-search="true" data-style="b-input">
-+                        <option value="1">bir</option>
-+                        <option value="2">iki</option>
-+                        <option value="3">uc</option>
-+                        <option value="4">dord</option>
-                       </select><small class="errorText">Must be 8-20 characters long.</small>
-                     </div>
-                     <div class="form-group f-2 mt-2">
-@@ -569,6 +581,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -583,6 +583,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511708778"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445213347"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520609267"></script>
++    <script src="js/all.js?v=1558706269740"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/messages.html b/build/messages.html
-index efb7f4f..9d4ff7f 100644
+index d4aef04..2edd6f2 100644
 --- a/build/messages.html
 +++ b/build/messages.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511709668">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445213543">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520609544">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706269982">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -499,6 +500,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -502,6 +502,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511709668"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445213543"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520609544"></script>
++    <script src="js/all.js?v=1558706269982"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/news_all.html b/build/news_all.html
-index 7523adf..77ab4b9 100644
+index 0fc6b4b..5852517 100644
 --- a/build/news_all.html
 +++ b/build/news_all.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511710492">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445213839">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520609774">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706270420">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -509,6 +510,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -512,6 +512,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511710492"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445213839"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520609774"></script>
++    <script src="js/all.js?v=1558706270420"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/news_one.html b/build/news_one.html
-index 466f7d4..f839aeb 100644
+index 0d5c292..e7c4556 100644
 --- a/build/news_one.html
 +++ b/build/news_one.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511712585">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445214114">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520610027">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706270658">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -477,6 +478,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -480,6 +480,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511712585"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445214114"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520610027"></script>
++    <script src="js/all.js?v=1558706270658"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/orders.html b/build/orders.html
-index 95b7c10..883781e 100644
+index 09e4fac..a632698 100644
 --- a/build/orders.html
 +++ b/build/orders.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511715417">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445214788">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520610369">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706270962">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -671,10 +672,10 @@
-         <div class="row order-delivered d-flex flex-column m-0">
-           <div class="row order-delivered__header fullCenter m-0 p-1">
-             <div class="col-sm-4 fullCenter">
--              <h2 class="m-0"> <span class="order-accordion__h-key">Mağaza:  </span><span class="bold black">Trendyol</span></h2>
-+              <h2 class="m-0"> <span class="order-accordion__h-key gray">Mağaza:  </span><span class="bold black">Trendyol</span></h2>
-             </div>
-             <div class="col-sm-4 fullCenter">
--              <h2 class="m-0"> <span class="order-accordion__h-key">Ölkə:  </span><span class="bold black">Türkiyə</span></h2>
-+              <h2 class="m-0"> <span class="order-accordion__h-key gray">Ölkə:  </span><span class="bold black">Türkiyə</span></h2>
-             </div>
-             <div class="col-sm-4 fullCenter"><a class="order-delivered__link fullCenter m-0" href=""> <img class="orders__filter-icon mr-2" src="./img/link (2).svg" alt="filter icon">Məhsulun Linki</a></div>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -477,34 +477,58 @@
            </div>
-@@ -712,6 +713,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+         </div>
+         <div class="row justify-content-center mt-5">
+-          <div class="inputs-wrapper inputs-wrapper--white fullCenter flex-column f-15 pt-3 pb-5 px-3 px-sm-5">
++          <div class="inputs-wrapper inputs-wrapper--white fullCenter flex-column f-15 pt-3 pb-5 px-3 px-sm-0">
+             <h1 class="text-center mt-3">SİFARİŞLƏRİM</h1>
+             <p class="text-center mb-5">Müştəri Kodu: <span class="f-25 bold main-color">112 820</span></p>
+             <div class="about-logo__wrapper text-center mb-5"></div>
+             <div class="orders__content-wrapper">
+               <div class="row justify-content-between">
+-                <div class="col-md-3 fullCenter mb-3 mb-sm-0">
+-                  <button class="btn btn-primary orders__tab-pill orders__tab-pill--active" type="button">
+-                     Notifications <span class="badge badge-light">4</span></button>
+-                </div>
+-                <div class="col-md-3 fullCenter mb-3 mb-sm-0">
+-                  <button class="btn orders__tab-pill" type="button">
+-                     Notifications <span class="badge badge-light">4</span></button>
+-                </div>
+-                <div class="col-md-3 fullCenter mb-3 mb-sm-0">
+-                  <button class="btn orders__tab-pill" type="button">
+-                     Notifications <span class="badge badge-light">4</span></button>
++                <div class="col-6 col-md-12 flex-row flex-wrap fullCenter">
++                  <div class="col-md-3 col-sm-12 fullCenter mb-3">
++                    <button class="btn btn-primary orders__tab-pill orders__tab-pill--active" type="button">
++                       Notifications <span class="badge badge-light">4</span></button>
++                  </div>
++                  <div class="col-md-3 col-sm-12 fullCenter mb-3">
++                    <button class="btn orders__tab-pill" type="button">
++                       Notifications <span class="badge badge-light">4</span></button>
++                  </div>
++                  <div class="col-md-3 col-sm-12 fullCenter mb-3">
++                    <button class="btn orders__tab-pill" type="button">
++                       Notifications <span class="badge badge-light">4</span></button>
++                  </div>
++                  <div class="col-md-3 col-sm-12 fullCenter mb-3">
++                    <button class="btn orders__tab-pill" type="button">
++                       Notifications <span class="badge badge-light">24</span></button>
++                  </div>
+                 </div>
+-                <div class="col-md-3 fullCenter mb-3 mb-sm-0">
+-                  <button class="btn orders__tab-pill" type="button">
+-                     Notifications <span class="badge badge-light">24</span></button>
++                <div class="col-6 col-md-12 flex-row flex-wrap fullCenter mt-md-3">
++                  <div class="col-lg-3 col-md-4 col-sm-12 fullCenter mb-2"><a class="orders__filter-link orders__filter-link--active fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/filter-results-button.svg" alt="filter icon">Əvvəlcə Bahalı</a></div>
++                  <div class="col-lg-3 col-md-4 col-sm-12 fullCenter mb-2"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/filter-results-button-reverse.svg" alt="filter icon">Əvvəlcə Ucuz</a></div>
++                  <div class="col-lg-3 col-md-4 col-sm-12 fullCenter mb-2"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/sort-alphabet-ascending.svg" alt="filter icon">A-dan Z-yə</a></div>
++                  <div class="col-lg-3 col-md-4 col-sm-12 fullCenter mb-2"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/descending-alphabet-sort.svg" alt="filter icon">Z-dən A-ya</a></div>
+                 </div>
+               </div>
+               <div class="row justify-content-between mt-3">
+-                <div class="col-md-3 fullCenter"><a class="orders__filter-link orders__filter-link--active fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/filter-results-button.svg" alt="filter icon">Əvvəlcə Bahalı</a></div>
+-                <div class="col-md-3 fullCenter"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/filter-results-button-reverse.svg" alt="filter icon">Əvvəlcə Ucuz</a></div>
+-                <div class="col-md-3 fullCenter"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/sort-alphabet-ascending.svg" alt="filter icon">A-dan Z-yə</a></div>
+-                <div class="col-md-3 fullCenter"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/descending-alphabet-sort.svg" alt="filter icon">Z-dən A-ya</a></div>
++                <div class="col-md-6 fullCenter mb-2">
++                  <div class="form-group f-2 mt-2">
++                    <label for="exampleFormControlInput1">Ölkə</label>
++                    <select class="form-control b-input b-input--small selectpicker" data-live-search="true" data-style="b-input">
++                      <option value="1">bir</option>
++                      <option value="2">iki</option>
++                      <option value="3">uc</option>
++                      <option value="4">dord</option>
++                    </select>
++                  </div>
++                </div>
++                <div class="col-md-6 fullCenter mb-2">
++                  <div class="form-group f-2 mt-2">
++                    <label for="exampleFormControlInput1">Sənədləşmə</label>
++                    <select class="form-control b-input b-input--small">
++                      <option value="1">Bəyənnamə</option>
++                      <option value="2">Digər</option>
++                    </select>
++                  </div>
++                </div>
+               </div>
+               <div class="row flex-column justify-content-between mt-4">
+                 <div class="col-md-12 flex-column">
+@@ -715,6 +739,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511715417"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445214788"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520610369"></script>
++    <script src="js/all.js?v=1558706270962"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/policy.html b/build/policy.html
-index 9e76932..812b121 100644
+index 46f75d4..0ba3816 100644
 --- a/build/policy.html
 +++ b/build/policy.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511716768">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445215029">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520610591">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706271192">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -474,6 +475,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -477,6 +477,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511716768"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445215029"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520610591"></script>
++    <script src="js/all.js?v=1558706271192"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/queries.html b/build/queries.html
-index 3205b25..dcceca5 100644
+index 49eedbf..8349962 100644
 --- a/build/queries.html
 +++ b/build/queries.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511718520">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445215257">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520610990">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706271451">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -572,6 +573,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -575,6 +575,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511718520"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445215257"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520610990"></script>
++    <script src="js/all.js?v=1558706271451"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/register.html b/build/register.html
-index 8df10ed..f4d7d06 100644
+index 750ec2d..192133d 100644
 --- a/build/register.html
 +++ b/build/register.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511720494">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445215584">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520611245">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706271985">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -561,6 +562,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -564,6 +564,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511720494"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445215584"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520611245"></script>
++    <script src="js/all.js?v=1558706271985"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/sample_sites.html b/build/sample_sites.html
-index c596e00..f758961 100644
+index 64bdf21..8e745a1 100644
 --- a/build/sample_sites.html
 +++ b/build/sample_sites.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511725471">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445215829">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520611448">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706272350">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -521,6 +522,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -524,6 +524,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511725471"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445215829"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520611448"></script>
++    <script src="js/all.js?v=1558706272350"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/wishlist.html b/build/wishlist.html
-index eac35c0..6e707aa 100644
+index 06b1425..a2bb90f 100644
 --- a/build/wishlist.html
 +++ b/build/wishlist.html
-@@ -9,9 +9,10 @@
+@@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1555511728917">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558445216458">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520611631">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706272568">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-@@ -570,6 +571,8 @@
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="js/datepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+@@ -573,6 +573,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
--    <script src="js/all.js?v=1555511728917"></script>
-+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-+    <script src="js/all.js?v=1558445216458"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+-    <script src="js/all.js?v=1558520611631"></script>
++    <script src="js/all.js?v=1558706272568"></script>
    </body>
  </html>
 \ No newline at end of file

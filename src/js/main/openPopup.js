@@ -20,11 +20,11 @@ const openPopup = ()=> {
 
 		// popup.css('display', 'flex')
 	})
-	popup.click(e=>{
+	$(document).on('click', '.b-popup', (e)=>{
 		const target = $(e.target)
 		if(target.closest('.b-popup__inner').length<=0){
 			blurryBg.removeClass('blurry-background--active')
-			popup.removeClass('b-popup--active')
+			target.removeClass('b-popup--active')
 			setTimeout(function(){
 				bNav.css('display', 'flex')
 			}, 300)
