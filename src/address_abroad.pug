@@ -59,7 +59,7 @@ block unique-content
 									.copy__right.flex-column.justify-content-center
 										button.btn.btn-clipboard.b-tooltip(data-clipboard-target='#'+val.id )
 											img(src="./img/paper.svg", alt="Copy this")
-											span.tooltiptext Kopiyala
+											span.tooltiptext(data-copy="Kopiyala" data-copied="Kopiyaladı")
 							
 					
 
@@ -84,4 +84,4 @@ block unique-content
 									.copy__right.flex-column.justify-content-center
 										button.btn.btn-clipboard.b-tooltip(data-clipboard-target='#'+val.id )
 											img(src="./img/paper.svg", alt="Copy this")
-											span.tooltiptext Kopiyala
+											span.tooltiptext(data-copy="Kopiyala" data-copied="Kopiyaladı")

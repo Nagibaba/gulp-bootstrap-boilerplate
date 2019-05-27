@@ -31,7 +31,18 @@ block unique-content
 						input.form-control.b-input(type='text', placeholder='')
 				
 
-			
+				.col-md-6.pt-2
+					.form-group.f-2.mt-2
+						label(for='exampleFormControlInput1') Ölkə
+						select.form-control.b-input.selectpicker(data-live-search='true' data-style="b-input")
+							option(value='1') bir
+							option(value='2') iki
+							option(value='3') uc
+							option(value='4') dord
+								
+				
+
+				
 
 				
 				
@@ -40,7 +51,7 @@ block unique-content
 				//- 		label.text-left.pl-2(for='exampleFormControlInput1') Qiymət
 				//- 		input.form-control.b-input(type='number', placeholder='')
 				
-				.col-md-6.pt-2
+				.col-md-12.pt-2
 					.custom-file.mt-2
 						input#customFileLang.custom-file-input(type='file', lang='az')
 						label.custom-file-label.b-input(for='customFileLang') Invoice (jpg,png,pdf)
@@ -53,9 +64,12 @@ block unique-content
 
 			hr.main-bg
 
-			.row.flex-row.justify-content-between.p-0.pt-3.m-0
+			.row.flex-row.p-0.pt-3.m-0
 				
 				.col-md-4.flex-column.pt-2(data-repeat-id='item')
+					.d-flex.fullWidth.justify-content-end
+						a.close-additional-item(href='')
+							i.fa.fa-close.text-danger
 					.form-group.fullWidth.mt-2
 						label(for='exampleFormControlInput1') 
 						select.form-control.b-input

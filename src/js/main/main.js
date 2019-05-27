@@ -45,11 +45,16 @@ ready(function() {
 	new Clipboard('.btn-clipboard');
 	var timeout;
 	// const timeout
+
+	
+	const tooltip = $('.tooltiptext')
+	tooltip.text(tooltip.data('copy'))
+
 	$('.btn-clipboard').bind('click onpressstart', e=>{
 		const target = $(e.target).parent('button')
 		const tooltip = target.find('.tooltiptext')
 		// const copyText = $( target.data('clipboard-target') )
-		tooltip.text('Kopiyaladı')
+		tooltip.text(tooltip.data('copied'))
 		clearTimeout(timeout)
 		// copyToClipboard(copyText)
 	})
@@ -59,7 +64,7 @@ ready(function() {
 		// const copyText = $( target.data('clipboard-target') )
 
 		timeout = setTimeout(function(){
-			tooltip.text('Kopiyala')
+			tooltip.text(tooltip.data('copy'))
 			
 		}, 200)
 	})
