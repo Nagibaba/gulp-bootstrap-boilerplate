@@ -8,6 +8,9 @@ block unique-content
 					span.f-25.bold.main-color -3.05 AZN
 				.row.pt-3.flex-row.fullCenter
 					button.btn.btn-warning.main-button(type='submit') Balansı artır
+
+				.row.pt-3.flex-row.fullCenter
+					button.btn.btn-warning.main-button.pay-button(type='submit'  disabled) Ödə
 		.col-md-6
 			.inputs-wrapper.inputs-wrapper--white.d-block.f-15.pt-3.pb-5.px-3.px-sm-5
 				.row.flex-row.fullCenter
@@ -90,15 +93,26 @@ block unique-content
 							.order-accordion.flex-column.mb-4
 								.order-accordion__header
 									.row.justify-content-between
-										.col-sm-6.fullCenter
+										.col-sm-4.fullCenter
+											.form-check.d-flex.flex-row.py-1.px-1.mt-1
+												input.form-check-input(type='checkbox' id='urgent-order'+val.accId)
+												label.form-check-label.ml-2(for='urgent-order'+val.accId) 
+													span.ml-1 Seç
+													
+										.col-sm-4.fullCenter
 											h2.m-0 
 												span.order-accordion__h-key Mağaza:  
 												span.bold.black Trendyol
 
-										.col-sm-6.fullCenter
+										.col-sm-4.fullCenter
 											h2.m-0 
 												span.order-accordion__h-key Ölkə:  
 												span.bold.black Türkiyə
+										
+										
+
+									
+
 								
 								.order-accordion__content-wrapper
 									.table-responsive

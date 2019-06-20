@@ -42,9 +42,19 @@ ready(function() {
 
 	
 	// Clipboard
-	new Clipboard('.btn-clipboard');
+	// new Clipboard('.btn-clipboard');
 	var timeout;
 	// const timeout
+	const copyToClipboard = function (text) {
+          var aux = document.createElement("input");
+          aux.setAttribute("value", text);
+          document.body.appendChild(aux);
+          aux.select();
+          document.execCommand("copy");
+          document.body.removeChild(aux);
+    }
+
+   
 
 	
 	const tooltip = $('.tooltiptext')
@@ -54,6 +64,12 @@ ready(function() {
 		const target = $(e.target).parent('button')
 		const tooltip = target.find('.tooltiptext')
 		// const copyText = $( target.data('clipboard-target') )
+		// COPY
+		const copyText = target.closest('.copy').find('.copy__value').text().trim()
+		
+		copyToClipboard(copyText)
+		// $(target.data('clipboard-target')).text()
+
 		tooltip.text(tooltip.data('copied'))
 		clearTimeout(timeout)
 		// copyToClipboard(copyText)
@@ -72,34 +88,8 @@ ready(function() {
 
 
 
-
-	// function copyToClipboard(element) {
-	//     var $temp = $("<input>");
-	//     $("body").append($temp);
-	//     $temp.val(element.text()).select();
-	//     document.execCommand("copy");
-	//     $temp.remove();
-	// }
-	// function myFunction() {
-	//   var copyText = document.getElementById("myInput");
-	//   copyText.select();
-	//   document.execCommand("copy");
-	  
-	//   var tooltip = document.getElementById("myTooltip");
-	//   tooltip.innerHTML = "Copied: " + copyText.value;
-	// }
-
-	// function outFunc() {
-	//   var tooltip = document.getElementById("myTooltip");
-	//   tooltip.innerHTML = "Copy to clipboard";
-	// }
-
-	// tooltips
-	// $('[data-toggle="tooltip"]').tooltip()
-
-
-	// new Tooltip($('.btn-clipboard'), {
-	//     placement: 'top', // or bottom, left, right, and variations
-	//     title: "Top"
-	// });
+	// we add the modal to the end of body 
+	const modal = $('.add-to-the-end-of-body')
+	$('body').append(modal.clone())
+	modal.remove()
 })

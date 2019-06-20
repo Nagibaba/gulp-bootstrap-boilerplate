@@ -173,6 +173,8 @@ body
 	cursor: pointer
 	transition: .4s border
 	& img
+		width: 66px
+		height: 66px
 		border-radius: 66px
 	&:after
 			@extend .fullCenter
@@ -822,7 +824,7 @@ select.form-control
 		// white-space: nowrap
 		text-align: center
 		color: $main-color
-		text-decoration: underline
+		text-decoration: none
 		&:hover
 			text-decoration: underline
 			color: #B2B2B2
@@ -986,7 +988,9 @@ select.form-control
 			&-wrapper
 				order: 1
 
-.errorText
+small.errorText
 	@extend .text-danger, .ml-1
 	min-height: 46px
+	font-size: 15px!important
+
 

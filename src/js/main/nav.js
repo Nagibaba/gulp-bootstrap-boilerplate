@@ -18,8 +18,8 @@ const nav = () => {
 		const href = target.attr('href')
 		$('.b-nav__tab').removeClass('b-nav__tab--active')
 		target.parent('.b-nav__tab').addClass('b-nav__tab--active')
-		$('.tab-content').hide()
-		$('.tab-content' + href).css('display','inherit')
+		$('.b-nav__tab-content').removeClass('b-nav__tab-content--active')
+		$('.b-nav__tab-content' + href).addClass('b-nav__tab-content--active')
 
 	})
 

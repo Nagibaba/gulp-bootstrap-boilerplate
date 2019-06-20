@@ -7826,7 +7826,7 @@ button.bg-dark:focus {
 .my-1 {
   margin-bottom: 0.25rem !important; }
 
-.ml-1, .errorText,
+.ml-1, small.errorText,
 .mx-1 {
   margin-left: 0.25rem !important; }
 
@@ -9285,10 +9285,10 @@ a.text-info:hover, a.text-info:focus {
 a.text-warning:hover, a.text-warning:focus {
   color: #ba8b00 !important; }
 
-.text-danger, .errorText {
+.text-danger, small.errorText {
   color: #ff4136 !important; }
 
-a.text-danger:hover, a.errorText:hover, a.text-danger:focus, a.errorText:focus {
+a.text-danger:hover, a.text-danger:focus {
   color: #e90d00 !important; }
 
 .text-light {
@@ -9480,6 +9480,9 @@ h2 {
 
 .f-25 {
   font-size: 25px; }
+
+.f-30 {
+  font-size: 30px; }
 
 .f-100 {
   font-size: 100px; }
@@ -9917,10 +9920,10 @@ body::after {
   100% {
     width: 100%; } }
 
-.tab-content#tab-2 {
+.b-nav__tab-content {
   display: none; }
 
-.tab-content#tab-1 {
+.b-nav__tab-content--active {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -9990,7 +9993,6 @@ body::after {
         position: absolute;
         top: -4px;
         left: 0;
-        content: url("../../img/Line 47.svg");
         z-index: -1; }
 
 .pressClose {
@@ -10611,6 +10613,8 @@ body {
   -moz-transition: .4s border;
   transition: .4s border; }
   .link-thumbnail img {
+    width: 66px;
+    height: 66px;
     -webkit-border-radius: 66px;
        -moz-border-radius: 66px;
             border-radius: 66px; }
@@ -11391,7 +11395,7 @@ select.form-control {
   .order-accordion__link {
     text-align: center;
     color: #FCD626;
-    text-decoration: underline; }
+    text-decoration: none; }
     .order-accordion__link:hover {
       text-decoration: underline;
       color: #B2B2B2; }
@@ -11550,8 +11554,9 @@ select.form-control {
         -ms-flex-order: 1;
             order: 1; } }
 
-.errorText {
-  min-height: 46px; }
+small.errorText {
+  min-height: 46px;
+  font-size: 15px !important; }
 
 .datepicker-container {
   background-color: #fff;

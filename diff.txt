@@ -1,13 +1,13 @@
 diff --git a/build/404.html b/build/404.html
-index b93724f..9ec2e33 100644
+index 892e5ef..69fbc2e 100644
 --- a/build/404.html
 +++ b/build/404.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520605081">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706265534">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971662731">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113705208">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -15,21 +15,21 @@ index b93724f..9ec2e33 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520605081"></script>
-+    <script src="js/all.js?v=1558706265534"></script>
+-    <script src="js/all.js?v=1558971662731"></script>
++    <script src="js/all.js?v=1559113705208"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/about.html b/build/about.html
-index ae8d337..e0973a2 100644
+index 332aee1..6f43fcb 100644
 --- a/build/about.html
 +++ b/build/about.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520605232">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706265896">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971663093">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113706006">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -37,65 +37,65 @@ index ae8d337..e0973a2 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520605232"></script>
-+    <script src="js/all.js?v=1558706265896"></script>
+-    <script src="js/all.js?v=1558971663093"></script>
++    <script src="js/all.js?v=1559113706006"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/add_invoice.html b/build/add_invoice.html
-index 5c615c7..04ae321 100644
+index 7a2491d..98844af 100644
 --- a/build/add_invoice.html
 +++ b/build/add_invoice.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520606444">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706267122">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971664681">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113709182">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-@@ -534,6 +534,6 @@
+@@ -546,6 +546,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520606444"></script>
-+    <script src="js/all.js?v=1558706267122"></script>
+-    <script src="js/all.js?v=1558971664681"></script>
++    <script src="js/all.js?v=1559113709182"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/address_abroad.html b/build/address_abroad.html
-index 860ced9..a7893b5 100644
+index 097cde5..83de0fc 100644
 --- a/build/address_abroad.html
 +++ b/build/address_abroad.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520605987">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706266726">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971664008">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113707611">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-@@ -581,6 +581,6 @@
+@@ -1224,6 +1224,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520605987"></script>
-+    <script src="js/all.js?v=1558706266726"></script>
+-    <script src="js/all.js?v=1558971664008"></script>
++    <script src="js/all.js?v=1559113707611"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/addresses.html b/build/addresses.html
-index d66f3eb..b264ff5 100644
+index ef7bdba..3837dbd 100644
 --- a/build/addresses.html
 +++ b/build/addresses.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520605660">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706266260">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971663435">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113706829">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -103,21 +103,21 @@ index d66f3eb..b264ff5 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520605660"></script>
-+    <script src="js/all.js?v=1558706266260"></script>
+-    <script src="js/all.js?v=1558971663435"></script>
++    <script src="js/all.js?v=1559113706829"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/balance.html b/build/balance.html
-index 94564bd..9bfd03b 100644
+index 0ee726c..276fffa 100644
 --- a/build/balance.html
 +++ b/build/balance.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520606646">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706267405">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971665299">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113712459">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -125,34 +125,34 @@ index 94564bd..9bfd03b 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520606646"></script>
-+    <script src="js/all.js?v=1558706267405"></script>
+-    <script src="js/all.js?v=1558971665299"></script>
++    <script src="js/all.js?v=1559113712459"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/calculator.html b/build/calculator.html
-index 61abb87..be945ea 100644
+index d8469de..b1da3cd 100644
 --- a/build/calculator.html
 +++ b/build/calculator.html
 @@ -10,7 +10,7 @@
      <link rel="apple-touch-icon" href="icon.png">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520606910">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706267492">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971665552">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113713647">
      <style></style>
    </head>
    <body>
 diff --git a/build/contact.html b/build/contact.html
-index e40ea48..fa333b7 100644
+index 8d21b07..832c085 100644
 --- a/build/contact.html
 +++ b/build/contact.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520607304">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706267744">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971666062">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113714283">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -160,21 +160,21 @@ index e40ea48..fa333b7 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520607304"></script>
-+    <script src="js/all.js?v=1558706267744"></script>
+-    <script src="js/all.js?v=1558971666062"></script>
++    <script src="js/all.js?v=1559113714283"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/courier_order.html b/build/courier_order.html
-index 3818b8b..7990384 100644
+index 0db9cba..3a97164 100644
 --- a/build/courier_order.html
 +++ b/build/courier_order.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520607717">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706268033">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971666505">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113715196">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -182,21 +182,21 @@ index 3818b8b..7990384 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520607717"></script>
-+    <script src="js/all.js?v=1558706268033"></script>
+-    <script src="js/all.js?v=1558971666505"></script>
++    <script src="js/all.js?v=1559113715196"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/edit_profile.html b/build/edit_profile.html
-index 8f17bbb..9fad744 100644
+index 0a85fa3..2a9cbf0 100644
 --- a/build/edit_profile.html
 +++ b/build/edit_profile.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520607919">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706268529">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971666958">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113715807">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -204,21 +204,21 @@ index 8f17bbb..9fad744 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520607919"></script>
-+    <script src="js/all.js?v=1558706268529"></script>
+-    <script src="js/all.js?v=1558971666958"></script>
++    <script src="js/all.js?v=1559113715807"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/faq.html b/build/faq.html
-index 5a24a3c..372eb07 100644
+index 2529e59..10b75a2 100644
 --- a/build/faq.html
 +++ b/build/faq.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520608131">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706268818">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971667255">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113716414">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -226,21 +226,21 @@ index 5a24a3c..372eb07 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520608131"></script>
-+    <script src="js/all.js?v=1558706268818"></script>
+-    <script src="js/all.js?v=1558971667255"></script>
++    <script src="js/all.js?v=1559113716414"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/how_work.html b/build/how_work.html
-index bf74858..134e763 100644
+index b30451d..e1830cb 100644
 --- a/build/how_work.html
 +++ b/build/how_work.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520608377">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706269100">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971667931">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113716857">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -248,21 +248,21 @@ index bf74858..134e763 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520608377"></script>
-+    <script src="js/all.js?v=1558706269100"></script>
+-    <script src="js/all.js?v=1558971667931"></script>
++    <script src="js/all.js?v=1559113716857"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/last_30_days.html b/build/last_30_days.html
-index c652def..71b15e0 100644
+index f0b0b08..41c9c32 100644
 --- a/build/last_30_days.html
 +++ b/build/last_30_days.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520608697">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706269444">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971668322">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113717310">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -270,21 +270,21 @@ index c652def..71b15e0 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520608697"></script>
-+    <script src="js/all.js?v=1558706269444"></script>
+-    <script src="js/all.js?v=1558971668322"></script>
++    <script src="js/all.js?v=1559113717310"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/main.html b/build/main.html
-index 28d07eb..3d00a1b 100644
+index cfc168c..7f6a12e 100644
 --- a/build/main.html
 +++ b/build/main.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520609267">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706269740">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971668810">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113719093">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -292,21 +292,21 @@ index 28d07eb..3d00a1b 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520609267"></script>
-+    <script src="js/all.js?v=1558706269740"></script>
+-    <script src="js/all.js?v=1558971668810"></script>
++    <script src="js/all.js?v=1559113719093"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/messages.html b/build/messages.html
-index d4aef04..2edd6f2 100644
+index dd0c356..62c2421 100644
 --- a/build/messages.html
 +++ b/build/messages.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520609544">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706269982">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971669248">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113719662">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -314,21 +314,21 @@ index d4aef04..2edd6f2 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520609544"></script>
-+    <script src="js/all.js?v=1558706269982"></script>
+-    <script src="js/all.js?v=1558971669248"></script>
++    <script src="js/all.js?v=1559113719662"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/news_all.html b/build/news_all.html
-index 0fc6b4b..5852517 100644
+index 128b3f4..cc10049 100644
 --- a/build/news_all.html
 +++ b/build/news_all.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520609774">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706270420">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971669497">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113720245">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -336,21 +336,21 @@ index 0fc6b4b..5852517 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520609774"></script>
-+    <script src="js/all.js?v=1558706270420"></script>
+-    <script src="js/all.js?v=1558971669497"></script>
++    <script src="js/all.js?v=1559113720245"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/news_one.html b/build/news_one.html
-index 0d5c292..e7c4556 100644
+index f8de316..6af3dbb 100644
 --- a/build/news_one.html
 +++ b/build/news_one.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520610027">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706270658">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971669721">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113720787">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -358,121 +358,43 @@ index 0d5c292..e7c4556 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520610027"></script>
-+    <script src="js/all.js?v=1558706270658"></script>
+-    <script src="js/all.js?v=1558971669721"></script>
++    <script src="js/all.js?v=1559113720787"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/orders.html b/build/orders.html
-index 09e4fac..a632698 100644
+index ed8b8d2..a57d5d8 100644
 --- a/build/orders.html
 +++ b/build/orders.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520610369">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706270962">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971670590">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113722232">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-@@ -477,34 +477,58 @@
-           </div>
-         </div>
-         <div class="row justify-content-center mt-5">
--          <div class="inputs-wrapper inputs-wrapper--white fullCenter flex-column f-15 pt-3 pb-5 px-3 px-sm-5">
-+          <div class="inputs-wrapper inputs-wrapper--white fullCenter flex-column f-15 pt-3 pb-5 px-3 px-sm-0">
-             <h1 class="text-center mt-3">SİFARİŞLƏRİM</h1>
-             <p class="text-center mb-5">Müştəri Kodu: <span class="f-25 bold main-color">112 820</span></p>
-             <div class="about-logo__wrapper text-center mb-5"></div>
-             <div class="orders__content-wrapper">
-               <div class="row justify-content-between">
--                <div class="col-md-3 fullCenter mb-3 mb-sm-0">
--                  <button class="btn btn-primary orders__tab-pill orders__tab-pill--active" type="button">
--                     Notifications <span class="badge badge-light">4</span></button>
--                </div>
--                <div class="col-md-3 fullCenter mb-3 mb-sm-0">
--                  <button class="btn orders__tab-pill" type="button">
--                     Notifications <span class="badge badge-light">4</span></button>
--                </div>
--                <div class="col-md-3 fullCenter mb-3 mb-sm-0">
--                  <button class="btn orders__tab-pill" type="button">
--                     Notifications <span class="badge badge-light">4</span></button>
-+                <div class="col-6 col-md-12 flex-row flex-wrap fullCenter">
-+                  <div class="col-md-3 col-sm-12 fullCenter mb-3">
-+                    <button class="btn btn-primary orders__tab-pill orders__tab-pill--active" type="button">
-+                       Notifications <span class="badge badge-light">4</span></button>
-+                  </div>
-+                  <div class="col-md-3 col-sm-12 fullCenter mb-3">
-+                    <button class="btn orders__tab-pill" type="button">
-+                       Notifications <span class="badge badge-light">4</span></button>
-+                  </div>
-+                  <div class="col-md-3 col-sm-12 fullCenter mb-3">
-+                    <button class="btn orders__tab-pill" type="button">
-+                       Notifications <span class="badge badge-light">4</span></button>
-+                  </div>
-+                  <div class="col-md-3 col-sm-12 fullCenter mb-3">
-+                    <button class="btn orders__tab-pill" type="button">
-+                       Notifications <span class="badge badge-light">24</span></button>
-+                  </div>
-                 </div>
--                <div class="col-md-3 fullCenter mb-3 mb-sm-0">
--                  <button class="btn orders__tab-pill" type="button">
--                     Notifications <span class="badge badge-light">24</span></button>
-+                <div class="col-6 col-md-12 flex-row flex-wrap fullCenter mt-md-3">
-+                  <div class="col-lg-3 col-md-4 col-sm-12 fullCenter mb-2"><a class="orders__filter-link orders__filter-link--active fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/filter-results-button.svg" alt="filter icon">Əvvəlcə Bahalı</a></div>
-+                  <div class="col-lg-3 col-md-4 col-sm-12 fullCenter mb-2"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/filter-results-button-reverse.svg" alt="filter icon">Əvvəlcə Ucuz</a></div>
-+                  <div class="col-lg-3 col-md-4 col-sm-12 fullCenter mb-2"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/sort-alphabet-ascending.svg" alt="filter icon">A-dan Z-yə</a></div>
-+                  <div class="col-lg-3 col-md-4 col-sm-12 fullCenter mb-2"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/descending-alphabet-sort.svg" alt="filter icon">Z-dən A-ya</a></div>
-                 </div>
-               </div>
-               <div class="row justify-content-between mt-3">
--                <div class="col-md-3 fullCenter"><a class="orders__filter-link orders__filter-link--active fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/filter-results-button.svg" alt="filter icon">Əvvəlcə Bahalı</a></div>
--                <div class="col-md-3 fullCenter"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/filter-results-button-reverse.svg" alt="filter icon">Əvvəlcə Ucuz</a></div>
--                <div class="col-md-3 fullCenter"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/sort-alphabet-ascending.svg" alt="filter icon">A-dan Z-yə</a></div>
--                <div class="col-md-3 fullCenter"><a class="orders__filter-link fullCenter" href=""> <img class="orders__filter-icon mr-2" src="./img/descending-alphabet-sort.svg" alt="filter icon">Z-dən A-ya</a></div>
-+                <div class="col-md-6 fullCenter mb-2">
-+                  <div class="form-group f-2 mt-2">
-+                    <label for="exampleFormControlInput1">Ölkə</label>
-+                    <select class="form-control b-input b-input--small selectpicker" data-live-search="true" data-style="b-input">
-+                      <option value="1">bir</option>
-+                      <option value="2">iki</option>
-+                      <option value="3">uc</option>
-+                      <option value="4">dord</option>
-+                    </select>
-+                  </div>
-+                </div>
-+                <div class="col-md-6 fullCenter mb-2">
-+                  <div class="form-group f-2 mt-2">
-+                    <label for="exampleFormControlInput1">Sənədləşmə</label>
-+                    <select class="form-control b-input b-input--small">
-+                      <option value="1">Bəyənnamə</option>
-+                      <option value="2">Digər</option>
-+                    </select>
-+                  </div>
-+                </div>
-               </div>
-               <div class="row flex-column justify-content-between mt-4">
-                 <div class="col-md-12 flex-column">
-@@ -715,6 +739,6 @@
+@@ -739,6 +739,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520610369"></script>
-+    <script src="js/all.js?v=1558706270962"></script>
+-    <script src="js/all.js?v=1558971670590"></script>
++    <script src="js/all.js?v=1559113722232"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/policy.html b/build/policy.html
-index 46f75d4..0ba3816 100644
+index 5d7fff1..ce19205 100644
 --- a/build/policy.html
 +++ b/build/policy.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520610591">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706271192">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971670981">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113722858">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -480,21 +402,21 @@ index 46f75d4..0ba3816 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520610591"></script>
-+    <script src="js/all.js?v=1558706271192"></script>
+-    <script src="js/all.js?v=1558971670981"></script>
++    <script src="js/all.js?v=1559113722858"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/queries.html b/build/queries.html
-index 49eedbf..8349962 100644
+index 7804516..be045c2 100644
 --- a/build/queries.html
 +++ b/build/queries.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520610990">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706271451">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971671437">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113723461">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -502,21 +424,21 @@ index 49eedbf..8349962 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520610990"></script>
-+    <script src="js/all.js?v=1558706271451"></script>
+-    <script src="js/all.js?v=1558971671437"></script>
++    <script src="js/all.js?v=1559113723461"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/register.html b/build/register.html
-index 750ec2d..192133d 100644
+index d3b0c7e..5d85351 100644
 --- a/build/register.html
 +++ b/build/register.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520611245">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706271985">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971671769">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113724080">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -524,21 +446,21 @@ index 750ec2d..192133d 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520611245"></script>
-+    <script src="js/all.js?v=1558706271985"></script>
+-    <script src="js/all.js?v=1558971671769"></script>
++    <script src="js/all.js?v=1559113724080"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/sample_sites.html b/build/sample_sites.html
-index 64bdf21..8e745a1 100644
+index 049d711..0ada32f 100644
 --- a/build/sample_sites.html
 +++ b/build/sample_sites.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520611448">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706272350">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971672044">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113725007">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -546,21 +468,21 @@ index 64bdf21..8e745a1 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520611448"></script>
-+    <script src="js/all.js?v=1558706272350"></script>
+-    <script src="js/all.js?v=1558971672044"></script>
++    <script src="js/all.js?v=1559113725007"></script>
    </body>
  </html>
 \ No newline at end of file
 diff --git a/build/wishlist.html b/build/wishlist.html
-index 06b1425..a2bb90f 100644
+index ec6d0d1..edf6124 100644
 --- a/build/wishlist.html
 +++ b/build/wishlist.html
 @@ -9,7 +9,7 @@
      <link rel="manifest" href="site.webmanifest">
      <!-- Place favicon.ico in the root directory-->
      <!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css-->
--    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558520611631">
-+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558706272568">
+-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1558971672407">
++    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1559113725739">
      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -568,8 +490,8 @@ index 06b1425..a2bb90f 100644
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
--    <script src="js/all.js?v=1558520611631"></script>
-+    <script src="js/all.js?v=1558706272568"></script>
+-    <script src="js/all.js?v=1558971672407"></script>
++    <script src="js/all.js?v=1559113725739"></script>
    </body>
  </html>
 \ No newline at end of file

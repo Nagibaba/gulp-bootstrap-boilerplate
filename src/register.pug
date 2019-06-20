@@ -47,7 +47,9 @@ block unique-content
 
 					.col-md-4
 						.form-group.mt-4.mt-sm-2.fullWidth
-							label(for='exampleFormControlInput1') Şəxsiyyət vəsiqəsi No*
+							label(for='exampleFormControlInput1') Şəxsiyyət vəsiqəsi No* 
+								button.btn.btn-linkr.p-0(type='button', data-toggle='modal', data-target='#exampleModalCenter')
+									i.fa.fa-info-circle.main-color
 							input.form-control.b-input(type='text', placeholder='', autofocus)
 							small.errorText Must be 8-20 characters long.
 
@@ -86,5 +88,15 @@ block unique-content
 				.row.pt-3.mb-3.flex-row.fullCenter
 					button.btn.btn-warning.main-button(type='submit')
 						|Qeydiyyatdan keç
-						
-
+		
+block popup						
+	#exampleModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+		.modal-dialog.modal-dialog-centered(role='document')
+			.modal-content
+				.modal-header
+					button.close(type='button', data-dismiss='modal', aria-label='Close')
+						span(aria-hidden='true') ×
+				.modal-body
+					.container-fluid
+						img.img-responsive(src="./img/vesiqe.jpg", alt="ID info" style="height: auto; width: 100%")
+				

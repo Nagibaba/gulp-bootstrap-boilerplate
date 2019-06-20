@@ -1,6 +1,24 @@
 extends pug_template/head
 
 block unique-content
+
+	.row.justify-content-between.mt-5
+		.col-md-6.fullCenter.mb-2
+			.form-group.f-2.mt-2
+				label(for='exampleFormControlInput1') Ölkə
+				select.form-control.b-input.b-input--small.selectpicker(data-live-search='true' data-style="b-input")
+					option(value='1') bir
+					option(value='2') iki
+					option(value='3') uc
+					option(value='4') dord
+		.col-md-6.fullCenter.mb-2
+			.form-group.f-2.mt-2
+				label(for='exampleFormControlInput1') Kateqoriya
+				select.form-control.b-input.b-input--small.selectpicker(data-live-search='true' data-style="b-input")
+					option(value='1') bir
+					option(value='2') iki
+					option(value='3') uc
+					option(value='4') dord
 	.row.justify-content-center.mt-5
 		
 		.col-xl-3.col-md-4.justify-content-center.mb-5
