@@ -229,7 +229,16 @@ body
 	height: 45px
 	max-height: 45px
 	font-family: CirceRounded
-	
+
+.b-textarea
+	flex-grow: 1
+	border-radius: 10px
+	border-color: #F0F0F0
+	font-size: 18px
+	// height: 45px
+	// max-height: 45px
+	font-family: CirceRounded
+
 	&:focus
 		border-color: $main-color
 		box-shadow: none
@@ -362,13 +371,13 @@ select.form-control
 
 .b-search-input
 	width: 100%
-	max-width: 0
+	// max-width: 0
 	height: 30px!important
-	opacity: 0
-	padding-left: 0
+	// opacity: 0
+	padding-left: $input-btn-padding-x
 	overflow: hidden
 	border-radius: 10px
-	border-color: #F0F0F0
+	border-color: $main-color
 	height: 45px
 	font-family: CirceRounded
 	border-color: $main-color
@@ -969,6 +978,14 @@ select.form-control
 			
 			padding: 0
 		&__date
+	
+	.inputs-wrapper
+		&--shopping
+			display: none
+			position: fixed
+			top: 77px
+			right: 10px
+			left: 10px
 
 @include media-breakpoint-between(xs, lg)
 	.work
