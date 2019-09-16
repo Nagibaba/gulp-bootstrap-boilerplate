@@ -1,6 +1,6 @@
 import closeNav from './closeNav'
 const documentListener = (cb=null) => {
-	$(document).click((e)=>{
+	$(document).on('click touchstart', (e)=>{
 		const _this = $(e.target)
 		
 

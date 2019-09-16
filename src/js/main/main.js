@@ -7,6 +7,7 @@ import Clipboard from 'clipboard'
 
 import a from './a'
 import nav from './nav'
+import windowScrollListener from './windowScrollListener'
 import documentListener from './documentListener'
 import slider from './slider'
 import shoppingCard from './shoppingCard'
@@ -28,6 +29,7 @@ function ready(fn) {
 ready(function() {
 
 	nav()
+	windowScrollListener()
 	documentListener()
 	slider(Swiper)
 	shoppingCard()
@@ -35,6 +37,17 @@ ready(function() {
 	repeatItem()
 
 	$('[data-toggle="datepicker"]').datepicker({ format: "dd/mm/yyyy" })
+
+	$('.jqueryMask').each(function(){
+		const t = $(this)
+		t.mask(t.attr('data-mask'), {
+			translation: {A: {pattern: /A/, optional: false}, Z: {pattern: /[AZ]/, optional: false}, E: {pattern: /E/, optional: true}}
+		})
+	})
+
+	$('#Declarations_link_id').change(function(){
+		$('#Declarations_name').trigger('focus')
+	})
 
 	// $.mask.definitions['9'] = '';
 	// $.mask.definitions['d'] = '[0-9]';
@@ -92,4 +105,28 @@ ready(function() {
 	const modal = $('.add-to-the-end-of-body')
 	$('body').append(modal.clone())
 	modal.remove()
+
+
+	
+
+
+	// scroll to order
+	$(".scroll-to-order").click(function (e){
+		e.preventDefault()
+        $('html, body').animate({
+            scrollTop: $(".orders-holder").offset().top - 10
+        }, 1000);
+    });
+
+    //scroll to top
+    $(".scroll-to-top").click(function (e){
+		e.preventDefault()
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
 })
+
+
+
+

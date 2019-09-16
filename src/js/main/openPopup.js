@@ -20,11 +20,12 @@ const openPopup = ()=> {
 
 		// popup.css('display', 'flex')
 	})
-	$(document).on('click', '.b-popup', (e)=>{
+	$(document).on('click touchstart', '.b-popup, .close-b-popup', (e)=>{
+		e.preventDefault()
 		const target = $(e.target)
-		if(target.closest('.b-popup__inner').length<=0){
+		if(target.closest('.b-popup__inner').length<=0 || target.closest('.close-b-popup').length>0){
 			blurryBg.removeClass('blurry-background--active')
-			target.removeClass('b-popup--active')
+			$('.b-popup--active').removeClass('b-popup--active')
 			setTimeout(function(){
 				bNav.css('display', 'flex')
 			}, 300)
