@@ -2,7 +2,20 @@
 ////// POPUP
 // import $ from 'jquery'
 // import mask from 'jquery-mask-plugin'
-import Clipboard from 'clipboard'
+// import Clipboard from 'clipboard'
+
+import $ from '../compiled_js/jquery-3.3.1.min'
+import '../compiled_js/jquery.mask'
+import '../compiled_js/popper.min'
+import '../compiled_js/datepicker.min'
+import '../compiled_js/swiper.min'
+import '../compiled_js/bootstrap.bundle.min'
+import '../compiled_js/bootstrap-select.min'
+import '../compiled_js/sweetalert.min'
+import '../compiled_js/jquery.form.min'
+import '../compiled_js/form.variables'
+
+
 // import Tooltip from 'tooltip'
 
 import a from './a'

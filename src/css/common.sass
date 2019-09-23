@@ -545,19 +545,23 @@ select.form-control
 			transition: .4s all
 .payment-radiogroup
 	&--first
-		& input
-			&:checked + div
-				background-image: url('../../img/Group 451.svg')
+
 		& label
 			& div
 				background-image: url('../../img/Group 450.svg')
-	&--second
 		& input
 			&:checked + div
-				background-image: url('../../img/Group 453.svg')
+				background-image: url('../../img/Group 451.svg')
+		
+	&--second
+
 		& label
 			& div
 				background-image: url('../../img/Group 452.svg')
+		& input
+			&:checked + div
+				background-image: url('../../img/Group 453.svg')
+		
 
 	& input
 		display: none
