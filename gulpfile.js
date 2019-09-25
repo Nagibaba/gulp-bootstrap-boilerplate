@@ -148,9 +148,9 @@ gulp.task('css:build', function () {
             console.log(err)
             this.emit('end')
         })
-        .pipe(uncss({
-            html: fizzaLinks // html: [path.build.html + '*.html']
-        }))
+        // .pipe(uncss({
+        //     html: fizzaLinks // html: [path.build.html + '*.html']
+        // }))
         .pipe(postcss([ autoprefixer({ browsers: ["> 0%", 'ie 11'] }) ]))
         .pipe(gulp.dest(path.build.css))
         .pipe(minifyCSS())

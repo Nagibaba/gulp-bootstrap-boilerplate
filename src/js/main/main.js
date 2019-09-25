@@ -4,16 +4,16 @@
 // import mask from 'jquery-mask-plugin'
 // import Clipboard from 'clipboard'
 
-import $ from '../compiled_js/jquery-3.3.1.min'
-import '../compiled_js/jquery.mask'
-import '../compiled_js/popper.min'
-import '../compiled_js/datepicker.min'
-import '../compiled_js/swiper.min'
-import '../compiled_js/bootstrap.bundle.min'
-import '../compiled_js/bootstrap-select.min'
-import '../compiled_js/sweetalert.min'
-import '../compiled_js/jquery.form.min'
-import '../compiled_js/form.variables'
+// import $ from '../compiled_js/jquery-3.3.1.min'
+// import '../compiled_js/jquery.mask'
+// import '../compiled_js/popper.min'
+// import '../compiled_js/datepicker.min'
+// import '../compiled_js/swiper.min'
+// import '../compiled_js/bootstrap.bundle.min'
+// import '../compiled_js/bootstrap-select.min'
+// import '../compiled_js/sweetalert.min'
+// import '../compiled_js/jquery.form.min'
+// import '../compiled_js/form.variables'
 
 
 // import Tooltip from 'tooltip'
@@ -138,6 +138,12 @@ ready(function() {
             scrollTop: 0
         }, 1000);
     });
+
+    // collapse aside in orders page
+    console.log($(window).width(), $(window).outerWidth())
+    if ( $(window).width() <= 991 ) {
+        $( '.b-aside__collapse' ).removeClass( 'show' );
+    }
 })
 
 
