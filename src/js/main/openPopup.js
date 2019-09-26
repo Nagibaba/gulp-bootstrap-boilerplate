@@ -2,6 +2,8 @@ const openPopup = ()=> {
 	const blurryBg = $('.blurry-background')
 	const popup = $('.b-popup')
 	const bNav = $('.b-nav') // responsive issues
+	const html = $('html')
+
 	$('.openPopup').click(e=>{
 		e.preventDefault()
 		const target = $(e.target).closest('a')
@@ -11,6 +13,8 @@ const openPopup = ()=> {
 		// const left = offset.left
 		bNav.css('display', 'none')
 		blurryBg.addClass('blurry-background--active')
+		html.addClass('y-hidden')
+
 		// $('body').css('background-color', 'rgba(0, 0, 0, .2)')
 		if($(href).length>0 ){
 			$(href).addClass('b-popup--active')
@@ -29,6 +33,8 @@ const openPopup = ()=> {
 			setTimeout(function(){
 				bNav.css('display', 'flex')
 			}, 300)
+			html.removeClass('y-hidden')
+
 			// $('body').css('background-color', 'white')
 
 		}

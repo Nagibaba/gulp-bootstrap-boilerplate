@@ -1,4 +1,5 @@
 [
+	"./src/js/**/*.js",
 	"fake_html/*.html",
 	"fake_html/*.htm",
 	"https://fizza.az//az/qiymet-cedveli-9",

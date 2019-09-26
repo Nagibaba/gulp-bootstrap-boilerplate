@@ -9443,6 +9443,9 @@ body.main-bg::-webkit-scrollbar-thumb {
 body.main-bg::-webkit-scrollbar-thumb:hover {
   background-color: white; }
 
+.no-scroll {
+  overflow: hidden; }
+
 h1 {
   font-size: 25px; }
 
@@ -9944,7 +9947,7 @@ body::after {
   z-index: 1000;
   position: fixed;
   top: 0;
-  right: -400px;
+  right: -420px;
   bottom: 0;
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
@@ -10478,7 +10481,7 @@ body {
   color: #676767;
   overflow-x: hidden; }
 
-.pay-button {
+.fixed-round-pay-button {
   position: fixed;
   width: 70px;
   height: 70px;
@@ -10925,6 +10928,7 @@ select.form-control {
   padding-right: 30px;
   min-width: 180px;
   background-color: #FCD626;
+  color: #676767;
   border-color: transparent !important;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
@@ -11312,6 +11316,7 @@ select.form-control {
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100vw;
   z-index: 1050;
   -webkit-transition: .2s transform;
   -o-transition: .2s transform;
@@ -11455,9 +11460,10 @@ select.form-control {
   .my-order-accordion {
     border: 1px solid #EAEAEA;
     border-top: transparent;
-    -webkit-border-radius: 10px;
-       -moz-border-radius: 10px;
-            border-radius: 10px; }
+    -webkit-border-radius: 0 0 10px 10px;
+       -moz-border-radius: 0 0 10px 10px;
+            border-radius: 0 0 10px 10px;
+      border-radius-margin-top: -8px; }
 
 .my-orders {
   max-width: -webkit-calc( 100% - 260px);
@@ -11470,12 +11476,14 @@ select.form-control {
 .orders-tab__button {
   border-color: #676767; }
   .orders-tab__button--active {
-    border-color: #FCD626;
-    font-weight: bold; }
+    background-color: #ececec;
+    border: 1px solid #ececec; }
+    .orders-tab__button--active .badge {
+      background-color: #FCD626; }
 
 .orders-tab__badge {
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   -webkit-border-radius: 20px;
      -moz-border-radius: 20px;
           border-radius: 20px;

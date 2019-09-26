@@ -44,7 +44,7 @@ body
 // 	&--active
 // 		display: block
 
-.pay-button
+.fixed-round-pay-button
 	position: fixed
 	width: 70px
 	height: 70px
@@ -414,6 +414,7 @@ select.form-control
 	padding-right: 30px
 	min-width: 180px
 	background-color: $main-color
+	color: #676767
 	border-color: transparent!important
 	border-radius: 3px
 	font-size: 20px
@@ -731,6 +732,7 @@ select.form-control
 	bottom: 0
 	left: 0
 	right: 0
+	width: 100vw
 	
 	z-index: $zindex-modal
 	// background-color: rgba(0, 0, 0, .1)
@@ -856,7 +858,8 @@ select.form-control
 	&-accordion
 		border: 1px solid #EAEAEA
 		border-top: transparent
-		border-radius: 10px
+		border-radius: 0 0 10px 10px
+    	margin-top: -8px
 
 
 .my-orders
@@ -870,11 +873,13 @@ select.form-control
 	&__button
 		border-color: #676767
 		&--active
-			border-color: $main-color
-			font-weight: bold
+			background-color: #ececec
+			border: 1px solid #ececec
+			& .badge
+				background-color: $main-color
 	&__badge
-		width: 20px
-		height: 20px
+		min-width: 20px
+		min-height: 20px
 		border-radius: 20px
 		border: 1px solid #676767
 .orders

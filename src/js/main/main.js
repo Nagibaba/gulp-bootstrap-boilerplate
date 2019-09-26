@@ -26,6 +26,8 @@ import slider from './slider'
 import shoppingCard from './shoppingCard'
 import openPopup from './openPopup'
 import repeatItem from './repeatItem'
+import closeNav from './closeNav'
+
 // import 'bootstrap'
 // import 'bootstrap/js/dist/collapse'
 // require("@chenfengyuan/datepicker")
@@ -48,6 +50,15 @@ ready(function() {
 	shoppingCard()
 	openPopup()
 	repeatItem()
+
+	$('.pressClose').on('click touchstart', e=>{
+		const html = $('html')
+		const pressClose = $('.pressClose')
+		pressClose.removeClass('pressClose--active')
+		setTimeout(function(){html.removeClass('y-hidden')}, 300)
+
+		closeNav()
+	})
 
 	$('[data-toggle="datepicker"]').datepicker({ format: "dd/mm/yyyy" })
 

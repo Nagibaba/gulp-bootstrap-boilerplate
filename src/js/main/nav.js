@@ -1,4 +1,3 @@
-import closeNav from './closeNav'
 
 const nav = () => {
 	$('.hamburger').click(()=>{
@@ -23,9 +22,7 @@ const nav = () => {
 
 	})
 
-	$('.pressClose').bind('click, touchstart', e=>{
-		closeNav()
-	})
+	
 }
 
 
