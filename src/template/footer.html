@@ -48,6 +48,20 @@
         <script type="text/javascript" src="./orders_files/mscripts.js"></script>
         <script type="text/javascript" src="./orders_files/jquery.form.min.js"></script>
         <script type="text/javascript" src="./orders_files/form.variables.js"></script>
+        <script src="./js/dropzone.js"></script>
+        <script>
+          Dropzone.options.invoiceDropzone = { 
+            url: "https://web.archive.org/web/20180804152616/http://www.emlaklar.az/elanver",
+            autoProcessQueue: false,
+            uploadMultiple: true,
+            parallelUploads: 100,
+            maxFiles: 25,
+            addRemoveLinks: true,
+            dictRemoveFile: 'Faylı sil',
+
+            acceptedFiles: "image/*,application/pdf",
+          };
+        </script>
 
   </body>
 </html>

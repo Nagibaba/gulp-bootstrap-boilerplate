@@ -53,10 +53,10 @@ body
 	bottom: 96px
 	padding: 0px
 	box-shadow: 0 0 0 0 mainColor(.7)
-	animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1)
+	animation: pulseShadow 2s infinite cubic-bezier(0.66, 0, 0, 1)
 	z-index: 1
 
-@keyframes pulse 
+@keyframes pulseShadow 
 	to 
 		box-shadow: 0 0 0 45px mainColor(0)
 
@@ -256,7 +256,7 @@ body
 	position: relative
 	font-size: 15px
 	font-weight: normal
-	color: $black
+	color: #676767
 	& label
 		position: absolute
 		top: -22px
@@ -264,7 +264,7 @@ body
 		text-align: center
 .b-input
 	flex-grow: 1
-	border-radius: 10px
+	border-radius: 3px
 	border: 1px solid #d8d8d8
 	font-size: 18px
 	height: 45px
@@ -278,6 +278,9 @@ body
 	&--limitless
 		max-height: unset
 		height: auto
+.b-dropzone
+	border-radius: 3px
+	height: 100%
 
 .b-textarea
 	flex-grow: 1
@@ -874,7 +877,7 @@ select.form-control
 		border-color: #676767
 		&--active
 			background-color: #ececec
-			border: 1px solid #ececec
+			// border: 1px solid #ececec
 			& .badge
 				background-color: $main-color
 	&__badge
@@ -1059,6 +1062,14 @@ select.form-control
 
 .close-additional-item
 	z-index: 1000
+
+
+[data-repeat-id="item"] [data-repeat-target="item"]
+	display: none
+[data-repeat-id="item"]:nth-last-of-type(1) .close-additional-item
+	display: none
+[data-repeat-id="item"]:nth-last-of-type(1) [data-repeat-target="item"]
+	display: flex
 
 
 .b-aside

@@ -150,11 +150,7 @@ ready(function() {
         }, 1000);
     });
 
-    // collapse aside in orders page
-    console.log($(window).width(), $(window).outerWidth())
-    if ( $(window).width() <= 991 ) {
-        $( '.b-aside__collapse' ).removeClass( 'show' );
-    }
+    
 })
 
 

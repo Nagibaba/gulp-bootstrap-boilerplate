@@ -3,138 +3,143 @@
   
           <main class="my-orders fullWidth flex-column pl-0 pl-lg-4">
             
+            <form action="/url" enctype="multipart/form-data" >
+              <div class="row flex-row">
 
-            <div  class="my-order d-flex flex-row justify-content-between align-items-center py-2 pl-4 pr-3 mt-4">
-              
-              
-              <div class="my-order__info pr-4 flex-column fullCenter">
-                <i class="fa fa-check-square-o f-30 green"></i>
-                <span class="text-center">Paid</span>
-              </div>
+                <div class="col-lg-4">
+                  <div class="form-group fullWidth mt-3">
+                    <label class="text-left pl-2 required" for="Declarations_c_id">Ölkə <span class="required">*</span></label>                    
+                    <select class="form-control b-input" name="Declarations[c_id]" id="Declarations_c_id">
+                      <option value="">-- Seçin --</option>
+                      <option value="1">Türkiyə</option>
+                      <option value="2">ABŞ</option>
+                    </select>
+                    <small class="errorText" data-error="Declarations_c_id" style="display: none;"></small>
+                  </div>
+                </div>
 
-              <div class="my-order__info pr-4 flex-column">
-                <div class="form-check form-check--small d-flex flex-row border-0 px-1">
-                  <input class="form-check-input" type="checkbox" id="urgent-order-main" name="urgent-order" checked="">
-                  <label class="form-check-label " for="urgent-order-main"> 
-                    
-                  </label>
+                <div class="col-lg-8">
+                  <div class="form-group fullWidth mt-3">
+                    <label class="text-left pl-2" for="Declarations_tracking_code">
+                      İzləmə kodu
+                    </label>                    
+                    <input class="form-control b-input" name="Declarations[tracking_code]" id="Declarations_tracking_code" type="text" maxlength="100">                    <small class="errorText" data-error="Declarations_tracking_code" style="display: none;"></small>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-4 flex-column">
                   
-                </div>
-              </div>
+                  <div class="form-group fullWidth mt-3">
+                    <label class="text-left pl-2 required" for="Declarations_c_id">Ölkə <span class="required">*</span></label>                    
+                    <select class="form-control b-input" name="Declarations[c_id]" id="Declarations_c_id">
+                      <option value="">-- Seçin --</option>
+                      <option value="1">Türkiyə</option>
+                      <option value="2">ABŞ</option>
+                    </select>
+                    <small class="errorText" data-error="Declarations_c_id" style="display: none;"></small>
+                  </div>
 
-              <a data-toggle="collapse" href="#collapseExample2" class="d-flex flex-row flex-grow-1 justify-content-between align-items-center">
-                <div class="my-order__info pr-4 flex-column">
-                  <p class="my-order__key f-16 m-0">Tracking kodu </p>
-                  <p class="my-order__val f-18 font-weight-bold m-0">2190348028</p>
+                  <div class="form-group fullWidth mt-3">
+                    <label class="text-left pl-2" for="Declarations_tracking_code">
+                      Bəyənamə adı
+                    </label>                    
+                    <input class="form-control b-input" name="Declarations[tracking_code]" id="Declarations_tracking_code" type="text" maxlength="100">                    <small class="errorText" data-error="Declarations_tracking_code" style="display: none;"></small>
+                  </div>
+                  
+                  <div class="form-group fullWidth flex-column mt-3 mb-0">   
+                    <label class="text-left pl-2 required" for="Declarations_date">Tarix <span class="required">*</span></label>   
+                    <input class="form-control b-input jqueryMask" data-toggle="datepicker" autofocus="autofocus" data-mask="00/00/0000" placeholder="gg/aa/iiii" name="Declarations[date]" id="Declarations_date" type="text" autocomplete="off" maxlength="10">                       
+                    <small class="errorText" data-error="Declarations_date" style="display: none;"></small>
+                  </div>
+
                 </div>
 
-                <div class="my-order__info pr-4 flex-column">
-                  <p class="my-order__key f-16 m-0">Ölkə</p>
-                  <p class="my-order__val f-18 font-weight-bold m-0">Amerika</p>
-                </div>
-
-                <div class="my-order__info pr-4 flex-column">
-                  <p class="my-order__key f-16 m-0">Mağaza</p>
-                  <p class="my-order__val f-18 font-weight-bold m-0">Trendyol</p>
-                </div>
-
-                <div class="my-order__info pr-4 flex-column">
-                  <p class="my-order__key f-16 m-0">Çatdırılma haqqı</p>
-                  <p class="my-order__val f-18 font-weight-bold m-0">4.5 $</p>
-                </div>
-
-                <div class="my-order__info pr-4 flex-column">
-                  <p class="my-order__key f-16 m-0">Tarix</p>
-                  <p class="my-order__val f-18 font-weight-bold m-0">14.04.2019 15:56</p>
+                <div class="col-lg-8 mt-3 mt-lg-0">
+                  <div class="form-group fullWidth mt-3 mb-0">
+                    <label class="text-left pl-2 required" for="Declarations_c_id">Fayl <span class="required">*</span></label> 
+                    <div class="dropzone b-dropzone dz-clickable fullWidth fullCenter soft-border " id="invoice-dropzone" name="file">
+                      <div class="dz-message dz-default flex-column" data-dz-message="">
+                        <p>Faylı bu sahəyə buraxın ya da klikləyin 
+                        </p>
+                        <p>
+                          Qəbul edilən formatlar: PNG, JPEG, PDF
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 
-                <div class="my-order__info pr-4 flex-column">
-                  <img src="./img/caret.svg" alt="">
+                <div class="fullWidth mt-3"></div>
+                
+                <div class="col-lg-12 fullWidth flex-column">
+                  <div class="row fullWidth bordered dotted m-0 mt-3 pt-3" data-repeat-id="item">
+                    
+
+                    <div class="col-lg-3">
+                      <div class="form-group fullWidth mt-3">
+                        <label class="text-left pl-2 required" for="Declarations_c_id">Kateqoriya <span class="required">*</span></label>                    
+                        <select class="form-control b-input" name="Declarations[c_id]" id="Declarations_c_id">
+                          <option value="">-- Seçin --</option>
+                          <option value="1">Türkiyə</option>
+                          <option value="2">ABŞ</option>
+                        </select>
+                        <small class="errorText" data-error="Declarations_c_id" style="display: none;"></small>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <div class="form-group fullWidth mt-3">
+                        <label class="text-left pl-2" for="Declarations_tracking_code">
+                          Məhsulun adı
+                        </label>                    
+                        <input class="form-control b-input" name="Declarations[tracking_code]" id="Declarations_tracking_code" type="text" maxlength="100">                    <small class="errorText" data-error="Declarations_tracking_code" style="display: none;"></small>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <div class="form-group fullWidth mt-3">
+                        <label class="text-left pl-2" for="Declarations_tracking_code">
+                          Yekun qiymət
+                        </label>                    
+                        <input class="form-control b-input" name="Declarations[tracking_code]" id="Declarations_tracking_code" type="text" maxlength="100">                    <small class="errorText" data-error="Declarations_tracking_code" style="display: none;"></small>
+                      </div>
+                    </div>
+                    
+                    <div class="col-lg-3 flex-column fullCenter pb-3">
+                      <button data-repeat-target="item" class="btn btn-outline-secondary main-border" type="button" data-type="23">
+                        Məhsul əlavə et +
+                      </button>
+                      <button class="btn btn-outline-danger close-additional-item" type="button" data-type="23">
+                        <i class="fa fa-close f-25"></i>
+                      </button>
+                    </div>
+
+
+                  </div> <!-- row -->
                 </div>
-              </a>
-
-            </div>
-            <div class="table-responsive my-order-accordion collapse" id="collapseExample2" style="">
-              
-             
-
-              <table class="table table--borderless table--nowrap table--textCenter f-18" cellspacing="20px" cellpadding="0">
-                <tbody>
-                  
-                  <tr>
-                    
-
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Kateqoriya</span>
-                        <b>Geyim</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Say</span>
-                        <b>3 ədəd</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Çəki</span>
-                        <b>1.6 kq</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Məhsulun dəyəri</span>
-                        <b>4.5 $</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>İnvoice</span>
-                        <b>Fayl 1</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Mövqe</span>
-                        <b>Xarici anbardadır</b>
-                      </div>
-                    </td>
-                    <td class="align-middle">
-                      <a class="order-accordion__link fullCenter showTracking" href="/az/users/tracking/185"> 
-                        <img style="width: 19px; height: 19px" class="orders__filter-icon mr-2" src="https://fizza.az/img/plane.svg" alt="filter icon">
-                        Bağlama Hərəkətləri
-                      </a>
-                    </td>
-                    
-                    
-                  </tr>
-                  
-                </tbody>
-              </table>
-            </div>
 
 
-            
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header text-center">
-                    <h5 class="modal-title " id="exampleModalLabel">Borcun yaranma səbəbi</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    Bağlamaların sayından və çəkisindən asılı olmayaraq, çatdırılma haqqı hər hesaba(akkaunta) və seçilən tarifə uyğun olaraq hesablanır. Çatdırıma haqqını bağlamanı əldə edən zaman nəğd ödəyə bilərsiniz.
-                  </div>
-                  <div class="modal-footer fullCenter">
-                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">BORC: 15 TL</button>
-                    <button type="button" class="btn btn-primary">Borcu ödə</button>
+                <div class="col-lg-12 mt-4">
+                  <div class="form-group fullWidth mt-2">
+                    <label class="text-left pl-2" for="Declarations_note">Qeyd</label>
+                    <textarea class="form-control b-textarea" rows="4" name="Declarations[note]" id="Declarations_note"></textarea>
+                    <small class="errorText" data-error="Declarations_note" style="display: none;"></small>
                   </div>
                 </div>
+                
+                <div class="col-lg-12 fullCenter mt-3">
+                  <button class="btn btn-warning main-button mt-2 mx-1 addBalanceButton" data-url="/az/users/addBalance">
+                    Yadda saxla
+                  </button>
+                </div>
+
+                
+
+                
               </div>
-            </div>
+            </form>
+            
 
           </main>
 
