@@ -4,7 +4,7 @@ a
 	color: inherit
 	transition: .4s color
 	&:hover
-		color: $black
+		color: $light-black
 		text-decoration: none
 	
 div
@@ -148,7 +148,7 @@ body
 			vertical-align: middle
 		& td
 			font-size: 12px
-			color: $black
+			color: $light-black
 			vertical-align: middle
 	&--white
 		width: 1105px
@@ -557,6 +557,8 @@ select.form-control
 		&:hover
 			color: $main-color
 			transform: scale(1.2)
+	&-light
+		color: $light-black
 
 
 .gender-radiogroup
@@ -623,7 +625,7 @@ select.form-control
 		color: $main-color
 		transition: .4s color
 		&:hover
-			color: $black
+			color: $light-black
 
 .account-info
 	@extend .flex-column
@@ -894,6 +896,7 @@ select.form-control
 		box-shadow: 0 0 15px rgba(0, 0, 0, .13)
 		border-radius: 10px
 		line-height: 22px
+		color: $light-black
 		&:not(&--active)
 			@extend .btn-light
 
@@ -967,7 +970,7 @@ select.form-control
 			
 	&__hlink
 		text-decoration: underline
-		color: $black
+		color: $light-black
 		&:hover
 			color: $main-color
 	// &__toggle
@@ -1021,7 +1024,7 @@ select.form-control
 		color: #D8D8D8
 	
 	& .progress-title
-		color: $black
+		color: $light-black
 
 
 .order-delivered
