@@ -10478,7 +10478,13 @@ div {
       -ms-flex-negative: 0;
           flex-shrink: 0; }
 
+.y-hidden {
+  overflow-y: hidden;
+  position: relative;
+  height: 100%; }
+
 html, body, .full-height {
+  -webkit-overflow-scrolling: touch;
   min-height: 100vh; }
 
 html {
@@ -10486,12 +10492,10 @@ html {
   margin-right: -webkit-calc(100vw - 100%);
   margin-right: -moz-calc(100vw - 100%);
   margin-right: calc(100vw - 100%);
-  -webkit-transition: .1s all;
-  -o-transition: .1s all;
-  -moz-transition: .1s all;
-  transition: .1s all; }
-  html.y-hidden {
-    overflow-y: hidden; }
+  -webkit-transition: 0.1s all;
+  -o-transition: 0.1s all;
+  -moz-transition: 0.1s all;
+  transition: 0.1s all; }
 
 body {
   width: 100%;

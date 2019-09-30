@@ -11,18 +11,24 @@ div
 	display: inherit
 	flex-shrink: 0
 
+.y-hidden
+	overflow-y: hidden
+	position: relative
+	height: 100%
+
 html, body, .full-height
 	// box-sizing: content-box
+	-webkit-overflow-scrolling: touch
 	min-height: 100vh
+	
 	
 
 html
 	width: 100vw
 	margin-right: calc(100vw - 100%)
 	transition: .1s all
-	&.y-hidden
-		overflow-y: hidden
-		
+	
+	
 
 		// &::-webkit-scrollbar-thumb 
 	 //    	background-color: transparent
