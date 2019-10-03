@@ -13,6 +13,7 @@ const openPopup = ()=> {
 		// const left = offset.left
 		bNav.css('display', 'none')
 		blurryBg.addClass('blurry-background--active')
+		$('.pressClose').addClass('pressClose--active')
 		html.addClass('y-hidden')
 
 		// $('body').css('background-color', 'rgba(0, 0, 0, .2)')
@@ -25,15 +26,18 @@ const openPopup = ()=> {
 		// popup.css('display', 'flex')
 	})
 	$(document).on('click touchstart', '.b-popup, .close-b-popup', (e)=>{
-		e.preventDefault()
+		console.log('popup clicked')
+		
 		const target = $(e.target)
 		if(target.closest('.b-popup__inner').length<=0 || target.closest('.close-b-popup').length>0){
+			e.preventDefault()
 			blurryBg.removeClass('blurry-background--active')
 			$('.b-popup--active').removeClass('b-popup--active')
 			setTimeout(function(){
 				bNav.css('display', 'flex')
 			}, 300)
-			html.removeClass('y-hidden')
+			$('html, body').removeClass('y-hidden')
+			$('.pressClose--active').removeClass('pressClose--active')
 
 			// $('body').css('background-color', 'white')
 

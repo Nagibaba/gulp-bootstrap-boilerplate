@@ -17,7 +17,7 @@ var connect = require('gulp-connect');
 var notify = require("gulp-notify");
 const imagemin = require('gulp-imagemin');
 var pug = require('gulp-pug');
-var fizzaLinks = require('./fizzalinks')
+var fizzalinks = require('./fizzalinks')
 
 
 // var gulpJustStarted = true;
@@ -105,6 +105,18 @@ gulp.task('pug:build', function () {
         );
 });
 
+gulp.task('js:min', function () {
+    return gulp.src(path.build.js + 'all.js')
+    .pipe(minify({
+        ext:{
+
+            min:'.min.js'
+        },
+        noSource:true 
+    }))
+    .pipe(gulp.dest(path.build.js))
+
+})
 gulp.task('js:build', function () {
     return browserify({
         entries: ['./src/js/main/main.js'],
@@ -141,19 +153,21 @@ gulp.task('js:build', function () {
 
 
 
-gulp.task('css:build', function () {
+gulp.task('css:build', function (dev=true) {
     return gulp.src(path.src.css) 
         .pipe(sass()) 
         .on('error', function(err) {
             console.log(err)
             this.emit('end')
         })
-        // .pipe(uncss({
-        //     html: fizzaLinks // html: [path.build.html + '*.html']
-        // }))
-        .pipe(postcss([ autoprefixer({ browsers: ["> 0%", 'ie 11'] }) ]))
+        .pipe(postcss([ autoprefixer({browsers: ['last 1 version']}) ]))
+        .pipe(
+            uncss({
+                    html: fizzalinks // html: ["fake_html/header.html"]
+            })
+        )
         .pipe(gulp.dest(path.build.css))
-        .pipe(minifyCSS())
+        .pipe(minifyCSS({keepSpecialComments : 0}))
         .pipe(rename({suffix:'.min'}))
         .pipe(gulp.dest(path.build.css)) 
         .pipe(reload())

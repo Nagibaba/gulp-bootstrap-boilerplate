@@ -27,6 +27,8 @@ import shoppingCard from './shoppingCard'
 import openPopup from './openPopup'
 import repeatItem from './repeatItem'
 import closeNav from './closeNav'
+import lazyload from './lazyload'
+
 
 // import 'bootstrap'
 // import 'bootstrap/js/dist/collapse'
@@ -42,7 +44,7 @@ function ready(fn) {
 }
 
 ready(function() {
-
+	document.querySelector('.not-visible-first').style.visibility='visible'
 	nav()
 	windowScrollListener()
 	documentListener()
@@ -154,5 +156,13 @@ ready(function() {
 })
 
 
+
+// window loaded
+window.addEventListener('load', ()=>{
+	
+	
+
+	lazyload()
+})  
 
 
