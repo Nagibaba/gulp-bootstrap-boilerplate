@@ -1585,40 +1585,6 @@ body::after {
   z-index: -1;
   content: url("../../img/Group 453.svg") url("../../img/Group 451.svg"); }
 
-@font-face {
-  font-family: 'CirceRounded';
-  font-display: 'optional';
-  src: local("CirceRounded"), url("../../fonts/CirceRounded-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'CirceRounded';
-  font-display: 'optional';
-  src: local("CirceRounded"), url("../../fonts/CirceRounded-Alt-Bold.otf") format("opentype");
-  font-weight: 500; }
-
-@font-face {
-  font-family: 'CirceRounded';
-  font-display: 'optional';
-  src: local("CirceRounded"), url("../../fonts/CirceRounded-Bold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'CirceRounded';
-  font-display: 'optional';
-  src: local("CirceRounded"), url("../../fonts/CirceRounded-ExtraBold.otf") format("opentype");
-  font-weight: bolder;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'CirceRounded';
-  font-display: 'optional';
-  src: local("CirceRounded"), url("../../fonts/CirceRounded-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal; }
-
 .b-tooltip {
   position: relative;
   display: inline-block; }
