@@ -532,15 +532,24 @@
                 <div class="col-lg-8 mt-3 mt-lg-0">
                   <div class="form-group fullWidth mt-3 mb-0">
                     <label class="text-left pl-2 required" for="Declarations_c_id">Fayl <span class="required">*</span></label> 
-                    <div class="dropzone b-dropzone dz-clickable fullWidth fullCenter soft-border " id="invoice-dropzone" name="file">
-                      <div class="dz-message dz-default flex-column" data-dz-message="">
-                        <p>Faylı bu sahəyə buraxın ya da klikləyin 
+                    
+                    <div class="b-invoice">
+                      <input type="file" class="b-invoice__input" multiple>
+                      <div class="b-invoice__infos fullWidth">
+                        <p class="b-invoice__select">
+                          Faylı bu sahəyə buraxın ya da klikləyin
                         </p>
-                        <p>
-                          Qəbul edilən formatlar: PNG, JPEG, PDF
+                        
+                        <p class="b-invoice__alert text-center">
+                          *Faylı  .png , .pdf formatlarında yükləyə bilərsiniz.
                         </p>
+                        <div class="b-invoice__extensions fullWidth fullCenter">
+                          
+                          
+                        </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
                 
