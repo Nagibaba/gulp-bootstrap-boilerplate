@@ -4,10 +4,9 @@ const nav = () => {
 		const nav = $('.b-nav')
 		const pressClose = $('.pressClose')
 		const html = $('html')
-
-		nav.addClass('b-nav--active')
-		pressClose.addClass('pressClose--active')
 		html.addClass('y-hidden')
+		setTimeout(()=>nav.addClass('b-nav--active'), 100)
+		pressClose.addClass('pressClose--active')
 
 	})
 

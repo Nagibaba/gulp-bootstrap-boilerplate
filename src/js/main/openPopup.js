@@ -1,5 +1,5 @@
 const openPopup = ()=> {
-	const blurryBg = $('.blurry-background')
+	// const blurryBg = $('.blurry-background')
 	const popup = $('.b-popup')
 	const bNav = $('.b-nav') // responsive issues
 	const html = $('html')
@@ -12,7 +12,7 @@ const openPopup = ()=> {
 		// const top = offset.top
 		// const left = offset.left
 		bNav.css('display', 'none')
-		blurryBg.addClass('blurry-background--active')
+		// blurryBg.addClass('blurry-background--active')
 		$('.pressClose').addClass('pressClose--active')
 		html.addClass('y-hidden')
 
@@ -31,7 +31,7 @@ const openPopup = ()=> {
 		const target = $(e.target)
 		if(target.closest('.b-popup__inner').length<=0 || target.closest('.close-b-popup').length>0){
 			e.preventDefault()
-			blurryBg.removeClass('blurry-background--active')
+			// blurryBg.removeClass('blurry-background--active')
 			$('.b-popup--active').removeClass('b-popup--active')
 			setTimeout(function(){
 				bNav.css('display', 'flex')

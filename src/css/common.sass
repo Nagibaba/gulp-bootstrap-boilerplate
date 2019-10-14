@@ -34,7 +34,7 @@ html
 	 //    	background-color: transparent
 body
 	width: 100%
-	font-family: CirceRounded, sans-serif
+	font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif
 	// overflow: hidden
 	color: $light-black
 	overflow-x: hidden
@@ -262,7 +262,7 @@ body
 	position: relative
 	font-size: 15px
 	font-weight: normal
-	color: #676767
+	color: $light-black
 	& label
 		position: absolute
 		top: -22px
@@ -423,7 +423,7 @@ select.form-control
 	padding-right: 30px
 	min-width: 180px
 	background-color: $main-color
-	color: #676767
+	color: $light-black
 	border-color: transparent!important
 	border-radius: 3px
 	font-size: 20px
@@ -655,10 +655,12 @@ select.form-control
 	// height: 100px
 	border-radius: 10px
 	overflow: hidden
-	transition: all 250ms
+	transition: transform 250ms, box-shadow 250ms
+	// -webkit-transform: translate3d(0,0,0)
 	&--sample
 		@extend .d-flex, .flex-column, .fullCenter, .py-4
 		width: 267px
+
 	&:hover,&:focus
 		@include shadow(3);
 		transform: translateY(-5px)
@@ -705,7 +707,7 @@ select.form-control
 	width: 100%
 	border-radius: 10px
 	overflow: hidden
-	transition: all 250ms
+	transition: transform 250ms, box-shadow 250ms
 	&:hover,&:focus
 		@include shadow(3);
 		transform: translateY(-5px)
@@ -721,11 +723,11 @@ select.form-control
 
 .blurry-background
 	// will-change: filter, background-color
-	transition: .2s filter, background-color
+	// transition: .2s filter, background-color
 	&--active
 		
-		filter: blur(8px) brightness(70%)
-		background-color: rgba(0,0,0, .2)
+		// filter: blur(8px) brightness(70%)
+		// background-color: rgba(0,0,0, .2)
 		
 
 
@@ -1171,16 +1173,25 @@ select.form-control
 	// 	&__collapse
 	// 		display: none
 
-
-
-@include media-breakpoint-between(xs, xl)
 	.my-orders
 		max-width: unset
+
+@include media-breakpoint-between(xs, xl)
+
+
+@include media-breakpoint-between(xs, lg)
+	
 
 
 small.errorText
 	@extend .text-danger, .ml-1
 	min-height: 46px
 	font-size: 15px!important
+
+
+
+
+
+
 
 

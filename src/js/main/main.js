@@ -28,6 +28,8 @@ import openPopup from './openPopup'
 import repeatItem from './repeatItem'
 import closeNav from './closeNav'
 import lazyload from './lazyload'
+import addMenusToProfileDropdown from './addMenusToProfileDropdown'
+
 
 
 // import 'bootstrap'
@@ -44,11 +46,11 @@ function ready(fn) {
 }
 
 ready(function() {
-	document.querySelector('.not-visible-first').style.visibility='visible'
+	// document.querySelector('.not-visible-first').style.visibility='visible'
 	nav()
 	windowScrollListener()
 	documentListener()
-	slider(Swiper)
+	// slider(Swiper)
 	shoppingCard()
 	openPopup()
 	repeatItem()
@@ -57,7 +59,7 @@ ready(function() {
 		const html = $('html')
 		const pressClose = $('.pressClose')
 		pressClose.removeClass('pressClose--active')
-		setTimeout(function(){html.removeClass('y-hidden')}, 300)
+		setTimeout(function(){html.removeClass('y-hidden')}, 500)
 
 		closeNav()
 	})
@@ -152,6 +154,9 @@ ready(function() {
         }, 1000);
     });
 
+
+   
+
     
 })
 
@@ -163,6 +168,7 @@ window.addEventListener('load', ()=>{
 	
 
 	lazyload()
+	addMenusToProfileDropdown()
 })  
 
 

@@ -13,6 +13,9 @@
 $theme-colors: ( primary: $main-color, danger: #ff4136)
 $grid-gutter-width: 30px !default
 @import "../../node_modules/bootstrap/scss/bootstrap";
+.not-visible-first
+	visibility: visible
+	opacity: 1
 
 // @import "../../node_modules/@fortawesome/fontawesome";
 // @import "../fontawesome/scss/fontawesome.scss"
@@ -56,8 +59,9 @@ $progress-color-light:      $grey
 $progress-color-grey-light: white
 $progress-color-grey:       $main-color
 $progress-color-grey-dark:  #333333
-@import "../../node_modules/progress-tracker/app/styles/progress-tracker.scss"
+
 @import "common.sass"
+@import "../../node_modules/progress-tracker/app/styles/progress-tracker.scss"
 @import "../../node_modules/@chenfengyuan/datepicker/src/index.scss"
 
 
@@ -66,7 +70,7 @@ $progress-color-grey-dark:  #333333
 @import './compiled_css/font-awesome.min'
 @import './compiled_css/bootstrap-select.min'
 @import './compiled_css/sweetalert'
-@import './compiled_css/swiper.min'
+// @import './compiled_css/swiper.min'
 @import './compiled_css/dropzone.min'
 
 
