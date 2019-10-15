@@ -29,6 +29,7 @@ import repeatItem from './repeatItem'
 import closeNav from './closeNav'
 import lazyload from './lazyload'
 import addMenusToProfileDropdown from './addMenusToProfileDropdown'
+import smsVerification from './smsVerification'
 
 
 
@@ -54,6 +55,7 @@ ready(function() {
 	shoppingCard()
 	openPopup()
 	repeatItem()
+	smsVerification()
 
 	$('.pressClose').on('click touchstart', e=>{
 		const html = $('html')

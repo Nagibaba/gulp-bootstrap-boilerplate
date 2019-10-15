@@ -998,7 +998,6 @@ select.form-control
 		z-index: 1!important
 
 .progress-step
-	
 	&::after
 		background-color: #F4F4F4
 	&.is-complete .progress-marker, &.is-active .progress-marker
@@ -1140,9 +1139,43 @@ select.form-control
 	    margin-right: 5px
 	    background-color: $main-color
 
+.b-alert
+	background-color: transparent
+	border-color: $main-color
+	color: $light-black
 
-
-
+.b-verification
+  position: relative
+  margin-left: 30px
+  visibility: hidden
+  &__dashes
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    display: flex
+    flex-direction: row
+    & span
+      display: block
+      width: 30px
+      height: 2px
+      margin-right: 20px
+      &:nth-last-of-type(1)
+        margin-right: 0
+      
+      background-color: #B1B1B1
+  &__input
+    border: none!important
+    outline: none!important
+    padding-left: 3px
+    padding-right: 3px
+    font-size: 40px
+    letter-spacing: 30px
+    text-align: left
+    // width: 110px
+    // background: lightgray
+  
+      
 
 //media
 @include media-breakpoint-between(xs, sm)

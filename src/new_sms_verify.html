@@ -1,0 +1,126 @@
+//= template/simple-head.html
+  
+<div class="not-visible-first container flex-column full-height justify-content-between d-flex p-0">
+
+  <div class="pressClose"></div>
+  <div class="b-nav">
+    <div class="container-fluid flex-column mt-4">
+
+      <div class="row flex-shrink-0">
+        <div class="col-6 b-nav__tab b-nav__tab--first justify-content-center b-nav__tab--active">
+          <a class="nav-tab-button" href="#tab-1">MENU</a>
+        </div>
+        <div class="col-6 b-nav__tab b-nav__tab--second justify-content-center ">
+          <a class="nav-tab-button" href="#tab-2">HESABIM</a>
+        </div>
+      </div>
+
+      <div class="container-fluid flex-column align-items-end mt-4 pr-2 pr-sm-5 b-nav__tab-content b-nav__tab-content--active" id="tab-1">
+        <a class="b-nav__item mb-3" href="/az/nece-isleyirik-10">Necə işləyirik </a>
+        <a class="b-nav__item mb-3" href="/az/haqqimizda-8">Haqqımızda</a>
+        <a class="b-nav__item mb-3" href="/az/tez-tez-verilen-suallar-7">Tez-tez verilən suallar</a>
+        <a class="b-nav__item mb-3" href="/az/numune-saytlar-6">Nümunə saytlar</a>
+        <a class="b-nav__item mb-3" href="/az/xeberler-ve-yenilikler-5">Xəbərlər və yeniliklər</a>
+        <a class="b-nav__item mb-3" href="/az/sifaris-et-xidmet-sertleri-3">"Sifariş et" xidmət şərtləri</a>
+        <a class="b-nav__item mb-3" href="/az/gizlilik-siyaseti-2">Gizlilik siyasəti</a>
+        <a class="b-nav__item mb-3" href="/az/elaqe-21">Əlaqə</a>
+      </div>
+      <div class="container-fluid flex-column mt-4  b-nav__tab-content  " id="tab-2">
+        <span class="text-center">GİRİŞ</span>
+        <div class="row mt-4">
+
+          <div class="col-md-6 justify-content-center pr-1">
+            <button class="btn btn-light ml-1 simple-button mt-1 fullWidth fullCenter" type="button" data-href="/az/users/login?service=facebook">
+              <i class="social-login fa fa-facebook" style="color: #385C8E"></i>
+            </button>
+          </div>
+
+          <div class="col-md-6 justify-content-center pr-1">
+            <button class="btn btn-light ml-1 simple-button mt-1 fullWidth fullCenter" type="button" data-href="/az/users/login?service=google-oauth">
+              <i class="social-login fa fa-google-plus" style="color: #F34A38"></i>
+            </button>
+          </div>
+
+
+        </div>
+
+        <form data-form="ajax" id="login-form" action="/az/users/login" method="post">
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="form-group fullWidth">
+                <input class="form-control b-input" placeholder="İstifadəçi Adı" autofocus="autofocus" name="LoginForm[username]" id="LoginForm_username" type="text">                <small class="errorText" data-error="username" style="display: none;"></small>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group fullWidth">
+                <input class="form-control b-input" placeholder="********" autofocus="autofocus" name="LoginForm[password]" id="LoginForm_password" type="password">                <small class="errorText" data-error="password" style="display: none;"></small>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 justify-content-center">
+              <button class="btn btn-warning main-button" type="submit">Daxil ol</button>
+            </div>
+          </div>
+
+        </form>
+        <p class="text-center"><a class="forgot-pass__link" href="/az/users/fpassword">Şifrəmi unutdum</a></p>
+        <div class="container-fluid account-info mt-5">
+          <div class="row justify-content-center">
+            <p class="account-info__ask">Hələ də hesabın yoxdur? O zaman</p>
+          </div>
+          <div class="row justify-content-center">
+            <a class="account-info__register" href="/az/users/registration">QEYDİYYATDAN KEÇ</a>
+          </div>
+    <!--
+    <div class="row justify-content-center">
+        <a class="account-info__company-register" href="">Hüquqi şəxslər üçün Qeydiyyat</a>
+      </div>-->
+    </div>                                
+  </div>
+
+
+</div>
+</div>
+
+
+<div class="row justify-content-center flex-column mt-5">
+  <div class="inputs-wrapper inputs-wrapper--white fullWidth d-block f-20 text-center pt-3 pb-5 px-3 px-sm-5">
+    <h1 class="text-center mt-3 mb-5">QEYDİYYAT</h1>
+    <div class="about-logo__wrapper text-center mb-5">
+      <!-- <img src="/img/logo.svg" alt="HAQQIMIZDA"/> -->
+    </div>
+      Qeydiyyatınızı tamamlamaq üçün telefon nömrəniziə göndərilən kodu daxil edin və ya email adresinizə göndərilmiş linki təsdiqləyin.
+  </div>
+  <div class="row fullCenter m-0">
+    <div class="b-verification d-flex fullCenter">
+      <input type="text" class="b-verification__input" value="444422" maxlength="6">
+      <!--  change maxlength to see results  -->
+      <div class="b-verification__dashes">
+          
+          
+          
+      </div>
+
+
+    </div>
+  </div>   
+
+
+  <div class="row fullCenter m-0 mt-4">
+    Mesaj gəlmədimi? <a href="" class="main-color"> &nbsp; Təkrar göndər</a>
+  </div>
+
+  <div class="row fullCenter m-0 mt-4">
+    <button class="btn btn-warning main-button scroll-to-order">Təsdiqlə</button>
+  </div>
+
+  
+
+</div>
+
+  
+
+//= template/footer.html

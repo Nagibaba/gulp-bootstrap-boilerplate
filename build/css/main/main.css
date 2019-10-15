@@ -8342,6 +8342,39 @@ select.form-control {
     margin-right: 5px;
     background-color: #FCD626; }
 
+.b-alert {
+  background-color: transparent;
+  border-color: #FCD626;
+  color: #434343; }
+
+.b-verification {
+  position: relative;
+  margin-left: 30px;
+  visibility: hidden; }
+  .b-verification__dashes {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row; }
+    .b-verification__dashes span {
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin-right: 20px;
+      background-color: #B1B1B1; }
+      .b-verification__dashes span:nth-last-of-type(1) {
+        margin-right: 0; }
+  .b-verification__input {
+    border: none !important;
+    outline: none !important;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 40px;
+    letter-spacing: 30px;
+    text-align: left; }
+
 @media (max-width: 767.98px) {
   .col-md-6, .col-md-12 {
     margin-top: 15px; }
