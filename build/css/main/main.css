@@ -35,7 +35,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: CirceRounded;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *,
@@ -54,7 +54,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -4073,7 +4073,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4158,7 +4158,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7010,6 +7010,17 @@ a.text-dark:hover, a.text-dark:focus {
 ::-webkit-scrollbar-corner {
   background-color: transparent; }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+.responsive-wrapper {
+  overflow-x: auto; }
+
 .black {
   color: black !important; }
 
@@ -7042,6 +7053,12 @@ h1 {
 
 h2 {
   font-size: 20px; }
+
+.test {
+  background: red; }
+
+.rotate {
+  transform: rotate(180deg); }
 
 .fullCenter, .growable, .lang, .link-thumbnail:after, .corrier-price, .form-check__urgent-price, .swiper-slide, .swiper-pagination, .btn-icon, .b-news--sample, .addAddressIcon, .orders__tab-pill, .orders__tab-pill .badge, .progress-step.is-active .progress-marker::before, .b-spinner {
   display: flex;
@@ -7384,6 +7401,268 @@ body::after {
 .nav-link {
   background-color: #f5f5f5; }
 
+.progress-tracker {
+  display: flex;
+  margin: 40px auto;
+  padding: 0;
+  list-style: none; }
+
+.progress-step {
+  display: block;
+  position: relative;
+  flex: 1 1 0%;
+  margin: 0;
+  padding: 0;
+  min-width: 28px; }
+  .progress-step:last-child {
+    flex-grow: 0; }
+  .progress-step:not(:last-child)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -10;
+    top: 12px;
+    bottom: 12px;
+    right: -14px;
+    width: 100%;
+    height: 4px;
+    transition: background-color 0.3s; }
+  .progress-step.is-active .progress-title {
+    font-weight: 400; }
+  .progress-step > a {
+    display: block; }
+
+.progress-marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 20;
+  width: 28px;
+  height: 28px;
+  padding-bottom: 2px;
+  color: #fff;
+  font-weight: 400;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: background-color, border-color;
+  transition-duration: 0.3s; }
+
+.progress-text {
+  display: block;
+  padding: 14px 9.33333px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.progress-title {
+  margin-top: 0; }
+
+.progress-step .progress-marker {
+  color: #fff;
+  background-color: white; }
+
+.progress-step::after {
+  background-color: white; }
+
+.progress-step .progress-text, .progress-step .progress-step > a .progress-text {
+  color: #333333; }
+
+.progress-step.is-active .progress-marker {
+  background-color: #FCD626; }
+
+.progress-step.is-complete .progress-marker {
+  background-color: #FCD626; }
+
+.progress-step.is-complete::after {
+  background-color: #FCD626; }
+
+.progress-step:hover .progress-marker {
+  background-color: #999999; }
+
+.progress-tracker--center .progress-step {
+  text-align: center; }
+  .progress-tracker--center .progress-step:last-child {
+    flex-grow: 1; }
+  .progress-tracker--center .progress-step::after {
+    right: -50%; }
+
+.progress-tracker--center .progress-marker {
+  margin-left: auto;
+  margin-right: auto; }
+
+.progress-tracker--right .progress-step {
+  text-align: right; }
+  .progress-tracker--right .progress-step:last-child {
+    flex-grow: 1; }
+  .progress-tracker--right .progress-step::after {
+    right: calc(-100% + 14px); }
+
+.progress-tracker--right .progress-marker {
+  margin-left: auto; }
+
+.progress-tracker--border {
+  padding: 5px;
+  border: 2px solid #FCD626;
+  border-radius: 38px; }
+
+.progress-tracker--spaced .progress-step::after {
+  width: calc(100% - 48px);
+  margin-right: 24px; }
+
+.progress-tracker--word {
+  padding-right: 38.66667px;
+  overflow: hidden; }
+  .progress-tracker--word .progress-text {
+    display: inline-block;
+    white-space: nowrap; }
+  .progress-tracker--word .progress-title {
+    margin: 0; }
+
+.progress-tracker--word-center {
+  padding-right: 38.66667px;
+  padding-left: 38.66667px; }
+  .progress-tracker--word-center .progress-text {
+    padding-right: 0;
+    padding-left: 0;
+    transform: translateX(calc(-50% + 14px)); }
+
+.progress-tracker--word-right {
+  padding-right: 0;
+  padding-left: 38.66667px; }
+  .progress-tracker--word-right .progress-text {
+    padding-left: 0;
+    transform: translateX(calc(-100% + 28px)); }
+
+.progress-tracker--text .progress-step:last-child {
+  flex-grow: 1; }
+
+.progress-tracker--text-top .progress-step::after {
+  top: auto; }
+
+.progress-tracker--text-top .progress-text {
+  height: 100%; }
+
+.progress-tracker--text-top .progress-marker {
+  bottom: 28px; }
+
+.progress-tracker--text-inline .progress-step {
+  display: flex; }
+
+.progress-tracker--text-inline .progress-text {
+  position: relative;
+  z-index: 30;
+  max-width: 70%;
+  white-space: nowrap;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fff; }
+
+.progress-tracker--text-inline .progress-title {
+  margin: 0; }
+
+.progress-tracker--square .progress-step {
+  padding-top: 0; }
+
+.progress-tracker--square .progress-marker {
+  transform: scaleX(0.33) translateY(-12px);
+  border-radius: 0; }
+
+@media (max-width: 399px) {
+  .progress-tracker-mobile {
+    overflow-x: auto; }
+    .progress-tracker-mobile .progress-tracker {
+      min-width: 200%; } }
+
+.progress-tracker--vertical {
+  flex-direction: column; }
+  .progress-tracker--vertical .progress-step {
+    flex: 1 1 auto; }
+    .progress-tracker--vertical .progress-step::after {
+      right: auto;
+      top: 14px;
+      left: 12px;
+      width: 4px;
+      height: 100%; }
+  .progress-tracker--vertical .progress-marker {
+    position: absolute;
+    left: 0; }
+  .progress-tracker--vertical .progress-text {
+    padding-top: 7px;
+    padding-left: 42px; }
+  .progress-tracker--vertical .progress-step:not(:last-child) .progress-text {
+    padding-bottom: 42px; }
+
+@keyframes scale-up {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0); }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1); } }
+
+.anim-ripple .progress-marker::before, .anim-ripple-large .progress-marker::before, .anim-ripple-splash .progress-marker::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 30;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  visibility: hidden; }
+
+.anim-ripple :not(:active) .progress-marker::before, .anim-ripple-large :not(:active) .progress-marker::before, .anim-ripple-splash :not(:active) .progress-marker::before {
+  animation: scale-up 0.3s ease-out; }
+
+.anim-ripple :focus .progress-marker::before, .anim-ripple-large :focus .progress-marker::before, .anim-ripple-splash :focus .progress-marker::before {
+  visibility: visible; }
+
+.anim-ripple-large .progress-marker::before {
+  width: 200%;
+  height: 200%; }
+
+.anim-ripple-splash .progress-marker::before {
+  width: 200%;
+  height: 200%;
+  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.35); }
+
+.anim-ripple-double .progress-marker::before, .anim-ripple-double .progress-marker::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 30;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  visibility: hidden;
+  background: none;
+  border: 3px solid rgba(0, 0, 0, 0.3); }
+
+.anim-ripple-double :not(:active) .progress-marker::before, .anim-ripple-double :not(:active) .progress-marker::after {
+  animation: scale-up 0.3s ease-out 0s; }
+
+.anim-ripple-double :not(:active) .progress-marker::after {
+  animation-delay: 0.15s; }
+
+.anim-ripple-double :focus .progress-marker::before, .anim-ripple-double :focus .progress-marker::after {
+  visibility: visible; }
+
+.anim-path .progress-step::after {
+  background-image: linear-gradient(to right, white 50%, #FCD626 50%);
+  background-size: 200% 100%;
+  background-position: 0% 100%;
+  transition: background-position 0.3s ease-out; }
+
+.anim-path .progress-step.is-complete::after {
+  background-position: -100% 100%; }
+
 .bg {
   background: red; }
 
@@ -7414,7 +7693,7 @@ html {
 
 body {
   width: 100%;
-  font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+  font-family: "Varela Round", sans-serif;
   color: #434343;
   overflow-x: hidden; }
 
@@ -7610,7 +7889,7 @@ body {
   font-size: 18px;
   height: 45px;
   max-height: 45px;
-  font-family: CirceRounded, sans-serif; }
+  font-family: "Varela Round", sans-serif; }
   .b-input__button {
     background-color: #FCD626;
     height: 45px;
@@ -7629,7 +7908,7 @@ body {
   border-radius: 10px;
   border-color: #d8d8d8;
   font-size: 18px;
-  font-family: CirceRounded, sans-serif; }
+  font-family: "Varela Round", sans-serif; }
   .b-textarea:focus {
     border-color: #FCD626;
     box-shadow: none; }
@@ -7767,7 +8046,7 @@ select.form-control {
   border-radius: 10px;
   border-color: #FCD626;
   height: 45px;
-  font-family: CirceRounded, sans-serif;
+  font-family: "Varela Round", sans-serif;
   border-color: #FCD626;
   transition: .5s all; }
   .b-search-input:focus {
@@ -8362,7 +8641,7 @@ select.form-control {
       display: block;
       width: 30px;
       height: 2px;
-      margin-right: 20px;
+      margin-right: 22px;
       background-color: #B1B1B1; }
       .b-verification__dashes span:nth-last-of-type(1) {
         margin-right: 0; }
@@ -8374,6 +8653,106 @@ select.form-control {
     font-size: 40px;
     letter-spacing: 30px;
     text-align: left; }
+
+.layered-slider {
+  position: relative;
+  max-width: 100%;
+  width: 728px;
+  max-height: 360px;
+  margin-bottom: 30px; }
+  .layered-slider__header {
+    font-size: 25px; }
+  .layered-slider__arrow {
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 40px;
+    z-index: 1000;
+    transition: .4s opacity; }
+    .layered-slider__arrow--prev {
+      left: 5px;
+      transform: translateY(-50%) rotate(180deg); }
+    .layered-slider__arrow--next {
+      right: 5px; }
+    .layered-slider__arrow:hover {
+      opacity: 1; }
+    .layered-slider__arrow--hidden {
+      pointer-events: none;
+      visibility: hidden; }
+  .layered-slider__indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5; }
+  .layered-slider__dot {
+    cursor: pointer;
+    padding: 5px; }
+    .layered-slider__dot:after {
+      content: "";
+      background: white;
+      position: relative;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      transition: .2s all; }
+    .layered-slider__dot--active:after {
+      background-color: #FCD626; }
+    .layered-slider__dot:hover:after {
+      width: 18px;
+      height: 18px;
+      border-radius: 18px; }
+  .layered-slider__item {
+    opacity: 0;
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(1.3);
+    transition: transform .2s, opacity .2s, z-index .2s .1s; }
+    .layered-slider__item .layered-slider__image {
+      border-radius: 10px;
+      opacity: 0;
+      transition: .2s opacity; }
+    .layered-slider__item--active {
+      position: relative;
+      opacity: 1;
+      z-index: 3;
+      transform: scale(1);
+      transition: transform .2s, opacity .2s, z-index .2s .1s; }
+      .layered-slider__item--active .layered-slider__image {
+        opacity: 1;
+        transition: .2s opacity; }
+      .layered-slider__item--active + div {
+        opacity: .7;
+        z-index: 2;
+        transform: translateY(10px) scaleX(0.95); }
+        .layered-slider__item--active + div + div {
+          opacity: .7;
+          z-index: 1;
+          transform: translateY(20px) scaleX(0.9); }
+  .layered-slider__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100; }
+
+.b-poster-slider {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow-x: scroll; }
 
 @media (max-width: 767.98px) {
   .col-md-6, .col-md-12 {
@@ -8397,7 +8776,9 @@ select.form-control {
     position: fixed;
     top: 77px;
     right: 10px;
-    left: 10px; } }
+    left: 10px; }
+  .layered-slider__header {
+    font-size: 15px; } }
 
 @media (max-width: 1199.98px) {
   .work__col {
@@ -8423,268 +8804,6 @@ select.form-control {
 small.errorText {
   min-height: 46px;
   font-size: 15px !important; }
-
-.progress-tracker {
-  display: flex;
-  margin: 40px auto;
-  padding: 0;
-  list-style: none; }
-
-.progress-step {
-  display: block;
-  position: relative;
-  flex: 1 1 0%;
-  margin: 0;
-  padding: 0;
-  min-width: 28px; }
-  .progress-step:last-child {
-    flex-grow: 0; }
-  .progress-step:not(:last-child)::after {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: -10;
-    top: 12px;
-    bottom: 12px;
-    right: -14px;
-    width: 100%;
-    height: 4px;
-    transition: background-color 0.3s; }
-  .progress-step.is-active .progress-title {
-    font-weight: 400; }
-  .progress-step > a {
-    display: block; }
-
-.progress-marker {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 20;
-  width: 28px;
-  height: 28px;
-  padding-bottom: 2px;
-  color: #fff;
-  font-weight: 400;
-  border: 2px solid transparent;
-  border-radius: 50%;
-  transition: background-color, border-color;
-  transition-duration: 0.3s; }
-
-.progress-text {
-  display: block;
-  padding: 14px 9.33333px;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-
-.progress-title {
-  margin-top: 0; }
-
-.progress-step .progress-marker {
-  color: #fff;
-  background-color: white; }
-
-.progress-step::after {
-  background-color: white; }
-
-.progress-step .progress-text, .progress-step .progress-step > a .progress-text {
-  color: #333333; }
-
-.progress-step.is-active .progress-marker {
-  background-color: #FCD626; }
-
-.progress-step.is-complete .progress-marker {
-  background-color: #FCD626; }
-
-.progress-step.is-complete::after {
-  background-color: #FCD626; }
-
-.progress-step:hover .progress-marker {
-  background-color: #999999; }
-
-.progress-tracker--center .progress-step {
-  text-align: center; }
-  .progress-tracker--center .progress-step:last-child {
-    flex-grow: 1; }
-  .progress-tracker--center .progress-step::after {
-    right: -50%; }
-
-.progress-tracker--center .progress-marker {
-  margin-left: auto;
-  margin-right: auto; }
-
-.progress-tracker--right .progress-step {
-  text-align: right; }
-  .progress-tracker--right .progress-step:last-child {
-    flex-grow: 1; }
-  .progress-tracker--right .progress-step::after {
-    right: calc(-100% + 14px); }
-
-.progress-tracker--right .progress-marker {
-  margin-left: auto; }
-
-.progress-tracker--border {
-  padding: 5px;
-  border: 2px solid #FCD626;
-  border-radius: 38px; }
-
-.progress-tracker--spaced .progress-step::after {
-  width: calc(100% - 48px);
-  margin-right: 24px; }
-
-.progress-tracker--word {
-  padding-right: 38.66667px;
-  overflow: hidden; }
-  .progress-tracker--word .progress-text {
-    display: inline-block;
-    white-space: nowrap; }
-  .progress-tracker--word .progress-title {
-    margin: 0; }
-
-.progress-tracker--word-center {
-  padding-right: 38.66667px;
-  padding-left: 38.66667px; }
-  .progress-tracker--word-center .progress-text {
-    padding-right: 0;
-    padding-left: 0;
-    transform: translateX(calc(-50% + 14px)); }
-
-.progress-tracker--word-right {
-  padding-right: 0;
-  padding-left: 38.66667px; }
-  .progress-tracker--word-right .progress-text {
-    padding-left: 0;
-    transform: translateX(calc(-100% + 28px)); }
-
-.progress-tracker--text .progress-step:last-child {
-  flex-grow: 1; }
-
-.progress-tracker--text-top .progress-step::after {
-  top: auto; }
-
-.progress-tracker--text-top .progress-text {
-  height: 100%; }
-
-.progress-tracker--text-top .progress-marker {
-  bottom: 28px; }
-
-.progress-tracker--text-inline .progress-step {
-  display: flex; }
-
-.progress-tracker--text-inline .progress-text {
-  position: relative;
-  z-index: 30;
-  max-width: 70%;
-  white-space: nowrap;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: #fff; }
-
-.progress-tracker--text-inline .progress-title {
-  margin: 0; }
-
-.progress-tracker--square .progress-step {
-  padding-top: 0; }
-
-.progress-tracker--square .progress-marker {
-  transform: scaleX(0.33) translateY(-12px);
-  border-radius: 0; }
-
-@media (max-width: 399px) {
-  .progress-tracker-mobile {
-    overflow-x: auto; }
-    .progress-tracker-mobile .progress-tracker {
-      min-width: 200%; } }
-
-.progress-tracker--vertical {
-  flex-direction: column; }
-  .progress-tracker--vertical .progress-step {
-    flex: 1 1 auto; }
-    .progress-tracker--vertical .progress-step::after {
-      right: auto;
-      top: 14px;
-      left: 12px;
-      width: 4px;
-      height: 100%; }
-  .progress-tracker--vertical .progress-marker {
-    position: absolute;
-    left: 0; }
-  .progress-tracker--vertical .progress-text {
-    padding-top: 7px;
-    padding-left: 42px; }
-  .progress-tracker--vertical .progress-step:not(:last-child) .progress-text {
-    padding-bottom: 42px; }
-
-@keyframes scale-up {
-  from {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(0); }
-  to {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(1); } }
-
-.anim-ripple .progress-marker::before, .anim-ripple-large .progress-marker::before, .anim-ripple-splash .progress-marker::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 30;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  visibility: hidden; }
-
-.anim-ripple :not(:active) .progress-marker::before, .anim-ripple-large :not(:active) .progress-marker::before, .anim-ripple-splash :not(:active) .progress-marker::before {
-  animation: scale-up 0.3s ease-out; }
-
-.anim-ripple :focus .progress-marker::before, .anim-ripple-large :focus .progress-marker::before, .anim-ripple-splash :focus .progress-marker::before {
-  visibility: visible; }
-
-.anim-ripple-large .progress-marker::before {
-  width: 200%;
-  height: 200%; }
-
-.anim-ripple-splash .progress-marker::before {
-  width: 200%;
-  height: 200%;
-  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.35); }
-
-.anim-ripple-double .progress-marker::before, .anim-ripple-double .progress-marker::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 30;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  visibility: hidden;
-  background: none;
-  border: 3px solid rgba(0, 0, 0, 0.3); }
-
-.anim-ripple-double :not(:active) .progress-marker::before, .anim-ripple-double :not(:active) .progress-marker::after {
-  animation: scale-up 0.3s ease-out 0s; }
-
-.anim-ripple-double :not(:active) .progress-marker::after {
-  animation-delay: 0.15s; }
-
-.anim-ripple-double :focus .progress-marker::before, .anim-ripple-double :focus .progress-marker::after {
-  visibility: visible; }
-
-.anim-path .progress-step::after {
-  background-image: linear-gradient(to right, white 50%, #FCD626 50%);
-  background-size: 200% 100%;
-  background-position: 0% 100%;
-  transition: background-position 0.3s ease-out; }
-
-.anim-path .progress-step.is-complete::after {
-  background-position: -100% 100%; }
 
 .datepicker-container {
   background-color: #fff;

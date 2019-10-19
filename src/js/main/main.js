@@ -30,6 +30,7 @@ import closeNav from './closeNav'
 import lazyload from './lazyload'
 import addMenusToProfileDropdown from './addMenusToProfileDropdown'
 import smsVerification from './smsVerification'
+import LayeredSlider from './LayeredSlider'
 
 
 
@@ -56,6 +57,7 @@ ready(function() {
 	openPopup()
 	repeatItem()
 	smsVerification()
+	LayeredSlider()
 
 	$('.pressClose').on('click touchstart', e=>{
 		const html = $('html')

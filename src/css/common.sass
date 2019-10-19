@@ -34,8 +34,7 @@ html
 	 //    	background-color: transparent
 body
 	width: 100%
-	font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif
-	// overflow: hidden
+	font-family: $font-family
 	color: $light-black
 	overflow-x: hidden
 	// overflow-y: auto
@@ -275,7 +274,7 @@ body
 	font-size: 18px
 	height: 45px
 	max-height: 45px
-	font-family: CirceRounded, sans-serif
+	font-family: $font-family
 	&__button
 		background-color: $main-color
 		height: 45px
@@ -295,7 +294,7 @@ body
 	font-size: 18px
 	// height: 45px
 	// max-height: 45px
-	font-family: CirceRounded, sans-serif
+	font-family: $font-family
 
 	&:focus
 		border-color: $main-color
@@ -450,7 +449,7 @@ select.form-control
 	border-radius: 10px
 	border-color: $main-color
 	height: 45px
-	font-family: CirceRounded, sans-serif
+	font-family: $font-family
 	border-color: $main-color
 	transition: .5s all
 	&:focus
@@ -1159,7 +1158,7 @@ select.form-control
       display: block
       width: 30px
       height: 2px
-      margin-right: 20px
+      margin-right: 22px
       &:nth-last-of-type(1)
         margin-right: 0
       
@@ -1175,6 +1174,116 @@ select.form-control
     // width: 110px
     // background: lightgray
   
+.layered-slider
+  position: relative
+  max-width: 100%
+  width: 728px
+  max-height: 360px
+  margin-bottom: 30px
+  &__headers
+  &__header
+  	font-size: 25px
+  
+  &__arrow
+    color: white
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    user-select: none
+    cursor: pointer
+    opacity: .9
+    font-size: 40px
+    z-index: 1000
+    transition: .4s opacity
+    &--prev
+      left: 5px
+      transform: translateY(-50%) rotate(180deg)
+    &--next
+      right: 5px
+    &:hover
+      opacity: 1
+    &--hidden
+      pointer-events: none
+      visibility: hidden
+  
+    
+    
+  &__indicators
+    position: absolute
+    bottom: 10px
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 5
+  &__dot
+    cursor: pointer
+    padding: 5px
+    
+    &:after
+      content: ""
+      background: white
+      position: relative
+      display: inline-block
+      width: 10px
+      height: 10px
+      border-radius: 10px
+      transition: .2s all
+    &--active
+      &:after
+        background-color: $main-color
+    &:hover:after
+      width: 18px
+      height: 18px
+      border-radius: 18px
+  &__items
+  
+  &__item
+    // background-color: red
+    opacity: 0
+    position: absolute
+    background-size: cover
+    width: 100%
+    height: 100%
+    border-radius: 10px
+    overflow: hidden
+    transform: scale(1.3)
+    transition: transform .2s, opacity .2s, z-index .2s .1s
+    & .layered-slider__image
+      border-radius: 10px
+      opacity: 0
+      transition: .2s opacity
+      
+      
+    &--active
+      position: relative
+      opacity: 1
+      z-index: 3
+      transform: scale(1)
+      transition: transform .2s, opacity .2s, z-index .2s .1s
+      & .layered-slider__image
+        opacity: 1
+        transition: .2s opacity
+      & + div
+        opacity: .7
+        z-index: 2
+        transform: translateY(10px) scaleX(.95)
+        & + div
+          opacity: .7
+          z-index: 1
+          transform: translateY(20px) scaleX(.9) 
+  &__info
+	  position: absolute
+	  top: 0
+	  left: 0
+	  bottom: 0
+	  right: 0
+	  z-index: 100
+   
+.b-poster-slider
+	flex-wrap: nowrap
+	justify-content: space-between
+	overflow-x: scroll
+
+
       
 
 //media
@@ -1212,6 +1321,11 @@ select.form-control
 			top: 77px
 			right: 10px
 			left: 10px
+	.layered-slider
+		&__headers
+		&__header
+			font-size: 15px
+
 
 @include media-breakpoint-between(xs, lg)
 	.work
@@ -1243,6 +1357,7 @@ select.form-control
 
 	.my-orders
 		max-width: unset
+	
 
 @include media-breakpoint-between(xs, xl)
 

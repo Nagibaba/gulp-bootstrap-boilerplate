@@ -24,6 +24,15 @@
 ::-webkit-scrollbar-corner 
     background-color: transparent 
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+	-webkit-appearance: none
+	margin: 0
+input[type=number]
+	-moz-appearance: textfield
+
+.responsive-wrapper
+	overflow-x: auto
 .black
 	color: black!important
 .gray
@@ -51,7 +60,10 @@ h1
 	font-size: 25px
 h2
 	font-size: 20px
-
+.test
+	background: red
+.rotate
+  transform: rotate(180deg)
 .fullCenter
 	display: flex
 	justify-content: center
