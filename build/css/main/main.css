@@ -8749,11 +8749,6 @@ select.form-control {
     right: 0;
     z-index: 100; }
 
-.b-poster-slider {
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  overflow-x: scroll; }
-
 @media (max-width: 767.98px) {
   .col-md-6, .col-md-12 {
     margin-top: 15px; }
