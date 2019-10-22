@@ -1,11 +1,19 @@
 const LayeredSlider = ()=> {
-	const dot = $('.layered-slider__dot')
+	const dotClone = $('.layered-slider__dot').clone().removeClass('layered-slider__dot--active')
+	const indicators = $('.layered-slider__indicators')
 	const item = $('.layered-slider__item')
 	const arrow = $('.layered-slider__arrow')
 	const nextArrow = $('.layered-slider__arrow--next')
 	const prevArrow = $('.layered-slider__arrow--prev')
-	const count = dot.length
+	const count = item.length
+	let i = 1
+	while(i < count){
+		indicators.append(dotClone.clone())
+		i++
+	}
 
+
+	const dot = $('.layered-slider__dot')
 	dot.click(function(){
 	  const index = $(this).index()
 	  
