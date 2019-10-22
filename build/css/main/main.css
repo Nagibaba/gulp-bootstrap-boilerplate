@@ -8706,7 +8706,7 @@ select.form-control {
       width: 10px;
       height: 10px;
       border-radius: 10px;
-      transition: 0.8s all; }
+      transition: .3s all; }
     .layered-slider__dot--active:after {
       background-color: #FCD626; }
     .layered-slider__dot:hover:after {
