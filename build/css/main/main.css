@@ -8746,6 +8746,7 @@ select.form-control {
           z-index: 1;
           transform: translateY(20px) scaleX(0.9); }
   .layered-slider__info {
+    border-radius: 10px;
     position: absolute;
     top: 0;
     left: 0;
