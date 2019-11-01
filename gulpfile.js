@@ -160,7 +160,7 @@ gulp.task('css:build', function (dev=true) {
             console.log(err)
             this.emit('end')
         })
-        .pipe(postcss([ autoprefixer({browsers: ['last 1 version']}) ]))
+        .pipe(postcss([ autoprefixer({browsers: ['last 4 version']}) ]))
         // .pipe(
         //     uncss({
         //             html: fizzalinks // html: ["fake_html/header.html"]

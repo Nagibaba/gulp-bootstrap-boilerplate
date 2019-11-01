@@ -22,7 +22,7 @@ import a from './a'
 import nav from './nav'
 import windowScrollListener from './windowScrollListener'
 import documentListener from './documentListener'
-import slider from './slider'
+// import slider from './slider'
 import shoppingCard from './shoppingCard'
 import openPopup from './openPopup'
 import repeatItem from './repeatItem'
@@ -58,6 +58,17 @@ ready(function() {
 	repeatItem()
 	smsVerification()
 	LayeredSlider()
+
+
+	// solve hash bug in chrome
+	var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    if (window.location.hash && isChrome) {
+        setTimeout(function () {
+            var hash = window.location.hash;
+            window.location.hash = "";
+            window.location.hash = hash;
+        }, 300);
+    }
 
 	$('.pressClose').on('click touchstart', e=>{
 		const html = $('html')
@@ -145,18 +156,25 @@ ready(function() {
 	// scroll to order
 	$(".scroll-to-order").click(function (e){
 		e.preventDefault()
-        $('html, body').animate({
-            scrollTop: $(".orders-holder").offset().top - 10
-        }, 1000);
+		
+		if(window.location.pathname.split('/').length>2){
+			window.location = '/#orders-holder'
+
+		} else {
+
+	        $('html, body').animate({
+	            scrollTop: $("#orders-holder").offset().top - 10
+	        }, 1000);
+	    }
     });
 
     //scroll to top
-    $(".scroll-to-top").click(function (e){
-		e.preventDefault()
-        $('html, body').animate({
-            scrollTop: 0
-        }, 1000);
-    });
+  //   $(".scroll-to-top").click(function (e){
+		// e.preventDefault()
+  //       $('html, body').animate({
+  //           scrollTop: 0
+  //       }, 1000);
+  //   });
 
 
    	$('.b-invoice__input').change(function(){
