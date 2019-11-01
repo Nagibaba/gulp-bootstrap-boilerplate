@@ -8518,7 +8518,7 @@ select.form-control {
     padding: 0.2em; }
     .form-check-input + label:before {
       display: inline-block;
-      content: "\2714";
+      content: "\2713";
       border: 1px solid #FCD626;
       border-radius: 5px;
       width: 20px;
