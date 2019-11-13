@@ -873,6 +873,10 @@ select.form-control
 	&__header
 		border-bottom: 1px solid $main-color
 	&__body
+		& span
+			color: #6b757d
+		& b
+			color: #434343
 
 
 .my-orders
@@ -1103,21 +1107,24 @@ select.form-control
 .b-invoice
 	position: relative
 	border: 1px solid #d8d8d8
+	width: 100%
+	height: 200px
 	border-radius: 3px
 	&__input
 		cursor: pointer
-		display: flex
-		justify-content: center
-		align-items: center
-		padding: 20px
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
 		width: 100%
-		height: 200px
+		
 		opacity: 0
 	&__infos
 		z-index: -1
 		position: absolute
 		left: 50%
-		top: 50%
+		top: 35%
 		transform: translate(-50%, -50%)
 		display: flex
 		flex-direction: column
@@ -1125,17 +1132,24 @@ select.form-control
 		text-align: center
 		padding: 5px
 		border-radius: 4px
-	&__file-info
-		text-align: center
-	&__ext
-	    display: flex
-	    justify-content: center
-	    align-items: center
-	    width: 40px
-	    height: 40px
-	    border-radius: 40px
-	    margin-right: 5px
-	    background-color: $main-color
+	
+	
+	&__fileinfo
+		position: absolute
+		bottom: 10px
+	&__filename
+		cursor: pointer
+		user-select: none
+		border: 1px solid $main-color
+		border-radius: 3px
+		& span
+			display: inline-block
+			transition: .4s transform, .4s color
+		&:hover span
+			transform: scale(1.7)
+			color: tomato
+
+
 
 .b-alert
 	background-color: transparent
