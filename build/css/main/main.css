@@ -8489,6 +8489,10 @@ select.form-control {
       align-self: center; }
 
 .form-check {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   min-width: 144px;
   max-width: 100%;
   background-color: white;
