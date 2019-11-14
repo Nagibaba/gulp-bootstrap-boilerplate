@@ -184,6 +184,7 @@ ready(function() {
 
 		for (var i = 0; i < files.length; i++){
 			const name = files[i].name
+			const size = files[i].size/1024/1024
 			fileInfo.append($(`<a class="b-invoice__filename p-1 mr-1">${name}<span class="ml-2" href="">&times;</span></a>`))
 		}
 	  
