@@ -9163,8 +9163,10 @@ select.form-control {
   position: relative;
   border: 1px solid #d8d8d8;
   width: 100%;
-  height: 200px;
+  min-height: 200px;
   border-radius: 3px; }
+  .b-invoice__col {
+    min-height: 200px; }
   .b-invoice__input {
     cursor: pointer;
     position: absolute;
