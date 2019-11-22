@@ -9439,7 +9439,9 @@ select.form-control {
 
 @media (max-width: 991.98px) {
   .my-orders {
-    max-width: unset; } }
+    max-width: unset; }
+  .b-invoice__col {
+    border-bottom: 1px solid #ECECEC; } }
 
 small.errorText {
   min-height: 46px;
