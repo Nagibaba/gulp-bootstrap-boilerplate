@@ -1,0 +1,293 @@
+//= template/simple-head.html
+  
+      <div class="not-visible-first container flex-column full-height justify-content-between d-flex p-0">
+        <div class="pressClose"></div>
+        <div class="b-nav">
+          <div class="container-fluid flex-column mt-4">
+            <div class="row flex-shrink-0">
+              <div class="col-6 b-nav__tab b-nav__tab--first justify-content-center b-nav__tab--active">
+                <a class="nav-tab-button" href="#tab-1">MENU</a>
+              </div>
+              <div class="col-6 b-nav__tab b-nav__tab--second justify-content-center ">
+                <a class="nav-tab-button" href="#tab-2">HESABIM</a>
+              </div>
+            </div>
+            <div class="container-fluid flex-column align-items-end mt-4 pr-2 pr-sm-5 b-nav__tab-content b-nav__tab-content--active" id="tab-1">
+              <a class="b-nav__item mb-3" href="/az/nece-isleyirik-10">Necə işləyirik </a>
+              <a class="b-nav__item mb-3" href="/az/haqqimizda-8">Haqqımızda</a>
+              <a class="b-nav__item mb-3" href="/az/tez-tez-verilen-suallar-7">Tez-tez verilən suallar</a>
+              <a class="b-nav__item mb-3" href="/az/numune-saytlar-6">Nümunə saytlar</a>
+              <a class="b-nav__item mb-3" href="/az/bloq-5">Bloq</a>
+              <a class="b-nav__item mb-3" href="/az/sifaris-et-xidmet-sertleri-3">"Sifariş et" xidmət şərtləri</a>
+              <a class="b-nav__item mb-3" href="/az/gizlilik-siyaseti-2">Gizlilik siyasəti</a>
+              <a class="b-nav__item mb-3" href="/az/elaqe-21">Əlaqə</a>
+            </div>
+            <div class="container-fluid flex-column mt-4  b-nav__tab-content  " id="tab-2">
+              <span class="text-center">GİRİŞ</span>
+              <div class="row mt-4">
+                <div class="col-md-6 justify-content-center pr-1">
+                  <button class="btn btn-light ml-1 simple-button mt-1 fullWidth fullCenter" type="button" data-href="/az/users/login?service=facebook">
+                  <i class="social-login fa fa-facebook" style="color: #385C8E"></i>
+                  </button>
+                </div>
+                <div class="col-md-6 justify-content-center pr-1">
+                  <button class="btn btn-light ml-1 simple-button mt-1 fullWidth fullCenter" type="button" data-href="/az/users/login?service=google-oauth">
+                  <i class="social-login fa fa-google-plus" style="color: #F34A38"></i>
+                  </button>
+                </div>
+              </div>
+              <form data-form="ajax" id="login-form" action="/az/users/login" method="post">
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <div class="form-group fullWidth">
+                      <input class="form-control b-input" placeholder="İstifadəçi Adı" autofocus="autofocus" name="LoginForm[username]" id="LoginForm_username" type="text"> <small class="errorText" data-error="username" style="display: none;"></small>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group fullWidth">
+                      <input class="form-control b-input" placeholder="********" autofocus="autofocus" name="LoginForm[password]" id="LoginForm_password" type="password"> <small class="errorText" data-error="password" style="display: none;"></small>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 justify-content-center">
+                    <button class="btn btn-warning main-button" type="submit">Daxil ol</button>
+                  </div>
+                </div>
+              </form>
+              <p class="text-center"><a class="forgot-pass__link" href="/az/users/fpassword">Şifrəmi unutdum</a></p>
+              <div class="container-fluid account-info mt-5">
+                <div class="row justify-content-center">
+                  <p class="account-info__ask">Hələ də hesabın yoxdur? O zaman</p>
+                </div>
+                <div class="row justify-content-center">
+                  <a class="account-info__register" href="/az/users/registration">QEYDİYYATDAN KEÇ</a>
+                </div>
+                <!--
+                  <div class="row justify-content-center">
+                      <a class="account-info__company-register" href="">Hüquqi şəxslər üçün Qeydiyyat</a>
+                  </div>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="inputs-wrapper inputs-wrapper--white flex-column f-20 py-3 px-3 px-sm-5">
+            <h1 class="text-center mt-3 mb-5">
+              TERMİNAL ÖDƏNİŞ   
+            </h1>
+            <div class="alert b-alert alert-primary fullCenter f-18 p-2" role="alert">
+              <i class="fa fa-info-circle main-color f-25 mr-2"></i> Hörmətli müştəri, cari balansa əlavə etdiyiniz məbləğdən sadəcə çatdırılma haqqını ödəyə bilərsiniz.
+Çatdırılma balansı ilə Türkiyədən alış-veriş etmək mümkün deyil! Artırılan Balans geri qaytarılmır!
+            </div>
+            
+            
+            <div class="row flex-row m-0">
+              <ul class="nav nav-pills nav-justified fullWidth mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="tr-tab" data-toggle="pill" href="#million" role="tab" aria-controls="tr" aria-selected="true">MİLLİ ÖN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " id="usd-tab" data-toggle="pill" href="#hesabaz" role="tab" aria-controls="usd" aria-selected="true">HESAB.AZ</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="tab-content row flex-row m-0" id="pills-tabContent">
+
+
+              <div class="tab-pane fade p-terminal d-flex flex-wrap fullMax justify-content-between" role="tabpanel" aria-labelledby="million-tab" id="million">
+
+                <div class="p-terminal__item flex-column my-3">
+                  <div class="p-terminal__header flex-row fullMax">
+                    <span class="p-terminal__key p-2 pr-4">
+                      5
+                    </span>
+                    <p class="p-terminal__info fullCenter m-0">
+                      Daxil olunan məlumat yoxlanılır və əgər 
+                      doğrudursa “Bəli” düyməsi sıxılır.
+                    </p>
+                  </div>
+                  <div class="p-terminal__body">
+                    <img src="./img/terminal.png" alt="Terminal payment image" class="img-fluid">
+                  </div>
+                </div>
+
+                <div class="p-terminal__item flex-column my-3">
+                  <div class="p-terminal__header flex-row fullMax">
+                    <span class="p-terminal__key p-2 pr-4">
+                      5
+                    </span>
+                    <p class="p-terminal__info fullCenter m-0">
+                      Daxil olunan məlumat yoxlanılır və əgər 
+                      doğrudursa “Bəli” düyməsi sıxılır.
+                    </p>
+                  </div>
+                  <div class="p-terminal__body">
+                    <img src="./img/terminal.png" alt="Terminal payment image" class="img-fluid">
+                  </div>
+                </div>
+
+                <div class="p-terminal__item flex-column my-3">
+                  <div class="p-terminal__header flex-row fullMax">
+                    <span class="p-terminal__key p-2 pr-4">
+                      5
+                    </span>
+                    <p class="p-terminal__info fullCenter m-0">
+                      Daxil olunan məlumat yoxlanılır və əgər 
+                      doğrudursa “Bəli” düyməsi sıxılır.
+                    </p>
+                  </div>
+                  <div class="p-terminal__body">
+                    <img src="./img/terminal.png" alt="Terminal payment image" class="img-fluid">
+                  </div>
+                </div>
+
+                <div class="p-terminal__item flex-column my-3">
+                  <div class="p-terminal__header flex-row fullMax">
+                    <span class="p-terminal__key p-2 pr-4">
+                      5
+                    </span>
+                    <p class="p-terminal__info fullCenter m-0">
+                      Daxil olunan məlumat yoxlanılır və əgər 
+                      doğrudursa “Bəli” düyməsi sıxılır.
+                    </p>
+                  </div>
+                  <div class="p-terminal__body">
+                    <img src="./img/terminal.png" alt="Terminal payment image" class="img-fluid">
+                  </div>
+                </div>
+                
+                <div class="p-terminal__item flex-column my-3">
+                  <div class="p-terminal__header flex-row fullMax">
+                    <span class="p-terminal__key p-2 pr-4">
+                      5
+                    </span>
+                    <p class="p-terminal__info fullCenter m-0">
+                      Daxil olunan məlumat yoxlanılır və əgər 
+                      doğrudursa “Bəli” düyməsi sıxılır.
+                    </p>
+                  </div>
+                  <div class="p-terminal__body">
+                    <img src="./img/terminal.png" alt="Terminal payment image" class="img-fluid">
+                  </div>
+                </div>
+                
+              </div>
+
+
+              <div class="tab-pane fade show active p-terminal d-flex flex-wrap fullMax justify-content-between" role="tabpanel" aria-labelledby="hesab-az-tab" id="hesabaz">
+
+                <div class="p-terminal__item flex-column my-3">
+                  <div class="p-terminal__header flex-row fullMax">
+                    <span class="p-terminal__key p-2 pr-4">
+                      7
+                    </span>
+                    <p class="p-terminal__info fullCenter m-0">
+                      Daxil olunan məlumat yoxlanılır və əgər 
+                      doğrudursa “Bəli” düyməsi sıxılır.
+                    </p>
+                  </div>
+                  <div class="p-terminal__body">
+                    <img src="./img/terminal.png" alt="Terminal payment image" class="img-fluid">
+                  </div>
+                </div>
+
+                <div class="p-terminal__item flex-column my-3">
+                  <div class="p-terminal__header flex-row fullMax">
+                    <span class="p-terminal__key p-2 pr-4">
+                      7
+                    </span>
+                    <p class="p-terminal__info fullCenter m-0">
+                      Daxil olunan məlumat yoxlanılır və əgər 
+                      doğrudursa “Bəli” düyməsi sıxılır.
+                    </p>
+                  </div>
+                  <div class="p-terminal__body">
+                    <img src="./img/terminal.png" alt="Terminal payment image" class="img-fluid">
+                  </div>
+                </div>
+
+                <div class="p-terminal__item flex-column my-3">
+                  <div class="p-terminal__header flex-row fullMax">
+                    <span class="p-terminal__key p-2 pr-4">
+                      7
+                    </span>
+                    <p class="p-terminal__info fullCenter m-0">
+                      Daxil olunan məlumat yoxlanılır və əgər 
+                      doğrudursa “Bəli” düyməsi sıxılır.
+                    </p>
+                  </div>
+                  <div class="p-terminal__body">
+                    <img src="./img/terminal.png" alt="Terminal payment image" class="img-fluid">
+                  </div>
+                </div>
+
+                <div class="p-terminal__item flex-column my-3">
+                  <div class="p-terminal__header flex-row fullMax">
+                    <span class="p-terminal__key p-2 pr-4">
+                      7
+                    </span>
+                    <p class="p-terminal__info fullCenter m-0">
+                      Daxil olunan məlumat yoxlanılır və əgər 
+                      doğrudursa “Bəli” düyməsi sıxılır.
+                    </p>
+                  </div>
+                  <div class="p-terminal__body">
+                    <img src="./img/terminal.png" alt="Terminal payment image" class="img-fluid">
+                  </div>
+                </div>
+                
+                <div class="p-terminal__item flex-column my-3">
+                  <div class="p-terminal__header flex-row fullMax">
+                    <span class="p-terminal__key p-2 pr-4">
+                      7
+                    </span>
+                    <p class="p-terminal__info fullCenter m-0">
+                      Daxil olunan məlumat yoxlanılır və əgər 
+                      doğrudursa “Bəli” düyməsi sıxılır.
+                    </p>
+                  </div>
+                  <div class="p-terminal__body">
+                    <img src="./img/terminal.png" alt="Terminal payment image" class="img-fluid">
+                  </div>
+                </div>
+                
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+        <div class="row b-footer soft-top mt-3 pt-2 pb-2">
+          <div class="col-lg-8 justify-content-start justify-content-md-center">
+            <div class="justify-content-start align-items-center fullWidth flex-wrap pt-2">
+              <!--  <a class=""  target="_blank">
+                <img b-lazyload class="m-1" style="height: 50px; width: auto; max-width: 100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP88R8AAvUB+VkkrXoAAAAASUVORK5CYII=" data-src="/img/as.png" alt="appstore icon">
+                </a>
+                <a class=""  target="_blank">
+                <img b-lazyload class="m-1" style="height: 50px; width: auto; max-width: 100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP88R8AAvUB+VkkrXoAAAAASUVORK5CYII=" data-src="/img/ps.png" alt="playstore icon">
+                </a> -->
+            </div>
+          </div>
+          <div class="col-lg-4 gray flex-column  align-items-center align-items-lg-start mt-3">
+            <p>İş saatları:</p>
+            <p>Bazar ertəsi - Cümə: 10:00 - 19:00</p>
+            <p>Şənbə: 11:00 - 16:00</p>
+          </div>
+          <div class="row soft-top fullWidth m-0 pt-2">
+            <div class="col-md-6">
+              <p class="copyright-text">Copyright 2018-2019. Developed by Fizza team.</p>
+            </div>
+            <div class="col-md-6 justify-content-md-end justify-content-xs-center">
+              <a class="social-icon" href="https://www.facebook.com/Fizzaaz-100689534637477/" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a class="social-icon" href="https://www.instagram.com/fizza.az/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+//= template/footer.html

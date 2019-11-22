@@ -116,7 +116,7 @@ ready(function() {
 	const tooltip = $('.tooltiptext')
 	tooltip.text(tooltip.data('copy'))
 
-	$('.btn-clipboard').bind('click onpressstart', e=>{
+	$('.btn-clipboard').bind('click touchstart', e=>{
 		const target = $(e.target).parent('button')
 		const tooltip = target.find('.tooltiptext')
 		// const copyText = $( target.data('clipboard-target') )

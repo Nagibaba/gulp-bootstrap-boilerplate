@@ -38,6 +38,7 @@ body
 	width: 100%
 	font-family: $font-family
 	color: $light-black
+	// word-break: break-word
 	
 	// overflow-y: auto
 	// transition: .4s all
@@ -870,13 +871,16 @@ select.form-control
 	border-radius: 10px
 	min-height: 81px
 	box-shadow: 3px 3px 20px #EAEAEA
+	
 	&__header
 		border-bottom: 1px solid $main-color
 	&__body
+		word-break: break-word
 		& span
 			color: #6b757d
 		& b
 			color: #434343
+	
 
 
 .my-orders
@@ -1263,6 +1267,7 @@ select.form-control
       height: 18px
       border-radius: 18px
   &__items
+  	max-width: 100%
   
   &__item
     background-color: $main-color
@@ -1321,7 +1326,31 @@ select.form-control
 	&__tracking
 		min-width: 173px
 
-      
+.p-terminal
+
+	word-break: break-word
+	&::after
+		content: ""
+		width: 308px
+	&__item
+		width: 308px
+		max-width: 100%
+		border: 1px solid #EFF0F0
+	&__header
+	&__key
+		font-size: 50px
+		font-weight: bold
+		color: #EFF0F0
+		line-height: 46px
+	&__info
+		font-size: 14px
+		color: #656565
+
+
+
+
+
+   
 
 //media
 @include media-breakpoint-between(xs, sm)
@@ -1394,6 +1423,7 @@ select.form-control
 
 	.my-orders
 		max-width: unset
+	
 	
 
 @include media-breakpoint-between(xs, xl)

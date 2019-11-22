@@ -8960,10 +8960,12 @@ select.form-control {
   box-shadow: 3px 3px 20px #EAEAEA; }
   .my-order__header {
     border-bottom: 1px solid #FCD626; }
-  .my-order__body span {
-    color: #6b757d; }
-  .my-order__body b {
-    color: #434343; }
+  .my-order__body {
+    word-break: break-word; }
+    .my-order__body span {
+      color: #6b757d; }
+    .my-order__body b {
+      color: #434343; }
 
 .my-orders {
   max-width: calc( 100% - 260px); }
@@ -9317,6 +9319,8 @@ select.form-control {
       width: 18px;
       height: 18px;
       border-radius: 18px; }
+  .layered-slider__items {
+    max-width: 100%; }
   .layered-slider__item {
     background-color: #FCD626;
     opacity: 0;
@@ -9366,6 +9370,24 @@ select.form-control {
 
 .input-group__tracking {
   min-width: 173px; }
+
+.p-terminal {
+  word-break: break-word; }
+  .p-terminal::after {
+    content: "";
+    width: 308px; }
+  .p-terminal__item {
+    width: 308px;
+    max-width: 100%;
+    border: 1px solid #EFF0F0; }
+  .p-terminal__key {
+    font-size: 50px;
+    font-weight: bold;
+    color: #EFF0F0;
+    line-height: 46px; }
+  .p-terminal__info {
+    font-size: 14px;
+    color: #656565; }
 
 @media (max-width: 767.98px) {
   .col-md-6, .col-md-12 {
