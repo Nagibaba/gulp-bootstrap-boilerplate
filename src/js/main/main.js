@@ -177,18 +177,18 @@ ready(function() {
   //   });
 
 
-   	$('.b-invoice__input').change(function(){
-		const files = $('.b-invoice__input')[0].files
-		const fileInfo = $('.b-invoice__fileinfo')
-		fileInfo.text('') 
+ //   	$('.b-invoice__input').change(function(){
+	// 	const files = $('.b-invoice__input')[0].files
+	// 	const fileInfo = $('.b-invoice__fileinfo')
+	// 	fileInfo.text('') 
 
-		for (var i = 0; i < files.length; i++){
-			const name = files[i].name
-			const size = files[i].size/1024/1024
-			fileInfo.append($(`<a class="b-invoice__filename p-1 mr-1">${name}<span class="ml-2" href="">&times;</span></a>`))
-		}
+	// 	for (var i = 0; i < files.length; i++){
+	// 		const name = files[i].name
+	// 		const size = files[i].size/1024/1024
+	// 		fileInfo.append($(`<a class="b-invoice__filename p-1 mr-1">${name}<span class="ml-2" href="">&times;</span></a>`))
+	// 	}
 	  
-	})
+	// })
 
 
 
