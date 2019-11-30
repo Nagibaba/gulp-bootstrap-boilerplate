@@ -22,19 +22,20 @@ var options_reg_form = {
                   title :obj.success, 
                   text : obj.desc, 
                   type : "success",
-                  //timer: 3000,   
+                  timer: 3000,   
                   html: true,
-                  showConfirmButton: true 
-                }, function(){
-                    if( typeof(obj.redirect) != "undefined" && obj.redirect !== null )
-                    {
-                        window.location.href = obj.redirect;
-                    }
+                  showConfirmButton: false 
                 });
+                
+                timer = 3200;
             }
             
-            //if( $form.attr('id') == 'login-form' )
-                window.location.href = obj.redirect;
+            if( typeof(obj.redirect) != "undefined" && obj.redirect !== null )
+            {
+                window.setTimeout(function() {
+                    window.location.href = obj.redirect;
+                }, timer);
+            }
         }
     }
 };
@@ -100,15 +101,13 @@ var options_user_filter_form = {
     success: function(data, statusText, xhr, $form)
     {
         $.MCustomLoader(false);
-        $('.content').replaceWith( data );
         
-        /*
         if( typeof $( data )[2] != 'undefined' )
         {
             $('.orders-content-main').replaceWith( $( data )[2] );
             
             $('.orders-content-main').find('.selectpicker').selectpicker();
-        }*/
+        }
     }
 };
 

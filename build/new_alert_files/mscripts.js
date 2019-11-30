@@ -28,6 +28,16 @@ $.extend({
             return eval(string);
         else
             return false;
+    },
+    bytesToSize: function( bytes ){
+        var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+        if (bytes == 0) return '0 Byte';
+        var i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+        return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
+    },
+    getExtName: function( name ){
+        var lastDot = name.lastIndexOf('.');
+        return name.substring(lastDot + 1).toUpperCase();
     }
 });
 
@@ -58,7 +68,7 @@ $(document).ready(function(){
        return false;  
     });
 
-    $(document).on('click', 'button[data-href]', function(){
+    $(document).on('click', 'button[data-href], .dec-file-link', function(){
         location.href = $(this).data('href');
 
         return false;
@@ -851,6 +861,12 @@ $(document).ready(function(){
         return false;
     });
 
+    $(document).on('keypress', '[name="amount"]', function(e){
+        if(e.which == 13){//Enter key pressed
+            $('.add2balance').click();//Trigger search button click event
+        }
+    });
+
     $(document).on('click', '.add2balance', function(e) {
         var _this = $(this);
         var _input = $('.amountInput');
@@ -972,4 +988,36 @@ $(document).ready(function(){
         });
         return false;
     });
+    
+    $(document).on('change', '#OrdersGroupsFiles_file[data-new]', function(e){
+        var _this = $(this);
+        var data = new FormData();
+        var files = _this[0].files;
+        var isNewRecord = _this.data('new');
+
+        if( files.length <= 0 )
+            return;
+        
+        $('.b-invoice__fileinfo.notSaved').remove();
+        
+        var len = $('.b-invoice__fileinfo').length;
+        
+        for(var i = 0; i < files.length; i++)
+        {
+            var _file = '<div class="b-invoice__fileinfo d-flex justify-content-between pr-2 notSaved" data-row-label="Fayl">'
+            	+'<div>'
+                    +'<span class="b-invoice__file-type mr-2">'+$.getExtName( files[i].name )+'</span>'
+            	    +'<div class="b-invoice__about flex-column">'
+            			+'<span class="b-invoice__file-name">Fayl '+ ( i + 1 + len ) +'</span>'
+            			+'<span class="b-invoice__file-size">'+ $.bytesToSize( files[i].size ) +'</span>'
+            		+'</div>'
+            	+'</div>'
+            +'</div>';
+            
+            $( '.b-invoice__fileinfos' ).append( _file );
+        }
+        
+        
+    });
+    
 });

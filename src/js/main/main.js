@@ -32,6 +32,8 @@ import addMenusToProfileDropdown from './addMenusToProfileDropdown'
 import smsVerification from './smsVerification'
 import LayeredSlider from './LayeredSlider'
 
+import {setCookie, getCookie} from './cookies'
+
 
 
 // import 'bootstrap'
@@ -121,22 +123,31 @@ ready(function() {
 		const tooltip = target.find('.tooltiptext')
 		// const copyText = $( target.data('clipboard-target') )
 		// COPY
-		const copyText = target.closest('.copy').find('.copy__value').text().trim()
-		
+		// const copyText = target.closest('.copy').find('.copy__value').text().trim()
+		const copyNode = $(target.data('clipboard-target'))
+		copyNode.addClass('animated heartBeat')
+		const copyText = copyNode.text().trim()
+		console.log(copyText)
 		copyToClipboard(copyText)
 		// $(target.data('clipboard-target')).text()
 
 		tooltip.text(tooltip.data('copied'))
 		clearTimeout(timeout)
+		setTimeout(function(){
+			copyNode.removeClass('animated heartBeat')
+		}, 1000)
+
 		// copyToClipboard(copyText)
 	})
 	$('.btn-clipboard').mouseout(e=>{
 		const target = $(e.target)
 		const tooltip = target.find('.tooltiptext')
+		// const copyNode = $(target.data('clipboard-target'))
 		// const copyText = $( target.data('clipboard-target') )
 
 		timeout = setTimeout(function(){
 			tooltip.text(tooltip.data('copy'))
+			
 			
 		}, 200)
 	})
@@ -196,10 +207,46 @@ ready(function() {
 }) // ready
 
 
+$('[data-toggle="tooltip"]').tooltip()
+
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    // Prevent Chrome 67 and earlier from automatically showing the prompt
+    e.preventDefault();
+    // Stash the event so it can be triggered later.
+    deferredPrompt = e;
+    const btnAdd = document.getElementById('save-as-app')
+    btnAdd.style.display = 'block';
+
+    if(!getCookie('save-as-app')){
+		$('#save-as-app').tooltip('show')
+		setTimeout(()=>{$('#save-as-app').tooltip('hide')}, 10000)
+		setCookie('save-as-app', 1)
+	}
+
+
+    btnAdd.addEventListener('click', (e) => {
+        e.preventDefault()
+        // hide our user interface that shows our A2HS button
+        btnAdd.style.display = 'none';
+        // Show the prompt
+        deferredPrompt.prompt();
+        // Wait for the user to respond to the prompt
+        deferredPrompt.userChoice
+        .then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted the A2HS prompt');
+          } else {
+            console.log('User dismissed the A2HS prompt');
+          }
+          deferredPrompt = null;
+        });
+    });
+});
 
 // window loaded
 window.addEventListener('load', ()=>{
-	
 	
 
 	lazyload()
