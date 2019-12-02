@@ -219,10 +219,10 @@ window.addEventListener('beforeinstallprompt', (e) => {
     const btnAdd = document.getElementById('save-as-app')
     btnAdd.style.display = 'block';
 
-    if(!getCookie('save-as-app')){
+    if(!getCookie('save-as-app2')){
 		$('#save-as-app').tooltip('show')
 		setTimeout(()=>{$('#save-as-app').tooltip('hide')}, 10000)
-		setCookie('save-as-app', 1)
+		setCookie('save-as-app2', 1)
 	}
 
 

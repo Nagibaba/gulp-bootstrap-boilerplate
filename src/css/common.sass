@@ -257,7 +257,8 @@ body
 
 
 .form-group
-	@extend .mr-2, .flex-column
+	@extend .flex-column
+	margin-right: .5rem
 	position: relative
 	font-size: 15px
 	font-weight: normal
@@ -267,6 +268,8 @@ body
 		top: -22px
 		width: 100%
 		text-align: center
+	&--no-margin
+		margin-right: 0!important
 .b-input
 	flex-grow: 1
 	border-radius: 3px
@@ -422,6 +425,7 @@ select.form-control
 	padding-left: 30px
 	padding-right: 30px
 	min-width: 180px
+	height: 45px
 	background-color: $main-color
 	color: $light-black
 	border-color: transparent!important
@@ -1227,7 +1231,7 @@ select.form-control
     transform: translateY(-50%)
     user-select: none
     cursor: pointer
-    opacity: .9
+    opacity: .5
     font-size: 40px
     z-index: 1000
     transition: opacity $layered-slider-transition-time 
@@ -1237,7 +1241,7 @@ select.form-control
     &--next
       right: 5px
     &:hover
-      opacity: 1
+      opacity: .8
     &--hidden
       pointer-events: none
       visibility: hidden
@@ -1327,6 +1331,39 @@ select.form-control
 // 		&:hover
 // 			transform: scale(1.1)
 
+.shine
+	position: relative
+	overflow: hidden
+	display: inline-block
+	&:after
+	    animation: shine 4s ease-in-out  infinite
+	    animation-fill-mode: forwards
+	    content: ""
+	    position: absolute
+	    top: -110%
+	    left: -210%
+	    width: 200%
+	    height: 200%
+	    opacity: 0
+	    transform: rotate(30deg)
+	    background: rgba(255, 255, 255, 0.13)
+	    background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%)
+
+@keyframes shine
+  10%
+    opacity: 1
+    top: -30%
+    left: -30%
+    transition-property: left, top, opacity
+    transition-duration: 0.7s, 0.7s, 0.15s
+    transition-timing-function: ease
+
+  100%
+    opacity: 0
+    top: -30%
+    left: -30%
+    transition-property: left, top, opacity
+
 .input-group
 	&__tracking
 		min-width: 173px
@@ -1350,6 +1387,14 @@ select.form-control
 	&__info
 		font-size: 14px
 		color: #656565
+
+
+
+.c-tariff
+	&__color
+		width: 20px
+		height: 20px
+		border-radius: 3px
 
 
 

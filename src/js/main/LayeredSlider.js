@@ -40,20 +40,25 @@ const LayeredSlider = ()=> {
 		dot.eq(nextIndex).addClass('layered-slider__dot--active')
 		sliderChanged(nextIndex)
 	}
+	const prevArrowClicked = () => {
+		clearInterval(interval)
+		const index = $('.layered-slider__dot--active').index()
+		const prevIndex = index - 1
+
+		item.removeClass('layered-slider__item--active')
+		item.eq(prevIndex).addClass('layered-slider__item--active')
+
+		dot.removeClass('layered-slider__dot--active')
+		dot.eq(prevIndex).addClass('layered-slider__dot--active')
+		sliderChanged(prevIndex)
+	}
 	nextArrow.click(function(){
-	  nextArrowClicked()
+		clearInterval(interval)
+		nextArrowClicked()
 	})
 
 	prevArrow.click(function(){
-	  const index = $('.layered-slider__dot--active').index()
-	  const prevIndex = index - 1
-	  
-	  item.removeClass('layered-slider__item--active')
-	  item.eq(prevIndex).addClass('layered-slider__item--active')
-	  
-	  dot.removeClass('layered-slider__dot--active')
-	  dot.eq(prevIndex).addClass('layered-slider__dot--active')
-	  sliderChanged(prevIndex)
+		prevArrowClicked()
 	})
 
 	const sliderChanged = (newIndex) => {
@@ -71,7 +76,7 @@ const LayeredSlider = ()=> {
 	let interval = null
 
 	const startInterval = () => {
-		interval = setInterval(nextArrowClicked, 3000)
+		interval = setInterval(nextArrowClicked, 5000)
 	}
 	startInterval()
 
@@ -79,6 +84,60 @@ const LayeredSlider = ()=> {
 		clearInterval(interval)
 	}, () => startInterval() )
 
+
+
+	// layeredSlider.on("touchstart", startTouch);
+	// layeredSlider.on("touchmove", moveTouch);
+
+	// // Swipe Up / Down / Left / Right
+	// let initialX = null;
+	// let initialY = null;
+
+	// function startTouch(e) {
+	// initialX = e.touches[0].clientX;
+	// initialY = e.touches[0].clientY;
+	// };
+
+	// function moveTouch(e) {
+	// if (initialX === null) {
+	//   return;
+	// }
+
+	// if (initialY === null) {
+	//   return;
+	// }
+
+	// let currentX = e.touches[0].clientX;
+	// let currentY = e.touches[0].clientY;
+
+	// let diffX = initialX - currentX;
+	// let diffY = initialY - currentY;
+
+	// if (Math.abs(diffX) > Math.abs(diffY)) {
+	//   // sliding horizontally
+	//   if (diffX > 10) {
+	//     // swiped left
+	//     prevArrowClicked()
+	//   } else {
+	//     // swiped right
+	//     nextArrowClicked()
+	//   }  
+	// } else {
+	//   // sliding vertically
+	//   if (diffY > 0) {
+	//     // swiped up
+	//     // nextArrowClicked()
+	//   } else {
+	//     // swiped down
+	//     // prevArrowClicked()
+	//   }  
+	// }
+
+	// initialX = null;
+	// initialY = null;
+
+	// e.preventDefault();
+	// };
 
 }
 
