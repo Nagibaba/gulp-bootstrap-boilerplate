@@ -1,0 +1,133 @@
+.main-button
+  position: relative
+  display: inline-block
+  z-index: 1
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    top: -11px
+    right: 0
+    width: 40px
+    height: 60px
+    background: url(/img/candy-cane.svg?v=1.0.1) no-repeat
+    background-size: contain
+
+.shopping-card
+	z-index: 1
+	position: relative
+
+#trackingSearch
+	z-index: 1
+
+.logo-wrapper
+  z-index: 1
+
+.xmass-lights
+  background-image: url(/img/lamp1.svg)
+  background-size: auto
+  background-position: center
+  background-repeat: repeat-x
+  height: 36px
+  animation: ledlights 1s steps(1, end) infinite
+
+
+#campaign-christmas-landing
+  overflow: hidden
+  position: relative
+  animation: snowY 5s linear infinite, snowX 55s linear infinite
+  padding: 0
+  background: url("/img/snow.svg") 0 0, url("/img/bg.svg") bottom right no-repeat, linear-gradient(to right, #C7EBFF, #92CDFA)
+  background-size: 1560px auto, 1832px auto, auto auto
+  // z-index: 1
+
+.y-hidden #campaign-christmas-landing
+	overflow: visible
+
+@media (max-width: 640px)
+  #campaign-christmas-landing .notification__content a
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    padding: 10px 50px 10px 20px
+    font-size: 14px
+
+    p
+      flex: 1
+
+@media (min-width: 768px)
+  #campaign-christmas-landing
+    .santa
+      position: absolute
+      content: ""
+
+    &::after
+      position: absolute
+      content: ""
+      top: 0
+      right: 0
+      width: 523px
+      height: 100%
+      background: url("/img/extra.svg") bottom right no-repeat
+      background-size: cover
+
+@media (min-width: 992px)
+  #campaign-christmas-landing .santa
+    animation: santaMovement 20s linear infinite
+    top: 50%
+    right: 400px
+    width: 152px
+    height: 50px
+
+    &::before
+      animation: santaRotate 8s linear infinite
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      margin-top: -25px
+      background: url("/img/santa.svg") center center no-repeat
+      background-size: 152px auto
+      content: ""
+
+@keyframes santaMovement
+  0%
+    transform: translate(40px, 60px)
+
+  100%
+    transform: translate(-1000px, -60px)
+
+@keyframes santaRotate
+  0%
+    transform: rotate(-3deg)
+
+  50%
+    transform: rotate(3deg)
+
+  100%
+    transform: rotate(-3deg)
+
+@keyframes snowY
+  0%
+    background-position-y: 0, bottom, 0
+
+  100%
+    background-position-y: 210px, bottom, 0
+
+@keyframes snowX
+  0%
+    background-position-x: 0, right, 0
+
+  100%
+    background-position-x: 3120px, right, 0
+
+
+@keyframes ledlights
+  0%, 100%
+    background-image: url(/img/lamp1.svg)
+
+  50%
+    background-image: url(/img/lamp2.svg)
+
+

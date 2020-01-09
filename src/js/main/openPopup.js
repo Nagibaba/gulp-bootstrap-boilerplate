@@ -26,8 +26,7 @@ const openPopup = ()=> {
 		// popup.css('display', 'flex')
 	})
 	$(document).on('click touchstart', '.b-popup, .close-b-popup', (e)=>{
-		console.log('popup clicked')
-		
+		$('.shopping-card').removeClass('shopping-card--active')
 		const target = $(e.target)
 		if(target.closest('.b-popup__inner').length<=0 || target.closest('.close-b-popup').length>0){
 			e.preventDefault()

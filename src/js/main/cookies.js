@@ -18,7 +18,7 @@ export const getCookie = (name) => {
     return null;
 }
 export const removeCookie = (name) => {   
-    document.cookie = name+'=; Max-Age=-99999999;';  
+    document.cookie = name+'=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';  
 }
 
 // setCookie('ppkcookie','testcookie',7);
