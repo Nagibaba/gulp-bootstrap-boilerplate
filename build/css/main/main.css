@@ -8638,7 +8638,7 @@ button:focus {
   overflow-x: auto; }
 
 .red {
-  color: #C0392C; }
+  color: #ED1E1E; }
 
 .black {
   color: black !important; }
@@ -10107,6 +10107,8 @@ select.form-control {
   border-radius: 10px;
   min-height: 81px;
   box-shadow: 3px 3px 20px #EAEAEA; }
+  .my-order--unpaid {
+    border: 1px solid #ED1E1E; }
   .my-order__header {
     border-bottom: 1px solid #FCD626; }
   .my-order__body {
@@ -10115,6 +10117,17 @@ select.form-control {
       color: #6b757d; }
     .my-order__body b {
       color: #434343; }
+
+.debt-info {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border: 1px solid #f3f2f2;
+  border-radius: 5px;
+  transition: .4s all; }
+  .debt-info:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.look-at-order {
+  border-bottom: 2px solid #FCD626; }
 
 .my-orders {
   max-width: calc( 100% - 260px); }
@@ -14278,126 +14291,3 @@ body.stop-scrolling {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 6px solid #be2626; }
-
-.main-button {
-  position: relative;
-  display: inline-block;
-  z-index: 1; }
-  .main-button::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -11px;
-    right: 0;
-    width: 40px;
-    height: 60px;
-    background: url(/img/candy-cane.svg?v=1.0.1) no-repeat;
-    background-size: contain; }
-
-.shopping-card {
-  z-index: 1;
-  position: relative; }
-
-#trackingSearch {
-  z-index: 1; }
-
-.logo-wrapper {
-  z-index: 1; }
-
-.xmass-lights {
-  background-image: url(/img/lamp1.svg);
-  background-size: auto;
-  background-position: center;
-  background-repeat: repeat-x;
-  height: 36px;
-  animation: ledlights 1s steps(1, end) infinite; }
-
-#campaign-christmas-landing {
-  overflow: hidden;
-  position: relative;
-  animation: snowY 5s linear infinite, snowX 55s linear infinite;
-  padding: 0;
-  background: url("/img/snow.svg") 0 0, url("/img/bg.svg") bottom right no-repeat, linear-gradient(to right, #C7EBFF, #92CDFA);
-  background-size: 1560px auto, 1832px auto, auto auto; }
-
-.y-hidden #campaign-christmas-landing {
-  overflow: visible; }
-
-@media (max-width: 640px) {
-  #campaign-christmas-landing .notification__content a {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-align: center;
-        align-items: center;
-    padding: 10px 50px 10px 20px;
-    font-size: 14px; }
-    #campaign-christmas-landing .notification__content a p {
-      -ms-flex: 1;
-          flex: 1; } }
-
-@media (min-width: 768px) {
-  #campaign-christmas-landing .santa {
-    position: absolute;
-    content: ""; }
-  #campaign-christmas-landing::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    width: 523px;
-    height: 100%;
-    background: url("/img/extra.svg") bottom right no-repeat;
-    background-size: cover; } }
-
-@media (min-width: 992px) {
-  #campaign-christmas-landing .santa {
-    animation: santaMovement 20s linear infinite;
-    top: 50%;
-    right: 400px;
-    width: 152px;
-    height: 50px; }
-    #campaign-christmas-landing .santa::before {
-      animation: santaRotate 8s linear infinite;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      margin-top: -25px;
-      background: url("/img/santa.svg") center center no-repeat;
-      background-size: 152px auto;
-      content: ""; } }
-
-@keyframes santaMovement {
-  0% {
-    transform: translate(40px, 60px); }
-  100% {
-    transform: translate(-1000px, -60px); } }
-
-@keyframes santaRotate {
-  0% {
-    transform: rotate(-3deg); }
-  50% {
-    transform: rotate(3deg); }
-  100% {
-    transform: rotate(-3deg); } }
-
-@keyframes snowY {
-  0% {
-    background-position-y: 0, bottom, 0; }
-  100% {
-    background-position-y: 210px, bottom, 0; } }
-
-@keyframes snowX {
-  0% {
-    background-position-x: 0, right, 0; }
-  100% {
-    background-position-x: 3120px, right, 0; } }
-
-@keyframes ledlights {
-  0%, 100% {
-    background-image: url(/img/lamp1.svg); }
-  50% {
-    background-image: url(/img/lamp2.svg); } }

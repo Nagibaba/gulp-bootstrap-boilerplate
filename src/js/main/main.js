@@ -31,8 +31,9 @@ import lazyload from './lazyload'
 import addMenusToProfileDropdown from './addMenusToProfileDropdown'
 import smsVerification from './smsVerification'
 import LayeredSlider from './LayeredSlider'
-import RandomDeer from './RandomDeer'
+// import RandomDeer from './RandomDeer'
 import PWA from './PWA'
+import GetPruductFromUrl from './GetPruductFromUrl'
 
 
 import {setCookie, getCookie} from './cookies'
@@ -63,6 +64,8 @@ ready(function() {
 	repeatItem()
 	smsVerification()
 	LayeredSlider()
+
+
 
 
 	// solve hash bug in chrome

@@ -474,298 +474,74 @@
             </ul>
           </aside>
 
-          <main class="my-orders fullWidth flex-column pl-0 pl-lg-4">
-            <a data-toggle="collapse" href="#collapseExample" class="my-order d-flex flex-row justify-content-between align-items-center py-2 pl-4 pr-3 "> <!-- mt-4 on if not first -->
-              
-              <div class="my-order__info pr-4 flex-column">
-                <img src="./img/tecili.svg" alt="Urgent order">
-              </div>
-
-              <div class="my-order__info pr-4 flex-column">
-                <p class="my-order__key f-16 m-0">Sifarişin nömrəsi </p>
-                <p class="my-order__val f-18 font-weight-bold m-0">AZ29292</p>
-              </div>
-
-              <div class="my-order__info pr-4 flex-column">
-                <p class="my-order__key f-16 m-0">Ölkə</p>
-                <p class="my-order__val f-18 font-weight-bold m-0">Amerika</p>
-              </div>
-
-              <div class="my-order__info pr-4 flex-column">
-                <p class="my-order__key f-16 m-0">Tarix</p>
-                <p class="my-order__val f-18 font-weight-bold m-0">14.04.2019 15:56</p>
-              </div>
-
-              <div class="my-order__info pr-4 flex-column">
-                <p class="my-order__key f-16 m-0">Ümumi dəyər</p>
-                <p class="my-order__val f-18 font-weight-bold m-0">480tl</p>
-              </div>
-              
-              <div class="my-order__info pr-4 flex-column">
-                <img src="./img/caret.svg" alt="">
-              </div>
-
-            </a>
-            <div class="table-responsive my-order-accordion collapse" id="collapseExample" style="">
-              
-              <table class="table table--borderless table--nowrap table--textCenter f-18 m-0" cellspacing="20px" cellpadding="0">
-                <tbody>
-                  <tr class="select-all-row">
-                    <td colspan="2">
-                      <div class="form-check d-flex flex-row border-0 px-1 mt-1">
-                        <input class="form-check-input" type="checkbox" id="urgent-order-main" name="urgent-order" checked="">
-                        <label class="form-check-label" for="urgent-order-main"> 
-                            <span class="mx-2">Hamısını seç</span>
-                        </label>
-                        
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <table class="table table--borderless table--nowrap table--textCenter f-18" cellspacing="20px" cellpadding="0">
-                <tbody>
-                  
-                  <tr>
-                    <td>
-                      <div class="form-check form-check--small d-flex flex-row border-0 px-1">
-                        <input class="form-check-input" type="checkbox" id="urgent-order-main" name="urgent-order" checked="">
-                        <label class="form-check-label " for="urgent-order-main"> 
-                          
-                        </label>
-                        
-                      </div>
+          <main class="my-orders fullWidth flex-column pl-0 pl-lg-4 orders-content-main">
+					  <div class="row justify-content-center">
+					    <div class="inputs-wrapper inputs-wrapper--white d-block f-20 pt-0 pb-5 px-3 px-sm-5">
+					      <div class="table-responsive">
+					        <table class="table table--borderless f-20" cellspacing="20px" cellpadding="0">
+					          <tbody>
+					            <tr class="borderBottom">
+					              <th>
+					                Seç								
+					              </th>
+					              <th class="ws-nowrap">
+					                Sifariş N								
+					              </th>
+					              <th>
+					                Borcun yaranma səbəbi							
+					              </th>
+					              <th></th>
+					            </tr>
+					            <tr>
+					            	<td>
+					            		<div class="form-check form-check--small d-flex flex-row border-0 px-1">
+		                        <input class="form-check-input" type="checkbox" id="urgent-order-main" name="urgent-order" checked="">
+		                        <label class="form-check-label " for="urgent-order-main"> 
+		                          
+		                        </label>
+		                        
+		                      </div>
+					            	</td>
+					              <td>
+					                12030	    						
+					              </td>
+					              <td>
+					                Hörmətli müştəri, bağlamanız Bakı ofisimizə çatıb. Ünvan: Dilarə Əliyeva 188.		                            
+					              </td>
+					              <td>
+					                <a href="" class="look-at-order ws-nowrap">Sifarişə bax</a>	                            
+					              </td>
+					            </tr>
 
 
-                    </td>
-                    
-                    <td>1</td>
-
-                    <td>
-                      <img class="order-accordion__thumb ml-2" src="https://fizza.az/img/noPhoto.png" alt="order image">
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Mağaza</span>
-                        <b>https://www.zara.com</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Qeyd</span>
-                        <b>Qara, M ölçü</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Say</span>
-                        <b>1</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Qiyməti</span>
-                        <b>110 TL</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Status</span>
-                        <b>Sifariş verilib</b>
-                      </div>
-                    </td>
-                    <td>
-                      <a href="" class="d-flex flex-column align-items-start" data-toggle="modal" data-target="#exampleModal">
-                        <span class="main-color"><i class="fa fa-info-circle mr-1"></i>Borc</span>
-                        <b>15 TL</b>
-                      </a>
-                    </td>
-                    
-                    
-                  </tr>
-                  
-                </tbody>
-              </table>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-            <a data-toggle="collapse" href="#collapseExample2" class="my-order my-order--unpaid d-flex flex-row justify-content-between align-items-center py-2 pl-4 pr-3 mt-4">
-              
-              <div class="my-order__info pr-4 flex-column">
-                <img src="./img/tecili.svg" alt="">
-              </div>
-
-              <div class="my-order__info pr-4 flex-column">
-                <p class="my-order__key f-16 m-0">Sifarişin nömrəsi </p>
-                <p class="my-order__val f-18 font-weight-bold m-0">AZ29292</p>
-              </div>
-
-              <div class="my-order__info pr-4 flex-column">
-                <p class="my-order__key f-16 m-0">Ölkə</p>
-                <p class="my-order__val f-18 font-weight-bold m-0">Amerika</p>
-              </div>
-
-              <div class="my-order__info pr-4 flex-column">
-                <p class="my-order__key f-16 m-0">Tarix</p>
-                <p class="my-order__val f-18 font-weight-bold m-0">14.04.2019 15:56</p>
-              </div>
-
-              <div class="my-order__info pr-4 flex-column">
-                <p class="my-order__key f-16 m-0">Ümumi dəyər</p>
-                <p class="my-order__val f-18 font-weight-bold m-0">480tl</p>
-              </div>
-              
-              <div class="my-order__info pr-4 flex-column">
-                <img src="./img/caret.svg" alt="">
-              </div>
-
-            </a>
-            <div class="table-responsive my-order-accordion collapse" id="collapseExample2" style="">
-              
-              <table class="table table--borderless table--nowrap table--textCenter f-18 m-0" cellspacing="20px" cellpadding="0">
-                <tbody>
-                  <tr class="select-all-row">
-                    <td colspan="2">
-                      <div class="form-check d-flex flex-row border-0 px-1 mt-1">
-                        <input class="form-check-input" type="checkbox" id="urgent-order-main" name="urgent-order" checked="">
-                        <label class="form-check-label" for="urgent-order-main"> 
-                            <span class="mx-2">Hamısını seç</span>
-                        </label>
-                        
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <table class="table table--borderless table--nowrap table--textCenter f-18" cellspacing="20px" cellpadding="0">
-                <tbody>
-                  
-                  <tr>
-                    <td>
-                      <div class="form-check form-check--small d-flex flex-row border-0 px-1">
-                        <input class="form-check-input" type="checkbox" id="urgent-order-main" name="urgent-order" checked="">
-                        <label class="form-check-label " for="urgent-order-main"> 
-                          
-                        </label>
-                        
-                      </div>
-
-
-                    </td>
-                    
-                    <td>1</td>
-                    <!-- <td>
-                      <a href="/borc" class="p-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="Hörmətli müştəri, sifariş zamanı yaranmış borc üzrə
-məlumat almaq və ödəniş etmək üçün klikləyin">
-                        <img src="/img/info-button.svg" alt="info button about unpaid order">
-                      </a>
-                    </td> -->
-
-                    <td>
-                      <a href="" class="d-flex flex-column align-items-start debt-info p-3 " data-toggle="tooltip" data-placement="right" title="" data-original-title="Sifariş zamanı yaranmış borc üzrə
-məlumat almaq və ödəniş etmək üçün klikləyin">
-                        <span class="red"><i class="fa fa-info-circle mr-1 red"></i>Borc</span>
-                        <b>15 TL</b>
-                      </a>
-                    </td>
-
-                    <td>
-                      <img class="order-accordion__thumb ml-2" src="https://fizza.az/img/noPhoto.png" alt="order image">
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Mağaza</span>
-                        <b>https://www.zara.com</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Qeyd</span>
-                        <b>Qara, M ölçü</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Say</span>
-                        <b>1</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Qiyməti</span>
-                        <b>110 TL</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Status</span>
-                        <b>Sifariş verilib</b>
-                      </div>
-                    </td>
-                    
-                    
-                    
-                  </tr>
-                  
-                </tbody>
-              </table>
-            </div>
-
-
-            
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header text-center">
-                    <h5 class="modal-title " id="exampleModalLabel">Borcun yaranma səbəbi</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    Bağlamaların sayından və çəkisindən asılı olmayaraq, çatdırılma haqqı hər hesaba(akkaunta) və seçilən tarifə uyğun olaraq hesablanır. Çatdırıma haqqını bağlamanı əldə edən zaman nəğd ödəyə bilərsiniz.
-                  </div>
-                  <div class="modal-footer fullCenter">
-                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">BORC: 15 TL</button>
-                    <button type="button" class="btn btn-primary">Borcu ödə</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="modal fade" id="paymentsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header text-center">
-                    <h5 class="modal-title " id="exampleModalLabel">Borcun yaranma səbəbi</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    Bağlamaların sayından və çəkisindən asılı olmayaraq, çatdırılma haqqı hər hesaba(akkaunta) və seçilən tarifə uyğun olaraq hesablanır. Çatdırıma haqqını bağlamanı əldə edən zaman nəğd ödəyə bilərsiniz.
-                  </div>
-                  <div class="modal-footer fullCenter">
-                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">BORC: 15 TL</button>
-                    <button type="button" class="btn btn-primary">Borcu ödə</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </main>
+					            <tr>
+					            	<td>
+					            		<div class="form-check form-check--small d-flex flex-row border-0 px-1">
+		                        <input class="form-check-input" type="checkbox" id="urgent-order-main" name="urgent-order" checked="">
+		                        <label class="form-check-label " for="urgent-order-main"> 
+		                          
+		                        </label>
+		                        
+		                      </div>
+					            	</td>
+					              <td>
+					                12030	    						
+					              </td>
+					              <td>
+					                Hörmətli müştəri, bağlamanız Bakı ofisimizə çatıb. Ünvan: Dilarə Əliyeva 188.		                            
+					              </td>
+					              <td>
+					                <a href="" class="look-at-order ws-nowrap">Sifarişə bax</a>	                            
+					              </td>
+					            </tr>
+					            
+					            
+					          </tbody>
+					        </table>
+					      </div>
+					    </div>
+					  </div>
+					</main>
 
         </div>
 
