@@ -27,6 +27,7 @@ const openPopup = ()=> {
 	})
 	$(document).on('click touchstart', '.b-popup, .close-b-popup', (e)=>{
 		$('.shopping-card').removeClass('shopping-card--active')
+		$('.inputs-wrapper--shopping').hide()
 		const target = $(e.target)
 		if(target.closest('.b-popup__inner').length<=0 || target.closest('.close-b-popup').length>0){
 			e.preventDefault()

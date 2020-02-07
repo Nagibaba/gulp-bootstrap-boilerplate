@@ -34,7 +34,6 @@
       <link rel="stylesheet" href="/css/main.min.css?v=1.43.4370" />
     </noscript>
     <script async="" src="./new_tariffs_files/default" charset="UTF-8" crossorigin="*"></script><script></script>
-    
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -56,323 +55,332 @@
     <div class="first-screen-preloader"></div>
     <div class="b-preloader"></div>
     <div class="container-fluid blurry-background full-height">
-      <div class="b-nav__wrapper b-nav__wrapper--active">
-        <div class="b-nav__top row flex-row soft-bottom px-1 py-1">
-          <div class="container justify-content-md-between justify-content-end p-0">
-            <div class="fullCenter d-none d-sm-flex p-xs-0">
-              <a class="b-nav__item fullCenter f-18 dark-gray mb-0 mx-2" href="https://fizza.az/az/qiymet-cedveli-9">Qiymət cədvəli</a>
-              <a class="b-nav__item fullCenter f-18 dark-gray mb-0 mx-2" href="https://fizza.az/az/dasinma-sertleri-4">Daşınma şərtləri</a>
-            </div>
-            <div class="fullCenter p-xs-0">
-              <button type="button" id="save-as-app" class="btn btn-warning main-bg mx-2 my-0" data-toggle="tooltip" data-placement="bottom" title="" style="display: none" data-original-title="Fizza tətbiqini endirin (PWA)">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="/img/pwa-d.svg">
-                  <source media="(max-width: 767px)" srcset="/img/pwa.svg">
-                  <img src="./new_tariffs_files/pwa.svg" class="img-fluid " width="20">
-                </picture>
+    <div class="b-nav__wrapper b-nav__wrapper--active">
+      <div class="b-nav__top row flex-row soft-bottom px-1 py-1">
+        <div class="container justify-content-md-between justify-content-end p-0">
+          <div class="fullCenter d-none d-sm-flex p-xs-0">
+            <a class="b-nav__item fullCenter f-18 dark-gray mb-0 mx-2" href="https://fizza.az/az/qiymet-cedveli-9">Qiymət cədvəli</a>
+            <a class="b-nav__item fullCenter f-18 dark-gray mb-0 mx-2" href="https://fizza.az/az/dasinma-sertleri-4">Daşınma şərtləri</a>
+          </div>
+          <div class="fullCenter p-xs-0">
+            <button type="button" id="save-as-app" class="btn btn-warning main-bg mx-2 my-0" data-toggle="tooltip" data-placement="bottom" title="" style="display: none" data-original-title="Fizza tətbiqini endirin (PWA)">
+              <picture>
+                <source media="(min-width: 768px)" srcset="/img/pwa-d.svg">
+                <source media="(max-width: 767px)" srcset="/img/pwa.svg">
+                <img src="./new_tariffs_files/pwa.svg" class="img-fluid " width="20">
+              </picture>
+            </button>
+            <!-- <a class="b-nav__item fullCenter f-18 dark-gray mb-0 mx-2" href="/az/users">Babak Naghiyev</a> -->
+            <div class="btn-group" role="group">
+              <button id="profileMenus" type="button" class="btn btn-light bg-transparent dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user main-color" aria-hidden="true"></i> Babak Naghiyev    
               </button>
-              <!-- <a class="b-nav__item fullCenter f-18 dark-gray mb-0 mx-2" href="/az/users">Babak Naghiyev</a> -->
-              <div class="btn-group" role="group">
-                <button id="profileMenus" type="button" class="btn btn-light bg-transparent dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-user main-color" aria-hidden="true"></i> Babak Naghiyev    
-                </button>
-                <div class="dropdown-menu" aria-labelledby="profileMenus" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
-                  <a class="dropdown-item" href="https://fizza.az/az/users/addresses">Xaricdəki ünvanlarım</a><a class="dropdown-item" href="https://fizza.az/az/users/index">Sifarişlərim</a><a class="dropdown-item" href="https://fizza.az/az/users/packages">Bağlamalarım</a><a class="dropdown-item" href="https://fizza.az/az/users/courier">Çatdırılma xidməti</a><a class="dropdown-item" href="https://fizza.az/az/users/balance">Balansım</a><a class="dropdown-item" href="https://fizza.az/az/users/messages">İsmarışlar</a><a class="dropdown-item" href="https://fizza.az/az/users/profile">Şəxsi məlumatlar</a><a class="dropdown-item" href="https://fizza.az/az/users/cpassword">Şifrəni dəyiş</a><a class="dropdown-item" href="https://fizza.az/az/users/lastOrders">Son 30 gün tarixçə</a><a class="dropdown-item" href="https://fizza.az/az/users/logout">Çıxış</a>
-                </div>
+              <div class="dropdown-menu" aria-labelledby="profileMenus" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
+                <a class="dropdown-item" href="https://fizza.az/az/users/addresses">Xaricdəki ünvanlarım</a><a class="dropdown-item" href="https://fizza.az/az/users/index">Sifarişlərim</a><a class="dropdown-item" href="https://fizza.az/az/users/packages">Bağlamalarım</a><a class="dropdown-item" href="https://fizza.az/az/users/courier">Çatdırılma xidməti</a><a class="dropdown-item" href="https://fizza.az/az/users/balance">Balansım</a><a class="dropdown-item" href="https://fizza.az/az/users/messages">İsmarışlar</a><a class="dropdown-item" href="https://fizza.az/az/users/profile">Şəxsi məlumatlar</a><a class="dropdown-item" href="https://fizza.az/az/users/cpassword">Şifrəni dəyiş</a><a class="dropdown-item" href="https://fizza.az/az/users/lastOrders">Son 30 gün tarixçə</a><a class="dropdown-item" href="https://fizza.az/az/users/logout">Çıxış</a>
               </div>
-              <div class="btn-group mx-1" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn btn-light bg-transparent dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                AZ    </button>
-                <div class="dropdown-menu no-min-width" aria-labelledby="btnGroupDrop1">
-                  <a class="dropdown-item" href="https://fizza.az/en/numune-saytlar-6">EN</a>                                    <a class="dropdown-item" href="https://fizza.az/ru/numune-saytlar-6">RU</a>                    
-                </div>
+            </div>
+            <div class="btn-group mx-1" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-light bg-transparent dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              AZ    </button>
+              <div class="dropdown-menu no-min-width" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="https://fizza.az/en/numune-saytlar-6">EN</a>                                    <a class="dropdown-item" href="https://fizza.az/ru/numune-saytlar-6">RU</a>                    
               </div>
             </div>
           </div>
         </div>
-        <div class="b-nav__main row flex-row justify-content-between pt-3 px-1" id="campaign-christmas-landing">
-          <div class="notification__content"><a class="nostyle medium" title="Creative Christmas" target="_blank"></a><span class="santa"></span></div>
-          <div class="container justify-content-md-between justify-content-center flex-wrap p-0">
-            <div class="logo-wrapper align-items-center justify-content-center justify-content-sm-start p-0 p-xs-0">
-              <a href="https://fizza.az/az"><img class="img-fluid" src="./new_tariffs_files/logo.png" alt="logo" style="width: 134px;height: 62px"></a>
-              <a href="https://fizza.az/" id="sound" class="p-3" data-toggle="tooltip" data-placement="right" data-original-title="Səsləri aç/bağla">
-              <i class="fa dark-blue f-20 fa-volume-up" style="min-width: 23px"></i>
-              </a>
-            </div>
-            <div class="top-form-wrapper align-items-center justify-content-center fullMax flex-wrap p-0 p-xs-0">
-              <form id="trackingSearch" class="search-form fullCenter my-2" action="https://fizza.az/az/tracking" title="İzləmə kodu axtar">
-                <div class="form-groudp input-group input-group__tracking fullCenter">
-                  <input class="col-sm-10 form-control b-input" autofocus="autofocus" autocomplete="off" id="search" name="t" type="text" placeholder="İzləmə kodu" aria-label="tracking code search input">
-                  <div class="input-group-append">
-                    <button class="btn b-input__button search-button" type="submit" aria-label="search button">
-                    <i class="fa fa-search light-black"></i>
-                    </button> 
-                  </div>
-                </div>
-              </form>
-              <button class="btn shopping-card d-flex mr-2 ml-2 my-2">
-                <div class="shopping-card--icon">
-                  <img src="./new_tariffs_files/shopping-basket (1).svg" alt="shopping card" style="width: 34px; height: 30px;">
-                  <span class="notification-circle fullCenter">0</span>
-                </div>
-              </button>
-              <button class="btn btn-warning main-button ws-nowrap px-1 px-sm-3 mx-2 my-2 scroll-to-order" type="submit">
-              Başla!                            </button>
-              <div class="justify-content-end">
-                <div class="align-items-center position-relative">
-                  <div class="inputs-wrapper inputs-wrapper--shopping px-2">
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Şəkil</th>
-                            <th scope="col">Məhsulun linki</th>
-                            <th scope="col">Ölkə</th>
-                            <th scope="col">Qiymət</th>
-                            <th scope="col">Yekun qiymət</th>
-                            <th scope="col">Rəng</th>
-                            <th scope="col">Ölçü</th>
-                            <th scope="col"><a href="https://fizza.az/" class="close-b-popup" aria-labelledby="close cart">×</a></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td colspan="8">Səbət boşdur.</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                  <!-- <div class="hamburger">
-                    <div class="top-bun ham-line"></div>
-                    <div class="meat ham-line"></div>
-                    <div class="bottom-bun ham-line"></div>
-                    </div> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="table-responsive d-flex soft-bottom soft-top rounded-0 py-2 px-3 mt-3">
-          <div class="flex-nowrap container justify-content-between p-0">
-            <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/nece-isleyirik-10">Necə işləyirik </a>
-            <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/haqqimizda-8">Haqqımızda</a>
-            <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/tez-tez-verilen-suallar-7">Tez-tez verilən suallar</a>
-            <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/numune-saytlar-6">Nümunə saytlar</a>
-            <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/bloq-5">Bloq</a>
-            <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/sifaris-et-xidmet-sertleri-3">"Sifariş et" xidmət şərtləri</a>
-            <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/gizlilik-siyaseti-2">Gizlilik siyasəti</a>
-            <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/elaqe-21">Əlaqə</a>
-          </div>
-        </div>
-        <div class="xmass-lights" data-toggle="tooltip" data-placement="bottom" title="" style="display: block;" data-original-title="Yeni il bəzəyi Novruzda yığışdırılar ;)"></div>
       </div>
-      <div class="not-visible-first container flex-column full-height justify-content-between d-flex p-0">
-        <div class="pressClose"></div>
-        <div class="b-nav">
-          <div class="container-fluid flex-column mt-4">
-            <div class="row flex-shrink-0">
-              <div class="col-6 b-nav__tab b-nav__tab--first justify-content-center ">
-                <a class="nav-tab-button" href="https://fizza.az/#tab-1">MENU</a>
+      <div class="b-nav__main row flex-row justify-content-between pt-3 px-1" id="campaign-christmas-landing">
+        <div class="notification__content"><a class="nostyle medium" title="Creative Christmas" target="_blank"></a><span class="santa"></span></div>
+        <div class="container justify-content-md-between justify-content-center flex-wrap p-0">
+          <div class="logo-wrapper align-items-center justify-content-center justify-content-sm-start p-0 p-xs-0">
+            <a href="https://fizza.az/az"><img class="img-fluid" src="./new_tariffs_files/logo.png" alt="logo" style="width: 134px;height: 62px"></a>
+            <a href="https://fizza.az/" id="sound" class="p-3" data-toggle="tooltip" data-placement="right" data-original-title="Səsləri aç/bağla">
+            <i class="fa dark-blue f-20 fa-volume-up" style="min-width: 23px"></i>
+            </a>
+          </div>
+          <div class="top-form-wrapper align-items-center justify-content-center fullMax flex-wrap p-0 p-xs-0">
+            <form id="trackingSearch" class="search-form fullCenter my-2" action="https://fizza.az/az/tracking" title="İzləmə kodu axtar">
+              <div class="form-groudp input-group input-group__tracking fullCenter">
+                <input class="col-sm-10 form-control b-input" autofocus="autofocus" autocomplete="off" id="search" name="t" type="text" placeholder="İzləmə kodu" aria-label="tracking code search input">
+                <div class="input-group-append">
+                  <button class="btn b-input__button search-button" type="submit" aria-label="search button">
+                  <i class="fa fa-search light-black"></i>
+                  </button> 
+                </div>
               </div>
-              <div class="col-6 b-nav__tab b-nav__tab--second justify-content-center b-nav__tab--active">
-                <a class="nav-tab-button" href="https://fizza.az/#tab-2">HESABIM</a>
+            </form>
+            <button class="btn shopping-card d-flex mr-2 ml-2 my-2">
+              <div class="shopping-card--icon">
+                <img src="./new_tariffs_files/shopping-basket (1).svg" alt="shopping card" style="width: 34px; height: 30px;">
+                <span class="notification-circle fullCenter">0</span>
               </div>
-            </div>
-            <div class="container-fluid flex-column align-items-end mt-4 pr-2 pr-sm-5 b-nav__tab-content " id="tab-1">
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/nece-isleyirik-10">Necə işləyirik </a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/haqqimizda-8">Haqqımızda</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/tez-tez-verilen-suallar-7">Tez-tez verilən suallar</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/numune-saytlar-6">Nümunə saytlar</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/bloq-5">Bloq</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/sifaris-et-xidmet-sertleri-3">"Sifariş et" xidmət şərtləri</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/gizlilik-siyaseti-2">Gizlilik siyasəti</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/elaqe-21">Əlaqə</a>
-            </div>
-            <div class="container-fluid flex-column mt-4 pr-2 pr-sm-5 b-nav__tab-content  b-nav__tab-content--active" id="tab-2">
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/users/addresses">Xaricdəki ünvanlarım</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/users/index">Sifarişlərim</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/users/packages">Bağlamalarım</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/users/courier">Çatdırılma xidməti</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/users/balance">Balansım</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/users/messages">İsmarışlar</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/users/profile">Şəxsi məlumatlar</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/users/cpassword">Şifrəni dəyiş</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/users/lastOrders">Son 30 gün tarixçə</a>
-              <a class="b-nav__item mb-3" href="https://fizza.az/az/users/logout">Çıxış</a>
+            </button>
+            <button class="btn btn-warning main-button ws-nowrap px-1 px-sm-3 mx-2 my-2 scroll-to-order" type="submit">
+            Başla!                            </button>
+            <div class="justify-content-end">
+              <div class="align-items-center position-relative">
+                <div class="inputs-wrapper inputs-wrapper--shopping px-2">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Şəkil</th>
+                          <th scope="col">Məhsulun linki</th>
+                          <th scope="col">Ölkə</th>
+                          <th scope="col">Qiymət</th>
+                          <th scope="col">Yekun qiymət</th>
+                          <th scope="col">Rəng</th>
+                          <th scope="col">Ölçü</th>
+                          <th scope="col"><a href="https://fizza.az/" class="close-b-popup" aria-labelledby="close cart">×</a></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td colspan="8">Səbət boşdur.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- <div class="hamburger">
+                  <div class="top-bun ham-line"></div>
+                  <div class="meat ham-line"></div>
+                  <div class="bottom-bun ham-line"></div>
+                  </div> -->
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="row flex-row fullCenter back-button__wrapper mx-0">
-            <h1 class="text-center">ÖLKƏLƏR ÜZRƏ TARİFLƏR</h1>
+      </div>
+      <div class="table-responsive d-flex soft-bottom soft-top rounded-0 py-2 px-3 mt-3">
+        <div class="flex-nowrap container justify-content-between p-0">
+          <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/nece-isleyirik-10">Necə işləyirik </a>
+          <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/haqqimizda-8">Haqqımızda</a>
+          <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/tez-tez-verilen-suallar-7">Tez-tez verilən suallar</a>
+          <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/numune-saytlar-6">Nümunə saytlar</a>
+          <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/bloq-5">Bloq</a>
+          <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/sifaris-et-xidmet-sertleri-3">"Sifariş et" xidmət şərtləri</a>
+          <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/gizlilik-siyaseti-2">Gizlilik siyasəti</a>
+          <a class="b-nav__item text-left dark-gray ws-nowrap slider-menu mx-2" href="https://fizza.az/az/elaqe-21">Əlaqə</a>
         </div>
-
-
-        <div class="row justify-content-center flex-column m-0 mt-4">
-          <div class="flex-row table-responsive">
-            <ul class="flex-nowrap nav nav-pills nav-justified fullWidth mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link fullCenter active" id="tr-tab" data-toggle="pill" href="#tr" role="tab" aria-controls="tr" aria-selected="true">
-                    <img style="height: 18px; width: auto" src="./img/tr-flag.svg" alt="Turkey flag">
-                    <span class="ml-2">
-                        Türkiyə
-                    </span>
-                </a>
-              </li>
-              <li class="nav-item ml-3">
-                <a class="nav-link fullCenter" id="usd-tab" data-toggle="pill" href="#us" role="tab" aria-controls="usd" aria-selected="true">
-                    <img style="height: 18px; width: auto" src="./img/usa-flag.svg" alt="USA flag">
-                    <span class="ml-2">
-                        ABŞ
-                    </span>
-                </a>
-              </li>
-
-              <li class="nav-item ml-3">
-                <a class="nav-link fullCenter" id="usd-tab" data-toggle="pill" href="#usd" role="tab" aria-controls="usd" aria-selected="true">
-                    <img style="height: 18px; width: auto" src="./img/china-flag.svg" alt="China flag">
-                    <span class="ml-2">
-                        ÇİN
-                    </span>
-                </a>
-              </li>
-
-              <li class="nav-item ml-3">
-                <a class="nav-link fullCenter" id="usd-tab" data-toggle="pill" href="#usd" role="tab" aria-controls="usd" aria-selected="true">
-                    <img style="height: 18px; width: auto" src="./img/uk-flag.svg" alt="UK flag">
-                    <span class="ml-2">
-                        İNGİLTƏRƏ
-                    </span>
-                </a>
-              </li>
-
-            </ul>
+      </div>
+      <div class="xmass-lights" data-toggle="tooltip" data-placement="bottom" title="" style="display: block;" data-original-title="Yeni il bəzəyi Novruzda yığışdırılar ;)"></div>
+    </div>
+    <div class="not-visible-first container flex-column full-height justify-content-between d-flex p-0">
+      <div class="pressClose"></div>
+      <div class="b-nav">
+        <div class="container-fluid flex-column mt-4">
+          <div class="row flex-shrink-0">
+            <div class="col-6 b-nav__tab b-nav__tab--first justify-content-center ">
+              <a class="nav-tab-button" href="https://fizza.az/#tab-1">MENU</a>
+            </div>
+            <div class="col-6 b-nav__tab b-nav__tab--second justify-content-center b-nav__tab--active">
+              <a class="nav-tab-button" href="https://fizza.az/#tab-2">HESABIM</a>
+            </div>
           </div>
-          <div class="tab-content mt-4" id="pills-tabContent">
+          <div class="container-fluid flex-column align-items-end mt-4 pr-2 pr-sm-5 b-nav__tab-content " id="tab-1">
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/nece-isleyirik-10">Necə işləyirik </a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/haqqimizda-8">Haqqımızda</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/tez-tez-verilen-suallar-7">Tez-tez verilən suallar</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/numune-saytlar-6">Nümunə saytlar</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/bloq-5">Bloq</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/sifaris-et-xidmet-sertleri-3">"Sifariş et" xidmət şərtləri</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/gizlilik-siyaseti-2">Gizlilik siyasəti</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/elaqe-21">Əlaqə</a>
+          </div>
+          <div class="container-fluid flex-column mt-4 pr-2 pr-sm-5 b-nav__tab-content  b-nav__tab-content--active" id="tab-2">
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/users/addresses">Xaricdəki ünvanlarım</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/users/index">Sifarişlərim</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/users/packages">Bağlamalarım</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/users/courier">Çatdırılma xidməti</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/users/balance">Balansım</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/users/messages">İsmarışlar</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/users/profile">Şəxsi məlumatlar</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/users/cpassword">Şifrəni dəyiş</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/users/lastOrders">Son 30 gün tarixçə</a>
+            <a class="b-nav__item mb-3" href="https://fizza.az/az/users/logout">Çıxış</a>
+          </div>
+        </div>
+      </div>
+      <div class="row flex-row fullCenter back-button__wrapper mx-0 my-4">
+        <h1 class="text-center m-0">ÖLKƏLƏR ÜZRƏ TARİFLƏR</h1>
+      </div>
+      <div class="row justify-content-center flex-column m-0">
+        <div class="flex-row table-responsive">
+          <ul class="flex-nowrap nav nav-pills nav-justified fullWidth mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link fullCenter active" id="tr-tab" data-toggle="pill" href="#tr" role="tab" aria-controls="tr" aria-selected="true">
+              <img style="height: 18px; width: auto" src="./img/tr-flag.svg" alt="Turkey flag">
+              <span class="ml-2">
+              Türkiyə
+              </span>
+              </a>
+            </li>
+            <li class="nav-item ml-3">
+              <a class="nav-link fullCenter" id="usd-tab" data-toggle="pill" href="#us" role="tab" aria-controls="usd" aria-selected="true">
+              <img style="height: 18px; width: auto" src="./img/usa-flag.svg" alt="USA flag">
+              <span class="ml-2">
+              ABŞ
+              </span>
+              </a>
+            </li>
+            <li class="nav-item ml-3">
+              <a class="nav-link fullCenter" id="usd-tab" data-toggle="pill" href="#usd" role="tab" aria-controls="usd" aria-selected="true">
+              <img style="height: 18px; width: auto" src="./img/china-flag.svg" alt="China flag">
+              <span class="ml-2">
+              ÇİN
+              </span>
+              </a>
+            </li>
+            <li class="nav-item ml-3">
+              <a class="nav-link fullCenter" id="usd-tab" data-toggle="pill" href="#usd" role="tab" aria-controls="usd" aria-selected="true">
+              <img style="height: 18px; width: auto" src="./img/uk-flag.svg" alt="UK flag">
+              <span class="ml-2">
+              İNGİLTƏRƏ
+              </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content mt-4" id="pills-tabContent">
+          <div class="row flex-row fullWidth fullMax tab-pane fade show active m-0" role="tabpanel" aria-labelledby="tr-tab" id="tr">
+            <div class="fullWidth mx-0">
+              <p class="text-center pl-0 px-md-5" >Türkiyə sifariş olunan bağlamanın çatdırılma haqqı çəkiyə görə hesablanır. Ölçüsü 1 metrdən böyük olan bağlamaların çatdırılma haqqı həcmi çəkiyə görə hesablanır. Həcmi çəkinin hesablanması üçün ( ( En (m) * Hündürlük (m) * Uzunluq (m) ) / 0.006 ) * Qiymət standartı tətbiq edilir.</p>
+            </div>
+            <div class="row fullWidth justify-content-center m-0 mt-2">
+              <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
+                <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
+                  <span class="main-color">0.25 kq-dək</span>
+                  <div class="c-price__right">
+                    <span class="c-price__old fullCenter">2.5 $</span>
+                    <span class="c-price__new ml-3">1 $</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
+                <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
+                  <span class="main-color">0.25 kq-dək</span>
+                  <div class="c-price__right">
+                    <span class="c-price__old fullCenter">4 $</span>
+                    <span class="c-price__new ml-3">2.5 $</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
+                <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
+                  <span class="main-color">0.25 kq-dək</span>
+                  <div class="c-price__right">
+                    <span class="c-price__old fullCenter">2.5 $</span>
+                    <span class="c-price__new ml-3">2.5 $</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
+                <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
+                  <span class="main-color">0.25 kq-dək</span>
+                  <div class="c-price__right">
+                    <span class="c-price__old fullCenter">2.5 $</span>
+                    <span class="c-price__new ml-3">2.5 $</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row flex-row fullCenter fullWidth back-button__wrapper mx-0 mt-4 mb-2">
+              <h1 class="text-center m-0">MAYE MƏHSULLARIN TARİFİ</h1>
+            </div>
+            <div class="fullWidth flex-column mx-0">
+              <p class="text-center pl-0 px-md-5 m-0" >
+                • Maye məhsulların Bakıya göndərişi həftədə 1 dəfə həyata keçirilir.
+              </p>
+              <p class="text-center pl-0 px-md-5 m-0" >
+                • Maye məhsulların Türkiyə anbarında sistemə daxil edilməsi həftədə 1 dəfə həyata keçirilir.
+              </p>
+            </div>
             
-            <div class="row flex-row fullWidth fullMax tab-pane fade show active m-0" role="tabpanel" aria-labelledby="tr-tab" id="tr">
-                
-                <div class="fullWidth mx-0">
-                    <p class="text-center pl-0 px-md-5" data-code="tr">Türkiyə sifariş olunan bağlamanın çatdırılma haqqı çəkiyə görə hesablanır. Ölçüsü 1 metrdən böyük olan bağlamaların çatdırılma haqqı həcmi çəkiyə görə hesablanır. Həcmi çəkinin hesablanması üçün ( ( En (m) * Hündürlük (m) * Uzunluq (m) ) / 0.006 ) * Qiymət standartı tətbiq edilir.</p>
-                </div>
-                
-                <div class="row fullWidth justify-content-center m-0 mt-2">
-                  
-                  <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
-                    <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
-                      
-                      <span class="main-color">0.25 kq-dək</span>
-                      <div class="c-price__right">
-                        <span class="c-price__old fullCenter">2.5 $</span>
-                        <span class="c-price__new ml-3">1 $</span>
-                      </div>
-                      
-                    </div>
-                  </div>
-                  
-                  <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
-                    <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
-                      
-                      <span class="main-color">0.25 kq-dək</span>
-                      <div class="c-price__right">
-                        <span class="c-price__old fullCenter">4 $</span>
-                        <span class="c-price__new ml-3">2.5 $</span>
-                      </div>
-                      
-                    </div>
-                  </div>
+            <div class="row fullWidth justify-content-center m-0 mt-4">
 
-                  <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
-                    <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
-                      
-                      <span class="main-color">0.25 kq-dək</span>
-                      <div class="c-price__right">
-                        <span class="c-price__old fullCenter">2.5 $</span>
-                        <span class="c-price__new ml-3">2.5 $</span>
-                      </div>
-                      
-                    </div>
+              <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
+                <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
+                  <span class="main-color">0.25 kq-dək</span>
+                  <div class="c-price__right">
+                    <span class="c-price__new ml-3">2.5 $</span>
                   </div>
-                  
-                  <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
-                    <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
-                      
-                      <span class="main-color">0.25 kq-dək</span>
-                      <div class="c-price__right">
-                        <span class="c-price__old fullCenter">2.5 $</span>
-                        <span class="c-price__new ml-3">2.5 $</span>
-                      </div>
-                      
-                    </div>
-                  </div>
-                  
                 </div>
-
+              </div>
+              <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
+                <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
+                  <span class="main-color">0.25 kq-dək</span>
+                  <div class="c-price__right">
+                    <span class="c-price__new ml-3">2.5 $</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
+                <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
+                  <span class="main-color">0.25 kq-dək</span>
+                  <div class="c-price__right">
+                    <span class="c-price__new ml-3">2.5 $</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
+                <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
+                  <span class="main-color">0.25 kq-dək</span>
+                  <div class="c-price__right">
+                    <span class="c-price__new ml-3">2.5 $</span>
+                  </div>
+                </div>
+              </div>
               
             </div>
+              
 
-            <div class="row flex-row fullWidth tab-pane " role="tabpanel" aria-labelledby="us-tab" id="us">
-
-                <div class="fullWidth mx-0">
-                    <p class="text-center pl-0 px-md-5" data-code="tr">Türkiyə sifariş olunan bağlamanın çatdırılma haqqı çəkiyə görə hesablanır. Ölçüsü 1 metrdən böyük olan bağlamaların çatdırılma haqqı həcmi çəkiyə görə hesablanır. Həcmi çəkinin hesablanması üçün ( ( En (m) * Hündürlük (m) * Uzunluq (m) ) / 0.006 ) * Qiymət standartı tətbiq edilir.</p>
-                </div>
-                
-                <div class="row fullWidth justify-content-center m-0 mt-2">
-                  
-                  <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
-                    <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
-                      
-                      <span class="main-color">0.25 kq-dək</span>
-                      <div class="c-price__right">
-                        <span class="c-price__old fullCenter">2.5 $</span>
-                        <span class="c-price__new ml-3">1 $</span>
-                      </div>
-                      
-                    </div>
-                  </div>
-                  
-                  <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
-                    <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
-                      
-                      <span class="main-color">0.25 kq-dək</span>
-                      <div class="c-price__right">
-                        <span class="c-price__old fullCenter">4 $</span>
-                        <span class="c-price__new ml-3">2.5 $</span>
-                      </div>
-                      
-                    </div>
-                  </div>
-
-                  <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
-                    <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
-                      
-                      <span class="main-color">0.25 kq-dək</span>
-                      <div class="c-price__right">
-                        <span class="c-price__old fullCenter">2.5 $</span>
-                        <span class="c-price__new ml-3">2.5 $</span>
-                      </div>
-                      
-                    </div>
-                  </div>
-                  
-                  <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
-                    <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
-                      
-                      <span class="main-color">0.25 kq-dək</span>
-                      <div class="c-price__right">
-                        <span class="c-price__old fullCenter">2.5 $</span>
-                        <span class="c-price__new ml-3">2.5 $</span>
-                      </div>
-                      
-                    </div>
-                  </div>
-                  
-                </div>
-
-
+          </div>
+          <div class="row flex-row fullWidth tab-pane " role="tabpanel" aria-labelledby="us-tab" id="us">
+            <div class="fullWidth mx-0">
+              <p class="text-center pl-0 px-md-5" >Türkiyə sifariş olunan bağlamanın çatdırılma haqqı çəkiyə görə hesablanır. Ölçüsü 1 metrdən böyük olan bağlamaların çatdırılma haqqı həcmi çəkiyə görə hesablanır. Həcmi çəkinin hesablanması üçün ( ( En (m) * Hündürlük (m) * Uzunluq (m) ) / 0.006 ) * Qiymət standartı tətbiq edilir.</p>
             </div>
+            <div class="row fullWidth justify-content-center m-0 mt-2">
+              <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
+                <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
+                  <span class="main-color">0.25 kq-dək</span>
+                  <div class="c-price__right">
+                    <span class="c-price__old fullCenter">2.5 $</span>
+                    <span class="c-price__new ml-3">1 $</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
+                <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
+                  <span class="main-color">0.25 kq-dək</span>
+                  <div class="c-price__right">
+                    <span class="c-price__old fullCenter">4 $</span>
+                    <span class="c-price__new ml-3">2.5 $</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
+                <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
+                  <span class="main-color">0.25 kq-dək</span>
+                  <div class="c-price__right">
+                    <span class="c-price__old fullCenter">2.5 $</span>
+                    <span class="c-price__new ml-3">2.5 $</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-6 justify-content-center mb-3 flex-column">
+                <div class="c-price flex-row d-flex p-3 align-items-center justify-content-between" href="">
+                  <span class="main-color">0.25 kq-dək</span>
+                  <div class="c-price__right">
+                    <span class="c-price__old fullCenter">2.5 $</span>
+                    <span class="c-price__new ml-3">2.5 $</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row b-footer soft-top mt-3 pt-2 pb-2">
           <div class="col-lg-8 justify-content-start justify-content-md-center">
@@ -460,6 +468,5 @@
     <script type="text/javascript" src="./new_tariffs_files/mscripts.js"></script>
     <script type="text/javascript" src="./new_tariffs_files/jquery.form.min.js"></script>
     <script type="text/javascript" src="./new_tariffs_files/form.variables.js"></script>
-    
   </body>
 </html>

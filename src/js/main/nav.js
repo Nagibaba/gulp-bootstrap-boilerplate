@@ -1,6 +1,6 @@
 
 const nav = () => {
-	$('.hamburger').click(()=>{
+	$(document).on('click', '.hamburger', ()=>{
 		const nav = $('.b-nav')
 		const pressClose = $('.pressClose')
 		const html = $('html')

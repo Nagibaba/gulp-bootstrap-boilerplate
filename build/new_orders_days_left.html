@@ -474,74 +474,205 @@
             </ul>
           </aside>
 
-          <main class="my-orders fullWidth flex-column pl-0 pl-lg-4 orders-content-main">
-					  <div class="row justify-content-center">
-					    <div class="inputs-wrapper inputs-wrapper--white d-block f-20 pt-0 pb-5 px-3 px-sm-5">
-					      <div class="table-responsive">
-					        <table class="table table--borderless f-20" cellspacing="20px" cellpadding="0">
-					          <tbody>
-					            <tr class="borderBottom">
-					              <th>
-					                Seç								
-					              </th>
-					              <th class="ws-nowrap">
-					                Sifariş N								
-					              </th>
-					              <th class="ws-nowrap">
-					                Borcun yaranma səbəbi							
-					              </th>
-					              <th></th>
-					            </tr>
-					            <tr>
-					            	<td>
-					            		<div class="form-check form-check--small d-flex flex-row border-0 px-1">
-		                        <input class="form-check-input" type="checkbox" id="urgent-order-main" name="urgent-order" checked="">
-		                        <label class="form-check-label " for="urgent-order-main"> 
-		                          
-		                        </label>
-		                        
-		                      </div>
-					            	</td>
-					              <td>
-					                12030	    						
-					              </td>
-					              <td>
-					                Hörmətli müştəri, bağlamanız Bakı ofisimizə çatıb. Ünvan: Dilarə Əliyeva 188.		                            
-					              </td>
-					              <td>
-					                <a href="" class="look-at-order ws-nowrap">Sifarişə bax</a>	                            
-					              </td>
-					            </tr>
+          <main class="my-orders fullWidth flex-column pl-0 pl-lg-4">
+            
+            <div class="my-order d-flex flex-column "> <!-- mt-4 on if not first -->
+              
+              <div class="my-order__header justify-content-between d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 pl-4 pr-3 ">
+                <div class="form-check d-flex flex-row border-0 pr-1 my-2">
+                  <input class="form-check-input" type="checkbox" id="urgent-order-main" name="urgent-order" >
+                  <label class="form-check-label d-flex fullCenter flex-row" for="urgent-order-main"> 
+                      <span class="f-10 scale-bigger origin-0 d-flex mx-2">Bağlamanın ödənişini etmək üçün seçin</span>
+                  </label>
+                  
+                </div>
+
+                <div class="my-order__info pr-4 flex-column my-2">
+                  <a class="order-accordion__link fullCenter showTracking" href="/az/users/tracking/748"> 
+                      <img style="width: 19px; height: 19px" class="orders__filter-icon mr-2" src="https://fizza.az/img/plane.svg" alt="filter icon">
+                      Bağlama Hərəkətləri
+                    </a>
+                </div>
+
+                <div class="my-2">
+                  <a href="#" class=" f-10 scale-bigger fullCenter pr-4">
+                    <img src="./img/edit.svg" class="mr-1" alt="edit order">
+                    düzəliş et
+                  </a>
+                  
+                  <a href="#" class="f-10 scale-bigger fullCenter pr-4">
+                    <img src="./img/remove.svg" class="mr-1" alt="edit order">
+                    Sil
+                  </a>
+                </div>
+              </div>
 
 
-					            <tr>
-					            	<td>
-					            		<div class="form-check form-check--small d-flex flex-row border-0 px-1">
-		                        <input class="form-check-input" type="checkbox" id="urgent-order-main" name="urgent-order" checked="">
-		                        <label class="form-check-label " for="urgent-order-main"> 
-		                          
-		                        </label>
-		                        
-		                      </div>
-					            	</td>
-					              <td>
-					                12030	    						
-					              </td>
-					              <td>
-					                Hörmətli müştəri, bağlamanız Bakı ofisimizə çatıb. Ünvan: Dilarə Əliyeva 188.		                            
-					              </td>
-					              <td>
-					                <a href="" class="look-at-order ws-nowrap">Sifarişə bax</a>	                            
-					              </td>
-					            </tr>
-					            
-					            
-					          </tbody>
-					        </table>
-					      </div>
-					    </div>
-					  </div>
-					</main>
+              <div class="my-order__body d-flex flex-row flex-wrap justify-content-center justify-content-sm-between p-4" style="">
+              
+              
+                <div class="flex-column mx-2">
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                </div>
+
+                <div class="flex-column mx-2">
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                </div>
+
+                <div class="flex-column mx-2">
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b class="red">https://www.zara.com</b>
+                  </div>
+                </div>
+                
+                
+                
+              </div>
+              
+
+            </div>
+
+
+
+            <div class="my-order d-flex flex-column mt-5"> <!-- mt-4 on if not first -->
+              
+              <div class="my-order__header justify-content-between d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 pl-4 pr-3 ">
+                <div class="form-check d-flex flex-row border-0 pr-1 my-2">
+                  <input class="form-check-input" type="checkbox" id="urgent-order-main" name="urgent-order" >
+                  <label class="form-check-label d-flex fullCenter flex-row" for="urgent-order-main"> 
+                      <span class="f-10 scale-bigger origin-0 d-flex mx-2">Bağlamanın ödənişini etmək üçün seçin</span>
+                  </label>
+                  
+                </div>
+
+                <div class="my-order__info pr-4 flex-column my-2">
+                  <a class="order-accordion__link fullCenter showTracking" href="/az/users/tracking/748"> 
+                      <img style="width: 19px; height: 19px" class="orders__filter-icon mr-2" src="https://fizza.az/img/plane.svg" alt="filter icon">
+                      Bağlama Hərəkətləri
+                    </a>
+                </div>
+
+                <div class="my-2">
+                  <a href="#" class=" f-10 scale-bigger fullCenter pr-4">
+                    <img src="./img/edit.svg" class="mr-1" alt="edit order">
+                    düzəliş et
+                  </a>
+                  
+                  <a href="#" class="f-10 scale-bigger fullCenter pr-4">
+                    <img src="./img/remove.svg" class="mr-1" alt="edit order">
+                    Sil
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="my-order__body d-flex flex-row flex-wrap justify-content-center justify-content-sm-between p-4" style="">
+              
+              
+                <div class="flex-column mx-2">
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                </div>
+
+                <div class="flex-column mx-2">
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                </div>
+
+                <div class="flex-column mx-2">
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b>https://www.zara.com</b>
+                  </div>
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <span>Mağaza</span>
+                    <b class="red">https://www.zara.com</b>
+                  </div>
+                </div>
+                
+                
+                
+              </div>
+              
+
+            </div>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+     
+
+
+            
+
+          </main>
 
         </div>
 

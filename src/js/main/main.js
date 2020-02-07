@@ -17,7 +17,6 @@
 
 
 // import Tooltip from 'tooltip'
-
 import a from './a'
 import nav from './nav'
 import windowScrollListener from './windowScrollListener'
@@ -28,12 +27,12 @@ import openPopup from './openPopup'
 import repeatItem from './repeatItem'
 import closeNav from './closeNav'
 import lazyload from './lazyload'
-import addMenusToProfileDropdown from './addMenusToProfileDropdown'
 import smsVerification from './smsVerification'
 import LayeredSlider from './LayeredSlider'
 // import RandomDeer from './RandomDeer'
 import PWA from './PWA'
 import GetPruductFromUrl from './GetPruductFromUrl'
+import loadDOM from './loadDOM'
 
 
 import {setCookie, getCookie} from './cookies'
@@ -171,9 +170,9 @@ ready(function() {
 
 
 	// scroll to order
-	$(".scroll-to-order").click(function (e){
+	$(document).on("click", ".scroll-to-order").click(function (e){
 		e.preventDefault()
-		
+		console.log(window.location)
 		if(window.location.pathname.split('/').length>2){
 			window.location = '/#orders-holder'
 
@@ -222,7 +221,6 @@ window.addEventListener('load', ()=>{
 	
 
 	lazyload()
-	addMenusToProfileDropdown()
 })  
 
 

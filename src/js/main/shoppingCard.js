@@ -1,6 +1,6 @@
 
 const shoppingCard = ()=> {
-	$('.shopping-card').click((e)=>{
+	$(document).on('click','.shopping-card', (e)=>{
 		e.preventDefault()
 		const _this = $(this)
 		const pressClose = $('.pressClose')
