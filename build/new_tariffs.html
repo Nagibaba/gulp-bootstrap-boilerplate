@@ -382,6 +382,137 @@
             </div>
           </div>
         </div>
+        
+        <hr class="fullWidth my-5">
+        
+        <div class="row justify-content-center fullMax m-0">
+
+
+          <div class="col-md-6 flex-column p-0 p-md-3">
+              <div id="pricesJson" style="display: none;">{"1":{"name":"T\u00fcrkiy\u0259","code":"tr","prices":{"13":{"min_weight":"0","max_weight":"0.25","price":"1.7","oldPrice":"4.25","main":"0"},"14":{"min_weight":"0.25","max_weight":"0.5","price":"3.91","oldPrice":"6.8","main":"0"},"15":{"min_weight":"0.5","max_weight":"0.7","price":"5.61","oldPrice":"7.65","main":"0"},"16":{"min_weight":"0.7","max_weight":"1","price":"6.63","oldPrice":"8.92","main":"0"},"22":{"min_weight":"1","max_weight":"3","price":"{weight} * 6.63","oldPrice":"0","main":"0"},"23":{"min_weight":"3","max_weight":"10","price":"{weight} * 6.46","oldPrice":"0","main":"0"},"24":{"min_weight":"10","max_weight":"9999999","price":"{weight} * 6.29","oldPrice":"0","main":"0"}}},"2":{"name":"AB\u015e","code":"usd","prices":{"17":{"min_weight":"0","max_weight":"0.5","price":"6.8","oldPrice":"0","main":"0"},"18":{"min_weight":"0.5","max_weight":"0.7","price":"9.02","oldPrice":"10.21","main":"0"},"19":{"min_weight":"0.7","max_weight":"1","price":"10.72","oldPrice":"12.76","main":"0"},"25":{"min_weight":"1","max_weight":"10","price":"{weight} * 10.72","oldPrice":"0","main":"0"},"26":{"min_weight":"10","max_weight":"9999999","price":"{weight} * 10.55","oldPrice":"0","main":"0"}}}}</div>
+              <div id="formuleJson" style="display: none;">{"tr":"( ( {width} * {height} * {length} ) \/ 0.006 ) * {price}","usd":"( ( {width} * {height} * {length} ) \/ 0.006 ) * {price}","cn":"( ( {width} * {height} * {length} ) \/ 0.006 ) * {price}"}</div>
+              <div class="row flex-row justify-content-center back-button__wrapper">
+                  <h1 class="fullCenter">KALKULYATOR</h1>
+              </div>
+              <div class="row mt-4 mx-0">
+                  <p class="text-center pr-0 pr-md-5">Bizim universal kalkulyator sizə çatdırılma haqqını hesablamağa kömək edəcək. Bunun üçün boş xanaları doldurun. Çatdırılma haqqı təqdim edilmiş məlumat əsasında hesablanır.</p>
+              </div>
+
+
+
+              <div class="inputs-wrapper inputs-wrapper--white inputs-wrapper--material flex-column px-3 py-2">
+                <div class="row m-0 mt-4">
+  
+                  <div class="form-group f-3">
+                    <label for="countriesSelect">Ölkə</label>
+                    <select class="form-control b-input pr-4" id="countriesSelect" name="countriesSelect">
+                      <option data-id="1" value="tr">Türkiyə</option>
+                      <option data-id="2" value="usd">ABŞ</option>
+                    </select>
+                  </div>
+                  <div class="form-group f-3">
+                    <div class="form-control b-input d-flex align-items-center justify-content-between" >
+                      <span class="ws-nowrap mr-1">Maye məhsul</span>
+                      <div class="form-check form-check--small d-flex flex-row fullCenter border-0 ">
+                        <input class="form-check-input" type="checkbox" id="urgent-order-main" name="urgent-order" checked="">
+                        <label class="form-check-label " for="urgent-order-main"> 
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                <div class="row m-0 mt-4">
+                  
+                  <div class="col-lg-3 justify-content-start p-0">
+                    <div class="form-group f-1 ws-nowrap mt-2">
+                      <label for="cargo_weight_input">Çəki (kq)</label>
+                      <input class="form-control b-input" id="cargo_weight_input" name="cargo_weight_input">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 justify-content-start p-0">
+                    <div class="form-group f-2 ws-nowrap mt-2">
+                      <label for="cargo_l_input">Uzunluq (m)</label>
+                      <input class="form-control b-input" id="cargo_l_input" name="cargo_l_input">
+                    </div>
+                  </div>
+                  <div class="col-lg-3 justify-content-center p-0">
+                    <div class="form-group f-2 ws-nowrap mt-2">
+                      <label for="cargo_w_input">En (m)</label>
+                      <input class="form-control b-input" id="cargo_w_input" name="cargo_w_input">
+                    </div>
+                  </div>
+                  <div class="col-lg-3 justify-content-end p-0">
+                    <div class="form-group f-2 ws-nowrap mt-2">
+                      <label for="cargo_h_input">Hündürlük (m)</label>
+                      <input class="form-control b-input" id="cargo_h_input" name="cargo_h_input">
+                    </div>
+                  </div>
+                </div>
+                <div class="row flex-row justify-content-between pt-3 m-0">
+                  <div class="fullCenter p-0">
+                    <button class="btn btn-warning main-button calculateButton" data-currency="1.702">Hesabla</button>
+                  </div>
+                  <div class="fullCenter p-0">
+                    <p class="text-center mt-4 calculateLabel">Yekun Məbləğ:<span class="bold main-color"></span></p>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+
+          <div class="col-md-6 flex-column p-0 p-md-3">
+              <div class="row flex-row fullCenter back-button__wrapper mx-0">
+                  <h1 class="text-center">VALYUTA HESABLANMASI</h1>
+              </div>
+              <div class="row mt-4 mx-0">
+                  <p class="text-center pl-0 pl-md-5">Valyuta konvertoru sifarişinizin qiymətini valyuta məzənnələrinin cari dəyərinə görə hesablayır. Bunun üçün siz məhsulun qiymətini TRY və ya USD daxil etməlisiniz.</p>
+              </div>
+
+
+              <div class="inputs-wrapper inputs-wrapper--white inputs-wrapper--material flex-grow-1 justify-content-center flex-column px-3 py-2">
+                <div class="row m-0 mt-4">
+                  <div class="col-md-6 p-0">
+                    <div class="form-group f-2 limit-min">
+                      <label class="text-left ml-2" for="currencyTL">TRY ilə məbləğ</label>
+                      <input class="form-control b-input" id="currencyTL" data-coef="0.29">
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-0">
+                    <div class="form-group f-2 flex-column">
+                      <p class="text-center text-sm-right m-0 ml-2" for="exampleFormControlInput1">Yekun Məbləğ:</p>
+                      <p id="tl" class="text-center text-sm-right bold main-color p-0 m-0">0 AZN</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row m-0 mt-4">
+                  <div class="col-md-6 p-0">
+                    <div class="form-group f-2 limit-min">
+                      <label class="text-left ml-2" for="currencyUSD">USD ilə məbləğ</label>
+                      <input class="form-control b-input" id="currencyUSD" data-coef="1.702">
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-0">
+                    <div class="form-group f-2 flex-column">
+                      <p class="text-center text-sm-right m-0 ml-2" for="exampleFormControlInput1">Yekun Məbləğ:</p>
+                      <p id="usd" class="text-center text-sm-right bold main-color p-0 m-0">0 AZN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+           
+          </div>
+
+
+
+        </div>
+
+
+
         <div class="row b-footer soft-top mt-3 pt-2 pb-2">
           <div class="col-lg-8 justify-content-start justify-content-md-center">
             <div class="justify-content-start align-items-center fullWidth flex-wrap pt-2">

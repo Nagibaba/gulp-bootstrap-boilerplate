@@ -9649,10 +9649,15 @@ select.form-control {
   padding-left: 0;
   text-align: center; }
   .form-check--small {
-    min-width: 0; }
+    min-width: 0;
+    width: 22px;
+    height: 27px; }
   .form-check-label {
     font-size: 15px;
-    font-weight: normal; }
+    font-weight: normal;
+    top: 0 !important;
+    position: relative !important;
+    padding: 0 !important; }
   .form-check-input {
     border-color: #FCD626; }
   .form-check__urgent-price {
@@ -9727,7 +9732,7 @@ select.form-control {
   border-color: transparent !important;
   border-radius: 3px;
   font-size: 20px;
-  font-weight: bold; }
+  font-weight: normal; }
 
 .customer-key {
   padding-left: 30px;
@@ -9998,6 +10003,7 @@ select.form-control {
   z-index: 1050;
   transition: .2s transform; }
   .b-popup--active {
+    opacity: 1;
     -ms-transform: scale(1);
         transform: scale(1); }
   .b-popup__inner {
@@ -10124,6 +10130,14 @@ select.form-control {
   border-radius: 5px;
   transition: .4s all; }
   .debt-info:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.days-left-info {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border: 1px solid #f3f2f2;
+  border-radius: 3px;
+  transition: .4s all; }
+  .days-left-info:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
 .look-at-order {

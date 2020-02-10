@@ -349,9 +349,14 @@ select.form-control
 	text-align: center
 	&--small
 		min-width: 0
+		width: 22px
+		height: 27px
 	&-label
 		font-size: 15px
 		font-weight: normal
+		top: 0!important
+		position: relative!important
+		padding: 0!important
 
 	&-input
 		border-color: $main-color
@@ -431,7 +436,7 @@ select.form-control
 	border-color: transparent!important
 	border-radius: 3px
 	font-size: 20px
-	font-weight: bold
+	font-weight: normal
 
 .customer-key
 	padding-left: 30px
@@ -757,6 +762,7 @@ select.form-control
 	// background-color: rgba(0, 0, 0, .1)
 	transition: .2s transform
 	&--active
+		opacity: 1
 		transform: scale(1)
 		// background-color: rgba(0, 0, 0, .1)
 	&__inner
@@ -892,6 +898,13 @@ select.form-control
 	@include shadow(1)
 	border: 1px solid #f3f2f2
 	border-radius: 5px
+	transition: .4s all
+	&:hover
+		@include shadow(3)
+.days-left-info
+	@include shadow(1)
+	border: 1px solid #f3f2f2
+	border-radius: 3px
 	transition: .4s all
 	&:hover
 		@include shadow(3)
