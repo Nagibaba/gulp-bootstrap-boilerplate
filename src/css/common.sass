@@ -27,6 +27,7 @@ html, body
 
 html
 	width: 100vw
+	overflow: hidden
 	margin-right: calc(100vw - 100%)
 	transition: .1s all
 	
@@ -36,8 +37,10 @@ html
 	 //    	background-color: transparent
 body
 	width: 100%
+	overflow-y: auto
 	font-family: $font-family
 	color: $light-black
+	max-height: 100vh
 	// word-break: break-word
 	
 	// overflow-y: auto
@@ -1451,6 +1454,10 @@ select.form-control
 
 //media
 @include media-breakpoint-between(xs, sm)
+
+	
+
+	
 	.col-md-6, .col-md-12
 		margin-top: 15px
 	.form-group.mt-2
@@ -1491,6 +1498,12 @@ select.form-control
 
 
 @include media-breakpoint-between(xs, lg)
+	body
+		-ms-overflow-style: none /* Internet Explorer 10+ */
+		scrollbar-width: none /* Firefox */
+
+	body::-webkit-scrollbar
+		display: none  /* Safari and Chrome */
 	.work
 		&__col
 			padding-top: 10px

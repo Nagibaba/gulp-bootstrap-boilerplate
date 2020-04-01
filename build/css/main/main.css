@@ -8720,6 +8720,12 @@ h2 {
     -ms-transform: scale(1.3);
         transform: scale(1.3); }
 
+.content-box {
+  box-sizing: content-box; }
+
+.border-box {
+  box-sizing: border-box; }
+
 .f-10 {
   font-size: 10px !important; }
 
@@ -9367,13 +9373,16 @@ html, body {
 
 html {
   width: 100vw;
+  overflow: hidden;
   margin-right: calc(100vw - 100%);
   transition: 0.1s all; }
 
 body {
   width: 100%;
+  overflow-y: auto;
   font-family: "Varela Round", sans-serif;
-  color: #434343; }
+  color: #434343;
+  max-height: 100vh; }
 
 .scroll-to-top {
   min-width: unset; }
@@ -10655,6 +10664,11 @@ select.form-control {
     font-size: 15px; } }
 
 @media (max-width: 1199.98px) {
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none; }
+  body::-webkit-scrollbar {
+    display: none; }
   .work__col {
     padding-top: 10px;
     padding-bottom: 20px; }
@@ -14305,3 +14319,267 @@ body.stop-scrolling {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 6px solid #be2626; }
+
+/* line 4, ../sass/_offline-theme-base.sass */
+.offline-ui, .offline-ui *, .offline-ui:before, .offline-ui:after, .offline-ui *:before, .offline-ui *:after {
+  box-sizing: border-box; }
+
+/* line 7, ../sass/_offline-theme-base.sass */
+.offline-ui {
+  display: none;
+  position: fixed;
+  background: white;
+  z-index: 2000;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+/* line 17, ../sass/_offline-theme-base.sass */
+.offline-ui .offline-ui-content:before {
+  display: inline; }
+
+/* line 20, ../sass/_offline-theme-base.sass */
+.offline-ui .offline-ui-retry {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  display: none; }
+
+/* line 24, ../sass/_offline-theme-base.sass */
+.offline-ui .offline-ui-retry:before {
+  display: inline; }
+
+/* line 29, ../sass/_offline-theme-base.sass */
+.offline-ui.offline-ui-up.offline-ui-up-5s {
+  display: block; }
+
+/* line 32, ../sass/_offline-theme-base.sass */
+.offline-ui.offline-ui-down {
+  display: block; }
+
+/* line 37, ../sass/_offline-theme-base.sass */
+.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-retry {
+  display: block; }
+
+/* line 42, ../sass/_offline-theme-base.sass */
+.offline-ui.offline-ui-down.offline-ui-reconnect-failed-2s.offline-ui-waiting .offline-ui-retry {
+  display: none; }
+
+@keyframes offline-fadein {
+  /* line 6, ../sass/_keyframes.sass */
+  0% {
+    opacity: 0; }
+  /* line 8, ../sass/_keyframes.sass */
+  100% {
+    opacity: 1; } }
+
+@keyframes offline-fadeout-and-hide {
+  /* line 20, ../sass/_keyframes.sass */
+  0% {
+    opacity: 1;
+    display: block; }
+  /* line 23, ../sass/_keyframes.sass */
+  99% {
+    opacity: 0;
+    display: block; }
+  /* line 26, ../sass/_keyframes.sass */
+  100% {
+    opacity: 0;
+    display: none; } }
+
+@keyframes offline-rotation {
+  /* line 64, ../sass/_keyframes.sass */
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg); }
+  /* line 66, ../sass/_keyframes.sass */
+  100% {
+    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    -o-transform: rotate(359deg); } }
+
+/* line 21, ../sass/offline-theme-default.sass */
+.offline-ui {
+  border-radius: 4px;
+  font-family: "Helvetica Neue", sans-serif;
+  padding: 1em;
+  top: 1em;
+  width: 38em;
+  max-width: 100%;
+  overflow: hidden; }
+
+@media (max-width: 38em) {
+  /* line 21, ../sass/offline-theme-default.sass */
+  .offline-ui {
+    border-radius: 0;
+    top: 0; } }
+
+/* line 34, ../sass/offline-theme-default.sass */
+.offline-ui .offline-ui-content:before {
+  line-height: 1.25em; }
+
+/* line 37, ../sass/offline-theme-default.sass */
+.offline-ui .offline-ui-retry {
+  position: absolute;
+  right: 3em;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  line-height: 3.5em;
+  height: 3.5em;
+  margin: auto;
+  padding: 0 1em; }
+
+/* line 50, ../sass/offline-theme-default.sass */
+.offline-ui.offline-ui-up {
+  animation: offline-fadeout-and-hide forwards 0.5s 2s;
+  -webkit-backface-visibility: hidden;
+  background: #d6e9c6;
+  color: #468847; }
+
+/* line 55, ../sass/offline-theme-default.sass */
+.offline-ui.offline-ui-down {
+  animation: offline-fadein 0.5s;
+  -webkit-backface-visibility: hidden;
+  background: #ec8787;
+  color: #551313; }
+
+/* line 60, ../sass/offline-theme-default.sass */
+.offline-ui.offline-ui-down.offline-ui-connecting, .offline-ui.offline-ui-down.offline-ui-waiting {
+  background: #f8ecad;
+  color: #7c6d1f;
+  padding-right: 3em; }
+
+/* line 65, ../sass/offline-theme-default.sass */
+.offline-ui.offline-ui-down.offline-ui-connecting:after, .offline-ui.offline-ui-down.offline-ui-waiting:after {
+  animation: offline-rotation 0.7s linear infinite;
+  -webkit-backface-visibility: hidden;
+  border-radius: 50%;
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 1em;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 1em;
+  width: 1em;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-top-color: #7c6d1f;
+  border-left-color: #7c6d1f;
+  opacity: 0.7; }
+
+/* line 82, ../sass/offline-theme-default.sass */
+.offline-ui.offline-ui-down.offline-ui-waiting {
+  padding-right: 11em; }
+
+/* line 85, ../sass/offline-theme-default.sass */
+.offline-ui.offline-ui-down.offline-ui-waiting.offline-ui-reconnect-failed-2s {
+  padding-right: 0; }
+
+/* line 6, ../sass/_content.sass */
+.offline-ui .offline-ui-retry:before {
+  content: "Yenidən qoşul"; }
+
+/* line 11, ../sass/_content.sass */
+.offline-ui.offline-ui-up .offline-ui-content:before {
+  content: "Kompyuterinizin interneti aktivdir."; }
+
+@media (max-width: 1024px) {
+  /* line 11, ../sass/_content.sass */
+  .offline-ui.offline-ui-up .offline-ui-content:before {
+    content: "Cihazınızın interneti aktivdir."; } }
+
+@media (max-width: 568px) {
+  /* line 11, ../sass/_content.sass */
+  .offline-ui.offline-ui-up .offline-ui-content:before {
+    content: "İnternet aktivdir."; } }
+
+/* line 22, ../sass/_content.sass */
+.offline-ui.offline-ui-down .offline-ui-content:before {
+  content: "Kompyuteriniz interneti sönülüdür."; }
+
+@media (max-width: 1024px) {
+  /* line 22, ../sass/_content.sass */
+  .offline-ui.offline-ui-down .offline-ui-content:before {
+    content: "Cihazınızın interneti sönülüdür."; } }
+
+@media (max-width: 568px) {
+  /* line 22, ../sass/_content.sass */
+  .offline-ui.offline-ui-down .offline-ui-content:before {
+    content: "İnternet sönülüdür."; } }
+
+/* line 33, ../sass/_content.sass */
+.offline-ui.offline-ui-down.offline-ui-connecting .offline-ui-content:before, .offline-ui.offline-ui-down.offline-ui-connecting-2s .offline-ui-content:before {
+  content: "Yenidən qoşulur..."; }
+
+/* line 42, ../sass/_content.sass */
+.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"]:before {
+  content: "Bağlantı qopdu. " attr(data-retry-in-value) " saniyəyə yenidən qoşulacaq..."; }
+
+@media (max-width: 568px) {
+  /* line 42, ../sass/_content.sass */
+  .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"]:before {
+    content: " " attr(data-retry-in-value) " sn qoşulur..."; } }
+
+/* line 50, ../sass/_content.sass */
+.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"][data-retry-in-value="1"]:before {
+  content: "Bağlantı qopdu. " attr(data-retry-in-value) " saniyəyə yenidən qoşulacaq..."; }
+
+@media (max-width: 568px) {
+  /* line 50, ../sass/_content.sass */
+  .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"][data-retry-in-value="1"]:before {
+    content: " " attr(data-retry-in-value) " sn qoşulur..."; } }
+
+/* line 58, ../sass/_content.sass */
+.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"]:before {
+  content: "Bağlantı qopdu. " attr(data-retry-in-value) " dəqiqəyə yenidən qoşulur..."; }
+
+@media (max-width: 568px) {
+  /* line 58, ../sass/_content.sass */
+  .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"]:before {
+    content: " " attr(data-retry-in-value) " dq qoşulur..."; } }
+
+/* line 66, ../sass/_content.sass */
+.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"][data-retry-in-value="1"]:before {
+  content: "Bağlantı qopdu. " attr(data-retry-in-value) " dəqiqəyə yenidən qoşulur..."; }
+
+@media (max-width: 568px) {
+  /* line 66, ../sass/_content.sass */
+  .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"][data-retry-in-value="1"]:before {
+    content: " " attr(data-retry-in-value) " dq qoşulur..."; } }
+
+/* line 74, ../sass/_content.sass */
+.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"]:before {
+  content: "Bağlantı qopdu. " attr(data-retry-in-value) " saata yenidən qoşulur..."; }
+
+@media (max-width: 568px) {
+  /* line 74, ../sass/_content.sass */
+  .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"]:before {
+    content: " " attr(data-retry-in-value) " saata qoşulur..."; } }
+
+/* line 82, ../sass/_content.sass */
+.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"][data-retry-in-value="1"]:before {
+  content: "Bağlantı qopdu. " attr(data-retry-in-value) " saata yenidən qoşulur..."; }
+
+@media (max-width: 568px) {
+  /* line 82, ../sass/_content.sass */
+  .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"][data-retry-in-value="1"]:before {
+    content: " " attr(data-retry-in-value) " saata qoşulur..."; } }
+
+/* line 90, ../sass/_content.sass */
+.offline-ui.offline-ui-down.offline-ui-reconnect-failed-2s.offline-ui-waiting .offline-ui-retry {
+  display: none; }
+
+/* line 93, ../sass/_content.sass */
+.offline-ui.offline-ui-down.offline-ui-reconnect-failed-2s .offline-ui-content:before {
+  content: "İnternetə qoşula bilmədi."; }

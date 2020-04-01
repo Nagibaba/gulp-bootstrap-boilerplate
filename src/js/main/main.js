@@ -15,6 +15,7 @@
 // import '../compiled_js/jquery.form.min'
 // import '../compiled_js/form.variables'
 
+import '../compiled_js/offline.min'
 
 // import Tooltip from 'tooltip'
 import a from './a'
@@ -170,7 +171,7 @@ ready(function() {
 
 
 	// scroll to order
-	$(document).on("click", ".scroll-to-order").click(function (e){
+	$(document).on("click", ".scroll-to-order", function (e){
 		e.preventDefault()
 		console.log(window.location)
 		if(window.location.pathname.split('/').length>2){

@@ -8,7 +8,7 @@
 		$('#Orders_color').val(searchParams.get('color'))
 
 		$(window).bind("load", function() {
-			searchParams.get('price')||$('#procedure-form #Orders_link').trigger('blur')
+			searchParams.get('price')&&$('#procedure-form #Orders_link').trigger('blur')
 			history.replaceState({page: 1}, "title 1", "")
 		})
 
