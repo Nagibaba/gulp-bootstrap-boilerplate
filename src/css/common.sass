@@ -1029,6 +1029,14 @@ select.form-control
 	// 		// transform: scaleY(1)
 	// 		// max-height: 1000px
 
+.wh-order
+	&__item
+		border-bottom: 1px solid #CECECE
+		border-right: 1px solid #CECECE
+		&:nth-last-of-type(2), &:nth-last-of-type(1)
+			border-bottom: none
+		&:nth-of-type(even)
+			border-right: none
 .progress-tracker
 	width: 700px
 	&__wrapper
@@ -1523,6 +1531,15 @@ select.form-control
 
 	.b-slider-image
 		transform: scale(1)
+
+
+	.wh-order
+		&__item
+			border-bottom: 1px solid #CECECE
+			border-right: none
+			&:nth-last-of-type(2)
+				border-bottom: 1px solid #CECECE
+			
 
 	
 

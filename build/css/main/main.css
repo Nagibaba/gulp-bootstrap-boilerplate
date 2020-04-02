@@ -10238,6 +10238,14 @@ select.form-control {
     .order-accordion__hlink:hover {
       color: #FCD626; }
 
+.wh-order__item {
+  border-bottom: 1px solid #CECECE;
+  border-right: 1px solid #CECECE; }
+  .wh-order__item:nth-last-of-type(2), .wh-order__item:nth-last-of-type(1) {
+    border-bottom: none; }
+  .wh-order__item:nth-of-type(even) {
+    border-right: none; }
+
 .progress-tracker {
   width: 700px; }
   .progress-tracker__wrapper {
@@ -10686,7 +10694,12 @@ select.form-control {
         order: 1; }
   .b-slider-image {
     -ms-transform: scale(1);
-        transform: scale(1); } }
+        transform: scale(1); }
+  .wh-order__item {
+    border-bottom: 1px solid #CECECE;
+    border-right: none; }
+    .wh-order__item:nth-last-of-type(2) {
+      border-bottom: 1px solid #CECECE; } }
 
 @media (max-width: 991.98px) {
   .my-orders {
