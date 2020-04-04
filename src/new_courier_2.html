@@ -420,8 +420,8 @@
                           </div>
                           
                           <div id="map" style="width: 100%; height: 300px"></div>
-                          <input type="hidden" id="client-lat">
-                          <input type="hidden" id="client-lng">
+                          <input type="text" id="client-lat">
+                          <input type="text" id="client-lng">
 
 
                         </div>
@@ -719,7 +719,7 @@
 
 
         function initMap() {
-            var clientPosition = {lat: -33.8688, lng: 151.2195};
+            var clientPosition = {lat: 40.376237, lng: 49.841261};
             var map = new google.maps.Map(document.getElementById('map'), {
               center: clientPosition,
               zoom: 17,
@@ -731,16 +731,18 @@
                 map: map,
                 title: 'İkonu dəqiq ünvana sürüşdürün',
                 draggable: true,
-                icon: '/img/pin.svg',
+                icon: './img/pin.svg',
                 position: clientPosition
               });
 
             if (navigator.geolocation) {
-               navigator.geolocation.getCurrentPosition(function (position) {
-                   initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-                   marker.setPosition(initialLocation);
-                   map.setCenter(initialLocation);
-               });
+              navigator.geolocation.getCurrentPosition(function (position) {
+                initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                marker.setPosition(initialLocation);
+                map.setCenter(initialLocation);
+                document.getElementById('client-lat').value = position.coords.latitude
+                document.getElementById('client-lng').value = position.coords.longitude
+              });
             }
 
             // Create the search box and link it to the UI element.
