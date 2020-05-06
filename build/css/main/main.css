@@ -9379,6 +9379,7 @@ html {
 
 body {
   width: 100%;
+  position: relative;
   overflow-y: auto;
   font-family: "Varela Round", sans-serif;
   color: #434343;
@@ -10644,6 +10645,25 @@ select.form-control {
       -ms-transform: rotate(-25deg);
           transform: rotate(-25deg);
       background-color: #CB0000; }
+
+.cur-info {
+  text-align: center;
+  background-color: #ddd;
+  border-radius: 3px;
+  font-size: 12px; }
+  .cur-info__dot {
+    line-height: 1px;
+    font-size: 30px; }
+
+.cur-tag {
+  margin-left: -0.25rem;
+  margin-right: -0.25rem; }
+  .cur-tag__item {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    font-size: 12px;
+    border: 1px solid #FCD626;
+    border-radius: 3px; }
 
 @media (max-width: 767.98px) {
   .col-md-6, .col-md-12 {

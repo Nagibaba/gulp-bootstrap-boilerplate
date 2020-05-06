@@ -37,6 +37,7 @@ html
 	 //    	background-color: transparent
 body
 	width: 100%
+	position: relative
 	overflow-y: auto
 	font-family: $font-family
 	color: $light-black
@@ -1456,6 +1457,25 @@ select.form-control
 			height: 1px
 			transform: rotate(-25deg)
 			background-color: #CB0000
+
+
+.cur-info
+	text-align: center
+	background-color: #ddd
+	border-radius: 3px
+	font-size: 12px
+	&__dot
+		line-height: 1px
+		font-size: 30px
+.cur-tag
+	margin-left: -($spacer * .25)
+	margin-right: -($spacer * .25)
+	&__item
+		margin-left: $spacer * .25
+		margin-right: $spacer * .25
+		font-size: 12px
+		border: 1px solid $main-color
+		border-radius: 3px
 
 
    
