@@ -8592,6 +8592,7 @@ a.text-dark:hover, a.text-dark:focus {
     animation-iteration-count: 1 !important; } }
 
 .not-visible-first {
+  display: inherit;
   visibility: visible;
   opacity: 1; }
 
@@ -8705,7 +8706,7 @@ h2 {
   border-style: dotted; }
 
 .main-border {
-  border-color: #FCD626; }
+  border-color: #FCD626 !important; }
 
 .mtm-0 {
   margin-top: 0; }
@@ -8753,7 +8754,7 @@ h2 {
 .f-100 {
   font-size: 100px !important; }
 
-.soft-border {
+.soft-border, .wh-order {
   border: 1px solid #D8D8D8 !important; }
 
 .soft-bottom {
@@ -9689,6 +9690,7 @@ select.form-control {
       border: 1px solid #FCD626;
       border-radius: 5px;
       width: 20px;
+      min-width: 20px;
       height: 20px;
       padding: 0;
       vertical-align: middle;
@@ -10239,13 +10241,10 @@ select.form-control {
     .order-accordion__hlink:hover {
       color: #FCD626; }
 
-.wh-order__item {
-  border-bottom: 1px solid #CECECE;
-  border-right: 1px solid #CECECE; }
-  .wh-order__item:nth-last-of-type(2), .wh-order__item:nth-last-of-type(1) {
-    border-bottom: none; }
-  .wh-order__item:nth-of-type(even) {
-    border-right: none; }
+.wh-order {
+  border-top: none;
+  padding-top: 5px;
+  margin-top: -5px; }
 
 .progress-tracker {
   width: 700px; }
@@ -10648,7 +10647,7 @@ select.form-control {
 
 .cur-info {
   text-align: center;
-  background-color: #ddd;
+  background-color: #ededed;
   border-radius: 3px;
   font-size: 12px; }
   .cur-info__dot {

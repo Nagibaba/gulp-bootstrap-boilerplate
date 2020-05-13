@@ -131,6 +131,7 @@ ready(function() {
 		// COPY
 		// const copyText = target.closest('.copy').find('.copy__value').text().trim()
 		const copyNode = $(target.data('clipboard-target'))
+		console.log(copyNode)
 		copyNode.addClass('animated heartBeat')
 		const copyText = copyNode.text().trim()
 		console.log(copyText)
@@ -207,15 +208,10 @@ ready(function() {
 	  
 	// })
 
-
+	$('[data-toggle="tooltip"]').tooltip()
 
     
 }) // ready
-
-
-$('[data-toggle="tooltip"]').tooltip()
-
-
 
 // window loaded
 window.addEventListener('load', ()=>{
