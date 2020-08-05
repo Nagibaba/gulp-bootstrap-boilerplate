@@ -1709,166 +1709,1166 @@
 
           </ul>
         </aside>
-  
-          <main class="my-orders fullWidth flex-column pl-0 pl-lg-4">
 
-            <div class="my-order d-flex flex-row justify-content-between align-items-center py-2 pl-4 pr-3 "> <!-- mt-4 on if not first -->
-              
-              <!-- <div class="my-order__info pr-4 flex-column">
-                <img src="./img/tecili.svg" alt="">
-              </div> -->
+<main class="my-orders fullWidth flex-column pl-0 pl-lg-4 orders-content-main">
+	<form data-form="ajax" style="display: none;" id="user-filter-form" action="/az/users" method="post"><input
+			name="OrdersGroups[position]" id="OrdersGroups_position" type="hidden"><input name="OrdersGroups[c_id]"
+			id="OrdersGroups_c_id" type="hidden"><input name="OrdersGroups[type]" id="OrdersGroups_type" type="hidden">
+	</form>
 
-              <div class="my-order__info pr-4 flex-column">
-                <p class="my-order__key f-16 m-0">ID</p>
-                <p class="my-order__val f-18 font-weight-bold m-0">2190348028</p>
-              </div>
+	<div class="my-order d-flex flex-column">
+		<!-- mt-4 on if not first -->
+		<div
+			class="my-order__header justify-content-between d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 pl-4 pr-3 ">
+			<div class="form-check d-flex flex-row border-0 pr-1 my-2">
+				<input class="form-check-input og-pay" type="checkbox" name="ids[]" value="92267" data-price="1.7"
+					id="orderaccordion-select0">
+				<label class="form-check-label d-flex fullCenter flex-row" for="orderaccordion-select0">
+					<span class="f-15 origin-0 d-flex mx-2">
+						Bağlamanın ödənişini etmək üçün seçin </span>
+				</label>
+			</div>
 
-              <div class="my-order__info pr-4 flex-column">
-                <p class="my-order__key f-16 m-0">Ölkə</p>
-                <p class="my-order__val f-18 font-weight-bold m-0">Amerika</p>
-              </div>
+			<div class="my-order__info pr-4 flex-column my-2">
+				<a class="order-accordion__link fullCenter showTracking" href="/az/users/tracking/92267">
+					<img style="width: 19px; height: 19px" class="orders__filter-icon mr-2" src="/img/plane.svg"
+						alt="filter icon">
+					Bağlama hərəkətləri </a>
+			</div>
 
-              <div class="my-order__info pr-4 flex-column">
-                <p class="my-order__key f-16 m-0">Çəki</p>
-                <p class="my-order__val f-18 font-weight-bold m-0">1 kq</p>
-              </div>
+			<div class="my-2">
 
-              <div class="my-order__info pr-4 flex-column">
-                <p class="my-order__key f-16 m-0">Çatdırılma haqqı</p>
-                <p class="my-order__val f-18 font-weight-bold m-0">4.5 $</p>
-              </div>
+			</div>
+		</div>
+		<div class="my-order__body d-flex flex-row flex-wrap justify-content-start justify-content-sm-center p-4"
+			style="">
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İzləmə kodu </span>
+					<div>
+						<b id="package_tracking_code_7332487872751" class="fullCenter">
+							7332487872751 </b>
+						<button class="btn btn-clipboard b-tooltip"
+							data-clipboard-target="#package_tracking_code_7332487872751">
+							<img src="/img/paper.svg" alt="Copy this">
+							<span class="tooltiptext" data-copied="Kopyalandı" data-copy="Kopiyala">Kopiyala</span>
+						</button>
 
-              <div class="my-order__info pr-4 flex-column">
-                <p class="my-order__key f-16 m-0">Tarix</p>
-                <p class="my-order__val f-18 font-weight-bold m-0">14.04.2019 15:56</p>
-              </div>
-              
-              <div class="my-order__info pr-3 flex-column">
-                <button class="btn btn-warning main-button mx-1 createOrderModal " data-url="/az/users/procedure">
-                  Bəyan et           
-                </button>
-              </div>
-
-            </div>
-            <div class="table-responsive my-order-accordion collapse" id="collapseExample" style="">
-              
-              <table class="table table--borderless table--nowrap table--textCenter f-18 m-0" cellspacing="20px" cellpadding="0">
-                <tbody>
-                  <tr class="select-all-row">
-                    <td colspan="2">
-                      <div class="form-check d-flex flex-row border-0 px-1 mt-1">
-                        <input class="form-check-input" type="checkbox" id="urgent-order-main" name="urgent-order" checked="">
-                        <label class="form-check-label" for="urgent-order-main"> 
-                            <span class="mx-2">Hamısını seç</span>
-                        </label>
-                        
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <table class="table table--borderless table--nowrap table--textCenter f-18" cellspacing="20px" cellpadding="0">
-                <tbody>
-                  
-                  <tr>
-                    <td>
-                      <div class="form-check form-check--small d-flex flex-row border-0 px-1">
-                        <input class="form-check-input" type="checkbox" id="urgent-order-main" name="urgent-order" checked="">
-                        <label class="form-check-label " for="urgent-order-main"> 
-                          
-                        </label>
-                        
-                      </div>
-
-
-                    </td>
-                    
-                    <td>1</td>
-
-                    <td>
-                      <img class="order-accordion__thumb ml-2" src="https://fizza.az/img/noPhoto.png" alt="order image">
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Mağaza</span>
-                        <b>https://www.zara.com</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Qeyd</span>
-                        <b>Qara, M ölçü</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Say</span>
-                        <b>1</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Qiyməti</span>
-                        <b>110 TL</b>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column align-items-start">
-                        <span>Status</span>
-                        <b>Sifariş verilib</b>
-                      </div>
-                    </td>
-                    <td>
-                      <a href="" class="d-flex flex-column align-items-start" data-toggle="modal" data-target="#exampleModal">
-                        <span class="main-color"><i class="fa fa-info-circle mr-1"></i>Borc</span>
-                        <b>15 TL</b>
-                      </a>
-                    </td>
-                    
-                    
-                  </tr>
-                  
-                </tbody>
-              </table>
-            </div>
-
-
-
-
-
-
+					</div>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çatdırılma haqqı </span>
+					<b>
+						1 USD </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mağaza adı </span>
+					<b>
+						www.koton.com </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ölkə </span>
+					<b>
+						Türkiyə </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Tarix </span>
+					<b>
+						29.07.2020 16:41 </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mövqe </span>
+					<b>
+						Bakıya göndərilib </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Kateqoriya </span>
+					<b>
+						Geyim </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Məhsul sayı </span>
+					<b>
+						1 məhsul </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ad </span>
+					<b>
+						tshırt </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çəki (kq) </span>
+					<b>
+						0.165 kq </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İnvoice </span>
+					<b class="red">
+						Yüklənməyib </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ümumi qiymət </span>
+					<b class="red">
+						19.99 TL </b>
+				</div>
+			</div>
+		</div>
+		<div
+			class="my-order__footer green soft-top justify-content-between d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 pl-4 pr-3 ">
+			Bağlamanızın çatdırılma haqqı kampaniyaya əsasında çıxılıb.
+		</div>
+	</div>
 
 
+	<div class="my-order d-flex flex-column mt-5">
+		<!-- mt-4 on if not first -->
+		<div
+			class="my-order__header justify-content-between d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 pl-4 pr-3 ">
+			<div class="form-check d-flex flex-row border-0 pr-1 my-2">
+				<input class="form-check-input og-pay" type="checkbox" name="ids[]" value="88204" data-price="1.7"
+					id="orderaccordion-select1">
+				<label class="form-check-label d-flex fullCenter flex-row" for="orderaccordion-select1">
+					<span class="f-15 origin-0 d-flex mx-2">
+						Bağlamanın ödənişini etmək üçün seçin </span>
+				</label>
+			</div>
+
+			<div class="my-order__info pr-4 flex-column my-2">
+				<a class="order-accordion__link fullCenter showTracking" href="/az/users/tracking/88204">
+					<img style="width: 19px; height: 19px" class="orders__filter-icon mr-2" src="/img/plane.svg"
+						alt="filter icon">
+					Bağlama hərəkətləri </a>
+			</div>
+
+			<div class="my-2">
+
+			</div>
+		</div>
+		<div class="my-order__body d-flex flex-row flex-wrap justify-content-start justify-content-sm-center p-4"
+			style="">
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İzləmə kodu </span>
+					<div>
+						<b id="package_tracking_code_20071101030171" class="fullCenter">
+							20071101030171 </b>
+						<button class="btn btn-clipboard b-tooltip"
+							data-clipboard-target="#package_tracking_code_20071101030171">
+							<img src="/img/paper.svg" alt="Copy this">
+							<span class="tooltiptext" data-copied="Kopyalandı" data-copy="Kopiyala">Kopiyala</span>
+						</button>
+
+					</div>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çatdırılma haqqı </span>
+					<b>
+						1 USD </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mağaza adı </span>
+					<b>
+						www.lcwaikiki.com </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ölkə </span>
+					<b>
+						Türkiyə </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Tarix </span>
+					<b>
+						25.07.2020 07:00 </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mövqe </span>
+					<b>
+						Bakıdakı anbarımızda </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Kateqoriya </span>
+					<b>
+						Geyim </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Məhsul sayı </span>
+					<b>
+						1 məhsul </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ad </span>
+					<b>
+						tişört </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çəki (kq) </span>
+					<b>
+						0.24 kq </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İnvoice </span>
+					<b class="red">
+						Yüklənməyib </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ümumi qiymət </span>
+					<b class="red">
+						44.99 TL </b>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
+	<div class="my-order d-flex flex-column mt-5">
+		<!-- mt-4 on if not first -->
+		<div
+			class="my-order__header justify-content-between d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 pl-4 pr-3 ">
+			<div class="form-check d-flex flex-row border-0 pr-1 my-2">
+				<input class="form-check-input og-pay" type="checkbox" name="ids[]" value="86172" data-price="6.63"
+					id="orderaccordion-select2">
+				<label class="form-check-label d-flex fullCenter flex-row" for="orderaccordion-select2">
+					<span class="f-15 origin-0 d-flex mx-2">
+						Bağlamanın ödənişini etmək üçün seçin </span>
+				</label>
+			</div>
+
+			<div class="my-order__info pr-4 flex-column my-2">
+				<a class="order-accordion__link fullCenter showTracking" href="/az/users/tracking/86172">
+					<img style="width: 19px; height: 19px" class="orders__filter-icon mr-2" src="/img/plane.svg"
+						alt="filter icon">
+					Bağlama hərəkətləri </a>
+			</div>
+
+			<div class="my-2">
+
+			</div>
+		</div>
+		<div class="my-order__body d-flex flex-row flex-wrap justify-content-start justify-content-sm-center p-4"
+			style="">
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İzləmə kodu </span>
+					<div>
+						<b id="package_tracking_code_P01120791570" class="fullCenter">
+							P01120791570 </b>
+						<button class="btn btn-clipboard b-tooltip"
+							data-clipboard-target="#package_tracking_code_P01120791570">
+							<img src="/img/paper.svg" alt="Copy this">
+							<span class="tooltiptext" data-copied="Kopyalandı" data-copy="Kopiyala">Kopiyala</span>
+						</button>
+
+					</div>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çatdırılma haqqı </span>
+					<b>
+						3.9 USD </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mağaza adı </span>
+					<b>
+						www.trendyol.com </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ölkə </span>
+					<b>
+						Türkiyə </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Tarix </span>
+					<b>
+						22.07.2020 23:56 </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mövqe </span>
+					<b>
+						Bakıdakı anbarımızda </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Kateqoriya </span>
+					<b>
+						Geyim </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Məhsul sayı </span>
+					<b>
+						7 məhsul </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ad </span>
+					<b>
+						tişört 6 elbise </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çəki (kq) </span>
+					<b>
+						1 kq </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İnvoice </span>
+					<b class="red">
+						Yüklənməyib </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ümumi qiymət </span>
+					<b class="red">
+						143.98 TL </b>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-            
+	<div class="my-order d-flex flex-column mt-5">
+		<!-- mt-4 on if not first -->
+		<div
+			class="my-order__header justify-content-between d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 pl-4 pr-3 ">
+
+			<div class="form-check d-flex flex-row border-0 pr-1 my-2">
+				<input class="form-check-input og-courier" type="checkbox" name="cids[]" value="68891"
+					id="orderaccordion-cselect3">
+				<label class="form-check-label d-flex fullCenter flex-row" for="orderaccordion-cselect3">
+					<span class="f-15 origin-0 d-flex mx-2">
+						Kuryer ilə göndər </span>
+				</label>
+			</div>
+			<div class="my-order__info pr-4 flex-column my-2">
+				<a class="order-accordion__link fullCenter showTracking" href="/az/users/tracking/68891">
+					<img style="width: 19px; height: 19px" class="orders__filter-icon mr-2" src="/img/plane.svg"
+						alt="filter icon">
+					Bağlama hərəkətləri </a>
+			</div>
+
+			<div class="my-2">
+
+			</div>
+		</div>
+		<div class="my-order__body d-flex flex-row flex-wrap justify-content-start justify-content-sm-center p-4"
+			style="">
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İzləmə kodu </span>
+					<div>
+						<b id="package_tracking_code_P01119538821" class="fullCenter">
+							P01119538821 </b>
+						<button class="btn btn-clipboard b-tooltip"
+							data-clipboard-target="#package_tracking_code_P01119538821">
+							<img src="/img/paper.svg" alt="Copy this">
+							<span class="tooltiptext" data-copied="Kopyalandı" data-copy="Kopiyala">Kopiyala</span>
+						</button>
+
+					</div>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çatdırılma haqqı </span>
+					<b>
+						3.3 USD </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mağaza adı </span>
+					<b>
+						www.trendyol.com </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ölkə </span>
+					<b>
+						Türkiyə </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Tarix </span>
+					<b>
+						03.07.2020 19:22 </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mövqe </span>
+					<b>
+						Bakıdakı anbarımızda </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Kateqoriya </span>
+					<b>
+						Geyim </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Məhsul sayı </span>
+					<b>
+						1 məhsul </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ad </span>
+					<b>
+						jeans </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çəki (kq) </span>
+					<b>
+						0.55 kq </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İnvoice </span>
+					<b class="red">
+						Yüklənməyib </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ümumi qiymət </span>
+					<b class="red">
+						99.98 TL </b>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-            
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header text-center">
-                    <h5 class="modal-title " id="exampleModalLabel">Borcun yaranma səbəbi</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    Bağlamaların sayından və çəkisindən asılı olmayaraq, çatdırılma haqqı hər hesaba(akkaunta) və seçilən tarifə uyğun olaraq hesablanır. Çatdırıma haqqını bağlamanı əldə edən zaman nəğd ödəyə bilərsiniz.
-                  </div>
-                  <div class="modal-footer fullCenter">
-                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">BORC: 15 TL</button>
-                    <button type="button" class="btn btn-primary">Borcu ödə</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+	<div class="my-order d-flex flex-column mt-5">
+		<!-- mt-4 on if not first -->
+		<div
+			class="my-order__header justify-content-between d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 pl-4 pr-3 ">
 
-          </main>
+			<div class="form-check d-flex flex-row border-0 pr-1 my-2">
+				<input class="form-check-input og-courier" type="checkbox" name="cids[]" value="50074"
+					id="orderaccordion-cselect4">
+				<label class="form-check-label d-flex fullCenter flex-row" for="orderaccordion-cselect4">
+					<span class="f-15 origin-0 d-flex mx-2">
+						Kuryer ilə göndər </span>
+				</label>
+			</div>
+			<div class="my-order__info pr-4 flex-column my-2">
+				<a class="order-accordion__link fullCenter showTracking" href="/az/users/tracking/50074">
+					<img style="width: 19px; height: 19px" class="orders__filter-icon mr-2" src="/img/plane.svg"
+						alt="filter icon">
+					Bağlama hərəkətləri </a>
+			</div>
+
+			<div class="my-2">
+
+			</div>
+		</div>
+		<div class="my-order__body d-flex flex-row flex-wrap justify-content-start justify-content-sm-center p-4"
+			style="">
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İzləmə kodu </span>
+					<div>
+						<b id="package_tracking_code_P01116465926" class="fullCenter">
+							P01116465926 </b>
+						<button class="btn btn-clipboard b-tooltip"
+							data-clipboard-target="#package_tracking_code_P01116465926">
+							<img src="/img/paper.svg" alt="Copy this">
+							<span class="tooltiptext" data-copied="Kopyalandı" data-copy="Kopiyala">Kopiyala</span>
+						</button>
+
+					</div>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çatdırılma haqqı </span>
+					<b>
+						2.3 USD </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mağaza adı </span>
+					<b>
+						www.trendyol.com </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ölkə </span>
+					<b>
+						Türkiyə </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Tarix </span>
+					<b>
+						09.06.2020 01:40 </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mövqe </span>
+					<b>
+						Bakıdakı anbarımızda </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Kateqoriya </span>
+					<b>
+						Geyim </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Məhsul sayı </span>
+					<b>
+						2 məhsul </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ad </span>
+					<b>
+						bluz 2 </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çəki (kq) </span>
+					<b>
+						0.47 kq </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İnvoice </span>
+					<b class="red">
+						Yüklənməyib </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ümumi qiymət </span>
+					<b class="red">
+						47.99 TL </b>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="my-order d-flex flex-column mt-5">
+		<!-- mt-4 on if not first -->
+		<div
+			class="my-order__header justify-content-between d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 pl-4 pr-3 ">
+
+			<div class="my-order__info pr-4 flex-column my-2">
+				<a class="order-accordion__link fullCenter showTracking" href="/az/users/tracking/35441">
+					<img style="width: 19px; height: 19px" class="orders__filter-icon mr-2" src="/img/plane.svg"
+						alt="filter icon">
+					Bağlama hərəkətləri </a>
+			</div>
+
+			<div class="my-2">
+
+			</div>
+		</div>
+		<div class="my-order__body d-flex flex-row flex-wrap justify-content-start justify-content-sm-center p-4"
+			style="">
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İzləmə kodu </span>
+					<div>
+						<b id="package_tracking_code_C45Z4900" class="fullCenter">
+							C45Z4900 </b>
+						<button class="btn btn-clipboard b-tooltip"
+							data-clipboard-target="#package_tracking_code_C45Z4900">
+							<img src="/img/paper.svg" alt="Copy this">
+							<span class="tooltiptext" data-copied="Kopyalandı" data-copy="Kopiyala">Kopiyala</span>
+						</button>
+
+					</div>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çatdırılma haqqı </span>
+					<b>
+						3.9 USD </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mağaza adı </span>
+					<b>
+						shop.mango.com </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ölkə </span>
+					<b>
+						Türkiyə </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Tarix </span>
+					<b>
+						15.05.2020 15:03 </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mövqe </span>
+					<b>
+						Təhvil verilib </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Kateqoriya </span>
+					<b>
+						Geyim </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Məhsul sayı </span>
+					<b>
+						2 məhsul </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ad </span>
+					<b>
+						ayakkabı tişört </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çəki (kq) </span>
+					<b>
+						0.89 kq </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İnvoice </span>
+					<b class="red">
+						Yüklənməyib </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ümumi qiymət </span>
+					<b class="red">
+						241.99 TL </b>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="my-order d-flex flex-column mt-5">
+		<!-- mt-4 on if not first -->
+		<div
+			class="my-order__header justify-content-between d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 pl-4 pr-3 ">
+
+			<div class="my-order__info pr-4 flex-column my-2">
+				<a class="order-accordion__link fullCenter showTracking" href="/az/users/tracking/17964">
+					<img style="width: 19px; height: 19px" class="orders__filter-icon mr-2" src="/img/plane.svg"
+						alt="filter icon">
+					Bağlama hərəkətləri </a>
+			</div>
+
+			<div class="my-2">
+
+			</div>
+		</div>
+		<div class="my-order__body d-flex flex-row flex-wrap justify-content-start justify-content-sm-center p-4"
+			style="">
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İzləmə kodu </span>
+					<div>
+						<b id="package_tracking_code_1Z61X6R66800406020" class="fullCenter">
+							1Z61X6R66800406020 </b>
+						<button class="btn btn-clipboard b-tooltip"
+							data-clipboard-target="#package_tracking_code_1Z61X6R66800406020">
+							<img src="/img/paper.svg" alt="Copy this">
+							<span class="tooltiptext" data-copied="Kopyalandı" data-copy="Kopiyala">Kopiyala</span>
+						</button>
+
+					</div>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çatdırılma haqqı </span>
+					<b>
+						3.9 USD </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mağaza adı </span>
+					<b>
+						www.trendyol.com </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ölkə </span>
+					<b>
+						Türkiyə </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Tarix </span>
+					<b>
+						17.03.2020 21:15 </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mövqe </span>
+					<b>
+						Təhvil verilib </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Kateqoriya </span>
+					<b>
+						Geyim </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Məhsul sayı </span>
+					<b>
+						2 məhsul </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ad </span>
+					<b>
+						hırka2 </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çəki (kq) </span>
+					<b>
+						0.78 kq </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İnvoice </span>
+					<b class="red">
+						Yüklənməyib </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ümumi qiymət </span>
+					<b class="red">
+						121 TL </b>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="my-order d-flex flex-column mt-5">
+		<!-- mt-4 on if not first -->
+		<div
+			class="my-order__header justify-content-between d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 pl-4 pr-3 ">
+
+			<div class="my-order__info pr-4 flex-column my-2">
+				<a class="order-accordion__link fullCenter showTracking" href="/az/users/tracking/17669">
+					<img style="width: 19px; height: 19px" class="orders__filter-icon mr-2" src="/img/plane.svg"
+						alt="filter icon">
+					Bağlama hərəkətləri </a>
+			</div>
+
+			<div class="my-2">
+
+			</div>
+		</div>
+		<div class="my-order__body d-flex flex-row flex-wrap justify-content-start justify-content-sm-center p-4"
+			style="">
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İzləmə kodu </span>
+					<div>
+						<b id="package_tracking_code_20031200431801" class="fullCenter">
+							20031200431801 </b>
+						<button class="btn btn-clipboard b-tooltip"
+							data-clipboard-target="#package_tracking_code_20031200431801">
+							<img src="/img/paper.svg" alt="Copy this">
+							<span class="tooltiptext" data-copied="Kopyalandı" data-copy="Kopiyala">Kopiyala</span>
+						</button>
+
+					</div>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çatdırılma haqqı </span>
+					<b>
+						3.3 USD </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mağaza adı </span>
+					<b>
+						www.flo.com.tr </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ölkə </span>
+					<b>
+						Türkiyə </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Tarix </span>
+					<b>
+						17.03.2020 00:33 </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mövqe </span>
+					<b>
+						Təhvil verilib </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Kateqoriya </span>
+					<b>
+						Ayaqqabı </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Məhsul sayı </span>
+					<b>
+						1 məhsul </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ad </span>
+					<b>
+						ayakabı </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çəki (kq) </span>
+					<b>
+						0.6 kq </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İnvoice </span>
+					<b class="red">
+						Yüklənməyib </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ümumi qiymət </span>
+					<b class="red">
+						149.9 TL </b>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="my-order d-flex flex-column mt-5">
+		<!-- mt-4 on if not first -->
+		<div
+			class="my-order__header justify-content-between d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 pl-4 pr-3 ">
+
+			<div class="my-order__info pr-4 flex-column my-2">
+				<a class="order-accordion__link fullCenter showTracking" href="/az/users/tracking/17376">
+					<img style="width: 19px; height: 19px" class="orders__filter-icon mr-2" src="/img/plane.svg"
+						alt="filter icon">
+					Bağlama hərəkətləri </a>
+			</div>
+
+			<div class="my-2">
+
+			</div>
+		</div>
+		<div class="my-order__body d-flex flex-row flex-wrap justify-content-start justify-content-sm-center p-4"
+			style="">
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İzləmə kodu </span>
+					<div>
+						<b id="package_tracking_code_24312326414000100032" class="fullCenter">
+							24312326414000100032 </b>
+						<button class="btn btn-clipboard b-tooltip"
+							data-clipboard-target="#package_tracking_code_24312326414000100032">
+							<img src="/img/paper.svg" alt="Copy this">
+							<span class="tooltiptext" data-copied="Kopyalandı" data-copy="Kopiyala">Kopiyala</span>
+						</button>
+
+					</div>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çatdırılma haqqı </span>
+					<b>
+						3.3 USD </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mağaza adı </span>
+					<b>
+						www.bershka.com </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ölkə </span>
+					<b>
+						Türkiyə </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Tarix </span>
+					<b>
+						16.03.2020 16:22 </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mövqe </span>
+					<b>
+						Təhvil verilib </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Kateqoriya </span>
+					<b>
+						Geyim </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Məhsul sayı </span>
+					<b>
+						2 məhsul </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ad </span>
+					<b>
+						tshırt,canta </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çəki (kq) </span>
+					<b>
+						0.52 kq </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İnvoice </span>
+					<b class="red">
+						Yüklənməyib </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ümumi qiymət </span>
+					<b class="red">
+						125.9 TL </b>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="my-order d-flex flex-column mt-5">
+		<!-- mt-4 on if not first -->
+		<div
+			class="my-order__header justify-content-between d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 pl-4 pr-3 ">
+
+			<div class="my-order__info pr-4 flex-column my-2">
+				<a class="order-accordion__link fullCenter showTracking" href="/az/users/tracking/17261">
+					<img style="width: 19px; height: 19px" class="orders__filter-icon mr-2" src="/img/plane.svg"
+						alt="filter icon">
+					Bağlama hərəkətləri </a>
+			</div>
+
+			<div class="my-2">
+
+			</div>
+		</div>
+		<div class="my-order__body d-flex flex-row flex-wrap justify-content-start justify-content-sm-center p-4"
+			style="">
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İzləmə kodu </span>
+					<div>
+						<b id="package_tracking_code_2003111713054" class="fullCenter">
+							2003111713054 </b>
+						<button class="btn btn-clipboard b-tooltip"
+							data-clipboard-target="#package_tracking_code_2003111713054">
+							<img src="/img/paper.svg" alt="Copy this">
+							<span class="tooltiptext" data-copied="Kopyalandı" data-copy="Kopiyala">Kopiyala</span>
+						</button>
+
+					</div>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çatdırılma haqqı </span>
+					<b>
+						2.3 USD </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mağaza adı </span>
+					<b>
+						www.lcwaikiki.com </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ölkə </span>
+					<b>
+						Türkiyə </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Tarix </span>
+					<b>
+						14.03.2020 16:48 </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Mövqe </span>
+					<b>
+						Təhvil verilib </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Kateqoriya </span>
+					<b>
+						Geyim </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Məhsul sayı </span>
+					<b>
+						2 məhsul </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ad </span>
+					<b>
+						takım,hırka </b>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 flex-column m-0">
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Çəki (kq) </span>
+					<b>
+						0.32 kq </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						İnvoice </span>
+					<b class="red">
+						Yüklənməyib </b>
+				</div>
+				<div class="d-flex flex-column align-items-center align-items-sm-start mb-3">
+					<span>
+						Ümumi qiymət </span>
+					<b class="red">
+						69.93 TL </b>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav aria-label="Page navigation example">
+		﻿<ul class="pagination justify-content-center order-pager" id="yw0">
+			<li class="page-item disabled"><a class="page-link" href="/az/users/packages"> Əvvəlki</a></li>
+			<li class="page-item active"><a class="page-link" href="/az/users/packages">1</a></li>
+			<li class="page-item"><a class="page-link" href="/az/users/packages/page/2">2</a></li>
+			<li class="page-item"><a class="page-link" href="/az/users/packages/page/2">Növbəti</a></li>
+		</ul>
+	</nav>
+
+</main>
 
         </div>
 
