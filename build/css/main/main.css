@@ -8905,6 +8905,11 @@ a.text-dark:hover, a.text-dark:focus {
 ::-webkit-scrollbar-corner {
   background-color: transparent; }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */
+  input, textarea {
+    transform: translateZ(0px) !important; } }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
