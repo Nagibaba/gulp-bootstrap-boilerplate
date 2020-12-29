@@ -9667,9 +9667,9 @@ html {
 body {
   width: 100%;
   position: relative;
-  overflow-y: auto;
   font-family: "Varela Round", sans-serif;
   color: #434343;
+  min-height: 100vh;
   max-height: 100vh; }
 
 .scroll-to-top {
