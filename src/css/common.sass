@@ -133,6 +133,8 @@ body
 	// box-shadow: 0 0 15px rgba(0,0,0,.16)
 	&--small
 		border-radius: 7px
+	&--xsmall
+		border-radius: 3px
 	&--shopping
 		display: none
 		position: absolute
@@ -443,6 +445,9 @@ select.form-control
 	border-radius: 3px
 	font-size: 20px
 	font-weight: normal
+	&--success
+		@extend .btn-success, .bg-success
+		color: white
 
 .customer-key
 	padding-left: 30px
@@ -747,6 +752,14 @@ select.form-control
 		// background-color: rgba(0,0,0, .2)
 		
 
+.screen-blocker
+	position: fixed
+	z-index: 9999999
+	background-color: mainColor(.9)
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
 
 
 .b-popup

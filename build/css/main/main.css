@@ -9740,6 +9740,8 @@ body {
   border-radius: 10px; }
   .inputs-wrapper--small {
     border-radius: 7px; }
+  .inputs-wrapper--xsmall {
+    border-radius: 3px; }
   .inputs-wrapper--shopping {
     display: none;
     position: absolute;
